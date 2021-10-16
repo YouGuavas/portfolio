@@ -1,4 +1,21 @@
-function Nav() {
+import React from "react";
+
+class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+  handleClick = () => {
+    const btn = document.querySelector('button.mobile-menu-button');
+    const menu = document.querySelector(".mobile-menu");
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      btn.classList.toggle('hidden');
+    });
+  }
+  render() {
   return(
     <nav className='bg-white shadow-lg'>
       <div className='max-w-6xl mx-auto px-4'>
@@ -27,7 +44,7 @@ function Nav() {
             </div>
           </div>
           <div className="md:hidden flex items-center">
-            <button className="outline-none mobile-menu-button">
+            <button className="outline-none mobile-menu-button" onClick={this.handleClick}>
               <svg className="w-6 h-6 text-gray-500"
                 x-show="!showMenu"
                 fill="none"
@@ -40,18 +57,19 @@ function Nav() {
               </svg>
             </button>
         </div>
-        <div class="hidden mobile-menu">
-	<ul class="">
-		<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-		<li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-		<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-		<li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
-	</ul>
-</div>
+        <div className="hidden mobile-menu">
+          <ul className="">
+            <li className="active"><a href="index.html" className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+            <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+            <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+            <li><a href="#contact" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+          </ul>
+        </div>
         </div>
       </div>
     </nav>
   );
+  }
 }
 
 export default Nav;
