@@ -5,9 +5,11 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <header className="App-header">
-        Hi, I'm Patrick 👋
-      </header>
+      <div className="flex items-center justify-center h-screen">
+        <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
+          Hi, I'm Patrick 👋
+        </div>
+      </div>
       <Main />
     </div>
   );
