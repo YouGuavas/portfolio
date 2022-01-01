@@ -25,7 +25,7 @@ class Nav extends React.Component {
           return null;
         });
       } else {
-        toggleClasses = ['text-gray-500', 'text-green-500', 'hover:text-green-500', 'border-b-4', 'border-green-500', 'transition', 'duration-300'];
+        toggleClasses = ['text-black', 'text-gray-200', 'hover:text-gray-200', 'border-b-4', 'border-gray-200', 'transition', 'duration-300'];
         const active = document.getElementById(`bigMenu${oldIndex}`);
         const inactive = document.getElementById(`bigMenu${this.state.activeIndex}`)
         toggleClasses.map((toggleClass) => {
@@ -60,7 +60,7 @@ class Nav extends React.Component {
             <div>
               <a href="#" className="flex items-center py-4 px-2">
                 <span className="font-semibold text-black text-lg">
-                  <img src="https://lh3.googleusercontent.com/l-ZXTHubGlEAxVyrpOscTNfz89iOEOYZuHN3RYyAr1NoOY0buMI6T3u9nsBRPF4hdddyZ-5sdM2__V7NsJ9RbNdwazkBr1tLftGAINPThBu7cYIJqlkW7MHPm81-2CIuU5XoU_xJHHvN55nOYvuVvpD8ZjsYv6C3O2ZHMM5rmkA9iapLR5Uwz-iA9nZxinI_wFvHwFGdpYvvK4CPSAByg8A6S5wPlYmp49vcyT2i6MKaR38fuZWPVgxZ4i7HYcRFKgKzrKHKZwRNV_hlOWSazMC4oUTF5cTYhwWzTYzSbQZlfz5RPf1ko53Ii9D7vDd8dai7sUb_CrhyBYuc0gKL6Bz3X6a-QFGqdDpJ5lpgUq5nAgJdK_hW39vsC1KdGKV-AjpgWtZ68lbZHUo3iP0CHf2kXUXEpGRvM08RCSfYHDQQKZZtvpJ2PxDDdhqwAd5f2O0gCIj4dvXoJWpH865BRbdWaK-Cq8yU9n9QyQeAjhFv5FtABtALtB5WgLfhU2HBMFX4odkBNpILxDc4-D19LRLOVO2c8loZhbLgbUIN_Y2i0je9X1Kc7K2fJ2JbwFeS4lruMciaiUGmatTijPcHz3MRIMnjQd6aEXhodz0If1F4rPerpgerOqr2m9DFMPFiBvMXVaL0MN6Ru24vfeOHkGcQ-Tokok12pn7oruAKHzsf2H8ikf3CiEBoqXvkWwFNU-FKao3GDvs-3srhlSO9Mx-V=s144-no?authuser=0" />
+                  <img alt="An image of my personal logo" className="h-24"src="https://lh3.googleusercontent.com/l-ZXTHubGlEAxVyrpOscTNfz89iOEOYZuHN3RYyAr1NoOY0buMI6T3u9nsBRPF4hdddyZ-5sdM2__V7NsJ9RbNdwazkBr1tLftGAINPThBu7cYIJqlkW7MHPm81-2CIuU5XoU_xJHHvN55nOYvuVvpD8ZjsYv6C3O2ZHMM5rmkA9iapLR5Uwz-iA9nZxinI_wFvHwFGdpYvvK4CPSAByg8A6S5wPlYmp49vcyT2i6MKaR38fuZWPVgxZ4i7HYcRFKgKzrKHKZwRNV_hlOWSazMC4oUTF5cTYhwWzTYzSbQZlfz5RPf1ko53Ii9D7vDd8dai7sUb_CrhyBYuc0gKL6Bz3X6a-QFGqdDpJ5lpgUq5nAgJdK_hW39vsC1KdGKV-AjpgWtZ68lbZHUo3iP0CHf2kXUXEpGRvM08RCSfYHDQQKZZtvpJ2PxDDdhqwAd5f2O0gCIj4dvXoJWpH865BRbdWaK-Cq8yU9n9QyQeAjhFv5FtABtALtB5WgLfhU2HBMFX4odkBNpILxDc4-D19LRLOVO2c8loZhbLgbUIN_Y2i0je9X1Kc7K2fJ2JbwFeS4lruMciaiUGmatTijPcHz3MRIMnjQd6aEXhodz0If1F4rPerpgerOqr2m9DFMPFiBvMXVaL0MN6Ru24vfeOHkGcQ-Tokok12pn7oruAKHzsf2H8ikf3CiEBoqXvkWwFNU-FKao3GDvs-3srhlSO9Mx-V=s144-no?authuser=0" />
                 </span>
               </a>
             </div>
