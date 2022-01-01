@@ -51,21 +51,22 @@ class Nav extends React.Component {
   }
   render() {
   const links = ['Home', 'Work', 'Contact Me'];
+  
   return(
-    <nav className='sticky top-0 z-50 bg-white shadow-lg'>
+    <nav className='sticky top-0 z-50 bg-yellow-500 shadow-lg'>
       <div className='max-w-6xl mx-auto px-4'>
         <div className='flex justify-between'>
           <div className='flex space-x-7'>
             <div>
               <a href="#" className="flex items-center py-4 px-2">
-                <span className="font-semibold text-gray-500 text-lg">
-                  Portfolio
+                <span className="font-semibold text-black text-lg">
+                  <img src="https://lh3.googleusercontent.com/l-ZXTHubGlEAxVyrpOscTNfz89iOEOYZuHN3RYyAr1NoOY0buMI6T3u9nsBRPF4hdddyZ-5sdM2__V7NsJ9RbNdwazkBr1tLftGAINPThBu7cYIJqlkW7MHPm81-2CIuU5XoU_xJHHvN55nOYvuVvpD8ZjsYv6C3O2ZHMM5rmkA9iapLR5Uwz-iA9nZxinI_wFvHwFGdpYvvK4CPSAByg8A6S5wPlYmp49vcyT2i6MKaR38fuZWPVgxZ4i7HYcRFKgKzrKHKZwRNV_hlOWSazMC4oUTF5cTYhwWzTYzSbQZlfz5RPf1ko53Ii9D7vDd8dai7sUb_CrhyBYuc0gKL6Bz3X6a-QFGqdDpJ5lpgUq5nAgJdK_hW39vsC1KdGKV-AjpgWtZ68lbZHUo3iP0CHf2kXUXEpGRvM08RCSfYHDQQKZZtvpJ2PxDDdhqwAd5f2O0gCIj4dvXoJWpH865BRbdWaK-Cq8yU9n9QyQeAjhFv5FtABtALtB5WgLfhU2HBMFX4odkBNpILxDc4-D19LRLOVO2c8loZhbLgbUIN_Y2i0je9X1Kc7K2fJ2JbwFeS4lruMciaiUGmatTijPcHz3MRIMnjQd6aEXhodz0If1F4rPerpgerOqr2m9DFMPFiBvMXVaL0MN6Ru24vfeOHkGcQ-Tokok12pn7oruAKHzsf2H8ikf3CiEBoqXvkWwFNU-FKao3GDvs-3srhlSO9Mx-V=s144-no?authuser=0" />
                 </span>
               </a>
             </div>
 					<div className="hidden md:flex items-center space-x-1">
             {links.map((item, index) => (
-               index === 0 ? <a href='#' key={index} id={`bigMenu${index}`} className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold" onClick={() => {this.handleClick('', item, index)}}>{item}</a> : <a href={`#${item}`} key={index} id={`bigMenu${index}`} className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" onClick={() => {this.handleClick('', item, index)}}>{item}</a>
+               index === 0 ? <a href='#' key={index} id={`bigMenu${index}`} className="py-4 px-2 text-gray-200 border-b-4 border-gray-200 font-semibold" onClick={() => {this.handleClick('', item, index)}}>{item}</a> : <a href={`#${item}`} key={index} id={`bigMenu${index}`} className="py-4 px-2 text-black font-semibold hover:text-gray-200 transition duration-300" onClick={() => {this.handleClick('', item, index)}}>{item}</a>
             ))}
             </div>
           </div>
