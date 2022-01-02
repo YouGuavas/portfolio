@@ -1,31 +1,25 @@
 import './App.css';
 import Nav from './Nav';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Home from './Home';
+import Work from './Work';
+import Contact from './Contact';
 
 function App() {
   return (
     <div className="App">
+      
       <Nav />
-      <Main />
-      <Work />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/work" element={<Work />}/>
+          <Route path="/contact%20me" element={<Contact />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
-
-function Main() {
-  return (
-    <div className="flex items-center justify-center h-screen">
-        <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
-          Hi, I'm Patrick 👋
-        </div>
-      </div>
-  );
-}
-function Work() {
-  return(
-    <div id="Work">
-      Work
-    </div>
-  )
 }
 
 export default App;
