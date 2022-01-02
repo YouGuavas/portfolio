@@ -64,7 +64,7 @@ class Nav extends React.Component {
       <div className='max-w-6xl mx-auto px-6'>
         <div className='flex justify-between'>
           <div className='flex items-center space-x-7'>
-              <a href="#" className="flex items-center py-4 px-2">
+              <a href="/" className="flex items-center py-4 px-2">
                 <span className="">
                   <img alt="An image of my personal logo" className="h-24"src="https://lh3.googleusercontent.com/s3lSG7Gfn_4DmtevVlwqv5XsRb9JtakoEsodbcDdKPX6aoYfh9T-dGsYgCaZlH32PEcsj3vAibIBSZUbHkQZ88LvW3lAZrgb13GLk9J-E6vp8EF13oLQEZ6H9fZ0Fq9nE2nG0W5eFHzOxKDT8ZPw-8virw9sxk5YwYKlEc-BkBAwdqNfWJgWDo-wikFuYvkCXxd12Mn0fN02lDAk1Vr4oYLo2P6KXrV0tbB9KbZIdyzcOUkza00ewcn38FX6QcWOVxdrURkbNO983X6n9iiBznhxyEd_wN8kmnPdqc9hTXsDtb_78xDpeFwUYUQdZDVWVsvqzKF0frC5BzQ1bBTAAuGrV6FIGZhtL-YeEaFrYzkHK_MlrGUHjlfLR09kVXV_VcWJBoHNWxJL2RezOwZYuMfOBpu4IbDRNgj8qLaTnBhr73z8rHDc71lS94ioLWNHLo4wc7V2wnlxHJNUQK6PrZ3SXvmZ-GuHnFrJP1l7Ehn3aM9bwstW6I2hcyfjX9TrLQ94SFzIj3DgK9YT50T_001wxCiivWvqYxPv-b2IfiRhovEB4nZLTg646GIGfkiLe6nAB30vytOLEVRVFm3_jxd-r4JZO0QbtpEw0MuuaYg_pBAKtcQRLexyq6XPqqSTf8dtXOvGSqN2_eV-tV1VpuzSpIcx-pnhmDkIOdXhRJHhte2qsL-Zp3U_3uAkohJSyCAcfCfR_RD2FxIoor7KGEAh=s594-no?authuser=0" />
                 </span>
