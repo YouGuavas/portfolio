@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="bg-gray-200 h-screen">
-
+    <div className="bg-green-500 h-screen">
+      <p className="text-white">Email: patrickyambrick@gmail.com</p>
     </div>
   )
 }

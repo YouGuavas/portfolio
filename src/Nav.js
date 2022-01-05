@@ -11,16 +11,16 @@ class Nav extends React.Component {
   toggler = (style, item, index) => {
     //toggle active nav item
     let myhref = "/"+item;
-    let activeStyle = "py-4 px-2 text-gray-200 font-semibold";
-    let normalStyle = "py-4 px-2 text-gray-700 font-semibold hover:text-gray-200 transition duration-300";
+    let activeStyle = "py-4 px-2 text-white font-semibold";
+    let normalStyle = "py-4 px-2 text-gray-400 font-semibold hover:text-white transition duration-300";
     let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"
     }
     if (style === "mobile") {
       menuType = 'mobile';
-      activeStyle = "block text-sm px-2 py-4 text-gray-200 font-semibold";
-      normalStyle = "block text-sm px-2 py-4 text-gray-700 hover:text-gray-200 transition duration-300";
+      activeStyle = "block text-sm px-2 py-4 text-white font-semibold";
+      normalStyle = "block text-sm px-2 py-4 text-gray-400 hover:text-white transition duration-300";
     }
     const activeLink = <a href={myhref} key={index} className={activeStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
     const inactiveLink = <a href={myhref} key={index} className={normalStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
@@ -60,9 +60,9 @@ class Nav extends React.Component {
   const links = ['Home', 'Work', 'Contact Me'];
   
   return(
-    <nav className='flex justify-between sticky top-0 z-50 bg-yellow-500 shadow-lg px-10'>
+    <nav className='flex justify-between sticky top-0 z-50 bg-green-900 shadow-lg px-10'>
           <a href="/" className="flex items-center py-2">
-              <img alt="An image of my personal logo" className="h-24"src="https://lh3.googleusercontent.com/s3lSG7Gfn_4DmtevVlwqv5XsRb9JtakoEsodbcDdKPX6aoYfh9T-dGsYgCaZlH32PEcsj3vAibIBSZUbHkQZ88LvW3lAZrgb13GLk9J-E6vp8EF13oLQEZ6H9fZ0Fq9nE2nG0W5eFHzOxKDT8ZPw-8virw9sxk5YwYKlEc-BkBAwdqNfWJgWDo-wikFuYvkCXxd12Mn0fN02lDAk1Vr4oYLo2P6KXrV0tbB9KbZIdyzcOUkza00ewcn38FX6QcWOVxdrURkbNO983X6n9iiBznhxyEd_wN8kmnPdqc9hTXsDtb_78xDpeFwUYUQdZDVWVsvqzKF0frC5BzQ1bBTAAuGrV6FIGZhtL-YeEaFrYzkHK_MlrGUHjlfLR09kVXV_VcWJBoHNWxJL2RezOwZYuMfOBpu4IbDRNgj8qLaTnBhr73z8rHDc71lS94ioLWNHLo4wc7V2wnlxHJNUQK6PrZ3SXvmZ-GuHnFrJP1l7Ehn3aM9bwstW6I2hcyfjX9TrLQ94SFzIj3DgK9YT50T_001wxCiivWvqYxPv-b2IfiRhovEB4nZLTg646GIGfkiLe6nAB30vytOLEVRVFm3_jxd-r4JZO0QbtpEw0MuuaYg_pBAKtcQRLexyq6XPqqSTf8dtXOvGSqN2_eV-tV1VpuzSpIcx-pnhmDkIOdXhRJHhte2qsL-Zp3U_3uAkohJSyCAcfCfR_RD2FxIoor7KGEAh=s594-no?authuser=0" />
+              <img alt="My personal logo" className="h-24"src="https://lh3.googleusercontent.com/tqwcv0YDVyi-z0OFmiVZrKqpRrgojPWs4dzga4m-hJfnVMDLt-NFP0rCjR098zdqr0DpoFDmU5HKdSm8eAM5WMMXQh6moIg_hpA8Gz4RF1Y4xRpjqgEMr2-L-Tc8I0wP5mwdUVFgHMR6E2yMjsgHx1dzBQtoK9w3aohjhWQPFIZlpV-mkjwIlwOM9W5N0RvInD7DAXi5N38zhYGpd07xakHhFlBSSvwU5SJXolx0sfNE4Mb7er2RenvAVUYDjK9vF-LU67INrDU5vEvCxZQz3FXKf4CIlJMQKqkg9qWWbXCuLLbUuAwjL9wmpc6l8XWFvJcjH1drjWJ-sAQoEvHQbJ3_P_Bb1piDHflK_ME68xy9K67gSAPX3mM5wwx_v5HQJqjGvv-uqggK28yNMh9wQn9LtqyO1dW4Hjjh9FNUHprYwbdUo5MmO-95tkdcmBjWdJtWjYaK7yypgc8_2dK9dgoXXTFt2tLQqJUSRkVcUD8V25ExYJ2rfrk9yrdFSSupVjlbItoOQ5smXzi_IJgPs7D7o8_wcv9LVg8Jc_2f065DgVwQUXh4oAvaOMQogLAEVDowF2aHrB5wuWfN30Qh6hBqK19n2EN32KxBx5G-oz9vrIVpBQ0m2krUem3wHEHRNayoGdMtokHYPlFE1nZAS6l5W1IGxdqujyZpkbLxE9SVqfJDSuHVsPaKXABDR80_vVvXvc5PeSA8HnHrCMKrt28=s666-no?authuser=0" />
           </a>
 					<div className="hidden md:flex items-center space-x-1">
             {links.map((item, index) => (this.toggler("standard", item, index)))}
