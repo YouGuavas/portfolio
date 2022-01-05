@@ -9,7 +9,7 @@ export default function Work() {
     }
   }
   return (
-    <div className="h-screen bg-green-500 p-6">
+    <div className="h-screen bg-green-500 p-6 text-center">
       <section className="text-white">
         <h2 className="font-bold">Personal Projects</h2>
         <p>These are projects I have done to further my own learning, comprehension, and growth.</p>
