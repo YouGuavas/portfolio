@@ -62,7 +62,7 @@ class Nav extends React.Component {
   return(
     <nav className='flex justify-between sticky top-0 z-50 bg-green-900 shadow-lg px-10'>
           <a href="/" className="flex items-center py-2">
-              <img alt="My personal logo" className="h-24"src="https://lh3.googleusercontent.com/tqwcv0YDVyi-z0OFmiVZrKqpRrgojPWs4dzga4m-hJfnVMDLt-NFP0rCjR098zdqr0DpoFDmU5HKdSm8eAM5WMMXQh6moIg_hpA8Gz4RF1Y4xRpjqgEMr2-L-Tc8I0wP5mwdUVFgHMR6E2yMjsgHx1dzBQtoK9w3aohjhWQPFIZlpV-mkjwIlwOM9W5N0RvInD7DAXi5N38zhYGpd07xakHhFlBSSvwU5SJXolx0sfNE4Mb7er2RenvAVUYDjK9vF-LU67INrDU5vEvCxZQz3FXKf4CIlJMQKqkg9qWWbXCuLLbUuAwjL9wmpc6l8XWFvJcjH1drjWJ-sAQoEvHQbJ3_P_Bb1piDHflK_ME68xy9K67gSAPX3mM5wwx_v5HQJqjGvv-uqggK28yNMh9wQn9LtqyO1dW4Hjjh9FNUHprYwbdUo5MmO-95tkdcmBjWdJtWjYaK7yypgc8_2dK9dgoXXTFt2tLQqJUSRkVcUD8V25ExYJ2rfrk9yrdFSSupVjlbItoOQ5smXzi_IJgPs7D7o8_wcv9LVg8Jc_2f065DgVwQUXh4oAvaOMQogLAEVDowF2aHrB5wuWfN30Qh6hBqK19n2EN32KxBx5G-oz9vrIVpBQ0m2krUem3wHEHRNayoGdMtokHYPlFE1nZAS6l5W1IGxdqujyZpkbLxE9SVqfJDSuHVsPaKXABDR80_vVvXvc5PeSA8HnHrCMKrt28=s666-no?authuser=0" />
+              <img alt="My personal logo" className="h-24"src="https://lh3.googleusercontent.com/pw/AM-JKLUjHJIxvNig7z_GFCQGCx6iBecUjhoizK6oig_E4W9Hg7k6LJNZjmaxJKSyDe1r-6kaUKw54E8WVUY1MD6PRPEY2b6iy7XQ4KQGnmjuJs4OhgI70QIxZ6WF2bFUzlqlu9nVM3eUV0XuuMEFUq0Bbknd=s666-no?authuser=0" />
           </a>
 					<div className="hidden md:flex items-center space-x-1">
             {links.map((item, index) => (this.toggler("standard", item, index)))}

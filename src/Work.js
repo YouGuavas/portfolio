@@ -5,7 +5,7 @@ export default function Work() {
       description: "A redesign of a local restaurant's website",
       github: "https://github.com/YouGuavas/lavilla",
       live: "",
-      src: "https://lh3.googleusercontent.com/JmIeq3TVf6WA-EZTyf09RJso_OCaZnc3Lix3cLsjsn4MKgym2llh7_IRuf0ShAqrU9Mb4jIUE-EAV3FGbOREdzuyRcwPiwtPOWqYM7NPpjrV1Q0n1EjFmfbX0Yn6GovKJeHW07xouD3dsImLXyu61R8b8ZPP20lUHM_i7I6OPt7R82Uw0cwWt08Zl_7WPzzqbWTOwyJswaL_imUscvAfnfUU_ThGsgHjCPQfdf2O2SgD7-EFJdi4ecNWtVvBCklH5IAXcOXiEUi0dpN5ZydNkoNXbbG-d2HvWQ6VnB1wVLlvwoKtFailjpqGv9QRD0RiCrLb0-vELkgQ7DnAMpSry41ZyxnuzjKXGz7ykbc8cDja6ousAvhe5AwogSHGaFtavyhr1KjF2X0eBicLTuqygYL8ivD3P6HnUz-0IuHlSgdzoPsaIehtrq-lFmJX5oKYaIwInv2CDYUjUSw-kpfLua_3EmgrVV6Jfo7Atz8fxSe-BVdeH0JlEJKHLPUml7ynQOSRHxWPFlRu6h6vaibVwG2ZEsau1FZlqeXZOLY-W4Bt4bd918RyZEj_Lw6yWlj9LW4cQQplNlkGsyEEhQ-FPpEzikX50dGLB7JRsoo8nKIFy6cqjwEI-CS2P-pM7FOZk4uRJbluKcfQD19uk1xoPWq2Y66RGE9jiY4xxAmimdw8LWwFRl300LMbW8v7eb46fFXSu9a1xxDyZFoQsyuWqrA=w119-h80-no?authuser=0"
+      src: "https://lh3.googleusercontent.com/pw/AM-JKLVDx-0PcfFUiXlqeQHmisL7uM2-dJD_BcV_LpyqVpIog4l_ennm2pzeEdZC9yS6ZFY_esTJu6t1CqGlb-Em0z_K4S9CwfZvxDDervaUClBYbnENO4iS5z3bvqbnahUrPDG_fjMxEyEjVm57nDxQKLcu=w119-h80-no?authuser=0"
     }
   }
   return (
