@@ -68,7 +68,7 @@ class Nav extends React.Component {
             {links.map((item, index) => (this.toggler("standard", item, index)))}
           </div>
           <div className="md:hidden flex items-center">
-            <button id="nav-button" className="outline-none mobile-menu-button" onClick={() => {this.handleClick("mobile")}}>
+            <button name="hamburger menu" id="nav-button" className="outline-none mobile-menu-button" onClick={() => {this.handleClick("mobile")}}>
               <svg className="w-6 h-6 text-gray-400"
                 x-show="!showMenu"
                 fill="none"
