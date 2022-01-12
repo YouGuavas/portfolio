@@ -31,8 +31,8 @@ function Card(props) {
     <h6 className="col-span-2 py-2">{props.project.title}</h6>
     <img className="col-span-2 py-2" alt="" src={props.project.src} />
     <p className="col-span-2 py-2">{props.project.description}</p>
-    <a href={props.project.live} className="col-span-2 w-1/2 hover:bg-green-800 border rounded p-2 my-2 hover:text-gray-300 font-semibold">View it live</a>
-    <a href={props.project.github} className="col-span-2 w-1/2 border rounded p-2 my-2 hover:text-gray-300 hover:bg-green-800 font-semibold">View it on github</a>
+    <a href={props.project.live} target="_blank" className="col-span-2 w-1/2 hover:bg-green-800 border rounded p-2 my-2 hover:text-gray-300 font-semibold">View it live</a>
+    <a href={props.project.github} target="_blank" className="col-span-2 w-1/2 border rounded p-2 my-2 hover:text-gray-300 hover:bg-green-800 font-semibold">View it on github</a>
   </div>
   )
 }
