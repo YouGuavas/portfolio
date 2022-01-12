@@ -62,7 +62,7 @@ class Nav extends React.Component {
   return(
     <nav className='flex justify-between sticky top-0 z-50 bg-green-900 shadow-lg px-10'>
           <a href="/" className="flex items-center py-2">
-              <img alt="My personal logo" className="h-24"src="https://lh3.googleusercontent.com/pw/AM-JKLUjHJIxvNig7z_GFCQGCx6iBecUjhoizK6oig_E4W9Hg7k6LJNZjmaxJKSyDe1r-6kaUKw54E8WVUY1MD6PRPEY2b6iy7XQ4KQGnmjuJs4OhgI70QIxZ6WF2bFUzlqlu9nVM3eUV0XuuMEFUq0Bbknd=s666-no?authuser=0" />
+              <img alt="My personal logo" className="h-24" height="96" width="96" src="https://lh3.googleusercontent.com/pw/AM-JKLXobqMgXDoXyzPRKm742CJiAwM_7Jq7miVxfm5-L_3tXV6xpDGPtClU_Tj8auUFChiXbqCnndNoa6b4t-ivMEin6PTsAuU8IdDoeP8WlagAdMvDELigoAhvSeCS2kSyY0aNUT1PaeD3VM7We2tX58bq=s96-no?authuser=0" />
           </a>
 					<div className="hidden md:flex items-center space-x-1">
             {links.map((item, index) => (this.toggler("standard", item, index)))}
