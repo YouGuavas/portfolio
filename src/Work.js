@@ -4,7 +4,7 @@ export default function Work() {
       title: "La Villa Website Redesign",
       description: "A redesign of a local restaurant's website",
       github: "https://github.com/YouGuavas/lavilla",
-      live: "",
+      live: "https://lavilla-123.web.app/",
       src: "https://lh3.googleusercontent.com/pw/AM-JKLVDx-0PcfFUiXlqeQHmisL7uM2-dJD_BcV_LpyqVpIog4l_ennm2pzeEdZC9yS6ZFY_esTJu6t1CqGlb-Em0z_K4S9CwfZvxDDervaUClBYbnENO4iS5z3bvqbnahUrPDG_fjMxEyEjVm57nDxQKLcu=w119-h80-no?authuser=0"
     }
   }
