@@ -11,16 +11,16 @@ class Nav extends React.Component {
   toggler = (style, item, index) => {
     //toggle active nav item
     let myhref = "/"+item;
-    let activeStyle = "py-4 px-2 text-white font-semibold";
-    let normalStyle = "py-4 px-2 text-gray-400 font-semibold hover:text-white transition duration-300";
+    let activeStyle = "py-4 px-2 text-white border-2 bg-black bg-opacity-40 font-semibold rounded";
+    let normalStyle = "py-4 px-2 text-white font-semibold hover:bg-black hover:bg-opacity-40 rounded transition duration-300";
     let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"
     }
     if (style === "mobile") {
       menuType = 'mobile';
-      activeStyle = "block text-sm px-2 py-4 text-white font-semibold";
-      normalStyle = "block text-sm px-2 py-4 text-gray-400 hover:text-white transition duration-300";
+      activeStyle = "block text-sm px-2 py-4 text-white border-2 bg-black bg-opacity-40 font-semibold";
+      normalStyle = "block text-sm px-2 py-4 text-white hover:bg-black hover:bg-opacity-40 transition duration-300";
     }
     const activeLink = <a href={myhref} key={index} className={activeStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
     const inactiveLink = <a href={myhref} key={index} className={normalStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
@@ -69,7 +69,7 @@ class Nav extends React.Component {
           </div>
           <div className="md:hidden flex items-center">
             <button name="hamburger menu" id="nav-button" className="outline-none mobile-menu-button" onClick={() => {this.handleClick("mobile")}}>
-              <svg className="w-6 h-6 text-gray-400"
+              <svg className="w-6 h-6 text-white"
                 x-show="!showMenu"
                 fill="none"
                 strokeLinecap="round"
