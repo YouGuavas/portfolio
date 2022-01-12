@@ -5,7 +5,7 @@ export default function Work() {
       description: "A redesign of a local restaurant's website",
       github: "https://github.com/YouGuavas/lavilla",
       live: "https://lavilla-123.web.app/",
-      src: "https://lh3.googleusercontent.com/pw/AM-JKLXqN7V0RXn4SJ6_1TGeUTx5H33lGJPeMnJvq3bV4i5mpB-hcE49TJSSjdefzjDdF2JxTHMMcIubLd0OH2u2Y76Mgky203-crvblZ1Rz2WGrVfkjBeSBE899_XQJjKF0v-UxTsU9nBQ_Z_2JvYqAWpj9=w500-h267-no?authuser=0"
+      src: "https://lh3.googleusercontent.com/pw/AM-JKLXnSElJlJyU7XGPr7i1Rd2-yMJmjVRVSwn9KYwZh0lSD2PVWsWYDkrBRHmcYEdoCTJadkgWc7eJ6RxR3QOAyIgf0zVaFEiCF_1UfGHlWBGjqiLuRcXOFIvXsRPZ9Sy37FeOcQNaPcFj7bBwHCRH4VwD=w250-h134-no?authuser=0"
     }
   }
   return (
@@ -30,7 +30,7 @@ function Card(props) {
   <div className="md:col-span-1 col-span-3 p6 h-100 bg-green-700 border-2 border-black rounded grid grid-cols-2 place-items-center text-center">
     <p className="col-span-2 py-2">{props.project.title}</p>
     <div className="col-span-2 p-2 bg-white">
-      <img alt="Screenshot of project page" src={props.project.src} />
+      <img height="134" width="250" alt="Screenshot of project page" src={props.project.src} />
     </div>
     <p className="col-span-2 py-2">{props.project.description}</p>
     <a href={props.project.live} target="_blank" rel="noopener" className="col-span-2 w-1/2 hover:bg-green-800 border rounded p-2 my-2 hover:text-gray-300 font-semibold">View it live</a>
