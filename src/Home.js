@@ -6,7 +6,7 @@ export default function Home() {
         col-start-1 col-span-4 grid place-items-center text-center 
         bg-gray-200 text-black rounded-lg border-2 border-black shadow-lg">
           <p className="">Hi, I'm Patrick 👋</p>
-          <p>This website was made with: React & Tailwind</p>
+          <p>I'm a full-stack developer, and I love learning new things.</p>
         </div>
       </div>
       <div className="h-screen bg-green-700">
