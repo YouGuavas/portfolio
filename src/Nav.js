@@ -11,16 +11,16 @@ class Nav extends React.Component {
   toggler = (style, item, index) => {
     //toggle active nav item
     let myhref = "/"+item;
-    let activeStyle = "py-4 px-2 text-white border-2 bg-black bg-opacity-40 font-semibold rounded";
-    let normalStyle = "py-4 px-2 text-white hover:bg-black hover:bg-opacity-40 rounded transition duration-300";
+    let activeStyle = "py-4 px-2 text-green-900 bg-white font-semibold rounded";
+    let normalStyle = "py-4 px-2 text-white hover:font-semibold hover:text-green-900 hover:bg-white rounded transition duration-300";
     let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"
     }
     if (style === "mobile") {
       menuType = 'mobile';
-      activeStyle = "block text-sm px-2 py-4 text-white border-2 bg-black bg-opacity-40 font-semibold";
-      normalStyle = "block text-sm px-2 py-4 text-white hover:bg-black hover:bg-opacity-40 transition duration-300";
+      activeStyle = "block text-sm px-2 py-4 text-green-900 bg-white font-semibold";
+      normalStyle = "block text-sm px-2 py-4 text-white hover:text-green-900 hover:bg-white transition duration-300";
     }
     const activeLink = <a href={myhref} key={index} className={activeStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
     const inactiveLink = <a href={myhref} key={index} className={normalStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
