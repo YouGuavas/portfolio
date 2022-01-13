@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'bounce-3': 'bounce 1s 3.5'
+        'bounce-3': 'bounce 1s 2.5'
       }
     },
     fontFamily: {
