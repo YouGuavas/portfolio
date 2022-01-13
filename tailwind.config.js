@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
     },
+    fontFamily: {
+      'ui': ['Roboto', 'Helvetica', 'ui-sans-serif', 'system-ui'],
+      'body': ['Merriweather', 'Georgia', 'ui-serif', 'system-ui']
+    }
   },
   variants: {
     extend: {},
