@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        'bounce-3': 'bounce 1s 3.5'
+      }
     },
     fontFamily: {
       'ui': ['Roboto', 'Helvetica', 'ui-sans-serif', 'system-ui'],
