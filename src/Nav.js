@@ -19,7 +19,7 @@ class Nav extends React.Component {
     }
     if (style === "mobile") {
       menuType = 'mobile';
-      activeStyle = "block text-sm px-2 py-4 text-green-900 my-background font-semibold";
+      activeStyle = "block text-sm px-2 py-4 my-nav-btn-active font-semibold";
       normalStyle = "block text-sm px-2 py-4 my-nav-btn";
     }
     const activeLink = <a href={myhref} key={index} className={activeStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
