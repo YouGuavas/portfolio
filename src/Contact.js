@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="bg-green-900 h-screen p-6 grid place-items-center">
+    <div className="my-forest-bg h-screen p-6 grid place-items-center">
       <p className="my-text">Email: patrickyambrick@gmail.com</p>
     </div>
   )

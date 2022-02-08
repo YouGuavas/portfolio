@@ -1,0 +1,68 @@
+$my-sage: #CBD18F;
+$my-forest: #3A6B35;
+$my-mustard: #E3B448;
+
+body {
+  background-color: $my-forest;
+}
+
+.my-text {
+  color: $my-sage;
+}
+.my-text-forest {
+  color: $my-forest;
+}
+
+.my-text-hover:hover {
+  color: $my-mustard;
+}
+
+
+.my-background {
+  background-color: $my-mustard;
+}
+.my-btn {
+  background-color: $my-forest;
+  color: $my-sage;
+  border-color: $my-sage;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba(140, 247, 40, 0.322);
+    color: $my-mustard;
+  }
+}
+
+.my-nav-btn {
+  color: $my-sage;
+  transition: 0.3s;
+  &:hover {
+    color: $my-forest;
+    background-color: $my-mustard;
+  }
+}
+.my-nav-btn-active {
+  color: $my-forest;
+  background-color: $my-mustard;
+}
+
+
+.my-background-hover:hover {
+  background-color: $my-mustard;
+}
+
+.my-forest-bg {
+  background-color: $my-forest;
+}
+.my-forest-bg-hover:hover {
+  background-color: rgba(140, 247, 40, 0.322);
+}
+.my-sage-bg {
+  background-color: $my-sage;
+}
+
+.border-sage {
+  border-color: $my-sage;
+}
+.border-mustard {
+  border-color: $my-mustard;
+}
