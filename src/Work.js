@@ -16,7 +16,7 @@ export default function Work() {
   }
   return (
     <div className="h-full bg-green-900 p-6 text-center">
-      <section className="text-white font-body">
+      <section className="my-text font-body">
         <p className="font-bold">Personal Projects</p>
         <p>These are projects I have done to further my own learning, comprehension, and growth.</p>
         <div className="grid grid-cols-3 gap-2 py-6">
@@ -33,9 +33,9 @@ export default function Work() {
 
 function Card(props) {
   return(
-  <div className="md:col-span-1 col-span-3 p-6 h-100 bg-green-800 border-2 border-black rounded grid grid-cols-2 place-items-center text-center">
+  <div className="md:col-span-1 col-span-3 p-6 h-100 bg-green-800 border-2 border-white rounded grid grid-cols-2 place-items-center text-center">
     <p className="col-span-2 py-2">{props.project.title}</p>
-    <div className="col-span-2 p-2 bg-white">
+    <div className="col-span-2 p-2 my-background">
       <img height="134" width="250" alt="Screenshot of project page" src={props.project.src} />
     </div>
     <p className="col-span-2 py-2">{props.project.description}</p>

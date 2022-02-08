@@ -5,3 +5,18 @@ body {
 .App-header {
   color: navy;
 }
+
+.my-text {
+  color: rgb(40, 247, 202);
+}
+.my-text-hover:hover {
+  color: rgb(40, 247, 202);
+}
+
+
+.my-background {
+  background-color: rgb(40, 247, 202);
+}
+.my-background-hover:hover {
+  background-color: rgb(40, 247, 202);
+}
