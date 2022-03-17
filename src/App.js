@@ -1,10 +1,10 @@
 import './App.scss';
-import Nav from './Nav';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Home from './Home';
-import Work from './Work';
-import Contact from './Contact';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Work from './components/Work';
+import Contact from './components/Contact';
 
 function App() {
   return (
