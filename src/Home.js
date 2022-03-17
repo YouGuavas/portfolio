@@ -9,7 +9,7 @@ export default function Home() {
           <p className="my-text-forest">I'm a full-stack developer, and I love learning new things.</p>
         </div>
       </div>
-      <div className="h-screen bg-green-700">
+      <div className="h-screen my-sage-bg">
 
       </div>
       </div>
