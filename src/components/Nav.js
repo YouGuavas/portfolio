@@ -57,7 +57,7 @@ class Nav extends React.Component {
     })
   }
   render() {
-  const links = ['Home', 'Work', 'Contact Me'];
+  const links = this.props.links;//['Home', 'Work', 'Cu', 'Contact Me'];
   
   return(
     <nav className='flex font-ui justify-between sticky top-0 z-50 my-forest-bg shadow-lg px-10'>
