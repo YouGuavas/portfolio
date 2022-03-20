@@ -41,6 +41,7 @@ body {
   }
 }
 .my-mustard-hover {
+  transition: 0.3s;
   &:hover {
     color: $my-forest;
     background-color: $my-mustard;
