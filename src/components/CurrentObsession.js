@@ -22,7 +22,7 @@ export default function CurrentObsession() {
               {src: 'https://lh3.googleusercontent.com/pw/AM-JKLXQmB4RW6ki_uKgndwKdTBx8DfqrOA60ofTFXi2b_erptmgZMmQZJtodF1tFprcup2rRGJkSq9NLGg2lnn1gR5SuA657vKcubXqbnbDKy1odWUHA7eJwg9_iRsPvak6Myx2cMgzwUxBB4Hrexd4mpgE=w883-h662-no?authuser=0', alt: 'A partially-finished wooden shelf (early stages)'}
             ]}
             }
-            
+
         ]}}/>
       </section>
     </div>
@@ -42,7 +42,7 @@ function Obsession(props) {
               const description = information.description;
               const pictures = information.pictures;
               return(
-                <div className="grid grid-cols-3 p-6">
+                <div key={index} className="grid grid-cols-3 p-6">
 
                   <h3 className="col-span-3 font-bold">{project}</h3>
                   <p className="col-span-3 p-2">{description}</p>
@@ -50,8 +50,8 @@ function Obsession(props) {
                   {//For all pictures related to a project, return a display "card"
                   pictures.map((item, index) => {
                     return (
-                      <div className="col-span-1 p-2">
-                        <a key={index} href={item.src}>
+                      <div key={index} className="col-span-1 p-2">
+                        <a href={item.src}>
                           <img height="134px" width="250px" alt={item.alt} src={item.src}/>
                         </a>
                       </div>
