@@ -10,10 +10,29 @@ export default function Home() {
         </div>
       </div>
       <div className="h-screen my-sage-bg">
-
+        <Skills />
       </div>
       </div>
   );
 }
 
-//animate-bounce-3
+function Skills() {
+  const skills = [{name: 'React', url: 'https://reactjs.org/'}, 
+    {name: 'Express', url: ''}, {name: 'MongoDB', url: ''},
+    {name: 'Sass', url: ''}, {name: 'Tailwind', url: ''}, 
+    {name: 'Bootstrap', url: ''}, {name: 'Bulma', url: ''}
+  ];
+  return(
+    <div className="my-text-forest p-6">
+      <h3 className="font-bold text-center">Skills</h3>
+      <ul className="grid grid-cols-2 gap-2 p-6 text-center border-2 border-forest md:mt-6 mt-2">
+        {skills.map((item, index) => {
+          return (
+            <li key={index} className="md:col-span-1 col-span-2"><a className="p-2 font-semibold my-mustard-hover" href={item.url}>{item.name}</a></li>
+          )
+        })}
+        
+      </ul>
+    </div>
+  )
+}

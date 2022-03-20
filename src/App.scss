@@ -40,6 +40,12 @@ body {
     background-color: $my-mustard;
   }
 }
+.my-mustard-hover {
+  &:hover {
+    color: $my-forest;
+    background-color: $my-mustard;
+  }
+}
 .my-nav-btn-active {
   color: $my-forest;
   background-color: $my-mustard;
@@ -65,4 +71,7 @@ body {
 }
 .border-mustard {
   border-color: $my-mustard;
+}
+.border-forest {
+  border-color: $my-forest;
 }
