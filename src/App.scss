@@ -20,6 +20,10 @@ body {
   color: $my-mustard;
 }
 
+.my-placeholder-mustard::placeholder {
+  color: $my-mustard;
+}
+
 .my-text-hover:hover {
   color: $my-mustard;
 }

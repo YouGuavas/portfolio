@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const labelClass = "block uppercase tracking-wide text-xs font-bold mb-2";
-  const inputClass = "my-transition my-text-forest appearance-none border border-sage block w-full bg-gray-200 border rounded py-1 px-4 mb-3 leading-tight"
+  const inputClass = "my-transition my-text-forest my-placeholder-mustard appearance-none border border-sage block w-full my-sage-bg border rounded py-1 px-4 mb-3 leading-tight"
   const [params, setParams] = useState({
     user_name: '',
     user_email: '',
