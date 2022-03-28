@@ -61,7 +61,7 @@ class Nav extends React.Component {
   
   return(
     <nav className='flex font-ui justify-between sticky top-0 z-50 my-forest-bg shadow-lg px-10'>
-          <a href="/" className="flex items-center py-2">
+          <a href="/" className="flex items-center py-2 my-transition">
               <img alt="My personal logo" className="h-24" height="96" width="96" src="https://lh3.googleusercontent.com/pw/AM-JKLXobqMgXDoXyzPRKm742CJiAwM_7Jq7miVxfm5-L_3tXV6xpDGPtClU_Tj8auUFChiXbqCnndNoa6b4t-ivMEin6PTsAuU8IdDoeP8WlagAdMvDELigoAhvSeCS2kSyY0aNUT1PaeD3VM7We2tX58bq=s96-no?authuser=0" />
           </a>
 					<div className="hidden md:flex items-center space-x-1">

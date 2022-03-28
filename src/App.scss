@@ -4,7 +4,11 @@ $my-mustard: #E3B448;
 
 body {
   background-color: $my-forest;
+  *:focus {
+    outline: 4px solid $my-mustard;
+  }
 }
+
 
 .my-text {
   color: $my-sage;
@@ -12,9 +16,15 @@ body {
 .my-text-forest {
   color: $my-forest;
 }
+.my-text-mustard {
+  color: $my-mustard;
+}
 
 .my-text-hover:hover {
   color: $my-mustard;
+}
+.my-transition {
+  transition: 0.3s;
 }
 
 
@@ -50,6 +60,7 @@ body {
 .my-nav-btn-active {
   color: $my-forest;
   background-color: $my-mustard;
+  transition: 0.3s;
 }
 
 
