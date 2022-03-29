@@ -9,7 +9,13 @@ body {
   }
 }
 
-
+.my-hr {
+  border-top: none;
+  border-bottom: 1px solid $my-forest;
+  width: 8rem;
+  border-radius: 50px;
+  margin: auto;
+}
 .my-text {
   color: $my-sage;
 }
@@ -43,6 +49,8 @@ body {
   &:hover {
     background-color: rgba(140, 247, 40, 0.322);
     color: $my-mustard;
+    cursor: pointer;
+    border-color: $my-mustard;
   }
 }
 

@@ -58,6 +58,7 @@ function Obsession(props) {
                 <div key={index} className="grid grid-cols-3 p-6">
 
                   <h3 className="col-span-3 font-bold">{project}</h3>
+                  <hr className="col-span-3 my-hr"/>
                   <p className="col-span-3 p-2">{description}</p>
                   
                   {//For all pictures related to a project, return a display "card"
