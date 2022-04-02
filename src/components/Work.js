@@ -47,8 +47,8 @@ function Card(props) {
     </div>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-8'}`}>{props.project.description}</p>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-4'}`}>View {props.project.live ? "it" : "the code"} here:</p>
-    {props.project.live ? <a href={props.project.live} target="_blank" rel="noopener" className="col-span-2 font-semibold w-full border rounded p-2 my-2 my-btn">View it live</a> : null}
-    {props.project.github ? <a href={props.project.github} target="_blank" rel="noopener" className="col-span-2 w-full font-semibold border rounded p-2 my-2 my-btn">View it on github</a> : null }
+    {props.project.live ? <a href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 font-semibold w-full border rounded p-2 my-2 my-btn">View it live</a> : null}
+    {props.project.github ? <a href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 w-full font-semibold border rounded p-2 my-2 my-btn">View it on github</a> : null }
   </div>
   )
 }
