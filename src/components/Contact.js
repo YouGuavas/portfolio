@@ -83,7 +83,7 @@ export default function Contact() {
         <div className="flex flex-wrap">
 
           <div className="w-full px-3">
-            <input className="my-btn w-full border p-2 rounded block uppercase tracking-wide text-xs font-bold mb-2" type="submit" value="Send" />
+            <input className="my-btn w-full p-2 rounded block uppercase tracking-wide text-xs font-bold mb-2" type="submit" value="Send" />
           </div>
 
         </div>
