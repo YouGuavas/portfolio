@@ -1,4 +1,6 @@
 import React from "react";
+import '../styles/Nav.scss';
+
 
 class Nav extends React.Component {
   constructor(props) {

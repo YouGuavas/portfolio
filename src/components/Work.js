@@ -31,7 +31,7 @@ export default function Work() {
   return (
     <div className="h-full my-forest-bg p-6 text-center">
       <section className="my-text font-body">
-        <h1 className="font-bold">Personal Projects</h1>
+        <h1 className="font-bold my-title">Personal Projects</h1>
         <p>These are projects I have done to further my own learning, comprehension, and growth.</p>
         <div className="grid grid-cols-3 gap-2 py-6">
           {Object.keys(projects).map((item, index) => { 

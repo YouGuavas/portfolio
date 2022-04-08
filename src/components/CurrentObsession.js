@@ -2,7 +2,7 @@ export default function CurrentObsession() {
   return(
     <div className="h-full my-forest-bg p-6 text-center">
       <section className="my-text font-body">
-        <h1 className="font-bold m-2">Current Obsessions</h1>
+        <h1 className="font-bold m-2 my-title">Current Obsessions</h1>
         <Obsession data={{obsession: "Woodworking", when: "March, 2022", 
           projects: [
 
@@ -46,7 +46,7 @@ function Obsession(props) {
   const data = props.data;
   return(
     <div className="w-full my-sage-bg my-text-forest p-6">
-        <h2 className="font-bold">{data.obsession}</h2>
+        <h2 className="font-bold my-title">{data.obsession}</h2>
         <p>{data.when}</p>
           {//For all projects in an obsession, return relevant information/pictures
             data.projects.map((item, index) => {
@@ -57,7 +57,7 @@ function Obsession(props) {
               return(
                 <div key={index} className="grid grid-cols-3 p-6">
 
-                  <h3 className="col-span-3 font-bold">{project}</h3>
+                  <h3 className="col-span-3 font-bold my-title">{project}</h3>
                   <hr className="col-span-3 my-hr"/>
                   <p className="col-span-3 p-2">{description}</p>
                   

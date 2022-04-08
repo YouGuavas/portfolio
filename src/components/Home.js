@@ -20,7 +20,7 @@ export default function Home() {
 function About() {
   return (
     <section className="my-text-forest pt-6 px-6">
-      <h3 className="font-bold text-center">About Me</h3>
+      <h3 className="font-bold text-center my-title">About Me</h3>
       <p className="px-12">My name is Patrick! Welcome to my site! 
         Here you will learn a bit about me as a person, 
         and about the things that I enjoy doing. 
@@ -42,7 +42,7 @@ function Skills() {
   ];
   return(
     <section className="my-text-forest pt-6 px-12">
-      <h3 className="font-bold text-center">Skills</h3>
+      <h3 className="font-bold text-center my-title">Skills</h3>
       <ul className="grid grid-cols-2 gap-2 p-6 text-center border-2 border-forest md:mt-6 mt-2">
         {skills.map((item, index) => {
           return (
