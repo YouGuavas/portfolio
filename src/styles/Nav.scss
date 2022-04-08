@@ -8,15 +8,17 @@ nav {
 }
 
 .menu-button {
-  background-color: $color-1;
+  background-color: $color-2;
   border: none;
   position: absolute;
-  color: $color-2;
   z-index: 1000;
-  height: 2rem;
-  width: 2rem;
-  top:0;
-  right:0;
+  height: 3rem;
+  width: 3rem;
+  top:0.1rem;
+  right:0.1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
   &:hover {
     cursor: pointer;
@@ -24,16 +26,19 @@ nav {
   .bar1, .bar2, .bar3 {
     width: 1.2rem;
     height: 0.2rem;
-    background-color: $color-2;
-    margin: 0.2rem 0;
+    background-color: $color-1;
+    margin: 0 auto;
     transition: 0.4s;
+  }
+  .bar2 {
+    margin: 0.2rem auto;
   }
 
   &.change {
     margin: 0;
     .bar1 {
       -webkit-transform: rotate(-45deg) translate(-0.375rem, 0.3rem);
-      transform: rotate(-45deg) translate(-0.375rem, 0.3rem);
+      transform: rotate(-45deg) translate(-0.3rem, 0.3rem);
     }
     .bar2 {
       opacity: 0;
@@ -47,6 +52,7 @@ nav {
 }
 
 .my-nav-full {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -65,7 +71,16 @@ nav {
   }
 
 
-
+  .my-logo {
+    position: absolute;
+    z-index: 10;
+    top:0.1rem;
+    left:0.1rem;
+    height: 4rem;
+    width: 4rem;
+    background-color: $color-1;
+    border-radius: 0.2rem;
+  }
   .standard-menu { 
     position: absolute;
     li {
@@ -76,8 +91,9 @@ nav {
         color: inherit;
         text-decoration: none;
         transition: 0.4s;
-        font-weight: 500;
-        letter-spacing: 0.2rem;
+        font-weight: 200;
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
         &:hover, &.active {
           color: $color-3;
         }
