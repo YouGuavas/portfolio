@@ -10,6 +10,9 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
+      <a href="/">
+          <img alt="My personal logo" className="my-logo" height="96" width="96" src="https://lh3.googleusercontent.com/pw/AM-JKLXobqMgXDoXyzPRKm742CJiAwM_7Jq7miVxfm5-L_3tXV6xpDGPtClU_Tj8auUFChiXbqCnndNoa6b4t-ivMEin6PTsAuU8IdDoeP8WlagAdMvDELigoAhvSeCS2kSyY0aNUT1PaeD3VM7We2tX58bq=s96-no?authuser=0" />
+        </a>
       <Nav links={['Home', 'Work', 'Current Obsession', 'Contact Me']}/>
       <BrowserRouter>
         <Routes>

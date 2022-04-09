@@ -112,3 +112,14 @@ section {
     font-family: sans-serif;
   }
 }
+
+.my-logo {
+  position: absolute;
+  z-index: 1000;
+  top:0.1rem;
+  left:0.1rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: $color-1;
+  border-radius: 0.2rem;
+}

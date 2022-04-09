@@ -1,16 +1,12 @@
 @import '../utils/_variables.scss';
 
-nav {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
+header {
+  display: block;
 }
-
 .menu-button {
   background-color: $color-2;
   border: none;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   height: 3rem;
   width: 3rem;
@@ -52,35 +48,25 @@ nav {
 }
 
 .my-nav-full {
+  position:fixed;
   overflow: hidden;
   width: 100%;
   height: 100%;
   z-index: 10;
-  left: 200%;
+  top: 0;
+  left: 100%;
   background-color: $color-1;
   color: $color-2;
   font-weight: 800;
   display: flex;
   justify-content: center;
   align-items: center;
-  position:absolute;
 
   &.change {
     left: 0;
-    position: initial;
+    //position: initial;
   }
-
-
-  .my-logo {
-    position: absolute;
-    z-index: 10;
-    top:0.1rem;
-    left:0.1rem;
-    height: 4rem;
-    width: 4rem;
-    background-color: $color-1;
-    border-radius: 0.2rem;
-  }
+  
   .standard-menu { 
     position: absolute;
     li {
