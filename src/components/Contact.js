@@ -44,7 +44,19 @@ export default function Contact() {
       //if all fields are filled out, send the email
       emailjs.sendForm('contact_gmail', 'basic_template', form.current, 'Cr-6gtILcNdET7irO')
       .then((result) => {
+          const userName = document.getElementById('user_name');
+          const userEmail = document.getElementById('user_email');
+          const message = document.getElementById('user_message');
           console.log(result.text);
+          alert('Your message has been sent!');
+          setParams({
+            user_name: '',
+            user_email: '',
+            message: ''
+          })
+          userName.value = '';
+          userEmail.value = '';
+          message.value = '';
       }, (error) => {
           console.log(error.text);
       });
@@ -61,12 +73,12 @@ export default function Contact() {
 
           <div className="w-full md:w-1/2 px-3">
             <label className={labelClass}>Name</label>
-            <input required className={inputClass} onChange={(e) => handleChange(e)} type="text" name="user_name" placeholder="John Doe" />
+            <input required className={inputClass} onChange={(e) => handleChange(e)} type="text" id="user_name" name="user_name" placeholder="John Doe" />
           </div>
 
           <div className="w-full md:w-1/2 px-3">
             <label className={labelClass}>Email</label>
-            <input required className={inputClass} onChange={(e) => handleChange(e)} type="email" name="user_email" placeholder="abc@123.com"/>
+            <input required className={inputClass} onChange={(e) => handleChange(e)} type="email" id="user_email" name="user_email" placeholder="abc@123.com"/>
           </div>
 
         </div>
@@ -75,7 +87,7 @@ export default function Contact() {
 
           <div className="w-full px-3">
             <label className={labelClass}>Message</label>
-            <textarea required className={inputClass} rows="4" style={{resize: "none"}} onChange={(e) => handleChange(e)} name="message" placeholder="Leave a message for me here!" />
+            <textarea required className={inputClass} rows="4" id="user_message" style={{resize: "none"}} onChange={(e) => handleChange(e)} name="message" placeholder="Leave a message for me here!" />
           </div>
 
         </div>
