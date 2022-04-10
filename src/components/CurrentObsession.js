@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function CurrentObsession() {
+  useEffect(() => {
+    document.title = "Current Obsession | Patrick Yambrick"
+   }, [document.title]
+ )
   return(
     <div className="h-full my-forest-bg p-6 text-center">
       <section className="my-text font-body">

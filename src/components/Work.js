@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 export default function Work() {
   const projects = {
     showcase: {
@@ -28,6 +30,10 @@ export default function Work() {
       src: "https://lh3.googleusercontent.com/pw/AM-JKLXnSElJlJyU7XGPr7i1Rd2-yMJmjVRVSwn9KYwZh0lSD2PVWsWYDkrBRHmcYEdoCTJadkgWc7eJ6RxR3QOAyIgf0zVaFEiCF_1UfGHlWBGjqiLuRcXOFIvXsRPZ9Sy37FeOcQNaPcFj7bBwHCRH4VwD=w250-h134-no?authuser=0"
     }
   }
+  useEffect(() => {
+    document.title = "Work | Patrick Yambrick"
+   }, [document.title]
+  )
   return (
     <div className="h-full my-forest-bg p-6 text-center">
       <section className="my-text font-body">

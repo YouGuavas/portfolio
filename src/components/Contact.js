@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -65,6 +65,10 @@ export default function Contact() {
       alert('Please make sure the form is completely filled out before submitting.');
     }
   }
+  useEffect(() => {
+    document.title = "Contact | Patrick Yambrick"
+   }, [document.title]
+ )
   return (
     <div className="my-forest-bg h-screen p-6 grid place-items-center">
       <form className="w-full my-text" ref={form} onSubmit={sendEmail}>

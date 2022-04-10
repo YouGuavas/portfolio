@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home | Patrick Yambrick"
+   }, [document.title]
+  )
   return (
     <div>
       <section className="p-6 h-screen my-forest-bg grid md:grid-cols-3 grid-cols-4 grid-rows-3">
