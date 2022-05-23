@@ -2,12 +2,12 @@ import { useEffect } from "react";
 
 export default function Work() {
   const projects = {
-    showcase: {
-      title: "React Component Showcase",
-      description: "This is a showcase of components I have built with React and Sass.",
-      github: "https://github.com/YouGuavas/component-showcase",
-      live: "https://guava-component-showcase.web.app/",
-      src: "https://lh3.googleusercontent.com/pw/AM-JKLV4s-vOpm9MI54gAScR36Ghvu02ZYjsNLBijwTqgJhepTKQ1SNeJ7IHOEJZR1UQm8MD_tlyU05anzuSX9ZuhiIJrLqCxHqTONG3ESaWQz9qa_Mbjl5YESb_sqzYhVCXfcVQVPRI5uBVmJgKeHpxUfvI=w1104-h591-no?authuser=0"
+    gardenTracker: {
+      title: 'Garden Tracker',
+      description: 'This is a gardening tracker I built using the MERN stack and Sass. Users should be able to view general information about plants, register/login, and, if registered and logged in, add, and view data about their gardens.',
+      github: 'https://github.com/YouGuavas/gardening-tracker',
+      live: 'https://guavas-garden-tracker.herokuapp.com/',
+      src: 'https://lh3.googleusercontent.com/pw/AM-JKLW-yAXZeV9XSZyly3w3sglULjrjOk3EWk6LVlK5UYiS9ceZxjmmIb-I2_Vi2IQ0Q073AOjiGyKuXMCmVBrOsH9sl1ZtAEFxo2IznBnbgRdYdR0jlPI76vTkltfZ5_-zNj1_nAl5QvEcqSJxAD6LEFpm=w1178-h604-no?authuser=0'
     },
     portfolio: {
       title: "This Portfolio Website",
@@ -15,9 +15,16 @@ export default function Work() {
       github:"https://github.com/YouGuavas/portfolio",
       src: "https://lh3.googleusercontent.com/pw/AM-JKLW-F4BRK6Y97vQM1NeFYFf0iCEF9Nn1w50tHOLhG2XW7ObCZuUQLIOwZu6uZk1RE0PIQo53nfEIvYNZ4-2Ryuveb6iVKsj3tXxyiprLIOT-5Wb-ST2jGYQ0oGhTvQfRxM1KCBl09j6CrkFZM0cUtKPZ=w500-h287-no?authuser=0"
     },
+    showcase: {
+      title: "React Component Showcase",
+      description: "This is a showcase of components I have built with React and Sass.",
+      github: "https://github.com/YouGuavas/component-showcase",
+      live: "https://guava-component-showcase.web.app/",
+      src: "https://lh3.googleusercontent.com/pw/AM-JKLV4s-vOpm9MI54gAScR36Ghvu02ZYjsNLBijwTqgJhepTKQ1SNeJ7IHOEJZR1UQm8MD_tlyU05anzuSX9ZuhiIJrLqCxHqTONG3ESaWQz9qa_Mbjl5YESb_sqzYhVCXfcVQVPRI5uBVmJgKeHpxUfvI=w1104-h591-no?authuser=0"
+    },
     pokemon: {
       title: "Pokemon Collection Tracker",
-      description: "This is a tool for keeping track of your Pokemon cards collection. I made this project using React, Sass, Mongodb, and Express.",
+      description: "This is a tool for keeping track of your Pokemon cards collection. Users should be able to add, remove, and view cards in their collection, as well as view cards yet to be collected. I built this project using the MERN stack and Sass.",
       github: "https://github.com/YouGuavas/pokemon-tracker",
       live: "https://pokemon-collection-tracker.herokuapp.com/",
       src: "https://lh3.googleusercontent.com/pw/AM-JKLVglu0wIYmnxolOpFBAy0T5Y4mw_nm-95AvDYCXM94Pr5vkTKu8DluYF1g0gB_agQEVy17i21LwUTS-65kke8ZXDyIWQH0UmNLKwpzK7MI_5RNjwgGY8zYQI0VT4pk5-ThVRl6wrkH_RN55GYdoBvid=w500-h285-no?authuser=0"
