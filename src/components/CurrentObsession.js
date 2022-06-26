@@ -33,8 +33,8 @@ export default function CurrentObsession() {
               "Walking Stick": {
               description: "A walking stick. I made this by cutting, sanding, and staining a fallen tree branch I found in my yard.", 
               pictures: [
-                {original: 'https://lh3.googleusercontent.com/pw/AM-JKLXWoYr-4tXsHNChYZvIrPmWOJKmI6kp9JKkdyx53lR1TJeJpLRdQFEDkifVlM4zh23lSqTDpHkvOvQX2SiVF9S3NNZxaD9vO47UDDk7VCeCil8lHHCChbqP7w9CI6R3tuYAf_bn_b09Kaji_98h6G5o=w497-h662-no?authuser=0', 
-                thumbnail: 'https://lh3.googleusercontent.com/pw/AM-JKLXWoYr-4tXsHNChYZvIrPmWOJKmI6kp9JKkdyx53lR1TJeJpLRdQFEDkifVlM4zh23lSqTDpHkvOvQX2SiVF9S3NNZxaD9vO47UDDk7VCeCil8lHHCChbqP7w9CI6R3tuYAf_bn_b09Kaji_98h6G5o=w497-h662-no?authuser=0', 
+                {original: 'https://lh3.googleusercontent.com/pw/AM-JKLVZQsOPrnxjZU5JZRP-AYFaqkj-CiwN6-b6Att4orRLIUBf9iLnohXsGbg4lC492GUoDfcjugKjk1RFSFeE-KuSdE1XbIiPg5pyRGtmbQutp3gfkc5fVWX2c7WwYx6m0xmO5z2JumRvypeA-U6n0Igv=w338-h450-no?authuser=0', 
+                thumbnail: 'https://lh3.googleusercontent.com/pw/AM-JKLVZQsOPrnxjZU5JZRP-AYFaqkj-CiwN6-b6Att4orRLIUBf9iLnohXsGbg4lC492GUoDfcjugKjk1RFSFeE-KuSdE1XbIiPg5pyRGtmbQutp3gfkc5fVWX2c7WwYx6m0xmO5z2JumRvypeA-U6n0Igv=w338-h450-no?authuser=0', 
                 alt: 'A finished walking stick'}, 
                 {original: 'https://lh3.googleusercontent.com/pw/AM-JKLVmHXbrts6xFSH6kSMeqvvyHrniFXhSQ0a_qZ9I6UAXPVosrG_cJcbGmAaE4vLfOcTsClTu2_8MsURTOfDqHAapVrs1-R6oHbsmJwkITeTW4AWoGwIydQ29x8H9u3kZO69DIgvDcZlN8qTCEUqhfo2s=w497-h662-no?authuser=0', 
                 thumbnail: 'https://lh3.googleusercontent.com/pw/AM-JKLVmHXbrts6xFSH6kSMeqvvyHrniFXhSQ0a_qZ9I6UAXPVosrG_cJcbGmAaE4vLfOcTsClTu2_8MsURTOfDqHAapVrs1-R6oHbsmJwkITeTW4AWoGwIydQ29x8H9u3kZO69DIgvDcZlN8qTCEUqhfo2s=w497-h662-no?authuser=0', 
@@ -87,7 +87,9 @@ function Obsession(props) {
                   <h3 className="col-span-4 font-bold my-title">{project}</h3>
                   <hr className="col-span-4 my-hr"/>
                   <p className="col-span-4 p-2">{description}</p>
-                  <Gallery items={pictures} />
+                  <div className="sm:col-span-2 sm:col-start-2 col-span-3 ">
+                    <Gallery items={pictures} />
+                  </div>
                   
                   {//For all pictures related to a project, return a display "card"
                  /* pictures.map((item, index) => {

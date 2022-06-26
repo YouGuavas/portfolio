@@ -39,7 +39,7 @@ export function Gallery(props) {
         }
     }
     return (
-        <div className={`sm:col-span-2 sm:col-start-2 col-span-3 gallery ${isFullScreen ? 'fullscreen-modal' : ''}`}>
+        <div className={`gallery ${isFullScreen ? 'fullscreen-modal' : ''}`}>
             <div className={`gallery-main-container`}>
                 {renderArrows('left')}
                 {

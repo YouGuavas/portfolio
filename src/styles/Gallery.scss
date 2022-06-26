@@ -2,16 +2,19 @@
 .gallery {
     min-height: 450px;
     position: relative;
+    height: 530px;
     min-width: 300px;
+    background-color: $color-1;
     .gallery-main-container {
         position: absolute;
         line-height: 0;
         overflow: hidden;
         white-space: nowrap;
-        height: calc(100% - 80px);
+        height: 450px;
         min-height: calc(100% - 80px);
         width: 100%;
     }
+    
     .gallery-thumbnails {
         overflow: hidden;
         white-space: nowrap;
@@ -20,11 +23,26 @@
         position: absolute;
         height: 80px;
     }
+    .gallery-main {
+        max-height: 450px;
+        position: absolute;
+        display: inline;
+        width: 100%;
+        transition: 0.4s ease-in;
+        z-index: 2;
+        left: 0%;
+        @for $i from 2 through 20 {
+            &:nth-child(#{$i}) {
+                left: calc(calc($i - 2) * 100%);
+            }
+        }
+    }
     &.fullscreen-modal {
         height: 100vh;
-        width: 100vw;
-        z-index: 100;
+        width: 75vw;
+        z-index: 8;
         position: fixed;
+        margin: 0 auto;
         bottom: 0;
         left: 0;
         right: 0;
@@ -33,12 +51,24 @@
         .gallery-main-container {
             height: calc(100vh - 80px);
         }
+
         .gallery-main {
             max-height: calc(100vh - 80px);
             display: inline;
-            width: 70%;
+            position: absolute;
+            width: 100%;
             transition: 0.4s ease-in;
+            transform: translate3d(100%, 0, 0);
+
             left: 0;
+            @for $i from 2 through 20 {
+                &:nth-child(#{$i}) {
+                    left: calc(calc($i - 2) * 100%);
+                }
+            }
+        }
+        .gallery-icon {
+            color: $color-3;
         }
         .gallery-fullscreen {
             height: 110px;
@@ -62,13 +92,13 @@
         right: 10px;
     }
     .gallery-icon {
-        color: $color-1;
+        color: $color-3;
         transition: all 0.3s ease-out;
         background-color: transparent;
         cursor: pointer;
         z-index: 4;
         &:hover, &:focus, &:active {
-            color: $color-2;
+            color: $color-1;
         }
         svg {
             transition: 0.2s;
@@ -79,22 +109,6 @@
     }
     .thumbnail-active {
         border: 2px solid $color-3;
-    }
-    .gallery-main {
-        max-height: 450px;
-        position: absolute;
-        display: inline;
-        width: 100%;
-        transition: 0.4s ease-in;
-        top: 20%;
-        transform: translateY(-20%);
-        z-index: 2;
-        left: 0%;
-        @for $i from 2 through 20 {
-            &:nth-child(#{$i}) {
-                left: calc(calc($i - 2) * 100%);
-            }
-        }
     }
     .gallery-arrow {
         position: absolute;
