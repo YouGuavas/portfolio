@@ -14,7 +14,7 @@ body {
   border-radius: 50px;
   margin: auto;
 }
-.my-text {
+.my-text, .my-text-sage {
   color: $my-sage;
 }
 .my-text-forest {
@@ -40,21 +40,15 @@ body {
   background-color: $my-mustard;
 }
 .my-btn {
-  background-color: $my-forest;
-  color: $my-sage;
-  border-width: 2px;
-  border-color: $my-sage;
-  border-style: outset;
-  transition: 0.3s;
+  background-color: $color-4;
+  color: $my-forest;
+  transition: 0.7s;
   &:hover {
-    background-color: rgba(140, 247, 40, 0.322);
-    color: $my-mustard;
+    background-color: $my-forest;
+    color: $my-sage;
     cursor: pointer;
-    border-color: $my-mustard;
   }
-  &:active {
-    border-style: inset;
-  }
+  
 }
 
 .my-nav-btn {
@@ -91,6 +85,9 @@ body {
 }
 .my-sage-bg {
   background-color: $my-sage;
+}
+.my-mustard-bg {
+  background-color: $my-mustard;
 }
 
 .border-sage {

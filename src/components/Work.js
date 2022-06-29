@@ -60,7 +60,7 @@ export default function Work() {
 
 function Card(props) {
   return(
-  <div className="md:col-span-1 col-span-3 p-6 h-100 my-forest-bg border-2 border-sage rounded grid grid-cols-2 place-items-center text-center">
+  <div className="md:col-span-1 col-span-3 p-6 h-100 my-sage-bg my-text-forest rounded grid grid-cols-2 place-items-center text-center">
     <h3 className="col-span-2 py-2">{props.project.title}</h3>
     <div className="col-span-2 p-2 my-sage-bg">
       <img height="134px" width="250px" alt="Screenshot of project page" src={props.project.src} />
