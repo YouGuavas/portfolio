@@ -6,9 +6,12 @@ import Home from './components/Home';
 import Work from './components/Work';
 import CurrentObsession from './components/CurrentObsession';
 import Contact from './components/Contact';
-import { Blogs } from './components/Blog';
+import { Blogs, Blog } from './components/Blog';
 
 function App() {
+  const posts = {
+    1: {title: 'My First Blog Post', id: 1, body: 'Test Text Test the Rest yes yes'}
+  }
   return (
     <div className="App">
       <a href="/">
@@ -21,7 +24,8 @@ function App() {
           <Route path="/home" element={<Home />}/>
           <Route path="/work" element={<Work />}/>
           <Route path="/current%20obsession" element={<CurrentObsession />}/>
-          <Route path="/blog" element={<Blogs />}/>
+          <Route path="/blog" element={<Blogs posts={posts}/>}/>
+          <Route path="/blog/:BLOG_ID" element={<Blog posts={posts}/>}/>
           <Route path="/contact%20me" element={<Contact />}/>
         </Routes>
       </BrowserRouter>
