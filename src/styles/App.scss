@@ -1,5 +1,9 @@
 @import '../utils/_variables.scss';
 
+* {
+  font-family: sans-serif;
+}
+
 body {
   background-color: $my-forest;
   *:focus {
