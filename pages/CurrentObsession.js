@@ -1,13 +1,14 @@
 import { useEffect } from "react";
-import { Gallery } from './Gallery';
+import { Gallery } from '../components/Gallery';
+import Head from 'next/head';
 
 export default function CurrentObsession() {
-  useEffect(() => {
-    document.title = "Current Obsession | Patrick Yambrick"
-   }, [document.title]
- )
   return(
     <div className="h-full my-forest-bg p-6 text-center">
+      <Head>
+        <title>Current Obsession | Patrick Yambrick</title>         
+
+      </Head>
       <section className="my-text font-body">
         <h1 className="font-bold m-2 my-title">Current Obsessions</h1>
         <Obsession data={{obsession: "Woodworking", when: "March, 2022", 
@@ -72,7 +73,7 @@ export default function CurrentObsession() {
 function Obsession(props) {
   const data = props.data;
   return(
-    <div className="w-full my-sage-bg my-text-forest p-6">
+    <div className="w-full my-bg-sage my-text-forest p-6">
         <h2 className="font-bold my-title">{data.obsession}</h2>
         <p>{data.when}</p>
           {//For all projects in an obsession, return relevant information/pictures

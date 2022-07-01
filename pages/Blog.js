@@ -1,19 +1,22 @@
-import '../styles/Blog.module.scss';
-//import '../styles/App.scss';
+import styles from '../styles/Blog.module.scss';
+//import styles from '../styles/App.module.scss';
 import Link from 'next/link';
+import Head from 'next/head';
+
 import { useEffect } from 'react';
 
 
 
 
 export default function Blogs(props) {
-    const posts = props.posts;
-    useEffect(() => {
-        document.title = "Blogs | Patrick Yambrick";
-       }, [document.title]
-     )
+    const posts = {
+        1: {title: 'My First Blog Post', id: 1, body: 'Test Text Test the Rest yes yes'}
+      }
     return (
         <div className="p-6 place-items-center w-full h-screen text-center my-text">
+            <Head>
+                <title>Blog | Patrick Yambrick</title>         
+            </Head>
             <section className="my-text font-body">
              <h1 className="my-title">Blog Posts</h1>
              <ul className="p-6 text-center">

@@ -1,4 +1,3 @@
-import '../styles/App.module.scss';
 import { useEffect } from "react";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
         <div className="font-body p-5 row-start-2 row-span-1 md:col-start-2 md:col-span-1 
         col-start-1 col-span-4 animate-ping-3 grid place-items-center text-center 
         my-sage-bg my-text-forest rounded-lg shadow-lg">
-          <p className="my-text-forest">Hi, I'm Patrick 👋</p>
+          <p className={styles.myTextForest}>Hi, I'm Patrick 👋</p>
           <p className="my-text-forest">I'm a full-stack developer, and I love learning new things.</p>
         </div>
       </section>

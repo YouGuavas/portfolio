@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import Head from 'next/head';
 
 export default function Work() {
   const projects = {
@@ -37,12 +37,12 @@ export default function Work() {
       src: "https://lh3.googleusercontent.com/pw/AM-JKLXnSElJlJyU7XGPr7i1Rd2-yMJmjVRVSwn9KYwZh0lSD2PVWsWYDkrBRHmcYEdoCTJadkgWc7eJ6RxR3QOAyIgf0zVaFEiCF_1UfGHlWBGjqiLuRcXOFIvXsRPZ9Sy37FeOcQNaPcFj7bBwHCRH4VwD=w250-h134-no?authuser=0"
     }
   }
-  useEffect(() => {
-    document.title = "Work | Patrick Yambrick"
-   }, [document.title]
-  )
   return (
-    <div className="h-full my-forest-bg p-6 text-center">
+    <div className={`h-full my-forest-bg p-6 text-center`}>
+      <Head>
+        <title>Work | Patrick Yambrick</title>         
+
+        </Head>
       <section className="my-text font-body">
         <h1 className="font-bold my-title">Personal Projects</h1>
         <p>These are projects I have done to further my own learning, comprehension, and growth.</p>
@@ -60,9 +60,9 @@ export default function Work() {
 
 function Card(props) {
   return(
-  <div className="md:col-span-1 col-span-3 p-6 h-100 my-sage-bg my-text-forest rounded grid grid-cols-2 place-items-center text-center">
+  <div className="md:col-span-1 col-span-3 p-6 h-100 my-bg-sage my-text-forest rounded grid grid-cols-2 place-items-center text-center">
     <h3 className="col-span-2 py-2">{props.project.title}</h3>
-    <div className="col-span-2 p-2 my-sage-bg">
+    <div className="col-span-2 p-2 my-bg-sage">
       <img height="134px" width="250px" alt="Screenshot of project page" src={props.project.src} />
     </div>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-8'}`}>{props.project.description}</p>
