@@ -1,16 +1,5 @@
 @import '../utils/_variables.scss';
 
-* {
-  font-family: sans-serif;
-}
-
-body {
-  background-color: $my-forest;
-  *:focus {
-    outline: 1px solid $my-mustard;
-  }
-}
-
 .my-hr {
   border-top: none;
   border-bottom: 1px solid $my-forest;

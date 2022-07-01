@@ -1,4 +1,7 @@
-import '../styles/Nav.scss';
+import '../styles/App.module.scss';
+import '../styles/Nav.module.scss';
+
+import Link from 'next/link';
 
 import {useState, useEffect} from 'react';
 
@@ -19,7 +22,7 @@ export default function Nav(props) {
     console.log(window.location.pathname);
   }, [active]);
   return (
-    <header>
+    <header className="nav-header">
       <button aria-label="Full Menu Button" onClick={toggleMenu} id="menu-button-full" className="menu-button">
               <div className="bar1"></div>
               <div className="bar2"></div>
@@ -30,7 +33,7 @@ export default function Nav(props) {
         <ul className="standard-menu">
             {links.map((item, index) => {
                 return (
-                  <li key={index}><a className={(active === `/${item}`) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? 'active' : ''} href={`/${item}`}>{item}</a></li>
+                  <li key={index}><Link href={`/${item}`}><a className={(active === `/${item}`) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? 'active' : ''}>{item}</a></Link></li>
                 )
               })}
         </ul>

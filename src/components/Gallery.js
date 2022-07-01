@@ -1,4 +1,4 @@
-import '../styles/Gallery.scss';
+import '../styles/Gallery.module.scss';
 import {useState} from 'react';
 import SVG from '../utils/SVG';
 
