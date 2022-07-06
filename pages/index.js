@@ -49,7 +49,9 @@ function Skills() {
   const skills = [{name: 'React', url: 'https://reactjs.org/'}, 
     {name: 'Express', url: 'https://expressjs.com/'}, {name: 'MongoDB', url: 'https://www.mongodb.com/'},
     {name: 'Sass', url: 'https://sass-lang.com/'}, {name: 'Tailwind', url: 'https://tailwindcss.com/'}, 
-    {name: 'Bootstrap', url: 'https://getbootstrap.com/'}, {name: 'Bulma', url: 'https://bulma.io/'}
+    {name: 'Bootstrap', url: 'https://getbootstrap.com/'}, {name: 'Bulma', url: 'https://bulma.io/'},
+    {name: 'Nextjs', url: ''},
+
   ];
   return(
     <section className="my-text-forest pt-6 px-12">

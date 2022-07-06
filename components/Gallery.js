@@ -27,7 +27,7 @@ export function Gallery(props) {
             if (direction === 'Right') {
                 return (
                     <button type="button" onClick={() => handleArrowClick(direction)} className={`${styles.galleryArrow} ${styles.galleryIcon} ${styles.arrowRight}`}>
-                        <SVG icon={direction} viewBox="6 0 12 24"/>
+                        <SVG strokeWidth={2} icon={direction} viewBox="6 0 12 24"/>
                     </button>
                 )
             } else {

@@ -1,6 +1,9 @@
 import React, {useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 
+import Head from 'next/head';
+
+
 export default function Contact() {
   const labelClass = "block uppercase tracking-wide text-xs font-bold mb-2";
   const inputClass = "my-transition my-text-forest my-placeholder-mustard appearance-none border border-sage block w-full my-sage-bg border rounded py-1 px-4 mb-3 leading-tight"
@@ -65,12 +68,12 @@ export default function Contact() {
       alert('Please make sure the form is completely filled out before submitting.');
     }
   }
-  useEffect(() => {
-    document.title = "Contact | Patrick Yambrick"
-   }, [document.title]
- )
+
   return (
     <div className="my-forest-bg h-screen p-6 grid place-items-center">
+      <Head>
+        <title>Contact | Patrick Yambrick</title>         
+      </Head>
       <form className="w-full my-text" ref={form} onSubmit={sendEmail}>
 
         <div className="flex flex-wrap">

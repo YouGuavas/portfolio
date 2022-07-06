@@ -27,7 +27,7 @@ export default function Nav(props) {
     } else if (item.indexOf(' ') !== -1) {
       const newLink = item.split(' ').join('');
       return (
-      <Link href={`/${newLink}`}>
+      <Link href={`/${newLink.toLowerCase()}`}>
         <a className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
           {item}
         </a>
@@ -35,7 +35,7 @@ export default function Nav(props) {
       )
     } else {
       return (
-        <Link href={`/${item}`}>
+        <Link href={`/${item.toLowerCase()}`}>
         <a className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
           {item}
         </a>
