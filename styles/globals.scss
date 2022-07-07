@@ -49,21 +49,31 @@ body {
   .my-background {
     background-color: $my-mustard;
   }
+  .my-btn, .my-contact-btn, .my-nav-btn {
+    transition: 0.7s;
+    cursor: pointer;
+  }
   .my-btn {
     background-color: $color-4;
     color: $my-forest;
-    transition: 0.7s;
     &:hover {
       background-color: $my-forest;
       color: $my-sage;
-      cursor: pointer;
     }
-    
   }
+
+  .my-contact-btn {
+    background-color: $my-sage;
+    color: $my-forest;
+    &:hover {
+      background-color: $color-4;
+      color: $my-sage;
+    }
+  }
+
   
   .my-nav-btn {
     color: $my-sage;
-    transition: 0.3s;
     &:hover {
       color: $my-forest;
       background-color: $my-mustard;
