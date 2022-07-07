@@ -7,7 +7,7 @@ export function Gallery(props) {
     const [isFullScreen, setIsFullScreen] = useState(false);
     const items = props.items;
     const handleArrowClick = (direction) => {
-        if (direction === 'Right') {
+        if (direction === 'right') {
             if (currentImage < items.length-1) {
                 setCurrentImage(currentImage+1);
             } else {
@@ -24,10 +24,10 @@ export function Gallery(props) {
     }
     const renderArrows = (direction) => {
         if (items.length > 1) {
-            if (direction === 'Right') {
+            if (direction === 'right') {
                 return (
                     <button type="button" onClick={() => handleArrowClick(direction)} className={`${styles.galleryArrow} ${styles.galleryIcon} ${styles.arrowRight}`}>
-                        <SVG strokeWidth={2} icon={direction} viewBox="6 0 12 24"/>
+                        <SVG icon={direction} viewBox="6 0 12 24"/>
                     </button>
                 )
             } else {
@@ -49,13 +49,13 @@ export function Gallery(props) {
     return (
         <div className={`${styles.gallery} ${isFullScreen ? styles.fullscreenModal : ''}`}>
             <div className={`${styles.galleryMainContainer}`}>
-                {renderArrows('Left')}
+                {renderArrows('left')}
                 {
                     items.map((item, index) => {
                         return <img style={{ transform: `translate3d(${-currentImage * 100}%, 0, 0)` }} alt={item.alt || 'Main project'} className={`${styles.galleryMain}`} height='450px' width='450px' src={item.original} key={index} />
                     })
                 }
-                {renderArrows('Right')}
+                {renderArrows('right')}
                 <button type="button"
                 className={`${styles.galleryIcon} ${styles.galleryFullscreen}`}
                 onClick={handleFullScreen}
