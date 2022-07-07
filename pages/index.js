@@ -12,7 +12,7 @@ function index() {
         <Head>
             <title>Home | Patrick Yambrick</title>         
         </Head>
-        <section className="p-6 h-screen grid md:grid-cols-3 grid-cols-4 grid-rows-3 styles.myBgForest}">
+        <section className="p-6 h-screen grid md:grid-cols-3 grid-cols-4 grid-rows-3 my-bg-forest">
             <div className="font-body p-5 row-start-2 row-span-1 md:col-start-2 md:col-span-1 
             col-start-1 col-span-4 animate-ping-3 grid place-items-center text-center 
             my-bg-sage my-text-forest rounded-lg shadow-lg">
