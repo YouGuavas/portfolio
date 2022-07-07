@@ -8,7 +8,6 @@ export default function Nav(props) {
   const links = props.links;
 
   const [active, setActive] = useState('');
-
   const toggleMenu = () => {
     const mobileMenu = document.getElementById('menu-full');
     const mobileBtn = document.getElementById('menu-button-full');
@@ -19,34 +18,26 @@ export default function Nav(props) {
     if (item == 'Home') {
       return( 
       <Link href="/">
-        <a className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
-          {item}
-        </a>
-      </Link>
-      )
-    } else if (item.indexOf(' ') !== -1) {
-      const newLink = item.split(' ').join('');
-      return (
-      <Link href={`/${newLink.toLowerCase()}`}>
-        <a className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
+        <a onClick={toggleMenu} className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
           {item}
         </a>
       </Link>
       )
     } else {
       return (
-        <Link href={`/${item.toLowerCase()}`}>
-        <a className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
+        <Link href={`/${item}`}>
+        <a onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
           {item}
         </a>
       </Link>
       )
     }
   }
- 
+
   useEffect(function() {
     setActive(window.location.pathname);
-  }, [active]);
+  });
+ 
   return (
     <header className={styles.navHeader}>
       <button aria-label="Full Menu Button" onClick={toggleMenu} id="menu-button-full" className={styles.menuButton}>

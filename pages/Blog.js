@@ -1,5 +1,4 @@
 import styles from '../styles/Blog.module.scss';
-//import styles from '../styles/App.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -17,11 +16,11 @@ export default function Blogs(props) {
             <Head>
                 <title>Blog | Patrick Yambrick</title>         
             </Head>
-            <section className="my-text font-body">
+            <section className="my-text">
              <h1 className="my-title">Blog Posts</h1>
              <ul className="p-6 text-center">
                 {Object.keys(posts).map((post, index) => {
-                    return <li key={index}><Link href={`/blog/${posts[post].id}`}><a>{posts[post].title}</a></Link></li>
+                    return <li key={index}><Link href={`/Blog/${posts[post].id}`}><a>{posts[post].title}</a></Link></li>
                 })}
              </ul>
             </section>
@@ -30,7 +29,6 @@ export default function Blogs(props) {
 }
 
 export function Blog(props) {
-    //const { BLOG_ID } = useParams();
     const BLOG_ID = '1'
     const posts = props.posts;
     const title = posts[BLOG_ID].title;
