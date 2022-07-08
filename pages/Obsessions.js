@@ -6,11 +6,11 @@ export default function CurrentObsession() {
   return(
     <div className="h-full my-forest-bg p-6 text-center">
       <Head>
-        <title>Current Obsession | Patrick Yambrick</title>         
+        <title>Obsessions | Patrick Yambrick</title>         
 
       </Head>
       <section className="my-text font-body">
-        <h1 className="font-bold m-2 my-title">Current Obsessions</h1>
+        <h1 className="font-bold m-2 my-title">Obsessions</h1>
         <Obsession data={{obsession: "Woodworking", when: "March, 2022", 
           projects: [
 
@@ -92,16 +92,9 @@ function Obsession(props) {
                     <Gallery items={pictures} />
                   </div>
                   
-                  {//For all pictures related to a project, return a display "card"
-                 /* pictures.map((item, index) => {
-                    return (
-                      <div key={index} className="col-span-1 p-2">
-                        <a href={item.src}>
-                          <img height="134px" width="250px" alt={item.alt} src={item.src}/>
-                        </a>
-                      </div>
-                    )
-                  })*/}
+                  {
+                  //For all pictures related to a project, return a display "card"
+                  }
                 </div>
                 )
               }
