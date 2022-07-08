@@ -7,9 +7,9 @@ export default function BlogPost(props) {
             <Head>
                 <title>{props.title} | Patrick Yambrick</title>
             </Head>
-            <section className="my-text">
+            <div className="my-text">
                 {props.children}
-            </section>
+            </div>
         </div>
     )
 }

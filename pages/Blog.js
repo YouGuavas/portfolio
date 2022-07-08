@@ -8,9 +8,11 @@ import { useEffect } from 'react';
 
 
 export default function Blogs(props) {
-    const posts = {
-        1: {title: 'My First Blog Post', id: 1, body: 'Test Text Test the Rest yes yes'}
-      }
+    const posts = [
+        {title: 'Struggling to Convert', id: 3},
+        {title: 'Converting', id: 2},
+        {title: 'My First Blog Post', id: 1},
+    ]
     return (
         <div className="p-6 place-items-center w-full h-screen text-center my-text">
             <Head>
@@ -18,29 +20,11 @@ export default function Blogs(props) {
             </Head>
             <section className="my-text">
              <h1 className="my-title">Blog Posts</h1>
-             <ul className="p-6 text-center">
-                {Object.keys(posts).map((post, index) => {
-                    return <li key={index}><Link href={`/Blog/${posts[post].id}`}><a>{posts[post].title}</a></Link></li>
+             <ul className={`p-6 text-center ${styles.blogsList}`}>
+                {posts.map((post, index) => {
+                    return <Link key={index} href={`/Blog/${post.id}`}><a id={post.title}><li className="my-bg-sage my-text-forest">{post.title}</li></a></Link>
                 })}
              </ul>
-            </section>
-        </div>
-    )
-}
-
-export function Blog(props) {
-    const BLOG_ID = '1'
-    const posts = props.posts;
-    const title = posts[BLOG_ID].title;
-    useEffect(() => {
-        document.title = `${title} | Patrick Yambrick`;
-       }, [document.title]
-     )
-    return (
-        <div className="p-6 place-items-center w-full h-screen text-center my-text">
-            <section className="my-text font-body">
-                <h1 className='my-title'>{title}</h1>
-                {posts[BLOG_ID].body}
             </section>
         </div>
     )

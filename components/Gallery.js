@@ -6,6 +6,7 @@ export function Gallery(props) {
     const [currentImage, setCurrentImage] = useState(0);
     const [isFullScreen, setIsFullScreen] = useState(false);
     const items = props.items;
+
     const handleArrowClick = (direction) => {
         if (direction === 'right') {
             if (currentImage < items.length-1) {
@@ -20,8 +21,8 @@ export function Gallery(props) {
                 setCurrentImage(items.length-1);
             }
         }
-
     }
+
     const renderArrows = (direction) => {
         if (items.length > 1) {
             if (direction === 'right') {
@@ -39,6 +40,7 @@ export function Gallery(props) {
             }
         }
     }
+
     const handleFullScreen = () => {
         if (isFullScreen) {
             setIsFullScreen(false);
@@ -46,6 +48,7 @@ export function Gallery(props) {
             setIsFullScreen(true);
         }
     }
+    
     return (
         <div className={`${styles.gallery} ${isFullScreen ? styles.fullscreenModal : ''}`}>
             <div className={`${styles.galleryMainContainer}`}>

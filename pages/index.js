@@ -3,9 +3,6 @@ import React from 'react';
 
 
 function index() {
-  const posts = {
-    1: {title: 'My First Blog Post', id: 1, body: 'Test Text Test the Rest yes yes'}
-  }
   
   return (
     <div>
