@@ -34,9 +34,7 @@ function About() {
         and about the things that I enjoy doing. 
         I like to create things: websites, woodworking projects, 
         and a bit of art here and there. 
-        <a className="font-bold my-bg-mustard-hover rounded" href="/contact%20me"> Contact me </a> 
-        if you think you'd like me to create something for you. 
-        Feel free to tell me a bit about it, and about yourself!</p>
+        I'd like to help you build something, and <a className="font-bold rounded my-fade-in my-dotted-underline" href="/Contact">I want you to tell me all about it</a>.</p>
     </section>
   )
 }
