@@ -1,9 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import '../utils/_variables.scss';
+
+* {
+  font-family: sans-serif;
+}
 
 body {
   background-color: $my-forest;
   *:focus {
     outline: 1px solid $my-mustard;
+  }
+}
+
+
+.my-dotted-underline {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.15rem;
+}
+.my-fade-in {
+  transition: 0.4s;
+  &:hover {
+    opacity: 65%;
   }
 }
 
@@ -31,6 +52,9 @@ body {
 .my-text-hover:hover {
   color: $my-mustard;
 }
+.my-text-forest-hover:hover {
+  color: $my-forest;
+}
 .my-transition {
   transition: 0.3s;
 }
@@ -39,28 +63,31 @@ body {
 .my-background {
   background-color: $my-mustard;
 }
+.my-btn, .my-contact-btn, .my-nav-btn {
+  transition: 0.7s;
+  cursor: pointer;
+}
 .my-btn {
   background-color: $color-4;
   color: $my-forest;
-  transition: 0.7s;
   &:hover {
     background-color: $my-forest;
     color: $my-sage;
-    cursor: pointer;
   }
-  
 }
+
+.my-contact-btn {
+  background-color: $my-sage;
+  color: $my-forest;
+  &:hover {
+    background-color: $color-4;
+    color: $my-sage;
+  }
+}
+
 
 .my-nav-btn {
   color: $my-sage;
-  transition: 0.3s;
-  &:hover {
-    color: $my-forest;
-    background-color: $my-mustard;
-  }
-}
-.my-mustard-hover {
-  transition: 0.3s;
   &:hover {
     color: $my-forest;
     background-color: $my-mustard;
@@ -73,22 +100,30 @@ body {
 }
 
 
-.my-background-hover:hover {
+.my-bg-mustard-hover, .my-bg-forest-hover, .my-bg-hover, .my-text-forest-hover {
+  transition: 0.4s;
+}
+.my-bg-mustard-hover:hover {
+  background-color: $my-mustard;
+}
+.my-bg-hover:hover {
+  background-color: $my-mustard;
+}
+.mybg-forestHover:hover {
+  background-color: rgba(140, 247, 40, 0.322);
+}
+
+
+.my-bg-forest {
+  background-color: $my-forest;
+}
+.my-bg-sage {
+  background-color: $my-sage;
+}
+.my-bg-mustard {
   background-color: $my-mustard;
 }
 
-.my-forest-bg {
-  background-color: $my-forest;
-}
-.my-forest-bg-hover:hover {
-  background-color: rgba(140, 247, 40, 0.322);
-}
-.my-sage-bg {
-  background-color: $my-sage;
-}
-.my-mustard-bg {
-  background-color: $my-mustard;
-}
 
 .border-sage {
   border-color: $my-sage;
@@ -100,15 +135,15 @@ body {
   border-color: $my-forest;
 }
 
-section {
-  h1.my-title, h2.my-title, h3.my-title {
+
+h1.my-title, h2.my-title, h3.my-title {
     font-weight: 400;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-family: sans-serif;
-  }
 }
+
 
 .my-logo {
   position: absolute;

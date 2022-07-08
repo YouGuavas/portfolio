@@ -1,0 +1,34 @@
+@import '../utils/_variables.scss';
+
+.paragraphLink {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.13rem;
+    text-underline-offset: 0.2rem;
+    transition: 0.4s;
+    &:hover {
+        opacity: 70%;
+    }
+}
+.blogParagraph {
+    width: 75%;
+    margin: 0 auto;
+    &:nth-child(n+3) {
+        margin-top: 10px;
+    }
+}
+
+.blogsList {
+    width: 75%;
+    margin: 0 auto;
+    li {
+        margin: 1rem 0;
+        padding: 0.5rem 0;
+        border-radius: 0.25rem;
+        transition: 0.4s;
+        &:hover {
+            opacity: 70%;
+        }
+    }
+
+}

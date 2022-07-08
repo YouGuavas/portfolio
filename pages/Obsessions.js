@@ -1,15 +1,16 @@
 import { useEffect } from "react";
-import { Gallery } from './Gallery';
+import { Gallery } from '../components/Gallery';
+import Head from 'next/head';
 
 export default function CurrentObsession() {
-  useEffect(() => {
-    document.title = "Current Obsession | Patrick Yambrick"
-   }, [document.title]
- )
   return(
     <div className="h-full my-forest-bg p-6 text-center">
+      <Head>
+        <title>Obsessions | Patrick Yambrick</title>         
+
+      </Head>
       <section className="my-text font-body">
-        <h1 className="font-bold m-2 my-title">Current Obsessions</h1>
+        <h1 className="font-bold m-2 my-title">Obsessions</h1>
         <Obsession data={{obsession: "Woodworking", when: "March, 2022", 
           projects: [
 
@@ -72,7 +73,7 @@ export default function CurrentObsession() {
 function Obsession(props) {
   const data = props.data;
   return(
-    <div className="w-full my-sage-bg my-text-forest p-6">
+    <div className="w-full my-bg-sage my-text-forest p-6">
         <h2 className="font-bold my-title">{data.obsession}</h2>
         <p>{data.when}</p>
           {//For all projects in an obsession, return relevant information/pictures
@@ -91,16 +92,9 @@ function Obsession(props) {
                     <Gallery items={pictures} />
                   </div>
                   
-                  {//For all pictures related to a project, return a display "card"
-                 /* pictures.map((item, index) => {
-                    return (
-                      <div key={index} className="col-span-1 p-2">
-                        <a href={item.src}>
-                          <img height="134px" width="250px" alt={item.alt} src={item.src}/>
-                        </a>
-                      </div>
-                    )
-                  })*/}
+                  {
+                  //For all pictures related to a project, return a display "card"
+                  }
                 </div>
                 )
               }
