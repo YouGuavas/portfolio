@@ -6,6 +6,9 @@
 * {
   font-family: sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: $my-forest;
