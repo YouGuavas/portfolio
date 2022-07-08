@@ -6,4 +6,4 @@ View it live [here](https://patrickyambrick.com/).
 ## Setup
 1. git clone https://github.com/YouGuavas/my-portfolio.git && cd portfolio
 2. npm i
-3. npm start
+3. npm run dev
