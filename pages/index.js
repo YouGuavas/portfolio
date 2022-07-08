@@ -47,7 +47,7 @@ function Skills() {
     {name: 'Express', url: 'https://expressjs.com/'}, {name: 'MongoDB', url: 'https://www.mongodb.com/'},
     {name: 'Sass', url: 'https://sass-lang.com/'}, {name: 'Tailwind', url: 'https://tailwindcss.com/'}, 
     {name: 'Bootstrap', url: 'https://getbootstrap.com/'}, {name: 'Bulma', url: 'https://bulma.io/'},
-    {name: 'Nextjs', url: ''},
+    {name: 'Nextjs', url: 'https://nextjs.org/'},
 
   ];
   return(
