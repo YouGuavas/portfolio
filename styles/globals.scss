@@ -51,6 +51,9 @@ body {
 .my-placeholder-mustard::placeholder {
   color: $my-mustard;
 }
+.my-placeholder-dark::placeholder {
+  color: $my-forest;
+}
 
 .my-text-hover:hover {
   color: $my-mustard;
@@ -71,11 +74,11 @@ body {
   cursor: pointer;
 }
 .my-btn {
-  background-color: $color-4;
+  background-color: $my-mustard;
   color: $my-forest;
   &:hover {
-    background-color: $my-forest;
-    color: $my-sage;
+    background-color: $color-4;
+    color: $my-forest;
   }
 }
 
@@ -83,8 +86,8 @@ body {
   background-color: $my-sage;
   color: $my-forest;
   &:hover {
-    background-color: $color-4;
-    color: $my-sage;
+    background-color: $my-mustard;
+    color: $my-forest;
   }
 }
 
@@ -157,6 +160,6 @@ h1.my-title {
   left:0.1rem;
   height: 4rem;
   width: 4rem;
-  background-color: $color-1;
+  background-color: $color-2;
   border-radius: 0.2rem;
 }

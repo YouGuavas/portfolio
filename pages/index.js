@@ -9,15 +9,15 @@ function index() {
         <Head>
             <title>Home | Patrick Yambrick</title>         
         </Head>
-        <section className="p-6 h-screen grid md:grid-cols-3 grid-cols-4 grid-rows-3 my-bg-forest">
+        <section className="p-6 h-screen grid md:grid-cols-3 grid-cols-4 grid-rows-3 my-bg-sage">
             <div className="font-body p-5 row-start-2 row-span-1 md:col-start-2 md:col-span-1 
             col-start-1 col-span-4 animate-ping-3 grid place-items-center text-center 
-            my-bg-sage my-text-forest rounded-lg shadow-lg">
-            <p className="my-text-forest">Hi, I'm Patrick 👋</p>
-            <p className="my-text-forest">I'm a full-stack developer, and I love learning new things.</p>
+            my-bg-forest my-text rounded-lg shadow-lg">
+              <p className="my-text">Hi, I'm Patrick 👋</p>
+              <p className="my-text">I'm a full-stack developer, and I love learning new things.</p>
             </div>
         </section>
-        <div className="h-screen my-bg-sage">
+        <div className="h-screen my-bg-forest">
             <About />
             <Skills />
         </div>
@@ -27,7 +27,7 @@ function index() {
 
 function About() {
   return (
-    <section className="my-text-forest pt-6 px-6">
+    <section className="my-text pt-6 px-6">
       <h3 className="font-bold text-center my-title">About Me</h3>
       <p className="px-12">My name is Patrick! Welcome to my site! 
         Here you will learn a bit about me as a person, 
@@ -49,9 +49,9 @@ function Skills() {
 
   ];
   return(
-    <section className="my-text-forest pt-6 px-12">
+    <section className="my-text pt-6 px-12">
       <h3 className="font-bold text-center my-title">Skills</h3>
-      <ul className="grid rounded grid-cols-2 gap-2 p-6 text-center my-bg-forest my-text-sage md:mt-6 mt-2">
+      <ul className="grid rounded grid-cols-2 gap-2 p-6 text-center my-bg-sage my-text-forest md:mt-6 mt-2">
         {skills.map((item, index) => {
           return (
             <li key={index} className="md:col-span-1 col-span-2"><a className="p-2 font-semibold my-bg-mustard-hover my-text-forest-hover rounded" href={item.url}>{item.name}</a></li>
