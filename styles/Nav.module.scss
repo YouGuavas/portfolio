@@ -74,6 +74,12 @@
       position: relative;
       list-style: none;
       text-align: center;
+      @media only screen and (min-width:$md-max) {
+        transition: 0.3s;
+        &:hover {
+          transform: translateX(-5px);
+        }
+      }
       .standardMenuLink {
         color: inherit;
         text-decoration: none;
@@ -83,6 +89,8 @@
         letter-spacing: 0.3rem;
         &:hover, &.active {
           color: $color-3;
+          left: 100px;
+          //transform: translateX(-10px);
         }
       }
     }
