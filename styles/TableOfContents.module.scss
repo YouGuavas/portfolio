@@ -1,0 +1,17 @@
+@import '../utils/_variables.scss';
+
+.tableOfContents {
+    width: 40%;
+    background-color: $my-mustard;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    margin-left: 15%;
+    li {
+        list-style: decimal;
+        list-style-position: inside;
+        width: 100%;
+        text-align: left;
+        color: $my-forest;
+        margin: 0.5rem auto;
+    }
+}
