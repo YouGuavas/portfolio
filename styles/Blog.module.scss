@@ -10,9 +10,16 @@
         opacity: 70%;
     }
 }
+.blogBody {
+    margin-top: 4rem;
+    .blogTitle {
+        margin: 2rem auto;
+    }
+}
 .blogParagraph {
     width: 75%;
     margin: 0 auto;
+    text-align: left;
     &:nth-child(n+3) {
         margin-top: 10px;
     }
