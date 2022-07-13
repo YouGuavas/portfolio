@@ -17,19 +17,21 @@ export default function Nav(props) {
   const renderLinks = (item, index) => {
     if (item == 'Home') {
       return( 
-      <Link href="/">
+      <Link href="/" key={index}>
         <a onClick={toggleMenu} className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
-        <li className={styles.standardMenuItem} key={index}>
-{item}</li>
+          <li className={styles.standardMenuItem}>
+            {item}
+          </li>
         </a>
       </Link>
       )
     } else {
       return (
-        <Link href={`/${item}`}>
+        <Link href={`/${item}`} key={index}>
         <a onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
-        <li className={styles.standardMenuItem} key={index}>
-{item}</li>
+          <li className={styles.standardMenuItem}>
+            {item}
+          </li>
         </a>
       </Link>
       )
@@ -51,9 +53,7 @@ export default function Nav(props) {
         {/*Standard menu, hides below laptop size*/}
         <ul className={styles.standardMenu}>
             {links.map((item, index) => {
-                return (
-                    renderLinks(item, index)
-                )
+                return renderLinks(item, index)
               })}
         </ul>
       </nav>
