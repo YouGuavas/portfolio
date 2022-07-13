@@ -70,30 +70,30 @@
   
   .standardMenu { 
     position: absolute;
-    .standardMenuItem {
-      position: relative;
-      list-style: none;
-      text-align: center;
-      @media only screen and (min-width:$md-max) {
-        transition: 0.3s;
-        &:hover {
-          transform: translateX(-5px);
-        }
+    .standardMenuLink {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.4s;
+      font-weight: 200;
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+      @media only screen and (max-width:$sm-max) {
+        font-weight: 400;
       }
-      .standardMenuLink {
-        color: inherit;
-        text-decoration: none;
-        transition: 0.4s;
-        font-weight: 200;
-        font-size: 1.2rem;
-        letter-spacing: 0.3rem;
-        @media only screen and (max-width:$sm-max) {
-          font-weight: 400;
-        }
-        &:hover, &.active {
-          color: $color-3;
-          left: 100px;
-          //transform: translateX(-10px);
+      &:hover, &.active {
+        color: $color-3;
+        left: 100px;
+      }
+    
+      .standardMenuItem {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        @media only screen and (min-width:$md-max) {
+          transition: 0.3s;
+          &:hover {
+            transform: translateX(-5px);
+          }
         }
       }
     }
