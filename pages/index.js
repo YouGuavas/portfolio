@@ -9,9 +9,9 @@ function index() {
         <Head>
             <title>Home | Patrick Yambrick</title>         
         </Head>
-        <section className="p-6 h-screen grid md:grid-cols-3 grid-cols-4 grid-rows-3 my-bg-sage">
+        <section className="p-6 h-screen w-screen grid md:grid-cols-3 grid-cols-4 grid-rows-3 my-bg-sage">
             <div className="font-body p-5 row-start-2 row-span-1 md:col-start-2 md:col-span-1 
-            col-start-1 col-span-4 animate-ping-3 grid place-items-center text-center 
+            col-start-1 col-span-4 grid animate-ping-3 place-items-center text-center 
             my-bg-forest my-text rounded-lg shadow-lg">
               <p className="my-text">Hi, I'm Patrick 👋</p>
               <p className="my-text">I'm a full-stack developer, and I love learning new things.</p>

@@ -1,5 +1,9 @@
 @import '../utils/_variables.scss';
 
+.blogPostContainer {
+    padding: 6rem 0;
+}
+
 .paragraphLink {
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -26,6 +30,12 @@
 }
 .blogTitle {
     margin: 0.9rem auto;
+}
+
+.byLine {
+    font-weight: 200;
+    font-size: 0.5rem;
+    text-align: left;
 }
 
 .blogsList {
