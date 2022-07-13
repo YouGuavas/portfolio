@@ -1,4 +1,5 @@
 import BlogPost from '../../components/BlogPost';
+import ByLine from '../../components/ByLine';
 import BlogImage from '../../components/BlogImage';
 import TableOfContents from '../../components/TableOfContents';
 import styles from '../../styles/Blog.module.scss';
@@ -69,14 +70,5 @@ export default function () {
             </div>
         </section>
     </BlogPost>
-    )
-}
-
-const ByLine = (props) => {
-    return (
-        <div>
-            <p className={styles.byLine}>By: {props.by}</p>
-            <p className={styles.byLine}>Published on: {props.date}</p>
-        </div>
     )
 }
