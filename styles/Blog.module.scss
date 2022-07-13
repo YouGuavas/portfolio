@@ -2,6 +2,11 @@
 
 .blogPostContainer {
     padding: 6rem 0;
+    h1 {
+        text-align: left;
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 
 .paragraphLink {
@@ -30,12 +35,16 @@
 }
 .blogTitle {
     margin: 0.9rem auto;
+    width: 75%;
+    text-align: left;
 }
 
 .byLine {
     font-weight: 200;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     text-align: left;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .blogsList {
@@ -58,4 +67,7 @@
     margin: 1rem auto;
     background-color: $my-mustard;
     padding: 1rem 0.1rem;
+    img {
+        margin: 0 auto;
+    }
 }
