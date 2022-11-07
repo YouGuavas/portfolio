@@ -29,13 +29,6 @@ export default function Work() {
       live: "https://pokemon-collection-tracker.herokuapp.com/",
       src: "https://lh3.googleusercontent.com/pw/AM-JKLVglu0wIYmnxolOpFBAy0T5Y4mw_nm-95AvDYCXM94Pr5vkTKu8DluYF1g0gB_agQEVy17i21LwUTS-65kke8ZXDyIWQH0UmNLKwpzK7MI_5RNjwgGY8zYQI0VT4pk5-ThVRl6wrkH_RN55GYdoBvid=w500-h285-no?authuser=0"
     },
-    lavilla: {
-      title: "La Villa Website Redesign",
-      description: "Here is a redesign of a local restaurant's website. I built this project using React & Tailwind.",
-      github: "https://github.com/YouGuavas/lavilla",
-      live: "https://lavilla-123.web.app/",
-      src: "https://lh3.googleusercontent.com/pw/AM-JKLXnSElJlJyU7XGPr7i1Rd2-yMJmjVRVSwn9KYwZh0lSD2PVWsWYDkrBRHmcYEdoCTJadkgWc7eJ6RxR3QOAyIgf0zVaFEiCF_1UfGHlWBGjqiLuRcXOFIvXsRPZ9Sy37FeOcQNaPcFj7bBwHCRH4VwD=w250-h134-no?authuser=0"
-    }
   }
   return (
     <div className={`h-full my-forest-bg p-6 text-center`}>
