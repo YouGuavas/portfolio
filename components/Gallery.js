@@ -49,14 +49,18 @@ export function Gallery(props) {
             setIsFullScreen(true);
         }
     }
-    
+    const currentImageScaling = {
+        0: 24,
+        1: -24
+    };
+
     return (
         <div className={`${styles.gallery} ${isFullScreen ? styles.fullscreenModal : ''}`}>
             <div className={`${styles.galleryMainContainer}`}>
                 {renderArrows('left')}
                 {
                     items.map((item, index) => {
-                        return (<img style={{ transform: `translate3d(${(-currentImage * 650) + 100}px, 0, 0)` }} alt={item.alt || 'Main project'} 
+                        return (<img style={{ transform: `translate3d(${-currentImage * 100}%, 0, 0)` }} alt={item.alt || 'Main project'} 
                         className={`${styles.galleryMain}`} 
                         height='450px' width='450px' src={item.original} key={index} />)
                     })
