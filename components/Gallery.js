@@ -1,5 +1,6 @@
 import styles from '../styles/Gallery.module.scss';
 import {useState} from 'react';
+
 import SVG from '../utils/SVG';
 
 export function Gallery(props) {
@@ -55,7 +56,9 @@ export function Gallery(props) {
                 {renderArrows('left')}
                 {
                     items.map((item, index) => {
-                        return <img style={{ transform: `translate3d(${-currentImage * 100}%, 0, 0)` }} alt={item.alt || 'Main project'} className={`${styles.galleryMain}`} height='450px' width='450px' src={item.original} key={index} />
+                        return (<img style={{ transform: `translate3d(${(-currentImage * 650) + 100}px, 0, 0)` }} alt={item.alt || 'Main project'} 
+                        className={`${styles.galleryMain}`} 
+                        height='450px' width='450px' src={item.original} key={index} />)
                     })
                 }
                 {renderArrows('right')}

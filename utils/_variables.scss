@@ -1,10 +1,11 @@
-$my-sage: white;//#CBD18F;
-$my-forest: #557752;//#3A6B35;
-$my-mustard: #CBD18F;//#E3B448;
+$my-sage: rgb(50, 50, 50);//white;//#CBD18F;
+$my-forest: rgb(1,1,1);//#557752;//#3A6B35;
+$my-mustard: #466143;//#CBD18F;//#E3B448;
+//TODO: transition all styles to use color-1,2,3, etc instead
 $color-1: $my-forest;
 $color-2: $my-sage;
-$color-3: $my-mustard;
-$color-4: rgba(40, 71, 11, 0.322);
+$color-3: #466143;
+$color-4: rgba(25,25,25, 0.8);//rgba(40, 71, 11, 0.322);
 
 
 $md-max: 900px;

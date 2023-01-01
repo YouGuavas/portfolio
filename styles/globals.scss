@@ -74,11 +74,11 @@ body {
   cursor: pointer;
 }
 .my-btn {
-  background-color: $my-mustard;
-  color: $my-forest;
+  background-color: $color-1;
+  color: $color-3;
   &:hover {
     background-color: $color-4;
-    color: $my-forest;
+    color: $color-3;
   }
 }
 
