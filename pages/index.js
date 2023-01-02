@@ -9,15 +9,13 @@ function index() {
         <Head>
             <title>Home | Patrick Yambrick</title>         
         </Head>
-        <section className="p-6 h-screen w-screen grid lg:grid-cols-3 grid-cols-4 grid-rows-3 my-bg-sage">
-            <div className="font-body p-5 row-start-2 row-span-1 lg:col-start-2 lg:col-span-1 
-            col-start-1 col-span-4 md:col-start-1 md:col-span-4 grid md:animate-ping-3 place-items-center text-center 
-            my-bg-forest my-text rounded-lg shadow-lg">
+        <section className="p-6 vpheight w-screen my-bg-forest">
+            <div className="lander">
               <p className="my-text">Hi, I'm Patrick 👋</p>
               <p className="my-text">I'm a full-stack developer, and I love learning new things.</p>
             </div>
         </section>
-        <div className="h-screen my-bg-forest">
+        <div className="vpheight my-bg-forest">
             <About />
             <Skills />
         </div>

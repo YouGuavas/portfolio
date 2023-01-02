@@ -1,12 +1,8 @@
-$my-sage: rgb(50, 50, 50);//white;//#CBD18F;
-$my-forest: rgb(1,1,1);//#557752;//#3A6B35;
-$my-mustard: #466143;//#CBD18F;//#E3B448;
-//TODO: transition all styles to use color-1,2,3, etc instead
-$color-1: $my-forest;
-$color-2: $my-sage;
-$color-3: #466143;
+$color-1: rgb(0,0,0);//#557752;//#3A6B35;
+$color-2: rgb(200, 200, 200);//white;//#CBD18F;
+$color-3: #53744f;//#CBD18F;//#E3B448;
 $color-4: rgba(25,25,25, 0.8);//rgba(40, 71, 11, 0.322);
 
-
+$lg-max: 1366px;
 $md-max: 900px;
 $sm-max: 400px;

@@ -11,9 +11,9 @@ html {
 }
 
 body {
-  background-color: $my-forest;
+  background-color: $color-1;
   *:focus {
-    outline: 1px solid $my-mustard;
+    outline: 1px solid $color-3;
   }
 }
 
@@ -33,41 +33,61 @@ body {
 
 .my-hr {
   border-top: none;
-  border-bottom: 1px solid $my-forest;
+  border-bottom: 1px solid $color-1;
   width: 8rem;
   border-radius: 50px;
   margin: auto;
 }
 .my-text, .my-text-sage {
-  color: $my-sage;
+  color: $color-2;
 }
 .my-text-forest {
-  color: $my-forest;
+  color: $color-1;
 }
 .my-text-mustard {
-  color: $my-mustard;
+  color: $color-3;
 }
 
 .my-placeholder-mustard::placeholder {
-  color: $my-mustard;
+  color: $color-3;
 }
 .my-placeholder-dark::placeholder {
-  color: $my-forest;
+  color: $color-1;
 }
 
 .my-text-hover:hover {
-  color: $my-mustard;
+  color: $color-3;
 }
 .my-text-forest-hover:hover {
-  color: $my-forest;
+  color: $color-1;
 }
 .my-transition {
   transition: 0.3s;
 }
+.vpheight {
+ height: 100vh;
+ @media only screen and (min-width:$lg-max) {
+  height: 50vh;
+}
+}
 
+.lander {
+  font-size: 3rem;
+  padding-top: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+  @media only screen and (max-width:$sm-max) {
+    font-size: 2rem;
+  }
+  p {
+    &:nth-child(2) {
+      margin-top: 1rem;
+    }
+  }
+}
 
 .my-background {
-  background-color: $my-mustard;
+  background-color: $color-3;
 }
 .my-btn, .my-contact-btn, .my-nav-btn {
   transition: 0.7s;
@@ -83,25 +103,25 @@ body {
 }
 
 .my-contact-btn {
-  background-color: $my-sage;
-  color: $my-forest;
+  background-color: $color-2;
+  color: $color-1;
   &:hover {
-    background-color: $my-mustard;
-    color: $my-forest;
+    background-color: $color-3;
+    color: $color-1;
   }
 }
 
 
 .my-nav-btn {
-  color: $my-sage;
+  color: $color-2;
   &:hover {
-    color: $my-forest;
-    background-color: $my-mustard;
+    color: $color-1;
+    background-color: $color-3;
   }
 }
 .my-nav-btn-active {
-  color: $my-forest;
-  background-color: $my-mustard;
+  color: $color-1;
+  background-color: $color-3;
   transition: 0.3s;
 }
 
@@ -110,10 +130,10 @@ body {
   transition: 0.4s;
 }
 .my-bg-mustard-hover:hover {
-  background-color: $my-mustard;
+  background-color: $color-3;
 }
 .my-bg-hover:hover {
-  background-color: $my-mustard;
+  background-color: $color-3;
 }
 .mybg-forestHover:hover {
   background-color: rgba(140, 247, 40, 0.322);
@@ -121,24 +141,24 @@ body {
 
 
 .my-bg-forest {
-  background-color: $my-forest;
+  background-color: $color-1;
 }
 .my-bg-sage {
-  background-color: $my-sage;
+  background-color: $color-2;
 }
 .my-bg-mustard {
-  background-color: $my-mustard;
+  background-color: $color-3;
 }
 
 
 .border-sage {
-  border-color: $my-sage;
+  border-color: $color-2;
 }
 .border-mustard {
-  border-color: $my-mustard;
+  border-color: $color-3;
 }
 .border-forest {
-  border-color: $my-forest;
+  border-color: $color-1;
 }
 
 
