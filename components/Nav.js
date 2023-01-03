@@ -1,7 +1,7 @@
 import styles from '../styles/Nav.module.scss';
 
 import Link from 'next/link';
-
+import logo from '../public/images/logo.png';
 import {useState, useEffect} from 'react';
 
 export default function Nav(props) {

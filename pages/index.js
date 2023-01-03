@@ -1,26 +1,34 @@
 import Head from 'next/head';
 import React from 'react';
 
+import styles from '../styles/Home.module.scss';
+
 
 function index() {
   
   return (
     <div>
         <Head>
-            <title>Home | Patrick Yambrick</title>         
+            <title>Home | Patrick Yambrick</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"/>         
         </Head>
-        <section className="p-6 vpheight w-screen my-bg-forest">
-            <div className="lander">
-              <p className="my-text">Hi, I'm Patrick 👋</p>
-              <p className="my-text">I'm a full-stack developer, and I love learning new things.</p>
-            </div>
-        </section>
+        <Lander />
         <div className="vpheight my-bg-forest">
             <About />
             <Skills />
         </div>
     </div>
   );
+}
+
+function Lander() {
+  return (
+    <section className={`p-6 vpheight w-screen ${styles.lander}`}>
+      <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
+    </section>
+  )
 }
 
 function About() {
@@ -33,6 +41,7 @@ function About() {
         I like to create things: websites, woodworking projects, 
         and a bit of art here and there. 
         I'd like to help you build something, and <a className="font-bold rounded my-fade-in my-dotted-underline" href="/Contact">I want you to tell me all about it</a>.</p>
+      <p className="px-12 my-text">I'm a full-stack developer, and I love learning new things.</p>
     </section>
   )
 }
