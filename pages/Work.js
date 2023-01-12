@@ -1,12 +1,17 @@
 import Head from 'next/head';
 import codeEditor1 from '../public/images/codeEditor1.png';
 import codeEditor2 from '../public/images/codeEditor2.png';
+import portfolio1 from '../public/images/portfolio1.png';
+import portfolio2 from '../public/images/portfolio2.png';
+import showcase1 from '../public/images/showcase1.png';
+import showcase2 from '../public/images/showcase2.png';
+
 
 export default function Work() {
   const projects = {
     codeEditor: {
       title: 'Code Editor',
-      description: 'This is a code editor I built using CodeMirror, react, and Sass. Users should be able to write html, css, and javascript code, and execute it in the iframe below. Html and Css update live, and javascript will run when the button is pressed.',
+      description: 'A code editor I built using CodeMirror, react, and Sass. Users should be able to write html, css, and javascript code, and execute it in the iframe below. Html and Css update live, and javascript will run when the button is pressed.',
       github: 'https://github.com/YouGuavas/code-editor',
       live: 'https://code-editor-vn5t7dek6-youguavas.vercel.app/',
       src1: codeEditor1.src,
@@ -22,10 +27,10 @@ export default function Work() {
     },*/
     portfolio: {
       title: "This Portfolio Website",
-      description: "Here we find a portfolio site I made to display my work. I made this portfolio using React & Tailwind.",
+      description: "A portfolio site I built to display my work using React & Tailwind.",
       github:"https://github.com/YouGuavas/portfolio",
-      src1: "https://lh3.googleusercontent.com/pw/AM-JKLW-F4BRK6Y97vQM1NeFYFf0iCEF9Nn1w50tHOLhG2XW7ObCZuUQLIOwZu6uZk1RE0PIQo53nfEIvYNZ4-2Ryuveb6iVKsj3tXxyiprLIOT-5Wb-ST2jGYQ0oGhTvQfRxM1KCBl09j6CrkFZM0cUtKPZ=w500-h287-no?authuser=0",
-      src2: "https://lh3.googleusercontent.com/pw/AM-JKLW-F4BRK6Y97vQM1NeFYFf0iCEF9Nn1w50tHOLhG2XW7ObCZuUQLIOwZu6uZk1RE0PIQo53nfEIvYNZ4-2Ryuveb6iVKsj3tXxyiprLIOT-5Wb-ST2jGYQ0oGhTvQfRxM1KCBl09j6CrkFZM0cUtKPZ=w500-h287-no?authuser=0"
+      src1: portfolio1.src,
+      src2: portfolio2.src
 
     },
     showcase: {
@@ -33,11 +38,11 @@ export default function Work() {
       description: "This is a showcase of components I have built with React and Sass.",
       github: "https://github.com/YouGuavas/component-showcase",
       live: "https://guava-component-showcase.web.app/",
-      src1: "https://lh3.googleusercontent.com/pw/AM-JKLV4s-vOpm9MI54gAScR36Ghvu02ZYjsNLBijwTqgJhepTKQ1SNeJ7IHOEJZR1UQm8MD_tlyU05anzuSX9ZuhiIJrLqCxHqTONG3ESaWQz9qa_Mbjl5YESb_sqzYhVCXfcVQVPRI5uBVmJgKeHpxUfvI=w1104-h591-no?authuser=0",
-      src2: "https://lh3.googleusercontent.com/pw/AM-JKLV4s-vOpm9MI54gAScR36Ghvu02ZYjsNLBijwTqgJhepTKQ1SNeJ7IHOEJZR1UQm8MD_tlyU05anzuSX9ZuhiIJrLqCxHqTONG3ESaWQz9qa_Mbjl5YESb_sqzYhVCXfcVQVPRI5uBVmJgKeHpxUfvI=w1104-h591-no?authuser=0"
+      src1: showcase1.src,
+      src2: showcase2.src,
 
     },
-    pokemon: {
+    /*pokemon: {
       title: "Pokemon Collection Tracker",
       description: "This is a tool for keeping track of your Pokemon cards collection. Users should be able to add, remove, and view cards in their collection, as well as view cards yet to be collected. I built this project using the MERN stack and Sass.",
       github: "https://github.com/YouGuavas/pokemon-tracker",
@@ -45,7 +50,7 @@ export default function Work() {
       src1: "https://lh3.googleusercontent.com/pw/AM-JKLVglu0wIYmnxolOpFBAy0T5Y4mw_nm-95AvDYCXM94Pr5vkTKu8DluYF1g0gB_agQEVy17i21LwUTS-65kke8ZXDyIWQH0UmNLKwpzK7MI_5RNjwgGY8zYQI0VT4pk5-ThVRl6wrkH_RN55GYdoBvid=w500-h285-no?authuser=0",
       src2: "https://lh3.googleusercontent.com/pw/AM-JKLVglu0wIYmnxolOpFBAy0T5Y4mw_nm-95AvDYCXM94Pr5vkTKu8DluYF1g0gB_agQEVy17i21LwUTS-65kke8ZXDyIWQH0UmNLKwpzK7MI_5RNjwgGY8zYQI0VT4pk5-ThVRl6wrkH_RN55GYdoBvid=w500-h285-no?authuser=0"
 
-    },
+    },*/
   }
   return (
     <div className={`h-full my-forest-bg p-6 text-center`}>
