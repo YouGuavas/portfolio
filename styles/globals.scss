@@ -89,6 +89,12 @@ body {
 .my-background {
   background-color: $color-3;
 }
+.my-col-span-3 {
+  grid-column: span 1 / span 1;
+  @media only screen and (max-width: $md-max) {
+    grid-column: span 3 / span 3;
+  }
+}
 .my-btn, .my-contact-btn, .my-nav-btn {
   transition: 0.7s;
   cursor: pointer;
@@ -99,6 +105,18 @@ body {
   &:hover {
     background-color: $color-4;
     color: $color-3;
+  }
+}
+.main-image {
+  display: none;
+  @media only screen and (min-width: $md-max) {
+    display: block;
+  }
+}
+.mobile-image {
+  display: none;
+  @media only screen and (max-width: $md-max) {
+    display: block;
   }
 }
 
