@@ -5,6 +5,8 @@ import portfolio1 from '../public/images/portfolio1.png';
 import portfolio2 from '../public/images/portfolio2.png';
 import showcase1 from '../public/images/showcase1.png';
 import showcase2 from '../public/images/showcase2.png';
+import unitConverter1 from '../public/images/unitConverter1.png';
+import unitConverter2 from '../public/images/unitConverter2.png';
 
 
 export default function Work() {
@@ -41,6 +43,14 @@ export default function Work() {
       src1: showcase1.src,
       src2: showcase2.src,
 
+    },
+    unitConverter: {
+      title: "Unit Converter",
+      description: "A unit converter built with React.",
+      github: "https://github.com/YouGuavas/unit-converter/",
+      live: "https://unit-converter-phi-sable.vercel.app/",
+      src1: unitConverter1.src,
+      src2: unitConverter2.src
     },
     /*pokemon: {
       title: "Pokemon Collection Tracker",
