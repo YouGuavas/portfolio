@@ -68,8 +68,8 @@ export default function Work() {
         <title>Work | Patrick Yambrick</title>         
 
         </Head>
-      <section className="my-text font-body">
-        <h1 className="font-bold my-title">Personal Projects</h1>
+      <section className="my-text-mustard font-body">
+        <h1 className="my-title">Personal Projects</h1>
         <p>These are projects I have done to further my own learning, comprehension, and growth.</p>
         <div className="grid grid-cols-3 gap-2 py-6">
           {Object.keys(projects).map((item, index) => { 
@@ -85,7 +85,7 @@ export default function Work() {
 
 function Card(props) {
   return(
-  <div className="my-col-span-3 p-6 h-100 my-bg-sage my-text-forest rounded grid grid-cols-2 place-items-center text-center">
+  <div className="my-col-span-3 p-6 h-100 my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center">
     <h3 className="col-span-2 py-2">{props.project.title}</h3>
     <div className="col-span-2 p-2 my-bg-sage">
       <img className='main-image' height="134px" width="250px" alt="Screenshot of project page" src={props.project.src1} />
@@ -93,8 +93,8 @@ function Card(props) {
     </div>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-8'}`}>{props.project.description}</p>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-4'}`}>View {props.project.live ? "it" : "the code"} here:</p>
-    {props.project.live ? <a href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 font-semibold w-full rounded p-2 my-2 my-btn">View it live</a> : null}
-    {props.project.github ? <a href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 w-full font-semibold rounded p-2 my-2 my-btn">View it on github</a> : null }
+    {props.project.live ? <a href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 rounded p-2 my-2 my-btn">View it live</a> : null}
+    {props.project.github ? <a href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 rounded p-2 my-2 my-btn">View it on github</a> : null }
   </div>
   )
 }

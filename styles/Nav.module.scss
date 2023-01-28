@@ -5,7 +5,7 @@
 }
 .menuButton {
   background-color: $color-2;
-  border-radius: 0.25rem;
+  //border-radius: 0.25rem;
   border: none;
   position: fixed;
   z-index: 1000;
@@ -21,7 +21,7 @@
       cursor: pointer;
     }
     .bar1, .bar2, .bar3 {
-      width: 1.2rem;
+      width: 1.4rem;
       height: 0.2rem;
       background-color: $color-1;
       margin: 0 auto;

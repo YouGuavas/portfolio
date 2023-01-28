@@ -9,6 +9,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -40,26 +42,24 @@ body {
   margin: auto;
 }
 .my-text, .my-text-sage {
-  color: $color-2;
-}
-.my-text-forest {
   color: $color-1;
 }
-.my-text-mustard {
+.my-text-forest {
   color: $color-3;
 }
-
+.my-text-mustard {
+  color: $color-2;
+}
+.my-text-hover:hover {
+  color: $color-1;
+}
+.my-text-forest-hover:hover {
+  color: $color-3;
+}
 .my-placeholder-mustard::placeholder {
   color: $color-3;
 }
 .my-placeholder-dark::placeholder {
-  color: $color-1;
-}
-
-.my-text-hover:hover {
-  color: $color-3;
-}
-.my-text-forest-hover:hover {
   color: $color-1;
 }
 .my-transition {
@@ -67,8 +67,10 @@ body {
 }
 .vpheight {
   height: 100vh;
+  scroll-snap-align: start;
   @media only screen and (min-width:$lg-max) {
    height: 50vh;
+   scroll-snap-align: none;
  }
  }
 
@@ -101,10 +103,15 @@ body {
   cursor: pointer;
 }
 .my-btn {
-  background-color: $color-1;
-  color: $color-3;
+  //background-color: $color-1;
+  color: $color-1;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid $color-3;
+
   &:hover {
-    background-color: $color-4;
+    //background-color: $color-4;
     color: $color-3;
   }
 }
@@ -154,7 +161,7 @@ body {
 .my-bg-hover:hover {
   background-color: $color-3;
 }
-.mybg-forestHover:hover {
+.my-bg-forest-hover:hover {
   background-color: rgba(140, 247, 40, 0.322);
 }
 

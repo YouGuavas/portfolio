@@ -13,6 +13,23 @@
         font-family: inherit;
     } 
 }
+.skills {
+  background-color: $color-2;
+  text-align: center;
+  h3 {
+    display: inline;
+    padding: 0 0 0.5rem 0;
+    border-bottom: 1px solid $color-3;
+  }
+}
+
+.about {
+  p {
+    margin: 1rem auto;
+  }
+}
+
+
 
 .lander {
     font-size: 3rem;
