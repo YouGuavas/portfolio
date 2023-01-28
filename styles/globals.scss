@@ -88,7 +88,11 @@ body {
     }
   }
 }
-
+.disappear-md {
+  @media only screen and (max-width: $md-max)  {
+    display: none;
+  }
+}
 .my-background {
   background-color: $color-3;
 }
