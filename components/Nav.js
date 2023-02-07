@@ -1,7 +1,6 @@
 import styles from '../styles/Nav.module.scss';
 
 import Link from 'next/link';
-import logo from '../public/images/logo.png';
 import {useState, useEffect} from 'react';
 
 export default function Nav(props) {
@@ -18,21 +17,17 @@ export default function Nav(props) {
     if (item == 'Home') {
       return( 
       <Link href="/" key={index}>
-        <a onClick={toggleMenu} className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
-          <li className={styles.standardMenuItem}>
+          <li onClick={toggleMenu} className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
             {item}
           </li>
-        </a>
       </Link>
       )
     } else {
       return (
         <Link href={`/${item}`} key={index}>
-        <a onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink}` : styles.standardMenuLink}>
-          <li className={styles.standardMenuItem}>
+          <li onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
             {item}
           </li>
-        </a>
       </Link>
       )
     }
