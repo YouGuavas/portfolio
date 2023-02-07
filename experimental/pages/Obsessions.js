@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Gallery } from '../components/Gallery'; 
 import Head from 'next/head';
 

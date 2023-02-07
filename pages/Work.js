@@ -7,6 +7,7 @@ import showcase1 from '../public/images/showcase1.png';
 import showcase2 from '../public/images/showcase2.png';
 import unitConverter1 from '../public/images/unitConverter1.png';
 import unitConverter2 from '../public/images/unitConverter2.png';
+import Image from 'next/image';
 
 import styles from '../styles/Work.module.scss';
 
@@ -90,8 +91,8 @@ function Card(props) {
   <div className={`${styles.card} p-6 h-100 my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center`}>
     <h3 className="col-span-2 py-2">{props.project.title}</h3>
     <div className="col-span-2 p-2 my-bg-sage">
-      <img className='main-image' height="134px" width="250px" alt="Screenshot of project page" src={props.project.src1} />
-      <img className='mobile-image' height="134px" width="250px" alt="Screenshot of project page" src={props.project.src2} />
+      <Image className='main-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src1} />
+      <Image className='mobile-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src2} />
     </div>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-8'}`}>{props.project.description}</p>
     <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-4'}`}>View {props.project.live ? "it" : "the code"} here:</p>

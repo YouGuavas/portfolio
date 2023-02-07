@@ -35,7 +35,7 @@ export default function Nav(props) {
 
   useEffect(function() {
     setActive(window.location.pathname);
-  });
+  }, [links]);
  
   return (
     <header className={styles.navHeader}>

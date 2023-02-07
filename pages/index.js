@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Link from 'next/link';
 
 import styles from '../styles/Home.module.scss';
 
@@ -12,7 +13,6 @@ function index() {
             <title>Home | Patrick Yambrick</title>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"/>         
         </Head>
         <Lander />
         <div className="vpheight my-bg-forest">
@@ -41,8 +41,8 @@ function About() {
         and about the things that I enjoy doing. 
         I like to create things: websites, woodworking projects, 
         and a bit of art here and there. 
-        I'd like to help you build something, and <a className="font-bold rounded my-fade-in my-dotted-underline" href="/Contact">I want you to tell me all about it</a>.</p>
-      <p className="px-12 my-text-mustard">I'm a full-stack developer, and I love learning new things.</p>
+        I&apos;d like to help you build something, and <Link className="font-bold rounded my-fade-in my-dotted-underline" href="/Contact">I want you to tell me all about it</Link>.</p>
+      <p className="px-12 my-text-mustard">I&apos;m a full-stack developer, and I love learning new things.</p>
     </section>
   )
 }
