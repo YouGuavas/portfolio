@@ -1,7 +1,11 @@
 import styles from '../styles/Nav.module.scss';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import {useState, useEffect} from 'react';
+
+import logo from '../public/images/logo.png';
+
 
 export default function Nav(props) {
   const links = props.links;
@@ -33,7 +37,7 @@ export default function Nav(props) {
     }*/
     return (
       <Link href={`#${item}`} key={index}>
-        <li onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
+        <li onClick={() => {setActive(`#${item}`)}} className={(active === `#${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
           {item}
         </li>
       </Link>
@@ -41,17 +45,19 @@ export default function Nav(props) {
   }
 
   useEffect(function() {
+    //const activePage = window.location.pathname.split('#').join('');
     setActive(window.location.pathname);
   }, [links]);
  
   return (
     <header className={styles.navHeader}>
-      <button aria-label="Full Menu Button" onClick={toggleMenu} id="menu-button-full" className={styles.menuButton}>
+      {/*<button aria-label="Full Menu Button" onClick={toggleMenu} id="menu-button-full" className={styles.menuButton}>
               <div className={styles.bar1}></div>
               <div className={styles.bar2}></div>
               <div className={styles.bar3}></div>
-      </button>
+  </button>*/}
       <nav className={styles.myNavFull} id="menu-full">
+        
         {/*Standard menu, hides below laptop size*/}
         <ul className={styles.standardMenu}>
             {links.map((item, index) => {

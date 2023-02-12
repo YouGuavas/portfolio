@@ -67,7 +67,7 @@ export default function Work() {
   }
   return (
     <section id="Work" className={`${styles.work} h-full w-3/4 my-forest-bg p-6 text-center my-text-mustard font-body`}>
-        <h1 className="my-title disappear-md">Personal Projects</h1>
+        <h1 className="my-title disappear-md top-10">Personal Projects</h1>
         <p className="disappear-md">These are projects I have done to further my own learning, comprehension, and growth.</p>
         <div className="grid grid-cols-2 gap-2 py-6">
           {Object.keys(projects).map((item, index) => { 

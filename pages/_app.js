@@ -12,7 +12,7 @@ function App({Component, pageProps}) {
       <Link href="/">
         <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
       </Link>
-      <Nav links={['Home', 'Work', 'Contact']}/> {/*'Blog', 'Obsessions' */}
+      <Nav links={['Home', 'Skills', 'Work', 'About', 'Contact']}/> {/*'Blog', 'Obsessions' */}
       <Component {...pageProps} />
     </React.Fragment>
   );
