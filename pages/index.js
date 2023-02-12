@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
+import Work from '../components/Work';
+import Contact from '../components/Contact';
 
 import styles from '../styles/Home.module.scss';
 
@@ -15,18 +17,24 @@ function index() {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         </Head>
         <Lander />
-        <div className="vpheight my-bg-forest">
-            <Skills />
+        <Skills />
+
+        <Work />
+        <div className="vpheight my-bg-sage">
             <About />
         </div>
+        <Contact />
     </div>
   );
 }
 
 function Lander() {
   return (
-    <section className={`p-6 vpheight w-screen ${styles.lander}`}>
+    <section id="Home" className={`p-6 vpheight w-screen ${styles.lander}`}>
+      <div>
       <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
+      <p className={`my-text-mustard`}>Developer.</p>
+      </div>
     </section>
   )
 }

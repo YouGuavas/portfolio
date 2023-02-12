@@ -14,7 +14,7 @@ export default function Nav(props) {
     mobileBtn.classList.toggle(styles.change);
   }
   const renderLinks = (item, index) => {
-    if (item == 'Home') {
+    /*if (item == 'Home') {
       return( 
       <Link href="/" key={index}>
           <li onClick={toggleMenu} className={(active === `/${item}`) || (active === `/${item.split(' ').join('')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
@@ -24,13 +24,20 @@ export default function Nav(props) {
       )
     } else {
       return (
-        <Link href={`/${item}`} key={index}>
+        <Link href={`#${item}`} key={index}>
           <li onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
             {item}
           </li>
-      </Link>
+        </Link>
       )
-    }
+    }*/
+    return (
+      <Link href={`#${item}`} key={index}>
+        <li onClick={toggleMenu} className={(active === `/${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
+          {item}
+        </li>
+      </Link>
+    )
   }
 
   useEffect(function() {
