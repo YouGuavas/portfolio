@@ -8,7 +8,8 @@
     width: 100vw;
     display: block;
     letter-spacing: 0.2rem;
-    font-family: 'Amatic SC', cursive;
+    font-family: inherit;
+    //font-family: 'Amatic SC', cursive;
     span {
         color: $color-3;
         margin-right: 0.2rem;
@@ -44,9 +45,9 @@
     align-items: center;
     div {
       text-align: center;
+      font-family: 'Amatic SC', 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       p {
-        font-family: 'Amatic SC', cursive;
-
+        font-family: inherit;
         font-size: 1.75rem;
         font-weight: 100;
       }

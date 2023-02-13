@@ -13,16 +13,16 @@ function index() {
     <div className={styles.scroller}>
         <Head>
             <title>Home | Patrick Yambrick</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         </Head>
+
         <Lander />
         <Skills />
-
         <Work />
+
         <div className="vpheight my-bg-sage">
             <About />
         </div>
+        
         <Contact />
     </div>
   );
@@ -32,8 +32,8 @@ function Lander() {
   return (
     <section id="Home" className={`p-6 vpheight w-screen ${styles.lander}`}>
       <div>
-      <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
-      <p className={`my-text-mustard`}>Developer.</p>
+        <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
+        <p className={`my-text-mustard`}>Developer.</p>
       </div>
     </section>
   )
