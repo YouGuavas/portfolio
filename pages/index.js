@@ -22,7 +22,7 @@ function index() {
         <div className="vpheight my-bg-sage">
             <About />
         </div>
-        
+
         <Contact />
     </div>
   );
@@ -42,7 +42,7 @@ function Lander() {
 
 function About() {
   return (
-    <section className={`my-text-mustard pt-6 px-6 vpheight ${styles.about}`}>
+    <section id="About" className={`my-text-mustard pt-6 px-6 vpheight ${styles.about}`}>
       <h3 className="font-bold text-center my-title" id="About">About Me</h3>
       <p className="px-12">My name is Patrick! Welcome to my site! 
         Here you will learn a bit about me as a person, 
@@ -64,7 +64,7 @@ function Skills() {
 
   ];
   return(
-    <section className={`${styles.skills} my-text pt-6 px-12 vpheight`}>
+    <section id="About" className={`${styles.skills} my-text pt-6 px-12 vpheight`}>
       <h3 className="text-center my-title">Skills</h3>
       <ul className="grid rounded grid-cols-2 gap-2 p-6 text-center my-text md:mt-6 mt-2">
         {skills.map((item) => {
