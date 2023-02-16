@@ -36,7 +36,7 @@ export default function Nav(props) {
       )
     }*/
     return (
-      <Link href={`#${item}`} scroll={false} key={index}>
+      <Link name={`Nav ${item}`} href={`#${item}`} scroll={false} key={index}>
         <li onClick={() => {setActive(`#${item}`)}} className={(active === `#${item}`) || (active.indexOf('/'+item+'/') !== -1) || (active === `/${item.split(' ').join('%20')}`) || ((active === '/') && (item === 'Home')) ? `${styles.active} ${styles.standardMenuLink} ${styles.standardMenuItem}` : `${styles.standardMenuLink} ${styles.standardMenuItem}`}>
           {item}
         </li>

@@ -9,7 +9,7 @@ import Nav from '../components/Nav';
 function App({Component, pageProps}) {
   return (
     <React.Fragment>
-      <Link href="#Home" scroll={false}>
+      <Link name="Logo Home" href="#Home" scroll={false}>
         <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
       </Link>
       <Nav links={['Home', 'Skills', 'Work', 'About', 'Contact']}/> {/*'Blog', 'Obsessions' */}

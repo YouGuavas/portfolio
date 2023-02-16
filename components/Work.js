@@ -90,8 +90,8 @@ function Card(props) {
     </div>
     <p className={`col-span-2`}>{props.project.description}</p>
     <p className={`col-span-2`}>View {props.project.live ? "it" : "the code"} here:</p>
-    {props.project.live ? <Link href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it live</Link> : null}
-    {props.project.github ? <Link href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it on github</Link> : null }
+    {props.project.live ? <Link name={`Live link to ${props.project.title}`} href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it live</Link> : null}
+    {props.project.github ? <Link name={`Github link to ${props.project.title}`} href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it on github</Link> : null }
   </div>
   )
 }
