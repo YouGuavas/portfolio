@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.scss';
 function index() {
   
   return (
-    <div className={styles.scroller}>
+    <div>
         <Head>
             <title>Home | Patrick Yambrick</title>
         </Head>
@@ -30,7 +30,7 @@ function index() {
 
 function Lander() {
   return (
-    <section id="Home" className={`p-6 vpheight w-screen ${styles.lander}`}>
+    <section id="Home" className={`p-6 vpheight ${styles.lander}`}>
       <div>
         <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
         <p className={`my-text-mustard`}>Developer.</p>
@@ -42,7 +42,7 @@ function Lander() {
 
 function About() {
   return (
-    <section id="About" className={`my-text-mustard pt-6 px-6 vpheight ${styles.about}`}>
+    <section id="About" className={`my-text-mustard px-6 vpheight vpwidth ${styles.about}`}>
       <h3 className="font-bold text-center my-title" id="About">About Me</h3>
       <p className="px-12">My name is Patrick! Welcome to my site! 
         Here you will learn a bit about me as a person, 
@@ -64,7 +64,7 @@ function Skills() {
 
   ];
   return(
-    <section id="Skills" className={`${styles.skills} my-text px-12 vpheight`}>
+    <section id="Skills" className={`${styles.skills} my-text px-12 vpwidth vpheight`}>
       <h3 className="text-center my-title padded-title">Skills</h3>
       <ul className="grid rounded grid-cols-2 gap-2 p-6 text-center my-text md:mt-6 mt-2">
         {skills.map((item) => {

@@ -7,10 +7,15 @@
 
 .card {
     grid-column: span 1 / span 1;
+    h4 {
+      padding: 1rem 0;
+    }
+    
     @media only screen and (max-width: $md-max)  {
-        //height: 75vh;
-        //width: 90vw;
         scroll-snap-align: center;
         grid-column: span 2 / span 2;
+        div {
+          padding: 2rem;
+        }
       }
 }
