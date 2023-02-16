@@ -68,9 +68,11 @@ body {
 .vpheight {
   height: 100vh;
   scroll-snap-align: start;
-  @media only screen and (min-width:$lg-max) {
+  padding-top: 4rem;
+  @media only screen and (min-width:$md-max) {
    height: 50vh;
    scroll-snap-align: none;
+   padding-top: auto;
  }
  }
 

@@ -66,7 +66,7 @@ export default function Work() {
     },*/
   }
   return (
-    <section id="Work" className={`${styles.work} h-full w-3/4 my-forest-bg p-6 text-center my-text-mustard font-body`}>
+    <section id="Work" className={`${styles.work} h-full my-forest-bg p-6 text-center my-text-mustard font-body`}>
         <h1 className="my-title disappear-md top-10">Personal Projects</h1>
         <p className="disappear-md">These are projects I have done to further my own learning, comprehension, and growth.</p>
         <div className="grid grid-cols-2 gap-2 py-6">
@@ -82,8 +82,8 @@ export default function Work() {
 
 function Card(props) {
   return(
-  <div className={`${styles.card} p-6 h-100 my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center`}>
-    <h3 className="col-span-2 py-2">{props.project.title}</h3>
+  <div className={`${styles.card} vpheight p-6 my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center`}>
+    <h4 className="col-span-2 py-2 padded-title">{props.project.title}</h4>
     <div className="col-span-2 p-2 my-bg-sage">
       <Image className='main-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src1} />
       <Image className='mobile-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src2} />

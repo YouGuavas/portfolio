@@ -70,7 +70,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="Contact" className="my-forest-bg h-screen p-6 grid place-items-center">
+    <section id="Contact" className="my-forest-bg vpheight p-6 grid place-items-center">
       
       <form className="w-full my-text" ref={form} onSubmit={sendEmail}>
 
