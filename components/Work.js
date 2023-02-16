@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Link from 'next/link';
 import codeEditor1 from '../public/images/codeEditor1.png';
 import codeEditor2 from '../public/images/codeEditor2.png';
 import portfolio1 from '../public/images/portfolio1.png';
@@ -69,7 +69,7 @@ export default function Work() {
     <section id="Work" className={`${styles.work} h-full my-forest-bg p-6 text-center my-text-mustard font-body`}>
         <h1 className="my-title disappear-md top-10">Personal Projects</h1>
         <p className="disappear-md">These are projects I have done to further my own learning, comprehension, and growth.</p>
-        <div className="grid grid-cols-2 gap-2 py-6">
+        <div className="grid grid-cols-3 gap-2 py-6">
           {Object.keys(projects).map((item, index) => { 
             const project = projects[item];
             return <Card key={index} project={project} />
@@ -82,16 +82,16 @@ export default function Work() {
 
 function Card(props) {
   return(
-  <div className={`${styles.card} vpheight p-6 my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center`}>
+  <div className={`${styles.card} my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center`}>
     <h4 className="col-span-2">{props.project.title}</h4>
-    <div className="col-span-2 my-bg-sage">
+    <div className={`col-span-2 my-bg-sage ${styles.imageContainer}`}>
       <Image className='main-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src1} />
-      <Image className='mobile-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src2} />
+      <Image className='mobile-image' height={270} width={250} alt="Screenshot of project page" src={props.project.src2} />
     </div>
-    <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-8'}`}>{props.project.description}</p>
-    <p className={`col-span-2 ${props.project.live ? 'my-1' : 'my-4'}`}>View {props.project.live ? "it" : "the code"} here:</p>
-    {props.project.live ? <a href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 rounded p-2 my-2 my-btn">View it live</a> : null}
-    {props.project.github ? <a href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 rounded p-2 my-2 my-btn">View it on github</a> : null }
+    <p className={`col-span-2`}>{props.project.description}</p>
+    <p className={`col-span-2`}>View {props.project.live ? "it" : "the code"} here:</p>
+    {props.project.live ? <Link href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it live</Link> : null}
+    {props.project.github ? <Link href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it on github</Link> : null }
   </div>
   )
 }

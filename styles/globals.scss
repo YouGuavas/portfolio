@@ -11,7 +11,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth !important; //TODO: Figure out why this won't work without !important
+  scroll-behavior: smooth;
 }
 
 body {

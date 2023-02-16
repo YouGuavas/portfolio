@@ -15,7 +15,9 @@
 }
 .skills {
   background-color: $color-2;
+  padding: auto 12rem;
   text-align: center;
+  height: 50vh;
   h3 {
     display: inline;
     padding: 0 0 0.5rem 0;
@@ -28,9 +30,14 @@
   p {
     margin: 1rem auto;
   }
+
 }
 
-
+.lander, .about, .skills {
+  @media only screen and (max-width: $md-max) {
+    scroll-snap-align: center;
+  }
+}
 
 .lander {
     font-size: 3rem;
@@ -41,6 +48,7 @@
     width: 100vw;
     display: flex;
     align-items: center;
+
     div {
       text-align: center;
       margin: 0 auto;
@@ -52,6 +60,7 @@
         font-weight: 100;
       }
     }
+   
     @media only screen and (max-width:$sm-max) {
       font-size: 2rem;
     }

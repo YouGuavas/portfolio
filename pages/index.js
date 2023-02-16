@@ -64,7 +64,7 @@ function Skills() {
 
   ];
   return(
-    <section id="Skills" className={`${styles.skills} my-text px-12 vpwidth vpheight`}>
+    <section id="Skills" className={`${styles.skills} my-text vpwidth vpheight`}>
       <h3 className="text-center my-title padded-title">Skills</h3>
       <ul className="grid rounded grid-cols-2 gap-2 p-6 text-center my-text md:mt-6 mt-2">
         {skills.map((item) => {

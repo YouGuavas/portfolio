@@ -4,18 +4,42 @@
 .work {
   margin: 0 auto;
 }
+.imageContainer {
+  height: 134px;
+  img {
+    height: 100%;
+  }
+  @media only screen and (max-width: $md-max) {
+    height: 270px;
+  }
+}
 
 .card {
     grid-column: span 1 / span 1;
+    height: 60vh;
+    padding: 1rem;
+    &:nth-child(1) {
+      grid-column: span 3 / span 3;
+      @media only screen and (min-width: $md-max) {
+        padding: 1rem 10rem;
+      }
+    }
     h4 {
-      padding: 1rem 0;
+      margin: 1rem 0;
     }
     
     @media only screen and (max-width: $md-max)  {
         scroll-snap-align: center;
-        grid-column: span 2 / span 2;
+        grid-column: span 3 / span 3;
+        height: 75vh;
+        p {
+          font-size: 0.8rem;
+        }
         div {
-          padding: 2rem;
+          margin: 0.5rem;
+        }
+        a {
+          font-size: 0.8rem;
         }
       }
 }
