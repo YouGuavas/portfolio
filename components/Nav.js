@@ -10,7 +10,6 @@ import {useState, useEffect} from 'react';
 export default function Nav(props) {
   const links = props.links;
 
-  const [active, setActive] = useState('');
   
   const renderLinks = (item, index) => {
     
@@ -30,7 +29,7 @@ export default function Nav(props) {
     let scrollY = window.scrollY;
     sections.forEach((section) => {
       const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 50;
+      const sectionTop = section.offsetTop - 500;
       const sectionId = section.getAttribute("id");
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
         document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.add(styles.active);;
@@ -44,8 +43,7 @@ export default function Nav(props) {
   }
 
   useEffect(function() {
-    
-
+    navHighlighter();
     window.addEventListener('scroll', navHighlighter);
     
   }, [links]);
