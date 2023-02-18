@@ -1,9 +1,13 @@
 import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import Nav from '../components/Nav';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
 
+import logo from '../public/images/logo.png';
 import styles from '../styles/Home.module.scss';
 
 
@@ -14,14 +18,16 @@ function index() {
         <Head>
             <title>Home | Patrick Yambrick</title>
         </Head>
+        <Link name="Logo Home" href="#Home" scroll={false}>
+        <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
+      </Link>
+      <Nav links={['Home', 'Skills', 'Work', 'About', 'Contact']}/> {/*'Blog', 'Obsessions' */}
 
         <Lander />
         <Skills />
         <Work />
 
-        <div className="vpheight my-bg-sage">
             <About />
-        </div>
 
         <Contact />
     </div>
@@ -42,7 +48,7 @@ function Lander() {
 
 function About() {
   return (
-    <section id="About" className={`my-text-mustard px-6 vpheight vpwidth ${styles.about}`}>
+    <section id="About" className={`my-bg-sage px-6 vpwidth ${styles.about}`}>
       <h3 className="font-bold text-center my-title" id="About">About Me</h3>
       <p className="px-12">My name is Patrick! Welcome to my site! 
         Here you will learn a bit about me as a person, 
@@ -50,7 +56,7 @@ function About() {
         I like to create things: websites, woodworking projects, 
         and a bit of art here and there. 
         I&apos;d like to help you build something, and <Link className="font-bold rounded my-fade-in my-dotted-underline" href="/Contact">I want you to tell me all about it</Link>.</p>
-      <p className="px-12 my-text-mustard">I&apos;m a full-stack developer, and I love learning new things.</p>
+      <p className="px-12">I&apos;m a full-stack developer, and I love learning new things.</p>
     </section>
   )
 }
