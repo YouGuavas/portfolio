@@ -16,7 +16,7 @@ export default function Nav(props) {
     return (
       <li key={index}>
 
-      <Link href={`#${item}`} className={`${styles.standardMenuLink} ${styles.standardMenuItem}`}  name={`Nav ${item}`}>
+      <Link scroll={false} href={`#${item}`} className={`${styles.standardMenuLink} ${styles.standardMenuItem}`}  name={`Nav ${item}`}>
           {item}
       </Link>
       </li>
