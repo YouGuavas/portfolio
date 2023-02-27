@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Code Editor",
+        "description": "A code editor I built using CodeMirror, React, and Sass. Users should be able to write html, css, and javascript code, and execute it in the iframe below. Html and Css update live, and javascript will run when the button is pressed.",
+        "github": "https://github.com/YouGuavas/code-editor",
+        "live": "https://code-editor-vn5t7dek6-youguavas.vercel.app/",
+        "src1": "/images/codeEditor1.png",
+        "src2": "/images/codeEditor2.png"
+      },
+      {
+        "title": "This Portfolio Website",
+        "description": "A portfolio site I built to display my work using React & Tailwind.",
+        "github":"https://github.com/YouGuavas/portfolio",
+        "src1": "/images/portfolio1.png",
+        "src2": "/images/portfolio2.png"
+  
+      },
+      {
+        "title": "Collectible Shop",
+        "description": "An ecommerce site for an imaginary collectible shop, built with React, Typescript, and Snipcart.",
+        "github": "https://github.com/YouGuavas/component-showcase",
+        "live": "https://guava-component-showcase.web.app/",
+        "src1": "/images/shop1.png",
+        "src2": "/images/showcase2.png"
+  
+      },
+      {
+        "title": "Unit Converter",
+        "description": "A unit converter built with React.",
+        "github": "https://github.com/YouGuavas/unit-converter/",
+        "live": "https://unit-converter-phi-sable.vercel.app/",
+        "src1": "/images/unitConverter1.png",
+        "src2": "/images/unitConverter2.png"
+      }
+]

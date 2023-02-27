@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Nav from '../components/Nav';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
-
+import projects from '../projects.json';
 import logo from '../public/images/logo.png';
 import styles from '../styles/Home.module.scss';
 
@@ -25,7 +25,7 @@ function index() {
 
         <Lander />
         <Skills />
-        <Work />
+        <Work projects={projects}/>
 
             <About />
 
