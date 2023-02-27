@@ -14,7 +14,7 @@ import styles from '../styles/Home.module.scss';
 function index() {
   
   return (
-    <div>
+    <div >
         <Head>
             <title>Home | Patrick Yambrick</title>
         </Head>
