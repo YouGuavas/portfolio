@@ -18,6 +18,7 @@
     grid-column: span 1 / span 1;
     height: 60vh;
     padding: 1rem;
+    overflow: hidden;
     &:nth-child(1) {
       grid-column: span 3 / span 3;
       @media only screen and (min-width: $md-max) {
@@ -34,6 +35,9 @@
         height: 90vh;
         p {
           font-size: 0.8rem;
+        }
+        h4 {
+          margin: 0.2rem 0;
         }
         div {
           margin: 0.5rem;
