@@ -1,12 +1,11 @@
 import React, {useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 
-import Head from 'next/head';
-
+import styles from '../styles/Contact.module.scss';
 
 export default function Contact() {
   const labelClass = "block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard";
-  const inputClass = "my-transition my-text-forest my-placeholder-mustard appearance-none border border-sage block w-full my-sage-bg border rounded py-1 px-4 mb-3 leading-tight"
+  const inputClass = `my-transition leading-tight appearance-none ${styles.inputClass}`;//"my-transition my-text-forest my-placeholder-mustard appearance-none border border-sage block w-full my-sage-bg border rounded py-1 px-4 mb-3 leading-tight"
   
   const [params, setParams] = useState({
     user_name: '',
