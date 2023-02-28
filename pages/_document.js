@@ -19,7 +19,7 @@ class MyDocument extends Document {
             content="Patrick Yambrick's portfolio website"
             />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
             <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald:wght@200&display=swap" rel="stylesheet" />
          </Head>
           <body>
