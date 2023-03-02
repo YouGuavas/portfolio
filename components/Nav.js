@@ -30,10 +30,10 @@ export default function Nav(props) {
       const sectionTop = section.offsetTop - 500;
       const sectionId = section.getAttribute("id");
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").parentNode.classList.add(styles.active);;
+        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").parentElement.classList.add(styles.active);;
       } else {
 
-        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").parentNode.classList.remove(styles.active);
+        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").parentElement.classList.remove(styles.active);
       }
   })
 }
