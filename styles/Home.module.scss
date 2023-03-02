@@ -29,16 +29,17 @@
   color: $color-1;
   height: 75vh;
   padding: 1rem;
-  @media screen and (min-width: $md-max) {
-    padding-top: 6rem;
-  }
   overflow: hidden;
   p {
     margin: 1rem auto;
   }
 
 }
-
+.about, .skills {
+  @media screen and (min-width: $md-max) {
+    padding-top: 6rem;
+  }
+}
 .lander, .about, .skills {
   @media only screen and (max-width: $md-max) {
     scroll-snap-align: center;
