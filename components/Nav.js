@@ -12,9 +12,9 @@ export default function Nav(props) {
   const renderLinks = (item, index) => {
     
     return (
-      <li key={index}>
+      <li className={styles.standardMenuItem} key={index}>
 
-      <Link scroll={false} href={`#${item}`} className={`${styles.standardMenuLink} ${styles.standardMenuItem}`}  name={`Nav ${item}`}>
+      <Link scroll={false} href={`#${item}`} className={`${styles.standardMenuLink}`}  name={`Nav ${item}`}>
           {item}
       </Link>
       </li>
@@ -30,10 +30,10 @@ export default function Nav(props) {
       const sectionTop = section.offsetTop - 500;
       const sectionId = section.getAttribute("id");
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.add(styles.active);;
+        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").parentNode.classList.add(styles.active);;
       } else {
 
-        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.remove(styles.active);
+        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").parentNode.classList.remove(styles.active);
       }
   })
 }
