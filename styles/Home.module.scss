@@ -29,6 +29,10 @@
   color: $color-1;
   height: 75vh;
   padding: 1rem;
+  @media screen and (min-width: $md-max) {
+    padding-top: 6rem;
+  }
+  overflow: hidden;
   p {
     margin: 1rem auto;
   }
