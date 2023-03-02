@@ -60,7 +60,7 @@ function About() {
         python just after high school. I dabbled in that for a while, then forgot about it
         while I explored the world around me. Some years later, I returned to python, 
         and from there began to consider coding as a career. That&apos;s how I discovered
-        HTML, CSS, and Javascript. I thought they'd be an easy way to get my feet wet 
+        HTML, CSS, and Javascript. I thought they&apos;d be an easy way to get my feet wet 
         in the world of programming for pay, and I never could have foreseen 
         the joy and fun they would bring. Now I do my best to write some piece of code
         for a web project every day, and I am always looking to learn new tricks
