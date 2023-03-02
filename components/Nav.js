@@ -1,9 +1,7 @@
 import styles from '../styles/Nav.module.scss';
 import Link from 'next/link';
-//import { Link } from 'react-scroll'
 
-
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 
 
 

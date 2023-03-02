@@ -3,50 +3,6 @@
 .navHeader {
   display: block;
 }
-.menuButton {
-  background-color: $color-2;
-  //border-radius: 0.25rem;
-  border: none;
-  position: fixed;
-  z-index: 1000;
-  height: 3rem;
-  width: 3rem;
-  top:0.1rem;
-  right:0.1rem;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-    &:hover {
-      cursor: pointer;
-    }
-    .bar1, .bar2, .bar3 {
-      width: 1.4rem;
-      height: 0.2rem;
-      background-color: $color-1;
-      margin: 0 auto;
-      transition: 0.7s;
-    }
-    .bar2 {
-      margin: 0.2rem auto;
-    }
-
-    &.change {
-      margin: 0;
-      .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-0.375rem, 0.3rem);
-        transform: rotate(-45deg) translate(-0.3rem, 0.3rem);
-      }
-      .bar2 {
-        opacity: 0;
-      }
-      .bar3 {
-        -webkit-transform: rotate(45deg) translate(-0.25rem, -0.25rem) ;
-        transform: rotate(45deg) translate(-0.25rem, -0.25rem) ;
-      }
-    }
-
-}
 
 .myNavFull {
   position:fixed;
@@ -55,8 +11,10 @@
   height: 10%;
   z-index: 10;
   top: 0;
-  
-  left: 25%;
+  @media only screen and (min-width:$md-max) {
+  left: 50%;
+  transform: translateX(-50%);
+  }
   background-color: $color-2;
   color: $color-1;
   font-weight: 800;
@@ -70,9 +28,7 @@
     left: 0;
   }
 
-  &.change {
-    left: 0;
-  }
+  
   
   .standardMenu { 
     position: absolute;
