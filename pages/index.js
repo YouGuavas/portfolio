@@ -21,13 +21,13 @@ function index() {
         <Link name="Logo Home" href="#Home" scroll={false}>
         <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
       </Link>
-      <Nav links={['Home', 'Skills', 'Work', 'About', 'Contact']}/> {/*'Blog', 'Obsessions' */}
+      <Nav links={['Home', 'About', 'Work', 'Skills', 'Contact']}/> {/*'Blog', 'Obsessions' */}
 
         <Lander />
-        <Skills />
-        <Work projects={projects}/>
+        <About />
 
-            <About />
+        <Work projects={projects}/>
+        <Skills />
 
         <Contact />
     </div>
