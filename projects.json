@@ -3,7 +3,7 @@
         "title": "Code Editor",
         "description": "A code editor I built using CodeMirror, React, and Sass. Users should be able to write html, css, and javascript code, and execute it in the iframe below. Html and Css update live, and javascript will run when the button is pressed.",
         "github": "https://github.com/YouGuavas/code-editor",
-        "live": "https://code-editor-vn5t7dek6-youguavas.vercel.app/",
+        "live": "https://code-editor-sage.vercel.app/",
         "src1": "/images/codeEditor1.png",
         "src2": "/images/codeEditor2.png"
       },
