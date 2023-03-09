@@ -34,6 +34,8 @@
     margin: 1rem auto;
   }
   @media screen and (max-width: $md-max) {
+    height: 100vh;
+    padding-top: 6rem;
     font-size: 0.8rem;
   }
 
