@@ -3,6 +3,21 @@
 @tailwind utilities;
 @import '../utils/_variables.scss';
 
+:root {
+  --color-1: salmon;
+  --color-2: white;
+  --color-3: #53744f;
+  --color-4: red;
+
+  @media (prefers-color-scheme: dark) {
+    --color-1: rgb(0,0,0);
+    --color-2: rgb(230, 230, 230);
+    --color-3: #53744f;
+    --color-4: rgba(25,25,25, 0.8);
+  }
+}
+
+
 * {
   font-family: sans-serif;
 }
@@ -15,9 +30,9 @@ html {
 }
 
 body {
-  background-color: $color-1;
+  background-color: var(--color-1);
   *:focus {
-    outline: 1px solid $color-3;
+    outline: 1px solid var(--color-3);
   }
 }
 
@@ -37,31 +52,31 @@ body {
 
 .my-hr {
   border-top: none;
-  border-bottom: 1px solid $color-1;
+  border-bottom: 1px solid var(--color-1);
   width: 8rem;
   border-radius: 50px;
   margin: auto;
 }
 .my-text, .my-text-sage {
-  color: $color-1;
+  color: var(--color-1);
 }
 .my-text-forest {
-  color: $color-3;
+  color: var(--color-3);
 }
 .my-text-mustard {
-  color: $color-2;
+  color: var(--color-2);
 }
 .my-text-hover:hover {
-  color: $color-1;
+  color: var(--color-1);
 }
 .my-text-forest-hover:hover {
-  color: $color-3;
+  color: var(--color-3);
 }
 .my-placeholder-mustard::placeholder {
-  color: $color-3;
+  color: var(--color-3);
 }
 .my-placeholder-dark::placeholder {
-  color: $color-1;
+  color: var(--color-1);
 }
 .my-transition {
   transition: 0.3s;
@@ -100,11 +115,11 @@ body {
   }
 }
 .my-background {
-  background-color: $color-3;
+  background-color: var(--color-3);
 }
 .my-col-span-3 {
   grid-column: span 1 / span 1;
-  @media only screen and (max-width: $md-max) {
+  @media only screen and (max-width: --md-max) {
     grid-column: span 3 / span 3;
   }
 }
@@ -113,16 +128,16 @@ body {
   cursor: pointer;
 }
 .my-btn {
-  //background-color: $color-1;
-  color: $color-1;
+  //background-color: var(--color-1);
+  color: var(--color-1);
   display: inline;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  border-bottom: 1px solid $color-3;
+  border-bottom: 1px solid var(--color-3);
 
   &:hover {
-    //background-color: $color-4;
-    color: $color-3;
+    //background-color: var(--color-4);
+    color: var(--color-3);
   }
 }
 .main-image {
@@ -139,25 +154,25 @@ body {
 }
 
 .my-contact-btn {
-  background-color: $color-2;
-  color: $color-1;
+  background-color: var(--color-2);
+  color: var(--color-1);
   &:hover {
-    background-color: $color-3;
-    color: $color-1;
+    background-color: var(--color-3);
+    color: var(--color-1);
   }
 }
 
 
 .my-nav-btn {
-  color: $color-2;
+  color: var(--color-2);
   &:hover {
-    color: $color-1;
-    background-color: $color-3;
+    color: var(--color-1);
+    background-color: var(--color-3);
   }
 }
 .my-nav-btn-active {
-  color: $color-1;
-  background-color: $color-3;
+  color: var(--color-1);
+  background-color: var(--color-3);
   transition: 0.3s;
 }
 
@@ -166,10 +181,10 @@ body {
   transition: 0.4s;
 }
 .my-bg-mustard-hover:hover {
-  background-color: $color-3;
+  background-color: var(--color-3);
 }
 .my-bg-hover:hover {
-  background-color: $color-3;
+  background-color: var(--color-3);
 }
 .my-bg-forest-hover:hover {
   background-color: rgba(140, 247, 40, 0.322);
@@ -177,24 +192,24 @@ body {
 
 
 .my-bg-forest {
-  background-color: $color-1;
+  background-color: var(--color-1);
 }
 .my-bg-sage {
-  background-color: $color-2;
+  background-color: var(--color-2);
 }
 .my-bg-mustard {
-  background-color: $color-3;
+  background-color: var(--color-3);
 }
 
 
 .border-sage {
-  border-color: $color-2;
+  border-color: var(--color-2);
 }
 .border-mustard {
-  border-color: $color-3;
+  border-color: var(--color-3);
 }
 .border-forest {
-  border-color: $color-1;
+  border-color: var(--color-1);
 }
 
 
@@ -218,9 +233,15 @@ h1.my-title {
   left:0.1rem;
   height: 4rem;
   width: 4rem;
-  background-color: $color-1;
+  background-color: var(--color-1);
   border-radius: 0.2rem;
   @media only screen and (max-width:$md-max) {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
 }
