@@ -25,6 +25,7 @@ export default function Nav(props) {
     if (window) {
     const sections = document.querySelectorAll("section[id]");
     let scrollY = window.scrollY;
+    
     sections.forEach((section) => {
       const sectionHeight = section.offsetHeight;
       const sectionTop = section.offsetTop - 500;
