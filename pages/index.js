@@ -3,9 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Work from '../components/Work';
 import Contact from '../components/Contact';
-import projects from '../projects.json';
 import logo from '../public/images/logo.png';
 import styles from '../styles/Home.module.scss';
 
@@ -23,7 +21,6 @@ function index() {
 
         <Lander />
 
-        <Work projects={projects}/>
         <Skills />
 
         <Contact />
