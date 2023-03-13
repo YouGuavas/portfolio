@@ -1,9 +1,14 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 
 
 export default function About() {
     return (
+        <div>
+            <Head>
+            <title>Home | Patrick Yambrick</title>
+        </Head>
       <section id="About" className={`my-bg-sage px-6 vpwidth ${styles.about}`}>
         <h3 className="font-bold text-center my-title" id="About">About Me</h3>
         <p className="px-12">Hi, my name is Patrick! Welcome to my site!</p>
@@ -25,5 +30,6 @@ export default function About() {
           <p className="px-12">
           I&apos;d like to help you build something, and <Link className="font-bold rounded my-fade-in my-dotted-underline" href="/Contact">I want you to tell me all about it</Link>.</p>
       </section>
+      </div>
     )
   }

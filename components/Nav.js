@@ -14,7 +14,7 @@ export default function Nav(props) {
     return (
       <li key={index}>
 
-      <Link scroll={false} href={`#${item}`} className={`${styles.standardMenuLink}`}  name={`Nav ${item}`}>
+      <Link scroll={false} href={props.pages.indexOf(item.toLowerCase()) !== -1 ? `${item.toLowerCase()}` : `/#${item}`} className={`${styles.standardMenuLink}`}  name={`Nav ${item}`}>
           {item}
       </Link>
       </li>
@@ -28,31 +28,29 @@ export default function Nav(props) {
     if (window) {
     const sections = document.querySelectorAll("section[id]");
     let scrollY = window.scrollY;
+    let pageName = window.location.pathname;
 
-    pages.map((page) => {
-      let pageName = window.location.pathname;
-      if (pageName === '/') return;
-      if (pageName.indexOf('posts') !== -1) {
-        pageName = '/blog';
-      } else {
-      console.log(page, pageName, 'WOOOOOOO')
-      }
-      if (pageName === '/'+page) {  
-        document.querySelector(`nav a[href=` + `'${pageName}'` + "]").classList.add(styles.active);;
-      } else {
-        document.querySelector(`nav a[href=` + `'${pageName}'` + "]").classList.remove(styles.active);;
-      }
+    if (pageName.indexOf('#') !== -1 || pageName === '/') {
+      sections.forEach((section) => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 500;
+        const sectionId = section.getAttribute("id");
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.add(styles.active);
+        } else {
+          document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.remove(styles.active);
+        }
     })
-    sections.forEach((section) => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 500;
-      const sectionId = section.getAttribute("id");
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.add(styles.active);;
-      } else {
-        document.querySelector(`nav a[href=` + `'/#${sectionId}'` + "]").classList.remove(styles.active);
-      }
-  })
+    } else {
+      pages.map((page) => {
+        if (pageName === '/') return;
+        if (pageName === '/'+page) {  
+          document.querySelector(`nav a[href=` + `'${pageName}'` + "]").classList.add(styles.active);
+        } else {
+          document.querySelector(`nav a[href=` + `'${pageName}'` + "]").classList.remove(styles.active);
+        }
+      })
+}
 }
     
   }

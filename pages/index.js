@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Nav from '../components/Nav';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
 import projects from '../projects.json';
@@ -19,8 +18,8 @@ function index() {
             <title>Home | Patrick Yambrick</title>
         </Head>
         <Link name="Logo Home" href="#Home" scroll={false}>
-        <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
-      </Link>
+          <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
+        </Link>
 
         <Lander />
 
