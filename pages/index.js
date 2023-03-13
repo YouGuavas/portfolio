@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Contact from '../components/Contact';
 import logo from '../public/images/logo.png';
 import styles from '../styles/Home.module.scss';
 
@@ -15,15 +14,11 @@ function index() {
         <Head>
             <title>Home | Patrick Yambrick</title>
         </Head>
-        <Link name="Logo Home" href="#Home" scroll={false}>
-          <Image alt="My personal logo" className="my-logo" height={96} width={96} src={logo.src} />
-        </Link>
 
         <Lander />
 
         <Skills />
 
-        <Contact />
     </div>
   );
 }

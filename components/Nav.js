@@ -14,7 +14,7 @@ export default function Nav(props) {
     return (
       <li key={index}>
 
-      <Link scroll={false} href={props.pages.indexOf(item.toLowerCase()) !== -1 ? `${item.toLowerCase()}` : `/#${item}`} className={`${styles.standardMenuLink}`}  name={`Nav ${item}`}>
+      <Link scroll={false} id={item.toLowerCase()} href={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className={`${styles.standardMenuLink}`}  name={`Nav ${item}`}>
           {item}
       </Link>
       </li>
@@ -25,14 +25,14 @@ export default function Nav(props) {
     const pages = props.pages;
     if (window) {
     let pageName = window.location.pathname;
-    pages.map((page) => {
-        if (pageName === '/') return;
-        if (pageName === '/'+page) {  
-          document.querySelector(`nav a[href=` + `'${pageName}'` + "]").classList.add(styles.active);
-        } else {
-          document.querySelector(`nav a[href=` + `'${pageName}'` + "]").classList.remove(styles.active);
-        }
-      })
+    document.querySelectorAll('nav a').forEach((link) => {
+      link.classList.remove(styles.active);
+      }
+    )
+    if (pageName === '/') {
+      return document.getElementById('home').classList.add(styles.active);
+    }
+    document.getElementById(`${pageName.slice(1)}`).classList.add(styles.active);
   }
   }
 
