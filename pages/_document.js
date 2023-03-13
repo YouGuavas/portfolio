@@ -24,7 +24,7 @@ class MyDocument extends Document {
             <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald:wght@200&display=swap" rel="stylesheet" />
          </Head>
           <body id="#body">
-          <Nav links={['Home', 'About', 'Work', 'Skills', 'Contact']}/> {/*'Blog', 'Obsessions' */}
+          <Nav links={['Home', 'About', 'Work', 'Skills', 'Contact']} pages={['about']}/> {/*'Blog', 'Obsessions' */}
 
             <Main />
             <NextScript />
