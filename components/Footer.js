@@ -4,6 +4,5 @@ export default function Footer() {
         <footer className={styles.footer}>
             Feet
         </footer>
-       
     )
 }

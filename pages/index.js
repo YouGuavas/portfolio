@@ -5,14 +5,14 @@ import styles from '../styles/Home.module.scss';
 
 
 function index() {
-  
+
   return (
     <div >
-        <Head>
-            <title>Home | Patrick Yambrick</title>
-        </Head>
+      <Head>
+        <title>Home | Patrick Yambrick</title>
+      </Head>
 
-        <Lander />
+      <Lander />
 
     </div>
   );
