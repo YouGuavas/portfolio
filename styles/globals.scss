@@ -12,10 +12,10 @@
   --main-height: calc(100vh - var(--footer-height));
 
   @media (prefers-color-scheme: dark) {
-    --color-1: rgb(0,0,0);
+    --color-1: rgb(0, 0, 0);
     --color-2: rgb(230, 230, 230);
     --color-3: #53744f;
-    --color-4: rgba(25,25,25, 0.8);
+    --color-4: rgba(25, 25, 25, 0.8);
   }
 }
 
@@ -33,6 +33,7 @@ html {
 
 body {
   background-color: var(--color-1);
+
   *:focus {
     outline: 1px solid var(--color-3);
   }
@@ -45,8 +46,10 @@ body {
   text-decoration-thickness: 0.15rem;
   text-underline-offset: 0.15rem;
 }
+
 .my-fade-in {
   transition: 0.4s;
+
   &:hover {
     opacity: 65%;
   }
@@ -59,67 +62,86 @@ body {
   border-radius: 50px;
   margin: auto;
 }
-.my-text, .my-text-sage {
+
+.my-text,
+.my-text-sage {
   color: var(--color-1);
 }
+
 .my-text-forest {
   color: var(--color-3);
 }
+
 .my-text-mustard {
   color: var(--color-2);
 }
+
 .my-text-hover:hover {
   color: var(--color-1);
 }
+
 .my-text-forest-hover:hover {
   color: var(--color-3);
 }
+
 .my-placeholder-mustard::placeholder {
   color: var(--color-3);
 }
+
 .my-placeholder-dark::placeholder {
   color: var(--color-1);
 }
+
 .my-transition {
   transition: 0.3s;
 }
 
- .vpwidth {
+.vpwidth {
   width: 100vw;
- }
+}
 
 .lander {
   font-size: 3rem;
   padding-top: 3rem;
   letter-spacing: 0.1rem;
   font-weight: 100;
+
   @media only screen and (max-width:$sm-max) {
     font-size: 2rem;
   }
+
   p {
     &:nth-child(2) {
       margin-top: 1rem;
     }
   }
 }
+
 .disappear-md {
-  @media only screen and (max-width: $md-max)  {
+  @media only screen and (max-width: $md-max) {
     display: none;
   }
 }
+
 .my-background {
   background-color: var(--color-3);
 }
+
 .my-col-span-3 {
   grid-column: span 1 / span 1;
+
   @media only screen and (max-width: --md-max) {
     grid-column: span 3 / span 3;
   }
 }
-.my-btn, .my-contact-btn, .my-nav-btn {
+
+.my-btn,
+.my-contact-btn,
+.my-nav-btn {
   transition: 0.7s;
   cursor: pointer;
 }
+
 .my-btn {
   //background-color: var(--color-1);
   color: var(--color-1);
@@ -133,14 +155,18 @@ body {
     color: var(--color-3);
   }
 }
+
 .main-image {
   display: none;
+
   @media only screen and (min-width: $md-max) {
     display: block;
   }
 }
+
 .mobile-image {
   display: none;
+
   @media only screen and (max-width: $md-max) {
     display: block;
   }
@@ -149,6 +175,7 @@ body {
 .my-contact-btn {
   background-color: var(--color-2);
   color: var(--color-1);
+
   &:hover {
     background-color: var(--color-3);
     color: var(--color-1);
@@ -158,11 +185,13 @@ body {
 
 .my-nav-btn {
   color: var(--color-2);
+
   &:hover {
     color: var(--color-1);
     background-color: var(--color-3);
   }
 }
+
 .my-nav-btn-active {
   color: var(--color-1);
   background-color: var(--color-3);
@@ -170,15 +199,21 @@ body {
 }
 
 
-.my-bg-mustard-hover, .my-bg-forest-hover, .my-bg-hover, .my-text-forest-hover {
+.my-bg-mustard-hover,
+.my-bg-forest-hover,
+.my-bg-hover,
+.my-text-forest-hover {
   transition: 0.4s;
 }
+
 .my-bg-mustard-hover:hover {
   background-color: var(--color-3);
 }
+
 .my-bg-hover:hover {
   background-color: var(--color-3);
 }
+
 .my-bg-forest-hover:hover {
   background-color: rgba(140, 247, 40, 0.322);
 }
@@ -187,9 +222,11 @@ body {
 .my-bg-forest {
   background-color: var(--color-1);
 }
+
 .my-bg-sage {
   background-color: var(--color-2);
 }
+
 .my-bg-mustard {
   background-color: var(--color-3);
 }
@@ -198,20 +235,25 @@ body {
 .border-sage {
   border-color: var(--color-2);
 }
+
 .border-mustard {
   border-color: var(--color-3);
 }
+
 .border-forest {
   border-color: var(--color-1);
 }
 
 
-h1.my-title, h2.my-title, h3.my-title {
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-family: sans-serif;
+h1.my-title,
+h2.my-title,
+h3.my-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: sans-serif;
 }
+
 h1.my-title {
   font-size: 1.2rem;
 }
@@ -219,15 +261,17 @@ h1.my-title {
 .top-10 {
   margin-top: 10%;
 }
+
 .my-logo {
   position: fixed;
   z-index: 10;
-  top:0.1rem;
-  left:0.1rem;
+  top: 0.1rem;
+  left: 0.1rem;
   height: 4rem;
   width: 4rem;
   background-color: var(--color-1);
   border-radius: 0.2rem;
+
   @media only screen and (max-width:$md-max) {
     display: none;
   }

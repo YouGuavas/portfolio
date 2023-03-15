@@ -2,9 +2,9 @@
 
 .footer {
     background-color: var(--color-2);
-    opacity: 90%;
     color: var(--color-3);
     padding: 1rem;
     text-align: center;
     height: var(--footer-height);
+    opacity: var(--main-opacity);
 }
