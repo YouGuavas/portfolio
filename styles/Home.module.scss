@@ -62,8 +62,4 @@
   @media only screen and (max-width:$sm-max) {
     font-size: 2rem;
   }
-
-  @media only screen and (max-width: $md-max) {
-    scroll-snap-align: center;
-  }
 }

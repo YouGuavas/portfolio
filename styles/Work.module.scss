@@ -3,47 +3,57 @@
 
 .work {
   margin: 0 auto;
+  padding: 0 3rem;
 }
+
 .imageContainer {
   height: 134px;
+
   img {
     height: 100%;
   }
+
   @media only screen and (max-width: $md-max) {
     height: 270px;
   }
 }
 
 .card {
-    grid-column: span 1 / span 1;
-    height: 60vh;
-    padding: 1rem;
-    overflow: hidden;
-    &:nth-child(1) {
-      grid-column: span 3 / span 3;
-      @media only screen and (min-width: $md-max) {
-        padding: 1rem 10rem;
-      }
+  grid-column: span 1 / span 1;
+  height: 60vh;
+  padding: 1rem;
+  overflow: hidden;
+
+  &:nth-child(1) {
+    grid-column: span 3 / span 3;
+
+    @media only screen and (min-width: $md-max) {
+      padding: 1rem 10rem;
     }
+  }
+
+  h4 {
+    margin: 1rem 0;
+  }
+
+  @media only screen and (max-width: $md-max) {
+    grid-column: span 3 / span 3;
+    height: 70vh;
+
+    p {
+      font-size: 0.8rem;
+    }
+
     h4 {
-      margin: 1rem 0;
+      margin: 0.2rem 0;
     }
-    
-    @media only screen and (max-width: $md-max)  {
-        scroll-snap-align: center;
-        grid-column: span 3 / span 3;
-        height: 90vh;
-        p {
-          font-size: 0.8rem;
-        }
-        h4 {
-          margin: 0.2rem 0;
-        }
-        div {
-          margin: 0.5rem;
-        }
-        a {
-          font-size: 0.8rem;
-        }
-      }
+
+    div {
+      margin: 0.5rem;
+    }
+
+    a {
+      font-size: 0.8rem;
+    }
+  }
 }
