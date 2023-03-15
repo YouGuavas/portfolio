@@ -4,12 +4,13 @@
 @import '../utils/_variables.scss';
 
 :root {
-  --color-1: white;
+  --color-1: rgb(240, 240, 220);
   --color-2: white;
   --color-3: #53744f;
   --color-4: red;
   --footer-height: 10vh;
   --main-height: calc(100vh - var(--footer-height));
+  --style-font-1: 'Amatic SC', 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   @media (prefers-color-scheme: dark) {
     --color-1: rgb(0, 0, 0);
