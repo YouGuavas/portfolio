@@ -4,7 +4,7 @@
 @import '../utils/_variables.scss';
 
 :root {
-  --color-1: salmon;
+  --color-1: white;
   --color-2: white;
   --color-3: #53744f;
   --color-4: red;
@@ -83,16 +83,7 @@ body {
 .my-transition {
   transition: 0.3s;
 }
-.vpheight {
-  height: 100vh;
-  scroll-snap-align: start;
-  padding-top: 5rem;
-  @media only screen and (min-width:$md-max) {
-   height: 50vh;
-   scroll-snap-align: none;
-   padding-top: 1rem;
- }
- }
+
  .vpwidth {
   width: 100vw;
  }

@@ -14,14 +14,13 @@ function index() {
 
         <Lander />
 
-
     </div>
   );
 }
 
 function Lander() {
   return (
-    <section id="Home" className={`p-6 ${styles.lander}`}>
+    <section id="Home" className={`${styles.lander}`}>
       <div>
         <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
         <p className={`my-text-mustard`}>Developer.</p>
