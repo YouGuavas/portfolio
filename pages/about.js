@@ -10,7 +10,7 @@ export default function About() {
             <Head>
                 <title>About | Patrick Yambrick</title>
             </Head>
-            <section id="About" className={`my-bg-sage px-6 vpwidth ${styles.about}`}>
+            <section id="About" className={`px-6 ${styles.about}`}>
                 <h3 className="font-bold text-center my-title" id="About">About Me</h3>
                 <p className="px-12">Hi, my name is Patrick! Welcome to my site!</p>
                 <p className="px-12">

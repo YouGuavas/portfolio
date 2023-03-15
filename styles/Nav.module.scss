@@ -42,8 +42,9 @@
       text-decoration: none;
       transition: 0.4s;
       font-weight: 200;
-      font-size: 1rem;
-      line-height: 1.3rem;
+      font-size: 1.3rem;
+      font-family: var(--style-font-1);
+      line-height: 1.6rem;
       letter-spacing: 0.2rem;
       margin: 0 0.8rem;
       cursor: pointer;
@@ -62,7 +63,7 @@
       &:hover,
       &.active {
         color: var(--color-3);
-        font-size: 1.3rem;
+        font-size: 1.6rem;
 
         @media only screen and (max-width:$md-max) {
           font-size: 1.1rem;

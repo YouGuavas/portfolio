@@ -15,11 +15,6 @@
   }
 }
 
-.titleWrapper {
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-
 .lander {
 
   font-size: 3rem;
@@ -29,7 +24,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  background-image: radial-gradient(var(--color-3) 5%, var(--color-3) 15%, var(--color-1) 60%);
+  background-image: radial-gradient(var(--color-3) 5%, var(--color-1) 75%, var(--color-1) 60%);
 
   p {
     &:nth-child(2) {
@@ -51,7 +46,10 @@
     .titleWrapper {
       display: inline-block;
       font-family: inherit;
-      margin-top: 33vh;
+      font-weight: 1000;
+      opacity: 100%;
+      margin-top: 31vh;
+      padding: 1rem;
     }
 
     p {

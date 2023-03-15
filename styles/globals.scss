@@ -5,16 +5,16 @@
 
 :root {
   --color-1: rgb(240, 240, 220);
-  --color-2: white;
+  --color-2: black;
   --color-3: #53744f;
   --color-4: red;
   --footer-height: 10vh;
-  --main-height: calc(100vh - var(--footer-height));
+  --main-height: calc(100vh);
   --style-font-1: 'Amatic SC', 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   @media (prefers-color-scheme: dark) {
     --color-1: rgb(0, 0, 0);
-    --color-2: rgb(230, 230, 230);
+    --color-2: rgb(220, 220, 220);
     --color-3: #53744f;
     --color-4: rgba(25, 25, 25, 0.8);
   }
