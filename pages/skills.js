@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/skills.module.scss';
 
 export default function Skills() {
     const skills = [{name: 'React', url: 'https://reactjs.org/'}, 

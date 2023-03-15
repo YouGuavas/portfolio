@@ -8,6 +8,8 @@
   --color-2: white;
   --color-3: #53744f;
   --color-4: red;
+  --footer-height: 10vh;
+  --main-height: calc(100vh - var(--footer-height));
 
   @media (prefers-color-scheme: dark) {
     --color-1: rgb(0,0,0);

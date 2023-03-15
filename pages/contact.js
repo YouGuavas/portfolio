@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Head from 'next/head';
 
 
-import styles from '../styles/Contact.module.scss';
+import styles from '../styles/contact.module.scss';
 
 export default function Contact() {
   const labelClass = "block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard";
@@ -75,7 +75,7 @@ export default function Contact() {
         <Head>
             <title>Contact | Patrick Yambrick</title>
         </Head>
-        <section id="Contact" className="my-forest-bg vpheight p-6 grid place-items-center">
+        <section className={`my-forest-bg p-6 grid place-items-center ${styles.contact}`}>
         
         <form className="w-full my-text" ref={form} onSubmit={sendEmail}>
 

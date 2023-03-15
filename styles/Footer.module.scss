@@ -1,0 +1,9 @@
+@import '../utils/_variables.scss';
+
+.footer {
+    background-color: var(--color-2);
+    color: var(--color-3);
+    padding: 1rem;
+    text-align: center;
+    height: var(--footer-height);
+}
