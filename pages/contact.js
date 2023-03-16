@@ -77,9 +77,17 @@ export default function Contact() {
         <title>Contact | Patrick Yambrick</title>
       </Head>
       <section className={`my-forest-bg p-6 grid place-items-center ${styles.contact}`}>
-
-        <form className="w-full my-text" ref={form} onSubmit={sendEmail}>
-
+        <div className="flex flex-wrap">
+          <h2 className={`${styles.jumbo} mx-2 pt-4`}>Email:</h2>
+          <p className={`${styles.jumbo} mx-2 pt-4`}>patrickyambrick@gmail.com</p>
+        </div>
+        <p>Or:</p>
+        <form name="contact form" className="w-full my-text" ref={form} onSubmit={sendEmail}>
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/2 px-3">
+              <label htmlFor="contact form" className={styles.contactTitle}>Contact Me</label>
+            </div>
+          </div>
           <div className="flex flex-wrap">
 
             <div className="w-full md:w-1/2 px-3">

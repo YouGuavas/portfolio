@@ -24,7 +24,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  background-image: radial-gradient(var(--color-3) 5%, var(--color-1) 75%, var(--color-1) 60%);
+  background-image: var(--primary-gradient);
 
   p {
     &:nth-child(2) {
@@ -40,7 +40,7 @@
     background-image: url('../public/images/background-forest.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 70%;
+    opacity: var(--semi-transparent);
     font-family: var(--style-font-1);
 
     .titleWrapper {
@@ -50,6 +50,7 @@
       opacity: 100%;
       margin-top: 31vh;
       padding: 1rem;
+
     }
 
     p {

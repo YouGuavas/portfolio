@@ -46,6 +46,8 @@
       font-family: var(--style-font-1);
       line-height: 1.6rem;
       letter-spacing: 0.2rem;
+      padding: 0 0.5rem;
+      border-radius: 0.1rem;
       margin: 0 0.8rem;
       cursor: pointer;
 
@@ -62,8 +64,10 @@
 
       &:hover,
       &.active {
-        color: var(--color-3);
+        color: var(--color-1);
         font-size: 1.6rem;
+        background-color: var(--color-2);
+        opacity: var(--semi-transparent);
 
         @media only screen and (max-width:$md-max) {
           font-size: 1.1rem;
