@@ -3,8 +3,13 @@
 
 .work {
   margin: 0 auto;
-  padding: 0 3rem;
+
+  .my-overlay {
+    height: 100%;
+    padding: 0;
+  }
 }
+
 
 .imageContainer {
   height: 134px;

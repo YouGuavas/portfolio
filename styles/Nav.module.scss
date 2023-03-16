@@ -17,7 +17,7 @@
     transform: translateX(-50%);
   }
 
-  //background-color: var(--color-2);
+
   color: var(--color-2);
   font-weight: 800;
   display: flex;
@@ -43,11 +43,18 @@
       transition: 0.4s;
       font-weight: 200;
       font-size: 1.3rem;
+      font-weight: 1000;
       font-family: var(--style-font-1);
+      background-color: var(--color-1);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: rgba(0, 0, 0, 0%);
+      }
+
       line-height: 1.6rem;
       letter-spacing: 0.2rem;
       padding: 0 0.5rem;
-      border-radius: 0.1rem;
+      border-radius: 0.15rem;
       margin: 0 0.8rem;
       cursor: pointer;
 
@@ -66,7 +73,7 @@
       &.active {
         color: var(--color-1);
         font-size: 1.6rem;
-        background-color: var(--color-2);
+        background-color: var(--color-4);
         opacity: var(--semi-transparent);
 
         @media only screen and (max-width:$md-max) {

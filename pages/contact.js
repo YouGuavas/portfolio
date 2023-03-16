@@ -76,50 +76,52 @@ export default function Contact() {
       <Head>
         <title>Contact | Patrick Yambrick</title>
       </Head>
-      <section className={`my-forest-bg p-6 grid place-items-center ${styles.contact}`}>
-        <div className="flex flex-wrap">
-          <h2 className={`${styles.jumbo} mx-2 pt-4`}>Email:</h2>
-          <p className={`${styles.jumbo} mx-2 pt-4`}>patrickyambrick@gmail.com</p>
+      <section className={`my-background-generic place-items-center ${styles.contact}`}>
+        <div className={`my-overlay grid place-items-center`}>
+          <div className="flex flex-wrap">
+            <h2 className={`${styles.jumbo} mx-2 pt-4`}>Email:</h2>
+            <p className={`${styles.jumbo} mx-2 pt-4`}>patrickyambrick@gmail.com</p>
+          </div>
+          <p className={styles.or}>Or:</p>
+          <form name="contact form" className="w-full my-text" ref={form} onSubmit={sendEmail}>
+            <div className="flex flex-wrap">
+              <div className="w-full px-3">
+                <label htmlFor="contact form" className={styles.contactTitle}>Contact Me</label>
+              </div>
+            </div>
+            <div className="flex flex-wrap">
+
+              <div className="w-full md:w-1/2 px-3">
+                <label className={labelClass}>Name</label>
+                <input required className={inputClass} onChange={(e) => handleChange(e)} type="text" id="user_name" name="user_name" placeholder="John Doe" />
+              </div>
+
+              <div className="w-full md:w-1/2 px-3">
+                <label className={labelClass}>Email</label>
+                <input required className={inputClass} onChange={(e) => handleChange(e)} type="email" id="user_email" name="user_email" placeholder="abc@123.com" />
+              </div>
+
+            </div>
+
+            <div className="flex flex-wrap">
+
+              <div className="w-full px-3">
+                <label className={labelClass}>Message</label>
+                <textarea required className={inputClass} rows="4" id="user_message" style={{ resize: "none" }} onChange={(e) => handleChange(e)} name="message" placeholder="Leave a message for me here!" />
+              </div>
+
+            </div>
+
+            <div className="flex flex-wrap">
+
+              <div className="w-full px-3">
+                <input className="my-contact-btn my-text w-full p-2 rounded block uppercase tracking-wide text-xs font-bold mb-2" type="submit" value="Send" />
+              </div>
+
+            </div>
+
+          </form>
         </div>
-        <p>Or:</p>
-        <form name="contact form" className="w-full my-text" ref={form} onSubmit={sendEmail}>
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-1/2 px-3">
-              <label htmlFor="contact form" className={styles.contactTitle}>Contact Me</label>
-            </div>
-          </div>
-          <div className="flex flex-wrap">
-
-            <div className="w-full md:w-1/2 px-3">
-              <label className={labelClass}>Name</label>
-              <input required className={inputClass} onChange={(e) => handleChange(e)} type="text" id="user_name" name="user_name" placeholder="John Doe" />
-            </div>
-
-            <div className="w-full md:w-1/2 px-3">
-              <label className={labelClass}>Email</label>
-              <input required className={inputClass} onChange={(e) => handleChange(e)} type="email" id="user_email" name="user_email" placeholder="abc@123.com" />
-            </div>
-
-          </div>
-
-          <div className="flex flex-wrap">
-
-            <div className="w-full px-3">
-              <label className={labelClass}>Message</label>
-              <textarea required className={inputClass} rows="4" id="user_message" style={{ resize: "none" }} onChange={(e) => handleChange(e)} name="message" placeholder="Leave a message for me here!" />
-            </div>
-
-          </div>
-
-          <div className="flex flex-wrap">
-
-            <div className="w-full px-3">
-              <input className="my-contact-btn my-text w-full p-2 rounded block uppercase tracking-wide text-xs font-bold mb-2" type="submit" value="Send" />
-            </div>
-
-          </div>
-
-        </form>
       </section>
     </div>
   )

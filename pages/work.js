@@ -12,15 +12,17 @@ export default function Work() {
       <Head>
         <title>Work | Patrick Yambrick</title>
       </Head>
-      <section id="Work" className={`${styles.work} my-forest-bg text-center my-text-mustard`}>
-        <h1 className="my-title disappear-md top-10">Personal Projects</h1>
-        <p className="disappear-md">These are projects I have done to further my own learning, comprehension, and growth.</p>
-        <div className="grid grid-cols-3 gap-2 py-6">
-          {projects.map((item, index) => {
-            const project = item;
-            return <Card key={index} project={project} />
-          }
-          )}
+      <section id="Work" className={`${styles.work} my-background-generic text-center my-text-mustard`}>
+        <div className="my-overlay">
+          <h1 className="my-title disappear-md">Personal Projects</h1>
+          <p className="disappear-md">These are projects I have done to further my own learning, comprehension, and growth.</p>
+          <div className="grid grid-cols-3 gap-2 py-6">
+            {projects.map((item, index) => {
+              const project = item;
+              return <Card key={index} project={project} />
+            }
+            )}
+          </div>
         </div>
       </section>
     </div>

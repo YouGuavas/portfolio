@@ -24,7 +24,7 @@ function Lander() {
       <div className={styles.landerOverlay}>
         <div className={styles.titleWrapper}>
           <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
-          <p className={`my-text-mustard`}>Developer.</p>
+          <p className={`my-text-mustard`}>Developer</p>
         </div>
       </div>
     </section>

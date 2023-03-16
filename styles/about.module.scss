@@ -3,7 +3,6 @@
 .about {
     color: var(--color-2);
     height: var(--main-height);
-    padding: 1rem;
     overflow: hidden;
 
     p {
@@ -12,12 +11,9 @@
 
     @media screen and (max-width: $md-max) {
         height: var(--main-height);
-        padding-top: 6rem;
         font-size: 0.8rem;
     }
 
-    @media screen and (min-width: $md-max) {
-        padding-top: 6rem;
-    }
+
 
 }
