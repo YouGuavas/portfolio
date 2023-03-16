@@ -51,9 +51,13 @@ body {
 .my-overlay {
   background-color: var(--color-1);
   opacity: var(--semi-transparent);
-  height: var(--main-height);
+  height: 100%;
   width: 100vw;
   padding: 6rem 3rem;
+
+  @media only screen and (max-width:$sm-max) {
+    padding: 3rem 0.5rem;
+  }
 }
 
 .my-dotted-underline {

@@ -79,11 +79,11 @@ export default function Contact() {
       <section className={`my-background-generic place-items-center ${styles.contact}`}>
         <div className={`my-overlay grid place-items-center`}>
           <div className="flex flex-wrap">
-            <h2 className={`${styles.jumbo} mx-2 pt-4`}>Email:</h2>
-            <p className={`${styles.jumbo} mx-2 pt-4`}>patrickyambrick@gmail.com</p>
+            <h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
+            <p className={`${styles.jumbo} pt-4`}>patrickyambrick@gmail.com</p>
           </div>
           <p className={styles.or}>Or:</p>
-          <form name="contact form" className="w-full my-text" ref={form} onSubmit={sendEmail}>
+          <form name="contact form" className="w-full md:w-1/2 my-text" ref={form} onSubmit={sendEmail}>
             <div className="flex flex-wrap">
               <div className="w-full px-3">
                 <label htmlFor="contact form" className={styles.contactTitle}>Contact Me</label>
@@ -91,7 +91,7 @@ export default function Contact() {
             </div>
             <div className="flex flex-wrap">
 
-              <div className="w-full md:w-1/2 px-3">
+              <div className="w-full md:w-1/2 xs:w-1/4 px-3">
                 <label className={labelClass}>Name</label>
                 <input required className={inputClass} onChange={(e) => handleChange(e)} type="text" id="user_name" name="user_name" placeholder="John Doe" />
               </div>
