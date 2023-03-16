@@ -4,7 +4,7 @@ import Head from 'next/head';
 import projects from '../projects.json';
 
 
-import styles from '../styles/Work.module.scss';
+import styles from '../styles/work.module.scss';
 
 export default function Work() {
   return (
