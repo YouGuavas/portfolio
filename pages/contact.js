@@ -78,12 +78,12 @@ export default function Contact() {
       </Head>
       <section className={`my-background-generic place-items-center ${styles.contact}`}>
         <div className={`my-overlay grid place-items-center`}>
-          <div className="flex flex-wrap">
+          <div className="lg:flex lg:flex-wrap">
             <h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
             <p className={`${styles.jumbo} pt-4`}>patrickyambrick@gmail.com</p>
           </div>
           <p className={styles.or}>Or:</p>
-          <form name="contact form" className="w-full md:w-1/2 my-text" ref={form} onSubmit={sendEmail}>
+          <form name="contact form" className="w-full my-text" ref={form} onSubmit={sendEmail}>
             <div className="flex flex-wrap">
               <div className="w-full px-3">
                 <label htmlFor="contact form" className={styles.contactTitle}>Contact Me</label>

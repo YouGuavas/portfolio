@@ -40,7 +40,7 @@ export default function Nav(props) {
     navHighlighter();
     window.addEventListener('scroll', navHighlighter);
 
-  }, [links]);
+  }, [links, navHighlighter]);
 
   return (
     <header className={styles.navHeader}>
