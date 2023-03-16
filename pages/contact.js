@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Head from 'next/head';
 
 
-import styles from '../styles/contact.module.scss';
+import styles from '../styles/Contact.module.scss';
 
 export default function Contact() {
   const labelClass = "block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard";
