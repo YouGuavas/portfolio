@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 #prettier
-.prettierrc.js
+.prettierrc.json
 
 #next
 .next
