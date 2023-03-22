@@ -53,7 +53,7 @@ body {
 }
 
 .my-rotate {
-  @media screen and (min-width: $md-max) {
+  @media screen and (min-width: $sm-max) {
     transform: rotate(2deg);
   }
 }

@@ -38,7 +38,7 @@
   padding: 1rem;
   width: 75vw;
 
-  @media screen and (max-width: $md-max) {
+  @media screen and (max-width: $sm-max) {
     width: 100vw;
     left: 0;
     bottom: auto;
@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: $md-max) {
+  @media screen and (min-width: $sm-max) {
     background-image: url('../public/images/background-forest.jpg');
     background-size: cover;
     background-repeat: no-repeat;

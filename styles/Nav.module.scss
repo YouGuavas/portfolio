@@ -45,13 +45,7 @@
       font-size: 1.3rem;
       font-weight: 1000;
       font-family: var(--style-font-1);
-      background-color: var(--color-1);
-
-      @media (prefers-color-scheme: dark) {
-        background-color: rgba(0, 0, 0, 0%);
-      }
-
-      line-height: 1.6rem;
+      line-height: 1.8rem;
       letter-spacing: 0.2rem;
       padding: 0 0.5rem;
       border-radius: 0.15rem;
@@ -60,28 +54,26 @@
 
       @media only screen and (max-width:$md-max) {
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin: 0 0.8rem;
       }
 
       @media only screen and (max-width:$sm-max) {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         margin: 0 0.2rem;
       }
 
       &:hover,
       &.active {
-        color: var(--color-1);
-        font-size: 1.6rem;
-        background-color: var(--color-4);
+        opacity: 30%;
+        font-size: 1.8rem;
 
         @media (prefers-color-scheme: dark) {
-          color: var(--color-1);
-          background-color: var(--color-4);
+          opacity: 40%;
         }
 
         @media only screen and (max-width:$md-max) {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
 
         @media only screen and (max-width:$sm-max) {
