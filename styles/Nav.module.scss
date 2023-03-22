@@ -9,7 +9,7 @@
   overflow: hidden;
   width: 50%;
   height: 10%;
-  z-index: 10;
+  z-index: 11;
   top: 0;
 
   @media only screen and (min-width:$md-max) {
@@ -38,7 +38,7 @@
     display: flex;
 
     .standardMenuLink {
-      color: inherit;
+      color: var(--color-2);
       text-decoration: none;
       transition: 0.4s;
       font-weight: 200;
@@ -74,7 +74,11 @@
         color: var(--color-1);
         font-size: 1.6rem;
         background-color: var(--color-4);
-        opacity: var(--semi-transparent);
+
+        @media (prefers-color-scheme: dark) {
+          color: var(--color-1);
+          background-color: var(--color-4);
+        }
 
         @media only screen and (max-width:$md-max) {
           font-size: 1.1rem;

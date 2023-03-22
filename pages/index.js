@@ -22,10 +22,10 @@ function Lander() {
   return (
     <section id="Home" className={`${styles.lander}`}>
       <div className={styles.landerOverlay}>
-        <div className={styles.titleWrapper}>
-          <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
-          <p className={`my-text-mustard`}>Developer</p>
-        </div>
+      </div>
+      <div className={`my-rotate ${styles.titleWrapper}`}>
+        <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
+        <p className={`my-text-mustard`}>Developer</p>
       </div>
     </section>
   )
