@@ -12,9 +12,9 @@ export default function About() {
             </Head>
             <section id="About" className={`${styles.about} my-background-generic`}>
                 <div className={`my-overlay`}>
-                    <h3 className="font-bold text-center my-title" id="About">About Me</h3>
-                    <p className="px-12">Hi, my name is Patrick! Welcome to my site!</p>
-                    <p className="px-12">
+                    <h1 className="font-bold md:px-4 px-3 my-title" id="About">About Me</h1>
+                    <p className="md:px-4 px-3">Hi, my name is Patrick! Welcome to my site!</p>
+                    <p className="md:px-4 px-3">
                         I enjoy creating things: websites, woodworking projects,
                         and a bit of art here and there. I am most passionate about building things with code.
                         More specifically, I love to create things for the web.
@@ -29,7 +29,7 @@ export default function About() {
                         for a web project every day, and I am always looking to learn new tricks
                         while doing so. I aspire to be the best developer I am capable of being!
                     </p>
-                    <p className="px-12">
+                    <p className="md:px-4 px-3">
                         I&apos;d like to help you build something, and <Link className="font-bold rounded my-fade-in my-dotted-underline" href="/contact">I want you to tell me all about it</Link>.</p>
                 </div>
             </section>
