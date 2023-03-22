@@ -41,6 +41,10 @@
   @media screen and (max-width: $md-max) {
     width: 100vw;
     left: 0;
+    bottom: auto;
+    margin-top: auto;
+    height: 100vh;
+    padding-top: 20vh;
   }
 
   p {
@@ -65,9 +69,12 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  background-image: url('../public/images/background-forest.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  @media screen and (min-width: $md-max) {
+    background-image: url('../public/images/background-forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   p {
     &:nth-child(2) {
