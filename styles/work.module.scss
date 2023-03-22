@@ -26,8 +26,9 @@
 .card {
     grid-column: span 1 / span 1;
     height: 60vh;
-    padding: 1rem;
+    padding: 0.5rem;
     overflow: hidden;
+    border-radius: 0.1rem;
 
     &:nth-child(1) {
         grid-column: span 3 / span 3;

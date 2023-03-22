@@ -31,7 +31,7 @@ export default function Work() {
 
 function Card(props) {
   return (
-    <div className={`${styles.card} my-bg-sage my-text rounded grid grid-cols-2 place-items-center text-center`}>
+    <div className={`${styles.card} my-bg-sage my-text grid grid-cols-2 place-items-center text-center`}>
       <h4 className="col-span-2">{props.project.title}</h4>
       <div className={`col-span-2 my-bg-sage ${styles.imageContainer}`}>
         <Image className='main-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src1} />
