@@ -25,7 +25,17 @@ function Lander() {
       </div>
       <div className={`my-rotate ${styles.titleWrapper}`}>
         <h1 className={styles.banner}><span>Patrick</span> Yambrick</h1>
-        <p className={`my-text-mustard`}>Developer</p>
+        <div>
+          <p className={`my-text-mustard`}>Dragons</p>
+          <p>Ents</p>
+          <p>V</p>
+          <p>E</p>
+          <p>L</p>
+          <p>O</p>
+          <p>P</p>
+          <p>E</p>
+          <p>R</p>
+        </div>
       </div>
     </section>
   )
