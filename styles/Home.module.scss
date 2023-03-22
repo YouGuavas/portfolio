@@ -70,12 +70,6 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: $sm-max) {
-    background-image: url('../public/images/background-forest.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   p {
     &:nth-child(2) {
       margin-top: 1rem;
@@ -87,9 +81,6 @@
     margin: 0 auto;
     width: 100vw;
     height: var(--main-height);
-    background-image: url('../public/images/background-forest.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: var(--primary-gradient);
 
     opacity: var(--semi-transparent);
