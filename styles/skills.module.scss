@@ -15,6 +15,22 @@
 
 }
 
+
 .listItem {
     color: var(--color-2);
+    transition: 0.4s;
+
+    caption {
+        display: block;
+        font-size: 0;
+        transition: 0.4s;
+        opacity: 0;
+    }
+
+    &:hover {
+        caption {
+            font-size: 1rem;
+            opacity: 1;
+        }
+    }
 }

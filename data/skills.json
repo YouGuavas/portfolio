@@ -1,0 +1,47 @@
+[
+    {
+        "name": "React",
+        "url": "https://reactjs.org/",
+        "description": "A popular UI library"
+    },
+    {
+        "name": "Express",
+        "url": "https://expressjs.com/",
+        "description": ""
+    },
+    {
+        "name": "MongoDB",
+        "url": "https://www.mongodb.com/",
+        "description": "A noSQL database"
+    },
+    {
+        "name": "Sass",
+        "url": "https://sass-lang.com/",
+        "description": "A CSS preprocessor"
+    },
+    {
+        "name": "Tailwind",
+        "url": "https://tailwindcss.com/",
+        "description": "A popular CSS framework"
+    },
+    {
+        "name": "Bootstrap",
+        "url": "https://getbootstrap.com/",
+        "description": "A popular CSS framework"
+    },
+    {
+        "name": "Bulma",
+        "url": "https://bulma.io/",
+        "description": "A lightweight CSS framework"
+    },
+    {
+        "name": "Nextjs",
+        "url": "https://nextjs.org/",
+        "description": ""
+    },
+    {
+        "name": "Typescript",
+        "url": "https://www.typescriptlang.org/",
+        "description": "A superset of Javascript"
+    }
+]
