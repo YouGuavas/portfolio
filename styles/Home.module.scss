@@ -2,6 +2,7 @@
 
 .banner {
   color: var(--color-2);
+  grid-column: span 5;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -25,7 +26,8 @@
 }
 
 .titleWrapper {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   position: absolute;
   z-index: 10;
   font-family: var(--style-font-1);
@@ -45,13 +47,15 @@
     margin-top: auto;
     height: 100vh;
     padding-top: 20vh;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   div {
     font-family: inherit;
-    display: inline-block;
+    display: grid;
 
     p {
+      grid-row: span 1;
       padding: 0 0.5rem;
       font-family: inherit;
       font-size: 1.75rem;
@@ -68,13 +72,13 @@
         transition: 0.7s;
 
         @media screen and (max-width: $md-max) {
-          opacity: 1;
+          opacity: 0.4;
         }
       }
 
       &:hover {
         span {
-          opacity: 1;
+          opacity: 0.4;
         }
       }
     }
