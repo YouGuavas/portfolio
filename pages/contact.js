@@ -114,8 +114,8 @@ export default function Contact() {
 
             <div className="flex flex-wrap">
 
-              <div className="w-full px-3">
-                <input className="my-contact-btn my-text w-full p-2 rounded block uppercase tracking-wide text-xs font-bold mb-2" type="submit" value="Send" />
+              <div className="w-full">
+                <input className="my-contact-btn my-text w-1/2 py-12 block uppercase tracking-wide text-xs font-bold mb-2" type="submit" value="Send" />
               </div>
 
             </div>

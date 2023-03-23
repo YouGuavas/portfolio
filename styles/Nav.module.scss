@@ -11,20 +11,17 @@
   height: 10%;
   z-index: 11;
   top: 0;
-
-  @media only screen and (min-width:$md-max) {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-
   color: var(--color-2);
   font-weight: 800;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.7s;
-  opacity: 0.8;
+
+  @media only screen and (min-width:$md-max) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media only screen and (max-width:$md-max) {
     width: 100%;
