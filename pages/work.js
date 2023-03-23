@@ -31,16 +31,20 @@ export default function Work() {
 
 function Card(props) {
   return (
-    <div className={`${styles.card} my-bg-sage my-text grid grid-cols-2 place-items-center text-center`}>
-      <h4 className="col-span-2">{props.project.title}</h4>
-      <div className={`col-span-2 my-bg-sage ${styles.imageContainer}`}>
-        <Image className='main-image' height={134} width={250} alt="Screenshot of project page" src={props.project.src1} />
-        <Image className='mobile-image' height={270} width={250} alt="Screenshot of project page" src={props.project.src2} />
+    <div className={`${styles.card}`}>
+      <div style={{ 'backgroundImage': `url(${props.project.src1})` }} className={styles.backgroundImageContainer}>
+
       </div>
-      <p className={`col-span-2`}>{props.project.description}</p>
-      <p className={`col-span-2`}>View {props.project.live ? "it" : "the code"} here:</p>
-      {props.project.live ? <Link name={`Live link to ${props.project.title}`} href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it live</Link> : null}
-      {props.project.github ? <Link name={`Github link to ${props.project.title}`} href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it on github</Link> : null}
+
+      <div className={`${styles.contentContainer} my-text-mustard grid grid-cols-2 place-items-center text-center`}>
+        <h4 className="col-span-2">{props.project.title}</h4>
+        <div className={`col-span-2 ${styles.projectDescription}`}>
+          <p>{props.project.description}</p>
+        </div>
+        <p className={`col-span-2`}>View {props.project.live ? "it" : "the code"} here:</p>
+        {props.project.live ? <Link name={`Live link to ${props.project.title}`} href={props.project.live} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it live</Link> : null}
+        {props.project.github ? <Link name={`Github link to ${props.project.title}`} href={props.project.github} target="_blank" rel="noreferrer" className="col-span-2 my-btn">View it on github</Link> : null}
+      </div>
     </div>
   )
 }
