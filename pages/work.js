@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head';
-import projects from '../projects.json';
+import projects from '../data/projects.json';
 
 
 import styles from '../styles/work.module.scss';

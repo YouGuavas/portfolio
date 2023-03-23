@@ -1,0 +1,88 @@
+[
+    {
+        "A": [
+            "Athlete",
+            "Awesome"
+        ],
+        "B": [
+            "Bicycling"
+        ],
+        "C": [
+            "Coding"
+        ],
+        "D": [
+            "Dragons"
+        ],
+        "E": [
+            "Ents",
+            "Engineering",
+            "Elements"
+        ],
+        "F": [
+            "Fellowship"
+        ],
+        "G": [
+            "Goals"
+        ],
+        "H": [
+            "Helpful"
+        ],
+        "I": [
+            "Intelligent"
+        ],
+        "J": [
+            "Jovial"
+        ],
+        "K": [
+            "Kind"
+        ],
+        "L": [
+            "Learning",
+            "Loyalty"
+        ],
+        "M": [
+            "Mystics"
+        ],
+        "N": [
+            "Nature"
+        ],
+        "O": [
+            "Openminded"
+        ],
+        "P": [
+            "Perceptive",
+            "Patrick"
+        ],
+        "Q": [
+            "Quaffle"
+        ],
+        "R": [
+            "Roses"
+        ],
+        "S": [
+            "Science"
+        ],
+        "T": [
+            "Trolls"
+        ],
+        "U": [
+            "Ubiquity"
+        ],
+        "V": [
+            "Values",
+            "Vampires"
+        ],
+        "W": [
+            "Waffles"
+        ],
+        "X": [
+            "Xylophones"
+        ],
+        "Y": [
+            "Yambrick"
+        ],
+        "Z": [
+            "Zebras"
+        ]
+    }
+]

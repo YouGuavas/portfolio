@@ -49,6 +49,7 @@
 
   div {
     font-family: inherit;
+    display: inline-block;
 
     p {
       padding: 0 0.5rem;
@@ -59,6 +60,23 @@
       color: inherit;
       margin: 0;
       line-height: 1.75rem;
+
+      span {
+        opacity: 0;
+        font-family: inherit;
+        color: inherit;
+        transition: 0.7s;
+
+        @media screen and (max-width: $md-max) {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
     }
   }
 }
