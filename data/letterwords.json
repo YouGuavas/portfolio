@@ -2,7 +2,9 @@
     {
         "A": [
             "Athlete",
-            "Awesome"
+            "Awesome",
+            "Acceptance",
+            "Accountability"
         ],
         "B": [
             "Bicycling"
@@ -11,7 +13,11 @@
             "Coding"
         ],
         "D": [
-            "Dragons"
+            "Dragons",
+            "Draugr",
+            "Dedication",
+            "Development",
+            "Dependability"
         ],
         "E": [
             "Ents",
@@ -76,7 +82,9 @@
         ],
         "V": [
             "Values",
-            "Vampires"
+            "Vampires",
+            "Veracity",
+            "Versatility"
         ],
         "W": [
             "Waffles"
