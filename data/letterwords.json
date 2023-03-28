@@ -16,7 +16,8 @@
         "E": [
             "Ents",
             "Engineering",
-            "Elements"
+            "Elements",
+            "Empathy"
         ],
         "F": [
             "Fellowship"
@@ -38,7 +39,8 @@
         ],
         "L": [
             "Learning",
-            "Loyalty"
+            "Loyalty",
+            "Leadership"
         ],
         "M": [
             "Mystics"
@@ -57,13 +59,17 @@
             "Quaffle"
         ],
         "R": [
-            "Roses"
+            "Roses",
+            "Receptive",
+            "Resilience",
+            "Respect"
         ],
         "S": [
             "Science"
         ],
         "T": [
-            "Trolls"
+            "Trolls",
+            "Teamwork"
         ],
         "U": [
             "Ubiquity"

@@ -7,7 +7,7 @@
     {
         "name": "Express",
         "url": "https://expressjs.com/",
-        "description": ""
+        "description": "A popular Node.js framework"
     },
     {
         "name": "MongoDB",
@@ -37,7 +37,7 @@
     {
         "name": "Nextjs",
         "url": "https://nextjs.org/",
-        "description": ""
+        "description": "A framework providing Ract apps with server-side rendering"
     },
     {
         "name": "Typescript",
