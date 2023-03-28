@@ -30,7 +30,7 @@ export default function Lander() {
         //
         newLetterWordsState[outerIndex][index] = letterWord;
         setLetterWordsState([...newLetterWordsState]);
-        alert("is: " + letterWordsState[outerIndex][index] + " should be: " + letterWord + " changing: " + outerIndex + '-' + index);
+        //alert("is: " + letterWordsState[outerIndex][index] + " should be: " + letterWord + " changing: " + outerIndex + '-' + index);
     }
 
     //Render vertical divs for words
