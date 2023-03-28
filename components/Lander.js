@@ -29,7 +29,7 @@ export default function Lander() {
         let newLetterWordsState = [[...letterWordsState]];
         //
         newLetterWordsState[outerIndex][index] = letterWord;
-        setLetterWordsState(...newLetterWordsState);
+        setLetterWordsState([...newLetterWordsState]);
         alert("is: " + letterWordsState[outerIndex][index] + " should be: " + letterWord + " changing: " + outerIndex + '-' + index);
     }
 
