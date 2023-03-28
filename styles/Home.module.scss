@@ -55,6 +55,12 @@
     font-family: inherit;
     display: inline-block;
 
+    @media screen and (max-width:$sm-max) {
+      &:nth-child(n+4) {
+        display: none;
+      }
+    }
+
     p {
       padding: 0 0.5rem;
       font-family: inherit;
