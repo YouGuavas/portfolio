@@ -19,69 +19,98 @@ export default function Lander() {
             letterWordsState[outerIndex][index] = letterWord;
         })
     }
+    const grabElement = (elementId) => {
+        //Grab element by id if document exists
+        if (typeof document !== 'undefined') {
+            return document.getElementById(elementId);
+        }
+    }
+    const addToParent = (parent, child) => {
+        //Append child element to parent element
+        parent.append(child);
+    }
 
+    const clearElement = (element) => {
+        if (element) {
+            element.remove();
+        }
+    }
+    const create = (elementType) => {
+        if (typeof document !== 'undefined') {
+            const newElement = document.createElement(elementType);
+            return newElement;
+        }
+        return;
+    }
+    const addWordToCard = (word, outerIndex, index, parent) => {
+
+        //add new p element
+        const newP = create("p");
+        newP.id = `${outerIndex}-${index}-inner`;
+
+        //Add new span for letterword and styling
+        const newSpan = create("span");
+        newSpan.innerHTML = word.slice(1);
+        newP.innerHTML = `${word.slice(0, 1)}`;
+
+        //Reset the word each time the mouse moves away
+        newP.onmouseleave = () => resetWord(outerIndex, index, word);
+        addToParent(newP, newSpan);
+        addToParent(parent, newP);
+    }
 
     const resetWord = (outerIndex, index, word) => {
         const letter = word.slice(0, 1);
         //Search letterwords by first letter
         const thisLetterWords = letterWords[0][letter.toUpperCase()];
         const letterWord = thisLetterWords[randomize(thisLetterWords.length)];
-        let newLetterWordsState = [[...letterWordsState]];
-        //
-        newLetterWordsState[outerIndex][index] = letterWord;
-        setLetterWordsState([...newLetterWordsState]);
-        //alert("is: " + letterWordsState[outerIndex][index] + " should be: " + letterWord + " changing: " + outerIndex + '-' + index);
+
+        const newWordsState = letterWordsState.map((outerItem, outerIdx) => {
+            const newArray = outerItem.map((item, innerIndex) => {
+                if (index === innerIndex) {
+                    return letterWord;
+                } else {
+                    return item;
+                }
+            })
+            if (outerIndex === outerIdx) return newArray;
+            return outerItem;
+        })
+        setLetterWordsState(newWordsState);
+
     }
 
     //Render vertical divs for words
     const renderWords = () => {
-        if (typeof document !== "undefined") {
-            const parent = document.getElementById('titleWrapper');
-            letterWordsState.map((word, index) => {
-                if (document.getElementById(`${index}-outer`) !== null) return;
-                const newDiv = document.createElement("div");
-                newDiv.id = `${index}-outer`;
-                parent.append(
-                    newDiv
-                );
-            })
-            return;
-        }
-        return <div></div>;
+        const parent = grabElement('titleWrapper');
+        letterWordsState.map((word, index) => {
+            if (grabElement(`${index}-outer`) !== null) return;
+            const newDiv = create("div");
+            newDiv.id = `${index}-outer`;
+            parent.append(
+                newDiv
+            );
+        })
+        return;
+
     }
+
+
 
     //Render the Letters and letterwords
     const renderLetters = () => {
-        if (typeof document !== "undefined") {
-            if (letterWordsState.length > 0) {
-                letterWordsState.map((localLetterWords, outerIndex) => {
-                    const parent = document.getElementById(`${outerIndex}-outer`);
+        if (letterWordsState.length > 0) {
+            letterWordsState.map((localLetterWords, outerIndex) => {
+                const parent = grabElement(`${outerIndex}-outer`); //document.getElementById(`${outerIndex}-outer`);
 
-                    localLetterWords.map((letterWord, index) => {
-                        if (document.getElementById(`${outerIndex}-${index}-inner`) !== null) return;
-
-                        //add new p element
-                        const newP = document.createElement("p");
-                        newP.id = `${outerIndex}-${index}-inner`;
-
-                        //Add new span for letterword and styling
-                        const newSpan = document.createElement("span");
-                        newSpan.innerHTML = letterWord.slice(1);
-                        newP.innerHTML = `${letterWord.slice(0, 1)}`;
-
-                        //Reset the word each time the mouse moves away
-                        newP.onmouseleave = () => resetWord(outerIndex, index, letterWord);
-                        newP.append(
-                            newSpan
-                        );
-                        parent.append(
-                            newP
-                        );
-                    })
+                localLetterWords.map((letterWord, index) => {
+                    const element = grabElement(`${outerIndex}-${index}-inner`);
+                    clearElement(element);
+                    addWordToCard(letterWord, outerIndex, index, parent);
                 })
-            }
+            })
         }
-        return <p></p>;
+        //return <p></p>;
     }
     useEffect(() => {
         words.map((word, index) => {
@@ -94,7 +123,6 @@ export default function Lander() {
     }, [])
     useEffect(() => {
         renderLetters();
-        console.log(letterWordsState);
     }, [letterWordsState]);
 
     return (
