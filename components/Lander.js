@@ -110,7 +110,6 @@ export default function Lander() {
                 })
             })
         }
-        //return <p></p>;
     }
     useEffect(() => {
         words.map((word, index) => {
