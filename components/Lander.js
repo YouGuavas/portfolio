@@ -55,6 +55,7 @@ export default function Lander() {
 
         //Reset the word each time the mouse moves away
         newP.onmouseleave = () => resetWord(outerIndex, index, word);
+        newP.ontouchstart = () => resetWord(outerIndex, index, word);
         addToParent(newP, newSpan);
         addToParent(parent, newP);
     }
