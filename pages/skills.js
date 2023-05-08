@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import styles from '../styles/skills.module.scss';
-import { create } from '../utils/_functions';
+import { create, grabElement } from '../utils/_functions';
 
 import skills from '../data/skills.json';
 
@@ -13,13 +13,16 @@ export default function Skills() {
         return;
     }
     useEffect(() => {
-        if (typeof document !== null) {
-            skills.map((item) => {
-                const container = document.getElementById(item.name + '-id');
-                const newCaption = create('caption');
-            }
-            )
+        skills.map((item) => {
+            const parent = grabElement(item.name + '-id');
+            const child = create('caption');
+            child.id = parent.id + '-child';
+            if (grabElement(child.id) !== null) return;
+            if (item.description === null) return;
+            child.innerHTML = item.description;
+            parent.append(child);
         }
+        )
     }, [])
     return (
         <main id="Skills" className={`${styles.skills} my-background-generic my-text`}>

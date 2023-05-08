@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { create } from '../utils/_functions';
+import { create, grabElement } from '../utils/_functions';
 
 import styles from '../styles/Home.module.scss';
 import words from '../data/words.json';
@@ -21,12 +21,7 @@ export default function Lander() {
             letterWordsState[outerIndex][index] = letterWord;
         })
     }
-    const grabElement = (elementId) => {
-        //Grab element by id if document exists
-        if (typeof document !== 'undefined') {
-            return document.getElementById(elementId);
-        }
-    }
+
     const addToParent = (parent, child) => {
         //Append child element to parent element
         parent.append(child);
