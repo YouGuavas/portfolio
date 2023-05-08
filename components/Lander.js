@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import { create } from '../utils/_functions';
+
 import styles from '../styles/Home.module.scss';
 import words from '../data/words.json';
 import letterWords from '../data/letterwords.json';
@@ -35,13 +37,7 @@ export default function Lander() {
             element.remove();
         }
     }
-    const create = (elementType) => {
-        if (typeof document !== 'undefined') {
-            const newElement = document.createElement(elementType);
-            return newElement;
-        }
-        return;
-    }
+
     const addWordToCard = (word, outerIndex, index, parent) => {
 
         //add new p element

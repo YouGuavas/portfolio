@@ -6,14 +6,14 @@ import Lander from '../components/Lander';
 function index() {
 
   return (
-    <div >
+    <main >
       <Head>
         <title>Home | Patrick Yambrick</title>
       </Head>
 
       <Lander />
 
-    </div>
+    </main>
   );
 }
 
