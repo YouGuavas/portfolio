@@ -80,7 +80,7 @@ export default function Contact() {
         <div className={`my-overlay grid place-items-center`}>
           <div className="lg:flex lg:flex-wrap">
             <h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
-            <p className={`${styles.jumbo} pt-4`}>patrickyambrick@gmail.com</p>
+            <a href="mailto:patrickyambrick@gmail.com" className={`${styles.jumbo} pt-4`}>patrickyambrick@gmail.com</a>
           </div>
           <p className={styles.or}>Or:</p>
           <form name="contact form" className="w-full my-text" ref={form} onSubmit={sendEmail}>
