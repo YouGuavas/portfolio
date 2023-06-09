@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
 import Head from 'next/head'
 
 import styles from '../styles/contact.module.scss'
@@ -42,41 +41,31 @@ export default function Contact() {
         }
     }
 
-    const sendEmail = e => {
+    const sendEmail = async e => {
         e.preventDefault()
         if (
             params.user_name.length &&
             params.user_email.length &&
             params.message.length > 0
         ) {
+            console.log(params)
             //if all fields are filled out, send the email
-            emailjs
-                .sendForm(
-                    'contact_gmail',
-                    'basic_template',
-                    form.current,
-                    'Cr-6gtILcNdET7irO'
-                )
-                .then(
-                    result => {
-                        const userName = document.getElementById('user_name')
-                        const userEmail = document.getElementById('user_email')
-                        const message = document.getElementById('user_message')
-                        console.log(result.text)
-                        alert('Your message has been sent!')
-                        setParams({
-                            user_name: '',
-                            user_email: '',
-                            message: '',
-                        })
-                        userName.value = ''
-                        userEmail.value = ''
-                        message.value = ''
-                    },
-                    error => {
-                        console.log(error.text)
-                    }
-                )
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: params.user_email,
+                    subject: 'Testing',
+                    message: params.message,
+                }),
+            })
+            if (response.ok) {
+                console.log('Email sent')
+            } else {
+                console.log('Failed')
+            }
         } else {
             //else, inform the user they need to fill out the form
             alert(

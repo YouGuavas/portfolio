@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.4.0",
     "@next/font": "13.1.6",
+    "@sendgrid/mail": "^7.7.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
+    "nodemailer": "^6.9.3",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-share": "^4.4.1",
