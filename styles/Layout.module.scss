@@ -1,6 +1,10 @@
 .container {
     background-color: var(--color-1);
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 10%;
     top: 0;
     z-index: 100;
     padding-bottom: 0.4rem;
