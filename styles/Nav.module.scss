@@ -1,81 +1,79 @@
 @import '../utils/_variables.scss';
 
 .navHeader {
-  display: block;
+    display: block;
 }
 
 .myNavFull {
-  position: fixed;
-  overflow: hidden;
-  width: 50%;
-  height: 10%;
-  z-index: 11;
-  top: 0;
-  color: var(--color-2);
-  font-weight: 800;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.7s;
-
-  @media only screen and (min-width:$md-max) {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  @media only screen and (max-width:$md-max) {
-    width: 100%;
-    left: 0;
-  }
-
-  .standardMenu {
-    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    height: 10%;
+    z-index: 11;
+    top: 0;
+    color: var(--color-2);
+    font-weight: 800;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
 
-    .standardMenuLink {
-      color: var(--color-2);
-      text-decoration: none;
-      transition: 0.4s;
-      font-weight: 200;
-      font-size: 1.3rem;
-      font-weight: 1000;
-      font-family: var(--style-font-1);
-      line-height: 1.8rem;
-      letter-spacing: 0.2rem;
-      padding: 0 0.5rem;
-      border-radius: 0.15rem;
-      margin: 0 0.8rem;
-      cursor: pointer;
-
-      @media only screen and (max-width:$md-max) {
-        font-weight: 400;
-        font-size: 1rem;
-        margin: 0 0.8rem;
-      }
-
-      @media only screen and (max-width:$sm-max) {
-        font-size: 0.8rem;
-        margin: 0 0.2rem;
-      }
-
-      &:hover,
-      &.active {
-        opacity: 30%;
-        font-size: 1.8rem;
-
-        @media (prefers-color-scheme: dark) {
-          opacity: 40%;
-        }
-
-        @media only screen and (max-width:$md-max) {
-          font-size: 1.3rem;
-        }
-
-        @media only screen and (max-width:$sm-max) {
-          font-size: 1rem;
-        }
-      }
+    @media only screen and (min-width: $md-max) {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-  }
+    @media only screen and (max-width: $md-max) {
+        width: 100%;
+        left: 0;
+    }
+
+    .standardMenu {
+        position: absolute;
+        display: flex;
+
+        .standardMenuLink {
+            color: var(--color-2);
+            text-decoration: none;
+            transition: 0.4s;
+            font-weight: 200;
+            font-size: 1.3rem;
+            font-weight: 1000;
+            font-family: var(--style-font-1);
+            line-height: 1.8rem;
+            letter-spacing: 0.2rem;
+            padding: 0 0.5rem;
+            border-radius: 0.15rem;
+            margin: 0 0.8rem;
+            cursor: pointer;
+
+            @media only screen and (max-width: $md-max) {
+                font-weight: 400;
+                font-size: 1rem;
+                margin: 0 0.8rem;
+            }
+
+            @media only screen and (max-width: $sm-max) {
+                font-size: 0.8rem;
+                margin: 0 0.2rem;
+            }
+
+            &:hover,
+            &.active {
+                opacity: 30%;
+                font-size: 1.8rem;
+
+                @media (prefers-color-scheme: dark) {
+                    opacity: 40%;
+                }
+
+                @media only screen and (max-width: $md-max) {
+                    font-size: 1.3rem;
+                }
+
+                @media only screen and (max-width: $sm-max) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }

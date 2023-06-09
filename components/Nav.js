@@ -49,10 +49,7 @@ export default function Nav(props) {
     )
 
     return (
-        <nav
-            className={`${styles.myNavFull} ${styles.navHeader}`}
-            id="menu-full"
-        >
+        <nav className={`${styles.myNavFull}`} id="menu-full">
             <ul className={styles.standardMenu}>
                 {links.map((item, index) => {
                     return renderLinks(item, index)
