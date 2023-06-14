@@ -57,27 +57,39 @@ body {
 .my-rhombus {
     transform: skewX(45deg) scaleY(cos(45deg));
 }
+.main-wrapper,
+.alt-wrapper {
+    width: 75vw;
+    height: 55vh;
+    min-height: 390px;
+    padding: 1rem;
+    position: absolute;
+}
+.alt-wrapper {
+    top: 15vh;
+    right: 1rem;
+    background-color: var(--color-1);
+    opacity: var(--semi-transparent);
+}
+.main-wrapper {
+    background-color: var(--color-6);
+}
 
 .my-rotate {
+    transform: rotate(1deg);
     @media screen and (min-width: $sm-max) {
         transform: rotate(2deg);
+    }
+}
+.alt-rotate {
+    transform: rotate(-1deg);
+    @media screen and (min-width: $sm-max) {
+        transform: rotate(-2deg);
     }
 }
 
 .my-background-generic {
     background-image: var(--primary-gradient);
-}
-
-.my-overlay {
-    background-color: var(--color-1);
-    opacity: var(--semi-transparent);
-    height: 100%;
-    width: 100vw;
-    padding: 6rem 0;
-
-    @media only screen and (max-width: $sm-max) {
-        padding: 4rem 0;
-    }
 }
 
 .my-dotted-underline {

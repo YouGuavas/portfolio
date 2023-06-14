@@ -113,7 +113,7 @@ export default function Lander() {
             <div className={styles.landerOverlay}></div>
             <div
                 id="titleWrapper"
-                className={`my-rotate ${styles.titleWrapper}`}
+                className={`my-rotate main-wrapper ${styles.titleWrapper}`}
             >
                 <h1 className={styles.banner}>Patrick Yambrick</h1>
             </div>
