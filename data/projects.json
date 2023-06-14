@@ -2,32 +2,27 @@
     {
         "title": "Wilson's Stump Grinding",
         "description": "A nextjs site built for a local small business owner. I worked with the client to design and build out his dream small business website. Built with nextjs and plain css. This project taught me how to work directly with a client, and how to send images serverlessly via email (using nodemailer, and remembering to encode and decode from base64).",
-        "github": "https://github.com/YouGuavas/wilson-stump-grinding",
         "live": "https://wilson-stump-grinding.vercel.app/",
-        "src1": "/images/wilsonStump1.png",
-        "src2": "/images/wilsonStump2.png"
+        "src1": "/images/wilsonStump1.png"
     },
     {
         "title": "Code Editor",
         "description": "A code editor I built using CodeMirror, React, and Sass. Users should be able to write html, css, and javascript code, and execute it in the iframe below.",
         "github": "https://github.com/YouGuavas/code-editor",
         "live": "https://code-editor-sage.vercel.app/",
-        "src1": "/images/codeEditor1.png",
-        "src2": "/images/codeEditor2.png"
+        "src1": "/images/codeEditor1.png"
     },
     {
         "title": "This Website",
         "description": "A portfolio site I built to display my work using React & Tailwind.",
         "github": "https://github.com/YouGuavas/portfolio",
-        "src1": "/images/portfolio1.png",
-        "src2": "/images/portfolio2.png"
+        "src1": "/images/portfolio1.png"
     },
     {
         "title": "Collectible Shop",
         "description": "An ecommerce site for an imaginary collectible shop, built with React, Typescript, and Snipcart.",
         "github": "https://github.com/YouGuavas/pokemon-shop",
         "live": "https://collectible-shop.vercel.app/",
-        "src1": "/images/shop1.png",
-        "src2": "/images/shop2.png"
+        "src1": "/images/shop1.png"
     }
 ]
