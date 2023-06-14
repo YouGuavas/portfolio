@@ -1,132 +1,139 @@
 @import '../utils/_variables.scss';
 
 .banner {
-  color: var(--color-2);
-  grid-column: span 5;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  letter-spacing: 0.2rem;
-  font-family: inherit;
-  opacity: 100%;
-
-  span {
     color: var(--color-2);
-    margin-right: 0.2rem;
+    grid-column: span 5;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    letter-spacing: 0.2rem;
     font-family: inherit;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: var(--color-2);
+    opacity: 100%;
 
     span {
-      color: var(--color-2);
+        color: var(--color-2);
+        margin-right: 0.2rem;
+        font-family: inherit;
     }
-  }
+
+    @media (prefers-color-scheme: dark) {
+        color: var(--color-2);
+
+        span {
+            color: var(--color-2);
+        }
+    }
 }
 
 .titleWrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  position: absolute;
-  z-index: 10;
-  font-family: var(--style-font-1);
-  font-weight: 1000;
-  background-color: var(--color-6);
-  opacity: 100%;
-  top: 25vh;
-  left: 1rem;
-  padding: 1rem;
-  width: 75vw;
-  height: 55vh;
-  min-height: 390px;
-  cursor: default;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+    z-index: 10;
+    font-family: var(--style-font-1);
+    font-weight: 1000;
+    background-color: var(--color-6);
+    opacity: 100%;
+    top: 25vh;
+    left: 1rem;
+    padding: 1rem;
+    width: 75vw;
+    height: 55vh;
+    min-height: 390px;
+    cursor: default;
 
-  @media screen and (max-width: $sm-max) {
-    width: 100vw;
-    top: 0;
-    left: 0;
-    bottom: auto;
-    margin-top: auto;
-    height: 100vh;
-    padding-top: 20vh;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  div {
-    font-family: inherit;
-    display: inline-block;
-
-    @media screen and (max-width:$sm-max) {
-      &:nth-child(n+4) {
-        display: none;
-      }
+    @media screen and (max-width: $sm-max) {
+        width: 100vw;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        margin-top: auto;
+        height: 100vh;
+        padding-top: 20vh;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    p {
-      padding: 0 0.5rem;
-      font-family: inherit;
-      font-size: 1.75rem;
-      letter-spacing: 0;
-      font-weight: 100;
-      color: inherit;
-      margin: 0;
-      line-height: 1.75rem;
-      height: 2.15rem;
-      cursor: pointer;
-
-      span {
-        opacity: 0;
+    div {
         font-family: inherit;
-        color: inherit;
-        transition: 0.7s;
+        display: inline-block;
 
-        @media screen and (max-width: $md-max) {
-          opacity: 0.4;
+        @media screen and (max-width: $sm-max) {
+            &:nth-child(n + 4) {
+                display: none;
+            }
         }
-      }
 
-      &:hover {
-        span {
-          opacity: 0.4;
+        p {
+            padding: 0 0.5rem;
+            font-family: inherit;
+            font-size: 1.75rem;
+            letter-spacing: 0;
+            font-weight: 100;
+            color: inherit;
+            margin: 0;
+            line-height: 1.75rem;
+            height: 2.15rem;
+            cursor: pointer;
+
+            span {
+                opacity: 0;
+                font-family: inherit;
+                color: inherit;
+                transition: 0.7s;
+
+                @media screen and (max-width: $md-max) {
+                    opacity: 0.4;
+                }
+            }
+
+            &:hover {
+                span {
+                    opacity: 0.4;
+                }
+            }
         }
-      }
     }
-  }
 }
 
-
-
 .lander {
-
-  font-size: 3rem;
-  letter-spacing: 0.1rem;
-  font-weight: 100;
-  height: var(--main-height);
-  width: 100vw;
-  display: flex;
-  align-items: center;
-
-  .landerOverlay {
-    text-align: center;
-    margin: 0 auto;
-    width: 100vw;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
     height: var(--main-height);
-    background-image: var(--primary-gradient);
+    width: 100vw;
+    display: flex;
+    align-items: center;
 
-    opacity: var(--semi-transparent);
-    font-family: var(--style-font-1);
+    .landerOverlay {
+        text-align: center;
+        margin: 0 auto;
+        width: 100vw;
+        height: var(--main-height);
+        background-image: var(--primary-gradient);
 
+        opacity: var(--semi-transparent);
+        font-family: var(--style-font-1);
 
-
-
-    h1 {
-      padding: 0 1rem;
+        h1 {
+            padding: 0 1rem;
+        }
     }
 
-  }
+    @media only screen and (max-width: $sm-max) {
+        font-size: 2rem;
+    }
+}
+.about {
+    color: var(--color-2);
+    height: var(--main-height);
+    overflow: hidden;
 
-  @media only screen and (max-width:$sm-max) {
-    font-size: 2rem;
-  }
+    p {
+        margin: 1rem auto;
+    }
+
+    @media screen and (max-width: $md-max) {
+        height: var(--main-height);
+        font-size: 0.8rem;
+    }
 }
