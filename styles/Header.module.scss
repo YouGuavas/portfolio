@@ -4,11 +4,10 @@
     justify-content: center;
     background-color: none;
     font-size: 0.8rem;
+
+    align-items: center;
 }
-.shareButton {
-    height: 1vh;
-    justify-content: center;
-}
+
 .collapse {
     animation: collapse 0.5s ease forwards;
 }
@@ -21,7 +20,7 @@
     from {
         opacity: 0.5;
         top: 0;
-        height: 2vh;
+        height: auto;
     }
     to {
         opacity: 0;
