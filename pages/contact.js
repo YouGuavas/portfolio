@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+
 import Head from 'next/head'
 
 import styles from '../styles/contact.module.scss'
@@ -6,7 +7,7 @@ import styles from '../styles/contact.module.scss'
 export default function Contact() {
     const labelClass =
         'block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard'
-    const inputClass = `my-transition leading-tight appearance-none ${styles.inputClass}` //"my-transition my-text-forest my-placeholder-mustard appearance-none border border-sage block w-full my-sage-bg border rounded py-1 px-4 mb-3 leading-tight"
+    const inputClass = `my-transition leading-tight appearance-none ${styles.inputClass}`
 
     const [params, setParams] = useState({
         user_name: '',
@@ -20,44 +21,26 @@ export default function Contact() {
         const name = e.target.name
         const value = e.target.value
 
-        if (name === 'user_name') {
-            setParams({
-                user_name: value,
-                user_email: params.user_email,
-                message: params.message,
-            })
-        } else if (name === 'user_email') {
-            setParams({
-                user_name: params.user_name,
-                user_email: value,
-                message: params.message,
-            })
-        } else {
-            setParams({
-                user_name: params.user_name,
-                user_email: params.user_email,
-                message: value,
-            })
-        }
+        setParams(prevParams => ({
+            ...prevParams,
+            [name]: value,
+        }))
     }
 
     const sendEmail = async e => {
         e.preventDefault()
+
         if (
             params.user_name.length &&
             params.user_email.length &&
             params.message.length > 0
         ) {
-            console.log(params)
-            //if all fields are filled out, send the email
-            const response = await fetch('/api/contact', {
+            const response = await fetch('./api/contact', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+
                 body: JSON.stringify({
+                    name: params.user_name,
                     email: params.user_email,
-                    subject: 'Testing',
                     message: params.message,
                 }),
             })
@@ -67,7 +50,6 @@ export default function Contact() {
                 console.log('Failed')
             }
         } else {
-            //else, inform the user they need to fill out the form
             alert(
                 'Please make sure the form is completely filled out before submitting.'
             )
@@ -94,6 +76,7 @@ export default function Contact() {
                     </div>
                     <p className={styles.or}>Or:</p>
                     <form
+                        id="contact-form"
                         name="contact form"
                         className="w-full my-text"
                         ref={form}

@@ -9,16 +9,16 @@ const transporter = nodemailer.createTransport(
     })
 )
 
-export default async (req, res) => {
+export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { email, subject, message } = req.body
-        console.log(req.body)
         try {
+            const { name, email, message } = JSON.parse(req.body)
+
             // Compose and send the email
             const mailOptions = {
                 from: 'patrizzzzzzle193@gmail.com',
                 to: 'patrickyambrick@gmail.com',
-                subject,
+                subject: `Email from ${name} at ${email}`,
                 text: message,
             }
 
