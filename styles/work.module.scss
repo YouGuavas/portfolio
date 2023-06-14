@@ -1,7 +1,7 @@
 @import '../utils/_variables.scss';
 
-
 .work {
+    padding-top: 15vh;
     margin: 0 auto;
 
     .my-overlay {
@@ -9,7 +9,6 @@
         padding: 0;
     }
 }
-
 
 .imageContainer {
     height: 134px;
@@ -61,7 +60,6 @@
         position: absolute;
     }
 
-
     &:nth-child(1) {
         height: 60vh;
         grid-column: span 3 / span 3;
@@ -82,7 +80,6 @@
         }
     }
 
-
     h4 {
         font-weight: 800;
         font-size: 2rem;
@@ -99,7 +96,6 @@
             opacity: 1;
         }
     }
-
 
     @media only screen and (max-width: $md-max) {
         grid-column: span 3 / span 3;

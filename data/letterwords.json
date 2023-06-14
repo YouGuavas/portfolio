@@ -4,14 +4,11 @@
             "Athlete",
             "Awesome",
             "Acceptance",
-            "Accountability"
+            "Accountability",
+            "Abstemious"
         ],
-        "B": [
-            "Bicycling"
-        ],
-        "C": [
-            "Coding"
-        ],
+        "B": ["Bicycling"],
+        "C": ["Coding"],
         "D": [
             "Dragons",
             "Draugr",
@@ -19,52 +16,17 @@
             "Development",
             "Dependability"
         ],
-        "E": [
-            "Ents",
-            "Engineering",
-            "Elements",
-            "Empathy"
-        ],
-        "F": [
-            "Fellowship"
-        ],
-        "G": [
-            "Goals"
-        ],
-        "H": [
-            "Honesty",
-            "Horcrux"
-        ],
-        "I": [
-            "Intelligent"
-        ],
-        "J": [
-            "Jovial"
-        ],
-        "K": [
-            "Kind"
-        ],
-        "L": [
-            "Learning",
-            "Loyalty",
-            "Leadership",
-            "Lycanthropy"
-        ],
-        "M": [
-            "Mystics",
-            "Mentorship"
-        ],
-        "N": [
-            "Nature",
-            "Nazgul"
-        ],
-        "O": [
-            "Originality",
-            "Optimism",
-            "Openmindedness",
-            "Ogres",
-            "Orpheus"
-        ],
+        "E": ["Ents", "Engineering", "Elements", "Empathy"],
+        "F": ["Fellowship"],
+        "G": ["Goals"],
+        "H": ["Honesty", "Horcrux"],
+        "I": ["Intelligent"],
+        "J": ["Jovial"],
+        "K": ["Kind"],
+        "L": ["Learning", "Loyalty", "Leadership", "Lycanthropy"],
+        "M": ["Mystics", "Mentorship"],
+        "N": ["Nature", "Nazgul"],
+        "O": ["Originality", "Optimism", "Openmindedness", "Ogres", "Orpheus"],
         "P": [
             "Paladins",
             "Pegasus",
@@ -73,43 +35,15 @@
             "Perceptiveness",
             "Patrick"
         ],
-        "Q": [
-            "Quaffle"
-        ],
-        "R": [
-            "Roses",
-            "Receptive",
-            "Resilience",
-            "Respect"
-        ],
-        "S": [
-            "Science",
-            "Sharing"
-        ],
-        "T": [
-            "Trolls",
-            "Teamwork"
-        ],
-        "U": [
-            "Ubiquity"
-        ],
-        "V": [
-            "Values",
-            "Vampires",
-            "Veracity",
-            "Versatility"
-        ],
-        "W": [
-            "Waffles"
-        ],
-        "X": [
-            "Xylophones"
-        ],
-        "Y": [
-            "Yambrick"
-        ],
-        "Z": [
-            "Zebras"
-        ]
+        "Q": ["Quaffle"],
+        "R": ["Roses", "Receptive", "Resilience", "Respect"],
+        "S": ["Science", "Sharing"],
+        "T": ["Trolls", "Teamwork"],
+        "U": ["Ubiquity"],
+        "V": ["Values", "Vampires", "Veracity", "Versatility"],
+        "W": ["Waffles"],
+        "X": ["Xylophones"],
+        "Y": ["Yambrick"],
+        "Z": ["Zebras"]
     }
 ]

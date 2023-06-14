@@ -1,7 +1,9 @@
 @import '../utils/_variables.scss';
 
 .contact {
-    height: var(--main-height);
+    min-height: var(--main-height);
+    padding-top: 15vh;
+    padding-bottom: 2rem;
 }
 
 .inputClass {
@@ -26,6 +28,7 @@
 
 .or {
     color: var(--color-4);
+    margin: 10vh auto;
 }
 
 .jumbo {
@@ -35,18 +38,14 @@
     color: var(--color-2);
 
     &:nth-child(1) {
-        margin: 0 0.5rem 0 0;
-    }
-
-    &:nth-child(2) {
-        margin: 0 0 0 0.5rem;
+        margin: 0 1rem 0 0;
     }
 
     @media screen and (max-width: $md-max) {
         font-size: 0.7rem;
     }
 
-    @media only screen and (max-width:$sm-max) {
+    @media only screen and (max-width: $sm-max) {
         font-size: 0.6rem;
         margin: 0 0.25rem;
     }

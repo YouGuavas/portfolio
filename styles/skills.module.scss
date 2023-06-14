@@ -4,6 +4,7 @@
     background-color: var(--color-1);
     color: var(--color-2);
     padding: auto 12rem;
+    padding-top: 15vh;
     text-align: center;
     height: var(--main-height);
 
@@ -21,9 +22,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-
 }
-
 
 .listItem {
     color: var(--color-2);
@@ -31,7 +30,6 @@
     grid-column: span 1;
     grid-row: span 1;
     align-items: center;
-
 
     caption {
         display: block;

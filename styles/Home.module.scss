@@ -9,7 +9,10 @@
     letter-spacing: 0.2rem;
     font-family: inherit;
     opacity: 100%;
-
+    h1,
+    label {
+        font-family: inherit;
+    }
     span {
         color: var(--color-2);
         margin-right: 0.2rem;
@@ -81,6 +84,32 @@
                 span {
                     opacity: 0.4;
                 }
+            }
+        }
+    }
+    .flexTitle {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 5;
+        h1 {
+            line-height: 2.5rem;
+        }
+        p {
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            text-align: center;
+            cursor: default;
+            height: 1rem;
+        }
+        @media screen and (max-width: $sm-max) {
+            h1 {
+                line-height: 1rem;
+            }
+            p {
+                font-size: 0.8rem;
+                text-align: center;
+                cursor: default;
+                height: 1rem;
             }
         }
     }
