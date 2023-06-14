@@ -1,7 +1,16 @@
-import { TwitterShareButton } from 'react-twitter-embed'
-import { FacebookShareButton } from 'react-share'
+import {
+    FacebookShareButton,
+    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon,
+} from 'react-share'
 import { useEffect } from 'react'
+import logo from '../public/images/logoDark.png'
+import Link from 'next/link'
+import Image from 'next/image'
+
 import styles from '../styles/Header.module.scss'
+const buttonSize = 24
 
 const FBButton = props => {
     const { url, text } = props
@@ -11,7 +20,7 @@ const FBButton = props => {
             url={url}
             quote={text}
         >
-            Share on FB
+            <FacebookIcon size={buttonSize} round={true} />
         </FacebookShareButton>
     )
 }
@@ -21,9 +30,9 @@ const TweetButton = props => {
         <TwitterShareButton
             className={styles.shareButton}
             url={url}
-            options={{ text: text }}
+            hashtags={['PatrickYambrick', 'WebDevelopment', 'React']}
         >
-            Tweet
+            <TwitterIcon size={buttonSize} round={true} />
         </TwitterShareButton>
     )
 }
@@ -60,6 +69,15 @@ export default function Header() {
     return (
         <header id="collapsible-header" className={styles.header}>
             <TweetButton url={url} text={text} />
+            <Link name="Logo Home" href="#Home" scroll={false}>
+                <Image
+                    alt="My personal logo"
+                    className="my-logo"
+                    height={96}
+                    width={96}
+                    src={logo.src}
+                />
+            </Link>
             <FBButton url={url} quote={text} />
         </header>
     )
