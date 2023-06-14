@@ -30,6 +30,7 @@
 
 .titleWrapper {
     display: grid;
+    height: 55vh;
     grid-template-columns: repeat(5, 1fr);
     position: absolute;
     z-index: 10;
@@ -162,9 +163,7 @@
         h1 {
             font-size: 0.9rem;
         }
-        div {
-            height: 80vh;
-        }
+
         p {
             margin: 0.2rem auto;
             font-size: 0.8rem;
