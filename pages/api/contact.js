@@ -13,13 +13,20 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         try {
             const { name, email, message } = JSON.parse(req.body)
-
+            const formatMessage = () => {
+                //format text to be sent
+                const description = `                Name: ${name}
+                Email: ${email}
+                Message:
+                ${message}`
+                return description
+            }
             // Compose and send the email
             const mailOptions = {
                 from: 'patrizzzzzzle193@gmail.com',
                 to: 'patrickyambrick@gmail.com',
                 subject: `Email from ${name} at ${email}`,
-                text: message,
+                text: formatMessage(),
             }
 
             await transporter.sendMail(mailOptions)

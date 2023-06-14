@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { grabElement } from '@/utils/_functions'
 
 import Head from 'next/head'
 
@@ -46,6 +47,13 @@ export default function Contact() {
             })
             if (response.ok) {
                 console.log('Email sent')
+                const name_field = grabElement('user_name')
+                const email_field = grabElement('user_email')
+                const message_field = grabElement('user_message')
+                const elements = [name_field, email_field, message_field]
+                elements.map(element => {
+                    element.value = ''
+                })
             } else {
                 console.log('Failed')
             }
