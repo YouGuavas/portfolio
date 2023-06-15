@@ -38,8 +38,8 @@ function Card(props) {
             const skills = props.skills
             return (
                 <ul>
-                    {skills.map(skill => {
-                        return <li>{skill}</li>
+                    {skills.map((skill, index) => {
+                        return <li key={index}>{skill}</li>
                     })}
                 </ul>
             )
