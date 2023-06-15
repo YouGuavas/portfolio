@@ -5,9 +5,9 @@ export default function About() {
     return (
         <section id="About" className={`${styles.about}`}>
             <div className={`alt-rotate alt-wrapper`}>
-                <h1 className="font-bold md:px-4 px-3 my-title" id="About">
+                <h2 className="font-bold md:px-4 px-3 my-title" id="About">
                     About Me
-                </h1>
+                </h2>
                 <p className="md:px-4 px-3">
                     Hi, my name is Patrick! Welcome to my site!
                 </p>

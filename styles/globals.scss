@@ -75,9 +75,7 @@ body {
     left: 1rem;
     background-color: var(--color-6);
 }
-.fall-right {
-    text-align: right;
-}
+
 .my-rotate {
     transform: rotate(1deg);
     @media screen and (min-width: $sm-max) {

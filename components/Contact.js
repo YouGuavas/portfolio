@@ -6,13 +6,13 @@ import styles from '../styles/Home.module.scss'
 const Contact = props => {
     return (
         <section className={`${styles.contact}`}>
-            <div className={`very-rotate main-wrapper fall-right`}>
-                <h1
+            <div className={`very-rotate main-wrapper`}>
+                <h2
                     className={`${styles.iconTitle} font-bold md:px-4 px-3 my-title`}
                     id="Contact"
                 >
                     Contact Me
-                </h1>
+                </h2>
                 <p>
                     Thank you for your interest in my web development services.
                     If you have any questions, inquiries, or would like to
