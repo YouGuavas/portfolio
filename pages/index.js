@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Lander from '../components/Lander'
 import About from '../components/About'
+import Contact from '../components/Contact'
 
 function index() {
     return (
@@ -12,6 +13,7 @@ function index() {
 
             <Lander />
             <About />
+            <Contact />
         </main>
     )
 }

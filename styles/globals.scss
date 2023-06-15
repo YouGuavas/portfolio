@@ -71,19 +71,35 @@ body {
     opacity: var(--semi-transparent);
 }
 .main-wrapper {
+    top: 15vh;
+    left: 1rem;
     background-color: var(--color-6);
 }
-
+.fall-right {
+    text-align: right;
+}
 .my-rotate {
     transform: rotate(1deg);
     @media screen and (min-width: $sm-max) {
         transform: rotate(2deg);
     }
 }
+.very-rotate {
+    transform: rotate(2deg);
+    @media screen and (min-width: $sm-max) {
+        transform: rotate(6deg);
+    }
+}
 .alt-rotate {
     transform: rotate(-1deg);
     @media screen and (min-width: $sm-max) {
         transform: rotate(-2deg);
+    }
+}
+.alt-very-rotate {
+    transform: rotate(-2deg);
+    @media screen and (min-width: $sm-max) {
+        transform: rotate(-4deg);
     }
 }
 
