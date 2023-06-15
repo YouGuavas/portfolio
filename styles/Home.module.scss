@@ -18,6 +18,9 @@
         margin-right: 0.2rem;
         font-family: inherit;
     }
+    @media screen and (max-width: $sm-max) {
+        font-size: 1.2rem;
+    }
 
     @media (prefers-color-scheme: dark) {
         color: var(--color-2);
@@ -63,6 +66,7 @@
         }
         &:nth-child(n + 2) {
             min-height: 44vh;
+            width: 7.7rem;
             @media screen and (max-height: 600px) {
                 min-height: 50vh;
             }
@@ -83,9 +87,13 @@
             color: inherit;
             margin: 0;
             line-height: 1.75rem;
-            height: 2.15rem;
+            height: 1.9rem;
             cursor: pointer;
-
+            @media screen and (max-width: $sm-max), (max-height: 600px) {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                height: 1.9rem;
+            }
             span {
                 opacity: 0;
                 font-family: inherit;
@@ -121,10 +129,10 @@
         }
         @media screen and (max-width: $sm-max), (max-height: 600px) {
             h1 {
-                line-height: 1rem;
+                line-height: 0.9rem;
             }
             p {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
                 text-align: center;
                 cursor: default;
                 height: 1rem;

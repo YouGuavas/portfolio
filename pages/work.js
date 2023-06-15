@@ -33,6 +33,18 @@ export default function Work() {
 }
 
 function Card(props) {
+    const renderSkills = () => {
+        if (props.skills) {
+            const skills = props.skills
+            return (
+                <ul>
+                    {skills.map(skill => {
+                        return <li>{skill}</li>
+                    })}
+                </ul>
+            )
+        }
+    }
     return (
         <div className={`${styles.card}`}>
             <div
@@ -44,6 +56,7 @@ function Card(props) {
                 className={`${styles.contentContainer} my-text-mustard grid grid-cols-2 place-items-center text-center`}
             >
                 <h4 className="col-span-2">{props.project.title}</h4>
+                {renderSkills()}
                 <div className={`col-span-2 ${styles.projectDescription}`}>
                     <p>{props.project.description}</p>
                 </div>
