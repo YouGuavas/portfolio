@@ -11,7 +11,7 @@ const Contact = props => {
                     className={`${styles.iconTitle} font-bold md:px-4 px-3 my-title`}
                     id="Contact"
                 >
-                    Contact Me
+                    Contact Patrick
                 </h2>
                 <p>
                     Thank you for your interest in my web development services.
