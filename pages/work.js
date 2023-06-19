@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import SkillsUsed from '@/components/SkillsUsed'
 import projects from '../data/projects.json'
 
 import styles from '../styles/work.module.scss'
@@ -34,15 +35,9 @@ export default function Work() {
 
 function Card(props) {
     const renderSkills = () => {
-        if (props.skills) {
-            const skills = props.skills
-            return (
-                <ul>
-                    {skills.map((skill, index) => {
-                        return <li key={index}>{skill}</li>
-                    })}
-                </ul>
-            )
+        if (props.project.skills) {
+            const skills = props.project.skills
+            return <SkillsUsed skills={skills} />
         }
     }
     return (
