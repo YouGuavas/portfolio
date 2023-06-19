@@ -95,6 +95,12 @@
         .projectDescription {
             opacity: 1;
         }
+        ul {
+            opacity: 1;
+            font-size: 1rem;
+            text-shadow: -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1),
+                -1px 1px 0 var(--color-1), 1px 1px 0 var(--color-1); /* Set the outline */
+        }
     }
 
     @media only screen and (max-width: $md-max) {

@@ -4,7 +4,11 @@ export default function SkillsUsed(props) {
     return (
         <ul className={`${styles.skillsUsed}`}>
             {skills.map((skill, index) => {
-                return <li key={index}>{skill}</li>
+                return (
+                    <li className={`outline-text`} key={index}>
+                        {skill}
+                    </li>
+                )
             })}
         </ul>
     )
