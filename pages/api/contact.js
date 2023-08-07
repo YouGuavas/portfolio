@@ -38,7 +38,6 @@ export default async function handler(req, res) {
             res.status(500).json({ message: 'Failed to send email' })
         }
     } else {
-        console.log(req.method)
         res.status(405).json({ message: 'Method not allowed' })
     }
 }
