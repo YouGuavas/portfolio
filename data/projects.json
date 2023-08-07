@@ -2,7 +2,7 @@
     {
         "title": "Wilson's Stump Grinding",
         "skills": ["React", "CSS"],
-        "description": "A nextjs site built for a local small business owner. I worked with the client to design and build out his dream small business website. Built with nextjs and plain css. This project taught me how to work directly with a client, and how to send images serverlessly via email (using nodemailer, and remembering to encode and decode from base64).",
+        "description": "A nextjs site built for a local small business owner. I worked with the client to design and build out his dream small business website. Built with nextjs and plain css. Client can use Prismic to update content.",
         "live": "https://wilson-stump-grinding.vercel.app/",
         "src1": "/images/wilsonStump1.png"
     },
