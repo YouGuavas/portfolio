@@ -92,6 +92,11 @@
                 display: none;
             }
         }
+        @media screen and (max-width: 1050px) {
+            &:nth-child(n + 8) {
+                display: none;
+            }
+        }
 
         p {
             padding: 0 0.5rem;

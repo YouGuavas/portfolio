@@ -46,52 +46,46 @@ export default function Lander() {
             element.remove()
         }
     }
-    const resetWord = useCallback(
-        (outerIndex, index, word) => {
-            const letter = word.slice(0, 1)
-            //Search letterwords by first letter
-            const thisLetterWords = letterWords[0][letter.toUpperCase()]
-            const letterWord =
-                thisLetterWords[randomize(thisLetterWords.length)]
-
-            const newWordsState = letterWordsState.map(
-                (outerItem, outerIdx) => {
-                    const newArray = outerItem.map((item, innerIndex) => {
-                        if (index === innerIndex) {
-                            return letterWord
-                        } else {
-                            return item
-                        }
-                    })
-                    if (outerIndex === outerIdx) return newArray
-                    return outerItem
+    const resetWord = (outerIndex, index, word) => {
+        const letter = word.slice(0, 1)
+        //Search letterwords by first letter
+        const thisLetterWords = letterWords[0][letter.toUpperCase()]
+        const letterWord = thisLetterWords[randomize(thisLetterWords.length)]
+        const newWordsState = []
+        letterWordsState.map((outerItem, outerIdx) => {
+            const newArray = outerItem.map((item, innerIndex) => {
+                if (index === innerIndex) {
+                    return letterWord
+                } else {
+                    return item
                 }
-            )
-            setLetterWordsState(newWordsState)
-        },
-        [letterWordsState]
-    )
-    const addWordToCard = useCallback(
-        (word, outerIndex, index, parent) => {
-            //add new p element
-            const newP = create('p')
-            newP.id = `${outerIndex}-${index}-inner`
+            })
+            if (outerIndex === outerIdx) {
+                newWordsState[outerIndex] = newArray
+            }
+            return outerItem
+        })
+        console.log(newWordsState)
+        setLetterWordsState(newWordsState)
+    }
+    const addWordToCard = (word, outerIndex, index, parent) => {
+        //add new p element
+        const newP = create('p')
+        newP.id = `${outerIndex}-${index}-inner`
 
-            //Add new span for letterword and styling
-            const newSpan = create('span')
-            newSpan.innerHTML = word.slice(1)
-            newP.innerHTML = `${word.slice(0, 1)}`
+        //Add new span for letterword and styling
+        const newSpan = create('span')
+        newSpan.innerHTML = word.slice(1)
+        newP.innerHTML = `${word.slice(0, 1)}`
 
-            //Reset the word each time the mouse moves away
-            newP.onclick = () => resetWord(outerIndex, index, word)
-            addToParent(newP, newSpan)
-            addToParent(parent, newP)
-        },
-        [resetWord]
-    )
+        //Reset the word each time the mouse moves away
+        newP.onclick = () => resetWord(outerIndex, index, word)
+        addToParent(newP, newSpan)
+        addToParent(parent, newP)
+    }
 
     //Render the Letters and letterwords
-    const renderLetters = useCallback(() => {
+    const renderLetters = () => {
         if (letterWordsState.length > 0) {
             letterWordsState.map((localLetterWords, outerIndex) => {
                 const parent = grabElement(`${outerIndex}-outer`) //document.getElementById(`${outerIndex}-outer`);
@@ -103,7 +97,7 @@ export default function Lander() {
                 })
             })
         }
-    }, [addWordToCard, letterWordsState])
+    }
     useEffect(() => {
         words.map((word, index) => {
             const letters = word.split('')
@@ -112,10 +106,10 @@ export default function Lander() {
             renderWords(letterWordsState)
         })
         renderLetters()
-    }, [renderLetters, setLetters, letterWordsState])
+    }, [])
     useEffect(() => {
         renderLetters()
-    }, [letterWordsState, renderLetters])
+    }, [letterWordsState])
 
     return (
         <section id="Home" className={`${styles.lander}`}>

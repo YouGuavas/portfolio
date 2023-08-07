@@ -111,6 +111,12 @@ body {
     text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.15rem;
 }
+.my-underline {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.075rem;
+    text-underline-offset: 0.2rem;
+}
 
 .my-fade-in {
     transition: 0.4s;

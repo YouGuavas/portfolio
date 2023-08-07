@@ -33,7 +33,7 @@ export default function About() {
                 <p className="md:px-4 px-3">
                     I&apos;d like to help you build something, and{' '}
                     <Link
-                        className="font-bold rounded my-fade-in my-dotted-underline"
+                        className="font-bold rounded my-fade-in my-underline"
                         href="/contact"
                     >
                         I want you to tell me all about it
