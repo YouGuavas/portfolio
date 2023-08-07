@@ -65,7 +65,6 @@ export default function Lander() {
             }
             return outerItem
         })
-        console.log(newWordsState)
         setLetterWordsState(newWordsState)
     }
     const addWordToCard = (word, outerIndex, index, parent) => {
