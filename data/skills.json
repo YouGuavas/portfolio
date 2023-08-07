@@ -37,7 +37,7 @@
     {
         "name": "Nextjs",
         "url": "https://nextjs.org/",
-        "description": "A framework providing Ract apps with server-side rendering"
+        "description": "A framework providing React apps with server-side rendering"
     },
     {
         "name": "Typescript",
