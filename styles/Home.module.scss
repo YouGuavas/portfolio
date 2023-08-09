@@ -109,9 +109,9 @@
             line-height: 1.75rem;
             height: 1.9rem;
             cursor: pointer;
-            @media screen and (max-width: 350px) {
-                font-size: 1rem;
-                line-height: 1.3rem;
+            @media screen and (max-width: $xs-max) {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
                 height: 1.5rem;
             }
             @media screen and (max-height: 600px) {
