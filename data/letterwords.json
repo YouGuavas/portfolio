@@ -1,12 +1,6 @@
 [
     {
-        "A": [
-            "Athlete",
-            "Awesome",
-            "Acceptance",
-            "Accountability",
-            "Abstemious"
-        ],
+        "A": ["Athlete", "Awesome", "Acceptance", "Accountable", "Abstemious"],
         "B": ["Bicycling"],
         "C": ["Coding"],
         "D": [
@@ -15,36 +9,36 @@
             "Drive",
             "Dedication",
             "Development",
-            "Dependability"
+            "Dependable"
         ],
-        "E": ["Ents", "Engineering", "Elements", "Empathy"],
+        "E": ["Ents", "Engineer", "Elements", "Empathy"],
         "F": ["Fellowship", "Friend", "Focus"],
         "G": ["Goals"],
         "H": ["Honesty", "Horcrux"],
-        "I": ["Intelligent", "Introspection", "Innovation"],
+        "I": ["Intelligent", "Innovation"],
         "J": ["Jovial"],
         "K": ["Kindness", "Kenough"],
-        "L": ["Learning", "Loyalty", "Leadership", "Lycanthropy"],
+        "L": ["Learning", "Loyalty", "Leadership", "Lycans"],
         "M": ["Mystics", "Mentorship"],
         "N": ["Nature", "Nazgul"],
-        "O": ["Originality", "Optimism", "Openminded", "Ogres", "Orpheus"],
+        "O": ["Original", "Optimist", "Ogres", "Orpheus"],
         "P": [
             "Paladins",
             "Pegasus",
-            "Positivity",
-            "Perseverance",
-            "Perceptiveness",
+            "Positive",
+            "Persevere",
+            "Perceptive",
             "Patrick"
         ],
         "Q": ["Quaffle"],
-        "R": ["Roses", "Receptive", "Resilience", "Respect"],
+        "R": ["Rose", "Receptive", "Resilience", "Respect"],
         "S": ["Science", "Sharing"],
         "T": ["Trolls", "Teamwork"],
         "U": ["Ubiquity"],
-        "V": ["Values", "Vampires", "Veracity", "Versatility"],
-        "W": ["Waffles"],
-        "X": ["Xylophones"],
+        "V": ["Values", "Vampires", "Veracity", "Versatile"],
+        "W": ["Waffle"],
+        "X": ["Xylophone"],
         "Y": ["Yambrick"],
-        "Z": ["Zebras"]
+        "Z": ["Zebra"]
     }
 ]
