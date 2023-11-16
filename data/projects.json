@@ -8,22 +8,25 @@
     },
     {
         "title": "Code Editor",
+        "skills": ["React", "Sass", "CodeMirror"],
         "description": "A code editor I built using CodeMirror, React, and Sass. Users should be able to write html, css, and javascript code, and execute it in the iframe below.",
         "github": "https://github.com/YouGuavas/code-editor",
         "live": "https://code-editor-sage.vercel.app/",
         "src1": "/images/codeEditor1.png"
     },
     {
-        "title": "This Website",
-        "description": "A portfolio site I built to display my work using React & Tailwind.",
-        "github": "https://github.com/YouGuavas/portfolio",
-        "src1": "/images/portfolio1.png"
-    },
-    {
         "title": "Collectible Shop",
+        "skills": ["React", "TypeScript", "Snipcart"],
         "description": "An ecommerce site for an imaginary collectible shop, built with React, Typescript, and Snipcart.",
         "github": "https://github.com/YouGuavas/pokemon-shop",
         "live": "https://collectible-shop.vercel.app/",
         "src1": "/images/shop1.png"
+    },
+    {
+        "title": "This Website",
+        "skills": ["React", "Tailwind"],
+        "description": "A portfolio I built to display my work using React & Tailwind.",
+        "github": "https://github.com/YouGuavas/portfolio",
+        "src1": "/images/portfolio1.png"
     }
 ]
