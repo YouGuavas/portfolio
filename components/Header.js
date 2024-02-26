@@ -4,6 +4,7 @@ import {
     TwitterShareButton,
     TwitterIcon,
 } from 'react-share'
+import { FbButton, TweetButton } from './SocialButtons'
 import { useEffect } from 'react'
 import logo from '../public/images/logoDark.png'
 import Link from 'next/link'
@@ -12,30 +13,6 @@ import Image from 'next/image'
 import styles from '../styles/Header.module.scss'
 const buttonSize = 24
 
-const FBButton = props => {
-    const { url, text } = props
-    return (
-        <FacebookShareButton
-            className={styles.shareButton}
-            url={url}
-            quote={text}
-        >
-            <FacebookIcon size={buttonSize} round={true} />
-        </FacebookShareButton>
-    )
-}
-const TweetButton = props => {
-    const { url, text } = props
-    return (
-        <TwitterShareButton
-            className={styles.shareButton}
-            url={url}
-            hashtags={['PatrickYambrick', 'WebDevelopment', 'React']}
-        >
-            <TwitterIcon size={buttonSize} round={true} />
-        </TwitterShareButton>
-    )
-}
 export default function Header() {
     const url = 'https://patrickyambrick.com/'
     const text =
@@ -68,7 +45,7 @@ export default function Header() {
     })
     return (
         <header id="collapsible-header" className={styles.header}>
-            <TweetButton url={url} text={text} />
+            <TweetButton buttonSize={buttonSize} url={url} text={text} />
             <Link name="Logo Home" href="#Home" scroll={false}>
                 <Image
                     alt="My personal logo"
@@ -78,7 +55,7 @@ export default function Header() {
                     src={logo.src}
                 />
             </Link>
-            <FBButton url={url} quote={text} />
+            <FbButton buttonSize={buttonSize} url={url} quote={text} />
         </header>
     )
 }

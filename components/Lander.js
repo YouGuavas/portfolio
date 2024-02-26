@@ -1,28 +1,22 @@
 import { useEffect, useState, useCallback } from 'react'
 
-import { create, grabElement } from '../utils/_functions'
+import {
+    create,
+    grabElement,
+    addToParent,
+    clearElement,
+} from '../utils/_functions'
+import { renderWords } from '../utils/_wordFunctions'
 
 import styles from '../styles/Home.module.scss'
 import words from '../data/words.json'
 import letterWords from '../data/letterwords.json'
 
-//Render vertical divs for words
-const renderWords = letterWordsState => {
-    const parent = grabElement('titleWrapper')
-    letterWordsState.map((word, index) => {
-        if (grabElement(`${index}-outer`) !== null) return
-        const newDiv = create('div')
-        newDiv.id = `${index}-outer`
-        parent.append(newDiv)
-    })
-    return
-}
 export default function Lander() {
     const randomize = inputNumber => {
         return Math.floor(Math.random() * inputNumber)
     }
     const [letterWordsState, setLetterWordsState] = useState([])
-
     //Generate letterwords
     const setLetters = useCallback(
         (letters, outerIndex) => {
@@ -36,16 +30,6 @@ export default function Lander() {
         [letterWordsState]
     )
 
-    const addToParent = (parent, child) => {
-        //Append child element to parent element
-        parent.append(child)
-    }
-
-    const clearElement = element => {
-        if (element) {
-            element.remove()
-        }
-    }
     const resetWord = (outerIndex, index, word) => {
         const letter = word.slice(0, 1)
         //Search letterwords by first letter
