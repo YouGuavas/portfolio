@@ -10,7 +10,7 @@ import logo from '../public/images/logoDark.png'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from '../styles/Header.module.scss'
+import styles from '../styles/components/Header.module.scss'
 const buttonSize = 24
 
 export default function Header() {

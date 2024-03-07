@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 
 import Nav from './Nav'
-import styles from '../styles/Layout.module.scss'
+import styles from '../styles/components/Layout.module.scss'
 
 const Layout = ({ children }) => {
     return (

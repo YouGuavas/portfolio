@@ -1,8 +1,4 @@
-import styles from '../styles/Footer.module.scss';
+import styles from '../styles/components/Footer.module.scss'
 export default function Footer() {
-    return (
-        <footer className={styles.footer}>
-            Patrick Yambrick
-        </footer>
-    )
+    return <footer className={styles.footer}>Patrick Yambrick</footer>
 }

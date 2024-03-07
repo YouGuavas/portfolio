@@ -4,7 +4,7 @@ import {
     TwitterShareButton,
     TwitterIcon,
 } from 'react-share'
-import styles from '../styles/Header.module.scss'
+import styles from '../styles/components/Header.module.scss'
 
 const FbButton = props => {
     const { url, text } = props

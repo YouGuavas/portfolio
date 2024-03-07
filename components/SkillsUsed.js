@@ -1,4 +1,4 @@
-import styles from '../styles/SkillsUsed.module.scss'
+import styles from '../styles/components/SkillsUsed.module.scss'
 export default function SkillsUsed(props) {
     const skills = props.skills
     return (

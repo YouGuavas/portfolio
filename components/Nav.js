@@ -1,4 +1,4 @@
-import styles from '../styles/Nav.module.scss'
+import styles from '../styles/components/Nav.module.scss'
 import Link from 'next/link'
 
 import { useEffect } from 'react'
