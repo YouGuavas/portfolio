@@ -15,7 +15,8 @@
 .DS_Store
 .env
 .env*.local
-
+/pages/not_used
+/experimental
 
 npm-debug.log*
 yarn-debug.log*
