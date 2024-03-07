@@ -22,7 +22,7 @@ const Contact = props => {
                 </p>
                 <ul>
                     <li className={`${styles.icon}`}>
-                        <Link href="mailto:patrickyambrick@gmail.com">
+                        <Link href="mailto:patrick@patdesigns.online">
                             <FontAwesomeIcon icon={faEnvelope} />
                         </Link>
                     </li>

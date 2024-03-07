@@ -76,10 +76,10 @@ export default function Contact() {
                     <div className="lg:flex lg:flex-wrap">
                         <h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
                         <a
-                            href="mailto:patrickyambrick@gmail.com"
+                            href="mailto:patrick@patdesigns.online"
                             className={`${styles.jumbo} pt-4`}
                         >
-                            patrickyambrick@gmail.com
+                            patrick@patdesigns.online
                         </a>
                     </div>
                     <p className={styles.or}>Or:</p>
