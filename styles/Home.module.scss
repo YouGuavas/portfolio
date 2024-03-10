@@ -240,6 +240,10 @@
         transform: rotate(30deg);
     }
     @media screen and (max-width: $sm-max) {
+        .icon,
+        .iconTitle {
+            position: relative;
+        }
         .iconTitle {
             right: -4rem;
         }
@@ -250,9 +254,9 @@
 
     .icon {
         text-align: center;
-
         color: var(--color-1);
         margin: 0.2rem;
+        width: 20vw;
         &:nth-child(1) {
             top: 14rem;
             right: -4rem;
@@ -273,10 +277,9 @@
             right: 0rem;
         }
         a {
-            border-radius: 0.3rem;
-
             background-color: var(--color-3);
             padding: 1.3rem 1.3rem;
+            width: 100%;
         }
     }
 }
