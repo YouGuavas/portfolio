@@ -3,7 +3,6 @@ import Header from './Header'
 
 import Nav from './Nav'
 import styles from '../styles/components/Layout.module.scss'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const Layout = ({ children }) => {
     return (
@@ -18,7 +17,6 @@ const Layout = ({ children }) => {
             </div>
 
             {children}
-            <SpeedInsights />
         </>
     )
 }
