@@ -30,7 +30,9 @@
     overflow: hidden;
     border-radius: 0.1rem;
     cursor: default;
-
+    @media only screen and (min-width: $md-max) {
+        padding: 1rem 10rem;
+    }
     .projectDescription {
         opacity: 0;
         width: 70vw;
@@ -61,10 +63,6 @@
         top: 0;
         left: 0;
         position: absolute;
-    }
-
-    @media only screen and (min-width: $md-max) {
-        padding: 1rem 10rem;
     }
 
     h4 {
