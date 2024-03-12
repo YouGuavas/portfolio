@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Wilson's Stump Grinding",
+        "skills": ["React", "CSS"],
+        "description": "A nextjs site built for a local small business owner. I worked with the client to design and build out his dream small business website. Built with nextjs and plain css. The client can use Prismic to update content. This was my first experience working with Prismic, so learning to integrate that proved challenging at some points, but with patience (and a couple of nature walks to clear my mind), I was able to solve the problems that arose.",
+        "live": "https://wilson-stump-grinding.vercel.app/",
+        "src1": "/images/wilsonStump1.png"
+    }
+]

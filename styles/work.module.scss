@@ -24,15 +24,17 @@
 
 .card {
     position: relative;
-    grid-column: span 1 / span 1;
-    height: 40vh;
+    grid-column: span 3 / span 3;
+    transition: 0.4s;
+    height: 60vh;
     overflow: hidden;
     border-radius: 0.1rem;
     cursor: default;
 
     .projectDescription {
         opacity: 0;
-        width: 70%;
+        width: 70vw;
+        height: 30vh;
         padding: 1rem;
         background-color: var(--color-6);
         color: var(--color-2);
@@ -54,31 +56,15 @@
 
     .backgroundImageContainer,
     .contentContainer {
-        height: 40vh;
-        width: 33vw;
+        height: 60vh;
+        width: 100vw;
         top: 0;
         left: 0;
         position: absolute;
     }
 
-    &:nth-child(1) {
-        height: 60vh;
-        grid-column: span 3 / span 3;
-
-        .backgroundImageContainer,
-        .contentContainer {
-            height: 60vh;
-            width: 100vw;
-        }
-
-        .projectDescription {
-            width: 70vw;
-            height: 30vh;
-        }
-
-        @media only screen and (min-width: $md-max) {
-            padding: 1rem 10rem;
-        }
+    @media only screen and (min-width: $md-max) {
+        padding: 1rem 10rem;
     }
 
     h4 {

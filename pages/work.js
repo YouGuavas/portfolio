@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import SkillsUsed from '@/components/SkillsUsed'
 import projects from '../data/projects.json'
+import work from '../data/work.json'
 
 import styles from '../styles/work.module.scss'
 
@@ -16,11 +17,15 @@ export default function Work() {
                 className={`${styles.work} my-background-generic text-center my-text-mustard`}
             >
                 <div className="my-overlay">
-                    <h1 className="my-title disappear-md">Personal Projects</h1>
-                    <p className="disappear-md">
-                        These are projects I have done to further my own
-                        learning, comprehension, and growth.
-                    </p>
+                    <h2 className="my-title disappear-md">Work</h2>
+                    <div className="grid grid-cols-3 gap-2 py-6">
+                        {work.map((item, index) => {
+                            const work = item
+                            return <Card key={index} project={work} />
+                        })}
+                    </div>
+                    <h2 className="my-title disappear-md">Personal Projects</h2>
+
                     <div className="grid grid-cols-3 gap-2 py-6">
                         {projects.map((item, index) => {
                             const project = item
