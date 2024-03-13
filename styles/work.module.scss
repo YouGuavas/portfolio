@@ -1,121 +1,121 @@
 @import '../utils/_variables.scss';
 
 .work {
-    padding-top: 15vh;
-    margin: 0 auto;
+	padding-top: 15vh;
+	margin: 0 auto;
 
-    .my-overlay {
-        height: 100%;
-        padding: 0;
-    }
+	.my-overlay {
+		height: 100%;
+		padding: 0;
+	}
 }
 
 .imageContainer {
-    height: 134px;
+	height: 134px;
 
-    img {
-        height: 100%;
-    }
+	img {
+		height: 100%;
+	}
 
-    @media only screen and (max-width: $md-max) {
-        height: 270px;
-    }
+	@media only screen and (max-width: $md-max) {
+		height: 270px;
+	}
 }
 
 .card {
-    position: relative;
-    grid-column: span 3 / span 3;
-    transition: 0.3s;
-    height: 60vh;
-    overflow: hidden;
-    border-radius: 0.1rem;
-    cursor: default;
-    @media only screen and (min-width: $md-max) {
-        padding: 1rem 10rem;
-    }
-    .projectDescription {
-        opacity: 0;
-        width: 70vw;
-        height: 30vh;
-        padding: 1rem;
-        background-color: var(--color-6);
-        color: var(--color-2);
-        transition: 0.4s;
-    }
+	position: relative;
+	grid-column: span 3 / span 3;
+	transition: 0.3s;
+	height: 60vh;
+	overflow: hidden;
+	border-radius: 0.1rem;
+	cursor: default;
+	@media only screen and (min-width: $md-max) {
+		padding: 1rem 10rem;
+	}
+	.projectDescription {
+		opacity: 0;
+		width: 70vw;
+		height: 30vh;
+		padding: 1rem;
+		background-color: var(--color-6);
+		color: var(--color-2);
+		transition: 0.4s;
+	}
 
-    .backgroundImageContainer {
-        opacity: var(--medium-transparent);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        z-index: 8;
-    }
+	.backgroundImageContainer {
+		opacity: var(--medium-transparent);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		z-index: 9;
+	}
 
-    .contentContainer {
-        z-index: 10;
-    }
+	.contentContainer {
+		z-index: 10;
+	}
 
-    .backgroundImageContainer,
-    .contentContainer {
-        height: 60vh;
-        width: 100vw;
-        top: 0;
-        left: 0;
-        position: absolute;
-    }
+	.backgroundImageContainer,
+	.contentContainer {
+		height: 60vh;
+		width: 100vw;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
 
-    h4 {
-        font-weight: 800;
-        font-size: 2rem;
-        margin: 1rem 0;
-        transition: 0.2s;
-    }
+	h4 {
+		font-weight: 800;
+		font-size: 2rem;
+		margin: 1rem 0;
+		transition: 0.2s;
+	}
 
-    &:hover {
-        h4 {
-            font-size: 2.5rem;
-        }
+	&:hover {
+		h4 {
+			font-size: 2.5rem;
+		}
 
-        .projectDescription {
-            opacity: 1;
-        }
-        ul {
-            opacity: 1;
-            font-size: 1rem;
-            text-shadow: -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1),
-                -1px 1px 0 var(--color-1), 1px 1px 0 var(--color-1); /* Set the outline */
-        }
-    }
+		.projectDescription {
+			opacity: 1;
+		}
+		ul {
+			opacity: 1;
+			font-size: 1rem;
+			text-shadow: -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1),
+				-1px 1px 0 var(--color-1), 1px 1px 0 var(--color-1); /* Set the outline */
+		}
+	}
 
-    @media only screen and (max-width: $md-max) {
-        grid-column: span 3 / span 3;
-        height: 70vh;
+	@media only screen and (max-width: $md-max) {
+		grid-column: span 3 / span 3;
+		height: 70vh;
 
-        .contentContainer,
-        .backgroundImageContainer {
-            width: 100vw;
-            height: 70vh;
-        }
+		.contentContainer,
+		.backgroundImageContainer {
+			width: 100vw;
+			height: 70vh;
+		}
 
-        .projectDescription {
-            height: 20vh;
-            opacity: 1;
-        }
+		.projectDescription {
+			height: 20vh;
+			opacity: 1;
+		}
 
-        p {
-            font-size: 0.8rem;
-        }
+		p {
+			font-size: 0.8rem;
+		}
 
-        h4 {
-            margin: 0.2rem 0;
-        }
+		h4 {
+			margin: 0.2rem 0;
+		}
 
-        div {
-            margin: 0.5rem;
-        }
+		div {
+			margin: 0.5rem;
+		}
 
-        a {
-            font-size: 0.8rem;
-        }
-    }
+		a {
+			font-size: 0.8rem;
+		}
+	}
 }
