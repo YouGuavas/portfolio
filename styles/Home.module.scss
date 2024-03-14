@@ -92,15 +92,18 @@
 			minmax(5%, 1fr)
 		); /* Create 5 columns with a minimum width of 5% */
 		grid-gap: 0.2rem; /* Adjust the gap between grid items */
+		grid-template-rows: 1;
+		overflow-x: none;
 		position: relative;
-		min-height: 90%;
+		min-height: 70%;
 		margin: 0 auto;
 		margin-top: 0.8rem;
 		@media screen and (max-width: $md-max) {
 			width: 100%;
+			grid-template-columns: repeat(4, minmax(5%, 1fr));
+		}
+		@media screen and (max-width: $sm-max) {
 			grid-template-columns: repeat(3, minmax(5%, 1fr));
-			grid-template-rows: 1;
-			overflow-x: none;
 		}
 		div {
 			font-family: inherit;
@@ -113,12 +116,16 @@
 			min-height: 40vh;
 			@media screen and (max-height: 600px) {
 				min-height: 30vh;
-				font-size: 1.4rem;
-				line-height: 1.5rem;
-				height: 1.9rem;
+				font-size: 1rem;
+				line-height: 1rem;
+			}
+			@media screen and (max-width: $sm-max) {
+				&:nth-child(n + 4) {
+					display: none;
+				}
 			}
 			@media screen and (max-width: $md-max) {
-				&:nth-child(n + 4) {
+				&:nth-child(n + 5) {
 					display: none;
 				}
 			}
@@ -146,7 +153,7 @@
 				height: 1.9rem;
 				cursor: pointer;
 				@media screen and (max-width: $xs-max) {
-					font-size: 1.5rem;
+					font-size: 1.3rem;
 					line-height: 1.5rem;
 					height: 1.5rem;
 				}
