@@ -1,9 +1,4 @@
-import {
-    FacebookShareButton,
-    FacebookIcon,
-    TwitterShareButton,
-    TwitterIcon,
-} from 'react-share'
+
 import { FbButton, TweetButton } from './SocialButtons'
 import { useEffect } from 'react'
 import logo from '../public/images/logoDark.png'
@@ -14,7 +9,7 @@ import styles from '../styles/components/Header.module.scss'
 const buttonSize = 24
 
 export default function Header() {
-    const url = 'https://patrickyambrick.com/'
+    const url = 'https://patdesigns.online/'
     const text =
         'Do you or somebody you know need a website for a small business? Contact Patrick!'
     const scrollTop = () => {
