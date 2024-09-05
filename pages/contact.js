@@ -1,34 +1,34 @@
-import React, { useRef, useState } from 'react'
-import { grabElement } from '@/utils/_functions'
+import React, { useRef, useState } from 'react';
+import { grabElement } from '@/utils/_functions';
 
-import Head from 'next/head'
+import Head from 'next/head';
 
-import styles from '../styles/contact.module.scss'
+import styles from '../styles/contact.module.scss';
 
 export default function Contact() {
-    const labelClass =
-        'block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard'
-    const inputClass = `my-transition leading-tight appearance-none ${styles.inputClass}`
+	const labelClass =
+		'block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard';
+	const inputClass = `my-transition leading-tight appearance-none ${styles.inputClass}`;
 
-    const [params, setParams] = useState({
-        user_name: '',
-        user_email: '',
-        message: '',
-    })
+	const [params, setParams] = useState({
+		user_name: '',
+		user_email: '',
+		message: '',
+	});
 
-    const form = useRef()
+	const form = useRef();
 
-    const handleChange = e => {
-        const name = e.target.name
-        const value = e.target.value
+	const handleChange = (e) => {
+		const name = e.target.name;
+		const value = e.target.value;
 
-        setParams(prevParams => ({
-            ...prevParams,
-            [name]: value,
-        }))
-    }
+		setParams((prevParams) => ({
+			...prevParams,
+			[name]: value,
+		}));
+	};
 
-    const sendEmail = async e => {
+	/*const sendEmail = async e => {
         e.preventDefault()
 
         if (
@@ -62,26 +62,27 @@ export default function Contact() {
                 'Please make sure the form is completely filled out before submitting.'
             )
         }
-    }
+    }*/
 
-    return (
-        <div>
-            <Head>
-                <title>Contact | Patrick Yambrick</title>
-            </Head>
-            <section
-                className={`my-background-generic place-items-center ${styles.contact}`}
-            >
-                <div className={`my-overlay grid place-items-center`}>
-                    <div className="lg:flex lg:flex-wrap">
-                        <h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
-                        <a
-                            href="mailto:patrick@patdesigns.online"
-                            className={`${styles.jumbo} pt-4`}
-                        >
-                            patrick@patdesigns.online
-                        </a>
-                    </div>
+	return (
+		<div>
+			<Head>
+				<title>Contact | Patrick Yambrick</title>
+			</Head>
+			<section
+				className={`my-background-generic place-items-center ${styles.contact}`}
+			>
+				<div className={`my-overlay grid place-items-center`}>
+					<div className="lg:flex lg:flex-wrap">
+						<h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
+						<a
+							href="mailto:patrick@patdesigns.online"
+							className={`${styles.jumbo} pt-4`}
+						>
+							patrick@patdesigns.online
+						</a>
+					</div>
+					{/*
                     <p className={styles.or}>Or:</p>
                     <form
                         id="contact-form"
@@ -153,9 +154,9 @@ export default function Contact() {
                                 />
                             </div>
                         </div>
-                    </form>
-                </div>
-            </section>
-        </div>
-    )
+                    </form>*/}
+				</div>
+			</section>
+		</div>
+	);
 }
