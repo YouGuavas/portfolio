@@ -68,7 +68,7 @@
 			font-family: sans-serif;
 			font-weight: 100;
 			letter-spacing: 0;
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			text-align: center;
 			cursor: default;
 			height: 1rem;
@@ -216,9 +216,13 @@
 	height: var(--main-height);
 	overflow: hidden;
 	position: relative;
-
+	h2 {
+		font-size: 1.4rem;
+	}
 	p {
 		margin: 1rem auto;
+		font-size: 1.2rem;
+		line-height: 1.75rem;
 	}
 
 	@media screen and (max-width: $md-max), (max-height: 600px) {
