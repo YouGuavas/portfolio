@@ -4,346 +4,349 @@
 @import '../utils/_variables.scss';
 
 :root {
-    --color-1: rgb(240, 250, 240);
-    --color-2: black;
-    --color-3: #53744f;
-    --color-4: rgba(90, 100, 90, 0.6);
-    --color-5: rgba(25, 80, 25, 0.5);
-    --color-6: rgb(130, 145, 130);
+	--color-1: rgb(240, 250, 240);
+	--color-2: black;
+	--color-3: #53744f;
+	--color-4: rgba(90, 100, 90, 0.6);
+	--color-5: rgba(25, 80, 25, 0.5);
+	--color-6: rgb(130, 145, 130);
 
-    --footer-height: 10vh;
-    --main-height: 100vh;
-    --semi-transparent: 55%;
-    --medium-transparent: 30%;
-    --primary-gradient: radial-gradient(
-        var(--color-1) 1%,
-        var(--color-1) 25%,
-        var(--color-1) 30%
-    );
-    --style-font-1: 'Amatic SC', 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri,
-        'Trebuchet MS', sans-serif;
+	--footer-height: 10vh;
+	--main-height: 100vh;
+	--semi-transparent: 55%;
+	--medium-transparent: 30%;
+	--primary-gradient: radial-gradient(
+		var(--color-1) 1%,
+		var(--color-1) 25%,
+		var(--color-1) 30%
+	);
+	--style-font-1: 'Amatic SC', 'Oswald', 'Gill Sans', 'Gill Sans MT', Calibri,
+		'Trebuchet MS', sans-serif;
 
-    @media (prefers-color-scheme: dark) {
-        --color-1: rgb(0, 0, 0);
-        --color-2: rgb(220, 220, 220);
-        --color-3: #53744f;
-        --color-4: rgba(220, 220, 220, 0.6);
-        --color-5: rgba(0, 0, 0, 0.3);
-        --color-6: rgb(30, 40, 30);
+	@media (prefers-color-scheme: dark) {
+		--color-1: rgb(0, 0, 0);
+		--color-2: rgb(220, 220, 220);
+		--color-3: #53744f;
+		--color-4: rgba(220, 220, 220, 0.6);
+		--color-5: rgba(0, 0, 0, 0.3);
+		--color-6: rgb(30, 40, 30);
 
-        --semi-transparent: 70%;
-        --medium-transparent: 55%;
-    }
+		--semi-transparent: 70%;
+		--medium-transparent: 55%;
+	}
 }
 
 * {
-    font-family: sans-serif;
+	font-family: sans-serif;
 }
 
 html {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--color-1);
+	background-color: var(--color-1);
 
-    *:focus {
-        outline: 1px solid var(--color-3);
-    }
+	*:focus {
+		outline: 1px solid var(--color-3);
+	}
 }
 
 .my-rhombus {
-    transform: skewX(45deg) scaleY(cos(45deg));
+	transform: skewX(45deg) scaleY(cos(45deg));
 }
 .main-wrapper,
 .alt-wrapper {
-    width: 75vw;
-    min-height: 55vh;
-    padding: 1rem;
-    position: absolute;
+	width: 75vw;
+	min-height: 55vh;
+	padding: 1rem;
+	position: absolute;
 }
 .alt-wrapper {
-    top: 15vh;
-    right: 1rem;
-    background-color: var(--color-1);
-    opacity: var(--semi-transparent);
+	top: 15vh;
+	right: 1rem;
+	background-color: var(--color-1);
+	opacity: var(--semi-transparent);
 }
 .main-wrapper {
-    top: 15vh;
-    left: 1rem;
-    background-color: var(--color-6);
+	top: 15vh;
+	left: 1rem;
+	background-color: var(--color-6);
 }
 
 .my-rotate {
-    transform: rotate(1deg);
-    @media screen and (min-width: $sm-max) {
-        transform: rotate(2deg);
-    }
+	transform: rotate(1deg);
+	@media screen and (min-width: $sm-max) {
+		transform: rotate(2deg);
+	}
 }
 .very-rotate {
-    transform: rotate(2deg);
-    @media screen and (min-width: $sm-max) {
-        transform: rotate(6deg);
-    }
+	transform: rotate(2deg);
+	@media screen and (min-width: $sm-max) {
+		transform: rotate(6deg);
+	}
 }
 .alt-rotate {
-    transform: rotate(-1deg);
-    @media screen and (min-width: $sm-max) {
-        transform: rotate(-2deg);
-    }
+	transform: rotate(-1deg);
+	@media screen and (min-width: $sm-max) {
+		transform: rotate(-2deg);
+	}
 }
 .alt-very-rotate {
-    transform: rotate(-2deg);
-    @media screen and (min-width: $sm-max) {
-        transform: rotate(-4deg);
-    }
+	transform: rotate(-2deg);
+	@media screen and (min-width: $sm-max) {
+		transform: rotate(-4deg);
+	}
 }
 
 .my-background-generic {
-    background-image: var(--primary-gradient);
+	background-image: var(--primary-gradient);
 }
 
 .my-dotted-underline {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.15rem;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: 0.15rem;
+	text-underline-offset: 0.15rem;
 }
 .my-underline {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0.075rem;
-    text-underline-offset: 0.2rem;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-thickness: 0.075rem;
+	text-underline-offset: 0.2rem;
 }
 
 .my-fade-in {
-    transition: 0.4s;
+	transition: 0.4s;
 
-    &:hover {
-        opacity: 65%;
-    }
+	&:hover {
+		opacity: 65%;
+	}
 }
 
 .my-hr {
-    border-top: none;
-    border-bottom: 1px solid var(--color-1);
-    width: 8rem;
-    border-radius: 50px;
-    margin: auto;
+	border-top: none;
+	border-bottom: 1px solid var(--color-1);
+	width: 8rem;
+	border-radius: 50px;
+	margin: auto;
+}
+.pad-top-vh {
+	padding-top: 15vh;
 }
 
 .my-text,
 .my-text-sage {
-    color: var(--color-1);
+	color: var(--color-1);
 }
 
 .my-text-forest {
-    color: var(--color-3);
+	color: var(--color-3);
 }
 
 .my-text-mustard {
-    color: var(--color-2);
+	color: var(--color-2);
 }
 
 .my-text-hover:hover {
-    color: var(--color-1);
+	color: var(--color-1);
 }
 
 .my-text-forest-hover:hover {
-    color: var(--color-3);
+	color: var(--color-3);
 }
 
 .my-placeholder-mustard::placeholder {
-    color: var(--color-3);
+	color: var(--color-3);
 }
 
 .my-placeholder-dark::placeholder {
-    color: var(--color-1);
+	color: var(--color-1);
 }
 
 .my-transition {
-    transition: 0.3s;
+	transition: 0.3s;
 }
 
 .vpwidth {
-    width: 100vw;
+	width: 100vw;
 }
 
 .lander {
-    font-size: 3rem;
-    padding-top: 3rem;
-    letter-spacing: 0.1rem;
-    font-weight: 100;
+	font-size: 3rem;
+	padding-top: 3rem;
+	letter-spacing: 0.1rem;
+	font-weight: 100;
 
-    @media only screen and (max-width: $sm-max) {
-        font-size: 2rem;
-    }
+	@media only screen and (max-width: $sm-max) {
+		font-size: 2rem;
+	}
 
-    p {
-        &:nth-child(2) {
-            margin-top: 1rem;
-        }
-    }
+	p {
+		&:nth-child(2) {
+			margin-top: 1rem;
+		}
+	}
 }
 
 .disappear-md {
-    @media only screen and (max-width: $md-max) {
-        display: none;
-    }
+	@media only screen and (max-width: $md-max) {
+		display: none;
+	}
 }
 
 .my-background {
-    background-color: var(--color-3);
+	background-color: var(--color-3);
 }
 
 .my-col-span-3 {
-    grid-column: span 1 / span 1;
+	grid-column: span 1 / span 1;
 
-    @media only screen and (max-width: --md-max) {
-        grid-column: span 3 / span 3;
-    }
+	@media only screen and (max-width: --md-max) {
+		grid-column: span 3 / span 3;
+	}
 }
 
 .my-btn,
 .my-contact-btn,
 .my-nav-btn {
-    transition: 0.7s;
-    cursor: pointer;
+	transition: 0.7s;
+	cursor: pointer;
 }
 
 .my-btn {
-    color: var(--color-2);
-    display: inline;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    border-bottom: 1px solid var(--color-3);
+	color: var(--color-2);
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	border-bottom: 1px solid var(--color-3);
 
-    &:hover {
-        color: var(--color-3);
-    }
+	&:hover {
+		color: var(--color-3);
+	}
 }
 
 .main-image {
-    display: none;
+	display: none;
 
-    @media only screen and (min-width: $md-max) {
-        display: block;
-    }
+	@media only screen and (min-width: $md-max) {
+		display: block;
+	}
 }
 
 .mobile-image {
-    display: none;
+	display: none;
 
-    @media only screen and (max-width: $md-max) {
-        display: block;
-    }
+	@media only screen and (max-width: $md-max) {
+		display: block;
+	}
 }
 
 .my-contact-btn {
-    background-color: var(--color-6);
-    color: var(--color-2);
-    margin: 0 auto;
+	background-color: var(--color-6);
+	color: var(--color-2);
+	margin: 0 auto;
 
-    &:hover {
-        opacity: var(--semi-transparent);
-    }
+	&:hover {
+		opacity: var(--semi-transparent);
+	}
 }
 
 .my-nav-btn {
-    color: var(--color-2);
+	color: var(--color-2);
 
-    &:hover {
-        color: var(--color-1);
-        background-color: var(--color-3);
-    }
+	&:hover {
+		color: var(--color-1);
+		background-color: var(--color-3);
+	}
 }
 
 .my-nav-btn-active {
-    color: var(--color-1);
-    background-color: var(--color-3);
-    transition: 0.3s;
+	color: var(--color-1);
+	background-color: var(--color-3);
+	transition: 0.3s;
 }
 
 .my-bg-mustard-hover,
 .my-bg-forest-hover,
 .my-bg-hover,
 .my-text-forest-hover {
-    transition: 0.4s;
+	transition: 0.4s;
 }
 
 .my-bg-mustard-hover:hover {
-    background-color: var(--color-3);
+	background-color: var(--color-3);
 }
 
 .my-bg-hover:hover {
-    background-color: var(--color-3);
+	background-color: var(--color-3);
 }
 
 .my-bg-forest-hover:hover {
-    background-color: rgba(140, 247, 40, 0.322);
+	background-color: rgba(140, 247, 40, 0.322);
 }
 
 .my-bg-forest {
-    background-color: var(--color-1);
+	background-color: var(--color-1);
 }
 
 .my-bg-sage {
-    background-color: var(--color-2);
+	background-color: var(--color-2);
 }
 
 .my-bg-mustard {
-    background-color: var(--color-3);
+	background-color: var(--color-3);
 }
 
 .border-sage {
-    border-color: var(--color-2);
+	border-color: var(--color-2);
 }
 
 .border-mustard {
-    border-color: var(--color-3);
+	border-color: var(--color-3);
 }
 
 .border-forest {
-    border-color: var(--color-1);
+	border-color: var(--color-1);
 }
 
 h1.my-title,
 h2.my-title,
 h3.my-title {
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-family: sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-family: sans-serif;
 }
 
 h1.my-title {
-    font-size: 1.2rem;
-    font-weight: 200;
+	font-size: 1.2rem;
+	font-weight: 200;
 }
 
 .top-10 {
-    margin-top: 10%;
+	margin-top: 10%;
 }
 
 .my-logo {
-    position: fixed;
-    z-index: 11;
-    top: 0.1rem;
-    left: 0.1rem;
-    height: 3rem;
-    width: 3rem;
-    border-bottom: 0rem;
+	position: fixed;
+	z-index: 11;
+	top: 0.1rem;
+	left: 0.1rem;
+	height: 3rem;
+	width: 3rem;
+	border-bottom: 0rem;
 
-    @media only screen and (max-width: $md-max) {
-        position: initial;
-        top: unset;
-    }
+	@media only screen and (max-width: $md-max) {
+		position: initial;
+		top: unset;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
+	html {
+		color-scheme: dark;
+	}
 }

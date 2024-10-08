@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import stories from '../data/stories.json';
-import styles from '../styles/work.module.scss';
+import styles from '../styles/stories.module.scss';
 
 export default function Work() {
 	return (
@@ -11,8 +11,8 @@ export default function Work() {
 				<title>Stories | Patrick Yambrick</title>
 			</Head>
 			<section
-				id="Work"
-				className={`${styles.work} my-background-generic text-center my-text-mustard`}
+				id="Stories"
+				className={`${styles.stories} pad-top-vh my-background-generic text-center my-text-mustard`}
 			>
 				<h1>Stories</h1>
 				<ul>

@@ -70,7 +70,7 @@ export default function Contact() {
 				<title>Contact | Patrick Yambrick</title>
 			</Head>
 			<section
-				className={`my-background-generic place-items-center ${styles.contact}`}
+				className={`pad-top-vh my-background-generic place-items-center ${styles.contact}`}
 			>
 				<div className={`my-overlay grid place-items-center`}>
 					<div className="lg:flex lg:flex-wrap">
