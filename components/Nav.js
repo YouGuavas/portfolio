@@ -2,6 +2,7 @@ import styles from '../styles/components/Nav.module.scss';
 import Link from 'next/link';
 
 import { useEffect } from 'react';
+
 const navHighlighter = () => {
 	if (window) {
 		let pageName = window.location.pathname;
