@@ -1,0 +1,19 @@
+.blogs {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	ul {
+		display: inherit;
+		flex-direction: inherit;
+		gap: inherit;
+		.title {
+			font-size: 1.2rem;
+		}
+		p {
+			span {
+				font-weight: 800;
+			}
+		}
+	}
+}

@@ -1,8 +1,4 @@
-import BlogPost from '../../experimental/components/BlogPost';
-import ByLine from '../../experimental/components/ByLine';
-import BlogImage from '../../experimental/components/BlogImage';
-import TableOfContents from '../../experimental/components/TableOfContents';
-import styles from '../../styles/Blog.module.scss';
+import styles from '../../styles/blog.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
 

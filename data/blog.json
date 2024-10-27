@@ -1,7 +1,14 @@
 [
 	{
-		"title": "",
-		"href": "",
-		"description": ""
+		"title": "A Concept for Interconnected Subjectivity via Nodular Solipsism",
+		"category": "Philosophical",
+		"href": "nodular-solipsism",
+		"description": "An attempt to make a leap from the concept of solipsism to an interconnected human experience by tying together multiple threads of thought."
+	},
+	{
+		"title": "Struggles With Converting",
+		"category": "Coding",
+		"href": "difficulty-converting",
+		"description": "A description of the difficulties I encountered while converting from CRA to nextjs"
 	}
 ]

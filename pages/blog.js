@@ -4,6 +4,8 @@ import Link from 'next/link';
 import blogPosts from '../data/blog';
 import styles from '../styles/blog.module.scss';
 
+import BlogInfo from '../components/BlogInfo';
+
 export default function Work() {
 	return (
 		<div>
@@ -12,16 +14,12 @@ export default function Work() {
 			</Head>
 			<section
 				id="Stories"
-				className={`${styles.stories} pad-top-vh my-background-generic text-center my-text-mustard`}
+				className={`${styles.blogs} pad-top-vh my-background-generic text-center my-text-mustard`}
 			>
 				<h1>Blog</h1>
 				<ul>
 					{blogPosts.map((blogPost, index) => {
-						return (
-							<li key={index}>
-								<Link href={`/blog/${blogPost.href}`}>{blogPost.title}</Link>
-							</li>
-						);
+						return <BlogInfo blogPost={blogPost} key={index} />;
 					})}
 				</ul>
 			</section>

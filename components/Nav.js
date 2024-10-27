@@ -13,10 +13,16 @@ const navHighlighter = () => {
 			return document.getElementById('home').classList.add(styles.active);
 		}
 		if (pageName.indexOf('stories') === -1) {
-			document
+			const classes = document
 				.getElementById(`${pageName.slice(1)}`)
 
 				.classList.add(styles.active);
+			if (classes) {
+				document
+					.getElementById(`${pageName.slice(1)}`)
+
+					.classList.add(styles.active);
+			}
 		}
 	}
 };
