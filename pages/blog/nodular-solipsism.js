@@ -13,7 +13,7 @@ export default function () {
 		'Hosting Horrors',
 	];
 	return (
-		<section title="Struggles With Converting">
+		<>
 			<Head>
 				<title>Struggles With Converting | Patrick Yambrick</title>
 			</Head>
@@ -87,6 +87,6 @@ export default function () {
 					<p className={styles.blogParagraph}>Hosting Horrors</p>
 				</div>
 			</section>
-		</section>
+		</>
 	);
 }

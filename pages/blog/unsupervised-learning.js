@@ -1,3 +1,6 @@
+import TableOfContents from '@/components/TableOfContents';
+import ByLine from '@/components/ByLine';
+import BlogImage from '@/components/BlogImage';
 import styles from '../../styles/blog.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -10,24 +13,20 @@ export default function () {
 		'Hosting Horrors',
 	];
 	return (
-		<BlogPost title="Struggles With Converting">
+		<>
 			<Head>
-				<title>Struggles With Converting | Patrick Yambrick</title>
+				<title>Simplifying Unsupervised Learning | Patrick Yambrick</title>
 			</Head>
-			<section className={styles.blogPostContainer}>
+			<section className={`${styles.blogPostContainer} pad-top-vh`}>
 				<h1 className="my-title" id="Struggling to Convert">
-					Struggling to Convert
+					Simplifying Unsupervised Learning
 				</h1>
 				<ByLine by="Patrick Yambrick" date="Wednesday, July 13, 2022" />
 				<div className={styles.blogBody}>
 					<p className={styles.blogParagraph}>
-						In{' '}
-						<Link href="/Blog/2">
-							<a className={styles.paragraphLink}>my previous post</a>
-						</Link>
-						, I detailed my process for converting from create-react-app to
-						nextjs. Here, I will cover some of the struggles I faced -- and
-						overcame -- while doing so.
+						In my previous post, I detailed my process for converting from
+						create-react-app to nextjs. Here, I will cover some of the struggles
+						I faced -- and overcame -- while doing so.
 					</p>
 					<TableOfContents sections={sections} />
 					<h2
@@ -57,9 +56,8 @@ export default function () {
 					<p className={styles.blogParagraph}>
 						Ultimately, thanks to a fair bit of Googling, I determined that the
 						source of my problems lay in my Tailwind config. All I had to do was
-						change my Tailwind config exports' purge line to this:
-						<BlogImage src="https://lh3.googleusercontent.com/pw/AM-JKLVTkAjtFnkPlAJqRzfkxIARc0ULvm_lsweIkvjx4-HNoLTpXnpUCw5IoXpxHan5GTpQxeLTJS48hRy6tU_7rC9vogww8Jnt0Ex1rd44hq4bD7UndRV0gYbop8L6eaoeIqR0NEU0bBYZXm58lhYdaFY=w602-h78-no?authuser=0" />
-						And poof! Onto the Next task with a strong Tailwind at my back.
+						change my Tailwind config exports' purge line to this: And poof!
+						Onto the Next task with a strong Tailwind at my back.
 					</p>
 					<h2
 						className={`${styles.blogTitle} my-title`}
@@ -93,6 +91,6 @@ export default function () {
 					<p className={styles.blogParagraph}>Hosting Horrors</p>
 				</div>
 			</section>
-		</BlogPost>
+		</>
 	);
 }

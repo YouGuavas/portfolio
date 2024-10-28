@@ -6,9 +6,9 @@
 		"description": "An attempt to make a leap from the concept of solipsism to an interconnected human experience by tying together multiple threads of thought."
 	},
 	{
-		"title": "Struggles With Converting",
-		"category": "Coding",
-		"href": "difficulty-converting",
-		"description": "A description of the difficulties I encountered while converting from CRA to nextjs"
+		"title": "Simplifying Unsupervised Learning",
+		"category": "Machine Learning",
+		"href": "unsupervised-learning",
+		"description": "A beginner-friendly explanation of the concept of unsupervised learning."
 	}
 ]
