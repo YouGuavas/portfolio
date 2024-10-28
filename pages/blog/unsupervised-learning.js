@@ -6,27 +6,25 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 export default function () {
-	const sections = [
-		'Struggling With Styles',
-		'Struggling With Structure',
-		'Nasty Navigation',
-		'Hosting Horrors',
-	];
+	const sections = ['Struggling With Styles', 'Struggling With Structure'];
 	return (
 		<>
 			<Head>
 				<title>Simplifying Unsupervised Learning | Patrick Yambrick</title>
 			</Head>
 			<section className={`${styles.blogPostContainer} pad-top-vh`}>
-				<h1 className="my-title" id="Struggling to Convert">
-					Simplifying Unsupervised Learning
-				</h1>
-				<ByLine by="Patrick Yambrick" date="Wednesday, July 13, 2022" />
+				<div className={`${styles.titleContainer}`}>
+					<h1 className="my-title" id="Struggling to Convert">
+						Simplifying Unsupervised Learning
+					</h1>
+					<ByLine by="Patrick Yambrick" date="Wednesday, July 13, 2022" />
+				</div>
 				<div className={styles.blogBody}>
+					<h2 className={`${styles.blogTitle} my-title`}>
+						What is unsupervised learning?
+					</h2>
 					<p className={styles.blogParagraph}>
-						In my previous post, I detailed my process for converting from
-						create-react-app to nextjs. Here, I will cover some of the struggles
-						I faced -- and overcame -- while doing so.
+						Unsupervised learning is a machine learning concept.
 					</p>
 					<TableOfContents sections={sections} />
 					<h2
@@ -77,18 +75,6 @@ export default function () {
 						yourself permission to mess up a couple of times, and you'll find
 						your own way through it.
 					</p>
-					<h2 className={`${styles.blogTitle} my-title`} id="Nasty Navigation">
-						Nasty Navigation
-					</h2>
-					<p className={styles.blogParagraph}>
-						Page navigation is much simpler in nextjs than it is with
-						create-react-app, but that doesn't mean it comes entirely without
-						its own challenges!
-					</p>
-					<h2 className={`${styles.blogTitle} my-title`} id="Hosting Horrors">
-						Hosting Horrors
-					</h2>
-					<p className={styles.blogParagraph}>Hosting Horrors</p>
 				</div>
 			</section>
 		</>

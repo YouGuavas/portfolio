@@ -21,4 +21,18 @@
 .blogPostContainer {
 	margin: 0 auto;
 	width: 70vw;
+	.titleContainer {
+		margin-bottom: 1.5rem;
+		h1 {
+			margin: 0.5rem 0;
+			font-size: 2rem;
+			font-weight: 800;
+			letter-spacing: 0.2rem;
+		}
+		.byLineContainer {
+			p {
+				font-weight: 200;
+			}
+		}
+	}
 }
