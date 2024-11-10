@@ -7,8 +7,8 @@ import Image from 'next/image';
 import styles from '../styles/components/Header.module.scss';
 const buttonSize = 24;
 
-export default function Header() {
-	const url = 'https://patdesigns.online';
+export default function Header(props) {
+	const url = props.url;
 	const text =
 		'Do you or somebody you know need a website for a small business? Contact Patrick!';
 	const scrollTop = () => {
@@ -17,6 +17,7 @@ export default function Header() {
 			return window.scrollY;
 		}
 	};
+
 	const handleScroll = () => {
 		const container = document.getElementById('collapsible-header');
 		const currentScroll = scrollTop();
@@ -34,6 +35,7 @@ export default function Header() {
 			container.classList.add(styles.open);
 		}
 	};
+
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
 	});

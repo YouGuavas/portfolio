@@ -5,13 +5,9 @@ import {
 	TwitterIcon,
 } from 'react-share';
 import styles from '../styles/components/Header.module.scss';
-
 const FbButton = (props) => {
-	let { url, text } = props;
-	if (window) {
-		let pageName = window.location.pathname;
-		url = 'https://patdesigns.online' + pageName;
-	}
+	const { url, text } = props;
+
 	return (
 		<FacebookShareButton className={styles.shareButton} url={url} quote={text}>
 			<FacebookIcon size={props.buttonSize} round={true} />
@@ -19,17 +15,10 @@ const FbButton = (props) => {
 	);
 };
 const TweetButton = (props) => {
-	let { url, text } = props;
-	if (window) {
-		let pageName = window.location.pathname;
-		url = 'https://patdesigns.online' + pageName;
-	}
+	const { url, text } = props;
+
 	return (
-		<TwitterShareButton
-			className={styles.shareButton}
-			url={url}
-			hashtags={['WebDevelopment', 'React']}
-		>
+		<TwitterShareButton className={styles.shareButton} url={url}>
 			<TwitterIcon size={props.buttonSize} round={true} />
 		</TwitterShareButton>
 	);
