@@ -1,5 +1,5 @@
 import styles from '../../styles/blog.module.scss';
-
+import ByLine from '@/components/ByLine';
 export default function blog() {
 	return (
 		<>
@@ -8,6 +8,7 @@ export default function blog() {
 					<h1 className="my-title" id="1">
 						Thoughts on the Israel-Hamas Conflict
 					</h1>
+					<ByLine by="Patrick Yambrick" date="November 9, 2024" />
 				</div>
 				<h2 className={`${styles.blogTitle} my-title`}>A Monke's Parable</h2>
 				<p className={styles.blogParagraph}>
@@ -25,7 +26,7 @@ export default function blog() {
 					brothers stop for just long enough to listen, and what do they see
 					behind them? Both brothers' wives, and all their neighbors, and
 					families had died. Where once stood a great symbol of light and peace,
-					and wisdom, now flowed /two/ seas of babies' blood.
+					and wisdom, now flowed <em>two</em> seas of babies' blood.
 				</p>
 				<p className={styles.blogParagraph}>
 					These two brothers were unwilling to pause and breathe for long enough
@@ -37,16 +38,16 @@ export default function blog() {
 					mightiest, wisest, and oldest brothers in the world finding a way to
 					spring unexpected unity up from holy land? Sometimes, both brothers
 					are stressed out, and need to take a breather. This monkey thinks the
-					women and children who look to them as heroes /really/ need some
-					heroes right now. Look around you. They're begging you to listen.
+					women and children who look to them as heroes <em>really</em> need
+					some heroes right now. Look around you. They're begging you to listen.
 				</p>
 				<p className={styles.blogParagraph}>
-					If I'm stressed out, I know /everyone/ over there is. Maybe even
-					especially the folks at the top. But the thing is, those folks are the
-					ones who have the power to /act/ on behalf of the folks whose voices
-					are drowned out. I see people on both sides /wanting/ to do what's
-					right, only losing sight of where /they/ might draw their /own/ lines
-					in the sand.
+					If I'm stressed out, I know <em>everyone</em> over there is. Maybe
+					even especially the folks at the top. But the thing is, those folks
+					are the ones who have the power to <em>act</em> on behalf of the folks
+					whose voices are drowned out. I see people on both sides{' '}
+					<em>wanting</em> to do what's right, only losing sight of where{' '}
+					<em>they</em> might draw their <em>own</em> lines in the sand.
 				</p>
 			</section>
 			<section className={styles.considerations}>

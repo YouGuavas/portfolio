@@ -5,15 +5,10 @@ export default function BlogInfo(props) {
 	const blogPost = props.blogPost;
 	return (
 		<li>
-			<h2 className={`${styles.title}`}>
-				<Link href={`/blog/${blogPost.href}`}>
-					<strong>{blogPost.title}</strong>
-				</Link>
-			</h2>
-			<p>
-				<span>Category: </span>
-				{blogPost.category}
-			</p>
+			<Link href={`/blog/${blogPost.href}`}>
+				<h2 className={`${styles.title}`}>{blogPost.title}</h2>
+			</Link>
+
 			<p>
 				<span>Description: </span>
 				{blogPost.description}
