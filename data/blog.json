@@ -4,5 +4,11 @@
 		"category": "Machine Learning",
 		"href": "unsupervised-learning",
 		"description": "A beginner-friendly explanation of the concept of unsupervised learning."
+	},
+	{
+		"title": "One Monkey's Thoughts on a Central Conflict",
+		"category": "World",
+		"href": "israel-hamas-conflict",
+		"description": "Exploring ideas for a peaceful resolution by way of storytelling."
 	}
 ]

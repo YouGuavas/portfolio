@@ -12,16 +12,6 @@ const navHighlighter = () => {
 		if (pageName === '/') {
 			return document.getElementById('home').classList.add(styles.active);
 		}
-		if (pageName.indexOf('stories') === -1) {
-			const classes = document.getElementById(`${pageName.slice(1)}`);
-
-			if (classes) {
-				document
-					.getElementById(`${pageName.slice(1)}`)
-
-					.classList.add(styles.active);
-			}
-		}
 	}
 };
 export default function Nav(props) {

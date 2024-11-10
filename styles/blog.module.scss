@@ -19,22 +19,24 @@
 		}
 	}
 }
-
-.blogPostContainer {
+.blogBody,
+.considerations {
+	width: 65vw;
 	margin: 0 auto;
-	width: 70vw;
-	.titleContainer {
-		margin-bottom: 1.5rem;
-		h1 {
-			margin: 0.5rem 0;
-			font-size: 2rem;
-			font-weight: 800;
-			letter-spacing: 0.2rem;
-		}
-		.byLineContainer {
-			p {
-				font-weight: 200;
-			}
+}
+.blogBody {
+	margin-top: 15vh;
+}
+.blogParagraph {
+	margin-top: 1rem;
+}
+.considerations {
+	margin-top: 2rem;
+	margin-bottom: 5vh;
+	ul {
+		list-style-type: '- ';
+		li {
+			margin-top: 0.4rem;
 		}
 	}
 }
