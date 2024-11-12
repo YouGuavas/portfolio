@@ -18,7 +18,7 @@ export default function blog() {
 					Monke finds himself taking a walk, when he stumbles upon two brothers,
 					squabbling over lines they have each drawn in the sand. Both believing
 					theirs to be best, each brother holds strong in his stance, roaring
-					like the two mightiest lions this land had ever seen.
+					like the two mightiest lions this land has ever seen.
 				</p>
 				<p className={styles.blogParagraph}>
 					So mighty were their roars -- heard across land and sea -- that they
