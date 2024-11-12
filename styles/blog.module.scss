@@ -35,6 +35,9 @@
 .leaders {
 	width: 65vw;
 	margin: 0 auto;
+	@media screen and (max-width: $md-max) {
+		width: 85vw;
+	}
 }
 .blogBody {
 	margin-top: 15vh;
@@ -52,6 +55,9 @@
 			margin: 0 auto;
 			margin-top: 0.6rem;
 			width: 63vw;
+			@media screen and (max-width: $md-max) {
+				width: 80vw;
+			}
 		}
 	}
 }
