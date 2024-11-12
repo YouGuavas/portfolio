@@ -23,7 +23,7 @@ export default function blog() {
 				<p className={styles.blogParagraph}>
 					So mighty were their roars -- heard across land and sea -- that they
 					didn&apos;t hear Monke the first two times he tried to grab their
-					attention. Finally, the Monke mustered up a mighty shout of his own,
+					attention. Finally, Monke musters up a mighty shout of his own,
 					cutting through to both lions&apos; ears: &quot;Brothers, can you hear
 					me now? Take a look around you, and tell me what you see?&quot; The
 					two mighty brothers stop for just long enough to listen, and what do
