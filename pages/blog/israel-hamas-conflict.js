@@ -16,7 +16,7 @@ export default function blog() {
 				</h2>
 				<p className={styles.blogParagraph}>
 					Monke finds himself taking a walk, when he stumbles upon two brothers,
-					squabbling over lines they had each drawn in the sand. Both believing
+					squabbling over lines they have each drawn in the sand. Both believing
 					theirs to be best, each brother holds strong in his stance, roaring
 					like the two mightiest lions this land had ever seen.
 				</p>
