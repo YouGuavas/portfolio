@@ -34,7 +34,7 @@ export default function blog() {
 					free Palestine. I see this. I know this. I am committed to that cause
 					with you. One of my most respected friends is a very bright,
 					intellectual Palestinian man who has been articulating your cause in
-					his own way, so that your roaring would not fall upon deaf, Western
+					his own way, so that your roaring will not fall upon deaf, Western
 					ears. <em>All</em> Palestinian people deserve the freedom and the
 					right to speak and to fight with that white-hot intensity that burns
 					in your belly — I see you: shield turned sword. I envy that fire; mine
