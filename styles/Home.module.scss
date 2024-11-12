@@ -120,7 +120,7 @@
 				line-height: 1rem;
 			}
 			@media screen and (max-width: $sm-max) {
-				&:nth-child(n + 4) {
+				&:nth-child(n + 3) {
 					display: none;
 				}
 			}
