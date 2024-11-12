@@ -76,9 +76,8 @@ export default function blog() {
 					Mightn&apos;t a Lion offering an olive branch qualify? If one shield
 					is mighty, picture two -- one holding peace, and the other security --
 					forming a <em>bulwark</em>, allowing a strategist some space to
-					breathe, and
-					<em>think</em> of ways to guide his people into security on the global
-					stage.
+					breathe, and <em>think</em> of ways to guide his people into security
+					on the global stage.
 				</p>
 				<div className={`${styles.closing}`}>
 					<p>Sincerely,</p>
