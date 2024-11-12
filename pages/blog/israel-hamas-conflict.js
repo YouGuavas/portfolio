@@ -57,7 +57,7 @@ export default function blog() {
 			</section>
 			<section className={styles.considerations}>
 				<h2 className={`${styles.blogTitle} my-title`}>
-					Consider these options (this monkey's perspective)
+					Consider these options (this monkey&apos;s perspective)
 				</h2>
 				<ul>
 					<li>
