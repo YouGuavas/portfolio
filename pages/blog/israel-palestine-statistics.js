@@ -48,7 +48,8 @@ export default function blog() {
 						>
 							Israel Ministry of Foreign Affairs
 						</Link>
-						, &quot;Israel's Security and the Protection of Civilian Lives&quot;
+						, &quot;Israel&apos;s Security and the Protection of Civilian
+						Lives&quot;
 						<br />
 						Source:{' '}
 						<Link
