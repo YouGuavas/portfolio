@@ -103,7 +103,7 @@
 			grid-template-columns: repeat(4, minmax(5%, 1fr));
 		}
 		@media screen and (max-width: $sm-max) {
-			grid-template-columns: repeat(3, minmax(5%, 1fr));
+			grid-template-columns: repeat(2, minmax(5%, 1fr));
 		}
 		div {
 			font-family: inherit;
