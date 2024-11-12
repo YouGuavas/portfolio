@@ -1,5 +1,6 @@
 import styles from '../../styles/blog.module.scss';
 import ByLine from '@/components/ByLine';
+import Link from 'next/link';
 export default function blog() {
 	return (
 		<>
@@ -56,7 +57,7 @@ export default function blog() {
 			</section>
 			<section className={styles.considerations}>
 				<h2 className={`${styles.blogTitle} my-title`}>
-					Consider these options
+					Consider these options (this monkey's perspective)
 				</h2>
 				<ul>
 					<li>
@@ -113,6 +114,19 @@ export default function blog() {
 						feeling a lot of the same things right now often does.
 					</li>
 				</ul>
+			</section>
+			<section className={styles.leaders}>
+				<Link href="prime-minister-netanyahu">
+					<h2 className={`${styles.blogTitle} my-title`}>Minister Netanyahu</h2>
+				</Link>
+				<Link href="leader-sinwar">
+					<h2 className={`${styles.blogTitle} my-title`}>Leader Sinwar</h2>
+				</Link>
+			</section>
+			<section className={`${styles.centered} ${styles.considerations}`}>
+				<Link href="israel-palestine-statistics">
+					<h2 className={`${styles.blogTitle} my-title`}>Statistics</h2>
+				</Link>
 			</section>
 		</>
 	);

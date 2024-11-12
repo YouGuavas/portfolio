@@ -118,7 +118,8 @@ body {
 	text-underline-offset: 0.2rem;
 }
 
-.my-fade-in {
+.my-fade-in,
+.back-link {
 	transition: 0.4s;
 
 	&:hover {
@@ -211,9 +212,14 @@ body {
 
 .my-btn,
 .my-contact-btn,
-.my-nav-btn {
+.my-nav-btn,
+.back-link {
 	transition: 0.7s;
 	cursor: pointer;
+}
+
+.stats-container {
+	margin-top: 15vh;
 }
 
 .my-btn {
@@ -314,10 +320,16 @@ body {
 
 h1.my-title,
 h2.my-title,
-h3.my-title {
+h3.my-title,
+a.back-link {
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
+	font-family: sans-serif;
+}
+a.stat-link {
+	font-weight: 800;
+	text-transform: uppercase;
 	font-family: sans-serif;
 }
 

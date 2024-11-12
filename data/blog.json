@@ -1,5 +1,18 @@
 [
 	{
+		"title": "A Letter to Prime Minister Netanyahu",
+		"category": "World",
+		"href": "prime-minister-netanyahu",
+		"description": "An open letter to Prime Minister Netanyahu penned from a place of respect."
+	},
+	{
+		"title": "A Letter to Leader Sinwar",
+		"category": "World",
+		"href": "leader-sinwar",
+		"description": "An open letter to Leader Sinwar penned from a place of humility."
+	},
+
+	{
 		"title": "Thoughts on the Israel-Hamas Conflict",
 		"category": "World",
 		"href": "israel-hamas-conflict",

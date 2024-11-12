@@ -31,7 +31,8 @@
 	}
 }
 .blogBody,
-.considerations {
+.considerations,
+.leaders {
 	width: 65vw;
 	margin: 0 auto;
 }
@@ -44,6 +45,7 @@
 .considerations {
 	margin-top: 2rem;
 	margin-bottom: 5vh;
+
 	ul {
 		list-style-type: '- ';
 		li {
@@ -53,6 +55,30 @@
 		}
 	}
 }
+.centered {
+	text-align: center;
+}
 .byLineContainer {
 	margin: 0.4rem auto;
+}
+.closing {
+	margin: 1.6rem auto;
+}
+.leaders {
+	display: flex;
+	gap: 2rem;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4vh;
+	a:hover {
+		cursor: pointer;
+		transition: 0.4s;
+		opacity: 0.7;
+	}
+}
+.quote {
+	opacity: 0.7;
+	width: 95%;
+	margin: 0.2rem auto;
 }
