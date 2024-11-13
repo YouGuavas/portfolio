@@ -48,16 +48,15 @@
 .considerations {
 	margin-top: 2rem;
 	margin-bottom: 5vh;
-
-	ul {
-		list-style-type: '- ';
-		li {
-			margin: 0 auto;
-			margin-top: 0.6rem;
-			width: 63vw;
-			@media screen and (max-width: $md-max) {
-				width: 80vw;
-			}
+}
+.myList {
+	list-style-type: '- ';
+	li {
+		margin: 0 auto;
+		margin-top: 0.6rem;
+		width: 63vw;
+		@media screen and (max-width: $md-max) {
+			width: 80vw;
 		}
 	}
 }

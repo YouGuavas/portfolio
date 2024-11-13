@@ -1,7 +1,8 @@
 import styles from '../styles/components/Nav.module.scss';
 import Link from 'next/link';
+import { MyContext } from './Layout';
 
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 
 const navHighlighter = () => {
 	if (window) {
@@ -16,7 +17,6 @@ const navHighlighter = () => {
 };
 export default function Nav(props) {
 	const links = props.links;
-
 	const renderLinks = (item, index) => {
 		return (
 			<li key={index}>
@@ -33,13 +33,14 @@ export default function Nav(props) {
 		);
 	};
 
+	const { theme, setTheme } = useContext(MyContext);
 	useEffect(() => {
 		navHighlighter();
 		window.addEventListener('scroll', navHighlighter);
 	}, [links]);
 
 	return (
-		<nav className={`${styles.myNavFull}`} id="menu-full">
+		<nav className={`${styles.myNavFull} ${theme}`} id="menu-full">
 			<ul className={styles.standardMenu}>
 				{links.map((item, index) => {
 					return renderLinks(item, index);

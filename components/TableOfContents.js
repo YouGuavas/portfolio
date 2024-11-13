@@ -1,17 +1,15 @@
-import styles from '../styles/TableOfContents.module.scss';
+import styles from '../styles/components/TableOfContents.module.scss';
+import { useContext } from 'react';
+import { MyContext } from './Layout';
 
 export default function TableOfContents(props) {
-    return (
-        <ol className={styles.tableOfContents}>
-            {props.sections.map((section, index) => {
-                return (
-                <a key={index} href={`#${section}`}>
-                    <li >
-                        {section}
-                    </li>
-                </a>
-                )
-            })}
-        </ol>
-    )
+	const { theme, setTheme } = useContext(MyContext);
+
+	return (
+		<ul className={`${styles.tableOfContents} ${theme}`}>
+			{props.sections.map((section, index) => {
+				return <li key={index}>{section[0]}</li>;
+			})}
+		</ul>
+	);
 }

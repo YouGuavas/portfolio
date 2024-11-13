@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useContext } from 'react';
 
 import {
 	create,
@@ -11,6 +11,7 @@ import { renderWords } from '../utils/_wordFunctions';
 import styles from '../styles/Home.module.scss';
 import words from '../data/words.json';
 import letterWords from '../data/letterwords.json';
+import { MyContext } from './Layout';
 
 export default function Lander() {
 	const randomize = (inputNumber) => {
@@ -80,6 +81,8 @@ export default function Lander() {
 			});
 		}
 	};
+	const { theme, setTheme } = useContext(MyContext);
+
 	useEffect(() => {
 		words.map((word, index) => {
 			const letters = word.split('');
@@ -94,8 +97,8 @@ export default function Lander() {
 	}, [letterWordsState]);
 
 	return (
-		<section id="Home" className={`${styles.lander}`}>
-			<div className={styles.landerOverlay}></div>
+		<section id="Home" className={`${styles.lander} ${theme}`}>
+			<div className={`${styles.landerOverlay} `}></div>
 			<div
 				id="titleWrapper"
 				className={`my-rotate main-wrapper ${styles.titleWrapper}`}
@@ -104,7 +107,7 @@ export default function Lander() {
 					<h1 className={styles.banner}>Hi, I&apos;m Patrick Yambrick</h1>
 					<p>Try tapping or clicking on a word!</p>
 				</div>
-				<div id="wordWrapper" className={`${styles.wordWrapper}`}></div>
+				<div id="wordWrapper" className={`${styles.wordWrapper} `}></div>
 			</div>
 		</section>
 	);
