@@ -3,20 +3,24 @@
 .tableOfContents {
 	transition: inherit;
 	position: fixed;
-	width: 40%;
 	left: 0;
 	margin: 1rem auto;
 	padding: 0.5rem;
+	cursor: pointer;
 	@media only screen and (max-width: $md-max) {
 		width: 75%;
 		margin-left: auto;
 	}
 	li {
 		transition: inherit;
-		list-style: decimal;
+		list-style: none;
 		list-style-position: inside;
+		background-color: var(--color-4);
+		font-family: var(--style-font-1);
 		width: 100%;
 		text-align: left;
 		margin: 0.5rem auto;
+		padding: 1rem 0.7rem;
+		border-radius: 0.2rem;
 	}
 }

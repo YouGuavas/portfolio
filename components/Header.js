@@ -1,14 +1,15 @@
 import { FbButton, TweetButton } from './SocialButtons';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import { MyContext } from './Layout';
 import logo from '../public/images/logoDark.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import styles from '../styles/components/Header.module.scss';
+
 const buttonSize = 24;
 
-export default function Header(props) {
-	const url = props.url;
+export default function Header() {
 	const text =
 		'Do you or somebody you know need a website for a small business? Contact Patrick!';
 	const scrollTop = () => {
@@ -35,13 +36,15 @@ export default function Header(props) {
 			container.classList.add(styles.open);
 		}
 	};
+	const { theme, setTheme } = useContext(MyContext);
+	const { url, setUrl } = useContext(MyContext);
 
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
 	});
 
 	return (
-		<header id="collapsible-header" className={styles.header}>
+		<header id="collapsible-header" className={`${styles.header} ${theme}`}>
 			<TweetButton buttonSize={buttonSize} url={url} text={text} />
 			<Link name="Logo Home" href="#Home" scroll={false}>
 				<Image

@@ -1,82 +1,87 @@
 @import '../../utils/_variables.scss';
 
 .blogPostContainer {
-    padding: 6rem 0;
+	padding: 6rem 0;
 
-    h1 {
-        text-align: left;
-        width: 75%;
-        margin: 0 auto;
-    }
+	h1 {
+		text-align: left;
+		width: 75%;
+		margin: 0 auto;
+	}
+	h1,
+	h2,
+	h3 {
+		font-family: var(--style-font-1);
+	}
 }
 
 .paragraphLink {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 0.13rem;
-    text-underline-offset: 0.2rem;
-    transition: 0.4s;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: 0.13rem;
+	text-underline-offset: 0.2rem;
+	transition: 0.4s;
 
-    &:hover {
-        opacity: 70%;
-    }
+	&:hover {
+		opacity: 70%;
+	}
 }
 
 .blogBody {
-    margin-top: 4rem;
+	margin-top: 4rem;
 
-    .blogTitle {
-        margin: 2rem auto;
-    }
+	.blogTitle {
+		margin: 2rem auto;
+	}
 }
 
 .blogParagraph {
-    width: 75%;
-    margin: 0 auto;
-    text-align: left;
+	width: 75%;
+	margin: 0 auto;
+	text-align: left;
 
-    &:nth-child(n + 3) {
-        margin-top: 10px;
-    }
+	&:nth-child(n + 3) {
+		margin-top: 10px;
+	}
 }
 
 .blogTitle {
-    margin: 0.9rem auto;
-    width: 75%;
-    text-align: left;
+	margin: 0.9rem auto;
+	width: 75%;
+	text-align: left;
 }
 
 .byLine {
-    font-weight: 200;
-    font-size: 0.7rem;
-    text-align: left;
-    width: 75%;
-    margin: 0 auto;
+	font-weight: 200;
+	font-size: 0.7rem;
+	text-align: left;
+	width: 75%;
+	margin: 0 auto;
 }
 
 .blogsList {
-    width: 75%;
-    margin: 0 auto;
+	width: 75%;
+	margin: 0 auto;
 
-    li {
-        margin: 1rem 0;
-        padding: 0.5rem 0;
-        border-radius: 0.25rem;
-        transition: 0.4s;
+	li {
+		margin: 1rem 0;
+		padding: 0.5rem 0;
+		border-radius: 0.25rem;
+		transition: 0.4s;
 
-        &:hover {
-            opacity: 70%;
-        }
-    }
+		&:hover {
+			opacity: 70%;
+		}
+	}
 }
 
 .blogImageContainer {
-    width: 90%;
-    margin: 1rem auto;
-    background-color: var(--color-3);
-    padding: 1rem 0.1rem;
+	width: 90%;
+	margin: 1rem auto;
+	background-color: var(--color-3);
+	padding: 1rem 0.1rem;
 
-    img {
-        margin: 0 auto;
-    }
+	img {
+		margin: 0 auto;
+	}
 }

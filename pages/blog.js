@@ -6,7 +6,7 @@ import styles from '../styles/blog.module.scss';
 
 import BlogInfo from '../components/BlogInfo';
 
-export default function Work() {
+export default function Blogs() {
 	return (
 		<div>
 			<Head>
