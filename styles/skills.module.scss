@@ -1,52 +1,50 @@
-@import '../utils/_variables.scss';
-
 .skills {
-    background-color: var(--color-1);
-    color: var(--color-2);
-    padding: 15vh 1rem 2rem 1rem;
-    text-align: center;
-    height: var(--main-height);
+	background-color: var(--color-1);
+	color: var(--color-2);
+	padding: 15vh 1rem 2rem 1rem;
+	text-align: center;
+	height: var(--main-height);
 
-    h3 {
-        display: inline;
-        padding: 0 0 0.5rem 0;
-        border-bottom: 1px solid var(--color-3);
-    }
+	h3 {
+		display: inline;
+		padding: 0 0 0.5rem 0;
+		border-bottom: 1px solid var(--color-3);
+	}
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 
-        @media screen and (max-width: $md-max) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
+		@media screen and (max-width: var(--md-max)) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 }
 
 .listItem {
-    color: var(--color-2);
-    transition: 0.4s;
-    grid-column: span 1;
-    grid-row: span 1;
-    align-items: center;
+	color: var(--color-2);
+	transition: 0.4s;
+	grid-column: span 1;
+	grid-row: span 1;
+	align-items: center;
 
-    caption {
-        display: block;
-        font-size: 0;
-        transition: 0.6s;
-        opacity: 0;
-        cursor: default;
+	caption {
+		display: block;
+		font-size: 0;
+		transition: 0.6s;
+		opacity: 0;
+		cursor: default;
 
-        @media screen and (max-width: $md-max) {
-            opacity: 1;
-            font-size: 1rem;
-        }
-    }
+		@media screen and (max-width: var(--md-max)) {
+			opacity: 1;
+			font-size: 1rem;
+		}
+	}
 
-    &:hover {
-        caption {
-            font-size: 1rem;
-            opacity: 1;
-        }
-    }
+	&:hover {
+		caption {
+			font-size: 1rem;
+			opacity: 1;
+		}
+	}
 }

@@ -1,4 +1,5 @@
 import styles from '../styles/Blog.module.scss';
+import Image from 'next/image';
 import { useContext } from 'react';
 import { MyContext } from './Layout';
 
@@ -7,7 +8,7 @@ export default function BlogImage(props) {
 
 	return (
 		<div className={`${styles.blogImageContainer} ${theme}`}>
-			<img src={props.src} />
+			<Image src={props.src} />
 		</div>
 	);
 }

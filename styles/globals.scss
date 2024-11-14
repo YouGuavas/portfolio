@@ -8,6 +8,10 @@
 	--main-height: 100vh;
 	--semi-transparent: 55%;
 	--medium-transparent: 30%;
+	--lg-max: 1366px;
+	--md-max: 850px;
+	--sm-max: 480px;
+	--xs-max: 400px;
 	--primary-gradient: radial-gradient(
 		var(--color-1) 1%,
 		var(--color-1) 25%,
@@ -32,29 +36,78 @@
 		--semi-transparent: 70%;
 		--medium-transparent: 55%;
 	}
-	--style-font-1: 'Amatic SC', 'Oswald', 'Lora', serif;
-	--style-font-2: 'Lora', 'Oswald', 'Amatic SC', serif;
+	--style-font-1: 'Amatic SC', 'Oswald', 'Patrick Hand', serif;
+	--style-font-2: serif;
+	--font-size-sm: 0.8rem;
+	--font-size-md: 1.2rem;
+	--font-size-lg: 1.4rem;
+	--font-weight-norm: 200;
+	--font-weight-bold: 800;
+	--radius: 0;
+	--rotate-1: 1deg;
+	--rotate-2: 2deg;
+	--rotate-4: 4deg;
+	--rotate-6: 6deg;
+	--alt-rotate-1: -1deg;
+	--alt-rotate-2: -2deg;
+	--alt-rotate-4: -4deg;
+	--alt-rotate-6: -6deg;
+	--big-rotate: 30deg;
+	--alt-big-rotate: -30deg;
+	--translate-x-1: -4rem;
+	--translate-x-2: -9rem;
+	--translate-y-1: 14rem;
+	--translate-y-2: 13rem;
+	--translate-y-3: 20rem;
+	--translate-y-4: 8rem;
+	--icon-position: absolute;
+	--zero: 0rem;
+
+	--lander-width: auto;
+	@media screen and (max-width: $sm-max) {
+		--translate-y-1: 9.5rem;
+		--translate-x-2: -4rem;
+		--translate-y-3: 14rem;
+		--icon-position: relative;
+	}
 }
 .spaceship {
-	--color-1: rgb(240, 250, 240);
-	--color-2: black;
-	--color-3: #53744f;
-	--color-4: rgba(90, 100, 90, 0.6);
-	--color-5: rgba(25, 80, 25, 0.5);
-	--color-6: rgb(130, 145, 130);
+	--color-1: white;
+	--color-2: rgb(20, 20, 120);
+	--color-3: rgb(40, 40, 170);
+	--color-4: rgb(170, 40, 40);
+	--color-5: rgb(120, 20, 20);
+	--color-6: white;
 	@media (prefers-color-scheme: dark) {
 		--color-1: rgb(0, 0, 0);
 		--color-2: rgb(220, 220, 220);
 		--color-3: #53744f;
-		--color-4: rgba(220, 220, 220, 0.6);
-		--color-5: rgba(0, 0, 0, 0.3);
-		--color-6: rgb(30, 40, 30);
+		--color-4: rgb(220, 220, 220);
+		--color-5: rgb(0, 0, 0);
+		--color-6: rgb(0, 0, 0);
 
-		--semi-transparent: 70%;
-		--medium-transparent: 55%;
+		--semi-transparent: 0%;
+		--medium-transparent: 0%;
 	}
-	--style-font-1: 'Orbitron', 'Exo 2', serif;
-	--style-font-2: 'Lora', 'Oswald', 'Amatic SC', serif;
+	--style-font-1: 'Orbitron', 'Exo 2', sans-serif;
+	--style-font-2: 'Exo 2', 'Orbitron', sans-serif;
+	--font-size-sm: 0.8rem;
+	--font-size-md: 1rem;
+	--font-size-lg: 1.2rem;
+	--font-weight-norm: 200;
+	--font-weight-bold: 600;
+	--radius: 0.4rem;
+	--rotate-1: 0deg;
+	--rotate-2: 0deg;
+	--rotate-4: 0deg;
+	--rotate-6: 0deg;
+
+	--alt-rotate-1: 0deg;
+	--alt-rotate-2: 0deg;
+	--alt-rotate-4: 0deg;
+	--alt-rotate-6: 0deg;
+	--lander-width: 100%;
+	--icon-position: relative;
 }
 
 * {
@@ -84,6 +137,7 @@ body {
 	min-height: 55vh;
 	padding: 1rem;
 	position: absolute;
+	border-radius: var(--radius);
 }
 .alt-wrapper {
 	top: 15vh;
@@ -98,27 +152,27 @@ body {
 }
 
 .my-rotate {
-	transform: rotate(1deg);
+	transform: rotate(var(--rotate-1));
 	@media screen and (min-width: $sm-max) {
-		transform: rotate(2deg);
+		transform: rotate(var(--rotate-2));
 	}
 }
 .very-rotate {
-	transform: rotate(2deg);
+	transform: rotate(var(--rotate-2));
 	@media screen and (min-width: $sm-max) {
-		transform: rotate(6deg);
+		transform: rotate(var(--rotate-6));
 	}
 }
 .alt-rotate {
-	transform: rotate(-1deg);
+	transform: rotate(var(--alt-rotate-1));
 	@media screen and (min-width: $sm-max) {
-		transform: rotate(-2deg);
+		transform: rotate(var(--alt-rotate-2));
 	}
 }
 .alt-very-rotate {
-	transform: rotate(-2deg);
+	transform: rotate(var(--alt-rotate-2));
 	@media screen and (min-width: $sm-max) {
-		transform: rotate(-4deg);
+		transform: rotate(var(--alt-rotate-4));
 	}
 }
 
@@ -200,7 +254,7 @@ body {
 	font-size: 3rem;
 	padding-top: 3rem;
 	letter-spacing: 0.1rem;
-	font-weight: 100;
+	font-weight: var(--font-weight-norm);
 
 	@media only screen and (max-width: $sm-max) {
 		font-size: 2rem;
@@ -343,25 +397,56 @@ h1.my-title,
 h2.my-title,
 h3.my-title,
 a.back-link {
-	font-weight: 400;
+	font-weight: var(--font-weight-bold);
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	font-family: var(--style-font-1);
 }
 h1.my-title {
 	font-size: 1.2rem;
-	font-weight: 200;
+	font-weight: var(--font-weight-norm);
 }
 h3.my-title {
 	font-size: 0.9rem;
 	margin-top: 0.2rem;
 }
 a.stat-link {
-	font-weight: 800;
+	font-weight: var(--font-weight-bold);
 	text-transform: uppercase;
 	font-family: var(--style-font-1);
 }
+.collapse {
+	animation: collapse 0.5s ease forwards;
+}
 
+.open {
+	animation: open 0.5s ease forwards;
+}
+@keyframes collapse {
+	from {
+		opacity: 1;
+		top: 0;
+		height: auto;
+	}
+	to {
+		opacity: 0;
+		top: -200;
+		height: 0;
+	}
+}
+
+@keyframes open {
+	from {
+		opacity: 0;
+		top: -200;
+		height: 0;
+	}
+	to {
+		opacity: 1;
+		top: 0;
+		height: auto;
+	}
+}
 .top-10 {
 	margin-top: 10%;
 }

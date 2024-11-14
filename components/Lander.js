@@ -104,7 +104,7 @@ export default function Lander() {
 				className={`my-rotate main-wrapper ${styles.titleWrapper}`}
 			>
 				<div className={styles.flexTitle}>
-					<h1 className={styles.banner}>Hi, I&apos;m Patrick Yambrick</h1>
+					<h1>Hi, I&apos;m Patrick Yambrick</h1>
 					<p>Try tapping or clicking on a word!</p>
 				</div>
 				<div id="wordWrapper" className={`${styles.wordWrapper} `}></div>

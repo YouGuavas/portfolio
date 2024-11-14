@@ -1,5 +1,3 @@
-@import '../utils/_variables.scss';
-
 .work {
 	margin: 0 auto;
 
@@ -16,7 +14,7 @@
 		height: 100%;
 	}
 
-	@media only screen and (max-width: $md-max) {
+	@media only screen and (max-width: var(--md-max)) {
 		height: 270px;
 	}
 }
@@ -29,7 +27,7 @@
 	overflow: hidden;
 	border-radius: 0.1rem;
 	cursor: default;
-	@media only screen and (min-width: $md-max) {
+	@media only screen and (min-width: var(--md-max)) {
 		padding: 1rem 10rem;
 	}
 	.projectDescription {
@@ -41,9 +39,9 @@
 		color: var(--color-2);
 		transition: 0.4s;
 		p {
-			font-size: 0.8rem;
-			@media only screen and (min-width: $md-max) {
-				font-size: 1.2rem;
+			font-size: var(--font-size-md);
+			@media only screen and (min-width: var(--md-max)) {
+				font-size: var(--font-size-lg);
 			}
 		}
 	}
@@ -70,7 +68,9 @@
 	}
 
 	h4 {
-		font-weight: 800;
+		font-weight: var(--font-weight-bold);
+		font-family: var(--style-font-1);
+
 		font-size: 2rem;
 		margin: 1rem 0;
 		transition: 0.2s;
@@ -83,6 +83,9 @@
 
 		.projectDescription {
 			opacity: 1;
+			p {
+				font-family: var(--style-font-2);
+			}
 		}
 		ul {
 			opacity: 1;
@@ -92,7 +95,7 @@
 		}
 	}
 
-	@media only screen and (max-width: $md-max) {
+	@media only screen and (max-width: var(--md-max)) {
 		grid-column: span 3 / span 3;
 		height: 70vh;
 

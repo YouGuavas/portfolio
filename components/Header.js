@@ -4,6 +4,7 @@ import { MyContext } from './Layout';
 import logo from '../public/images/logoDark.png';
 import Link from 'next/link';
 import Image from 'next/image';
+import { handleScroll } from '@/utils/_functions';
 
 import styles from '../styles/components/Header.module.scss';
 
@@ -12,30 +13,7 @@ const buttonSize = 24;
 export default function Header() {
 	const text =
 		'Do you or somebody you know need a website for a small business? Contact Patrick!';
-	const scrollTop = () => {
-		//returns current scroll position
-		if (typeof window !== 'undefined') {
-			return window.scrollY;
-		}
-	};
 
-	const handleScroll = () => {
-		const container = document.getElementById('collapsible-header');
-		const currentScroll = scrollTop();
-		if (currentScroll > 50) {
-			container.classList.remove(styles.open);
-			container.classList.add(styles.collapse);
-			if (container.classList.contains(styles.open)) {
-				setTimeout(() => {
-					container.style.display = 'none';
-				}, 200);
-			}
-		} else {
-			container.style.display = 'flex';
-			container.classList.remove(styles.collapse);
-			container.classList.add(styles.open);
-		}
-	};
 	const { theme, setTheme } = useContext(MyContext);
 	const { url, setUrl } = useContext(MyContext);
 

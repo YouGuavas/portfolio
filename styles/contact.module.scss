@@ -1,5 +1,3 @@
-@import '../utils/_variables.scss';
-
 .contact {
 	min-height: var(--main-height);
 	padding-bottom: 2rem;
@@ -35,21 +33,22 @@
 	font-size: 2rem;
 	letter-spacing: 0.25rem;
 	color: var(--color-2);
+	font-family: var(--style-font-1);
 
 	&:nth-child(1) {
 		margin: 0 1rem 0 0;
 	}
 
-	@media screen and (max-width: $md-max) {
+	@media screen and (max-width: var(--md-max)) {
 		font-size: 0.7rem;
 	}
 
-	@media only screen and (max-width: $sm-max) {
+	@media only screen and (max-width: var(--sm-max)) {
 		font-size: 0.6rem;
 		margin: 0 0.25rem;
 	}
 
-	@media only screen and (max-width: $md-max) {
+	@media only screen and (max-width: var(--md-max)) {
 		&:nth-child(1) {
 			display: block;
 			margin: 0 0.25rem;

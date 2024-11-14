@@ -5,10 +5,13 @@ import blogPosts from '../data/blog';
 import styles from '../styles/blog.module.scss';
 
 import BlogInfo from '../components/BlogInfo';
+import { useContext } from 'react';
+import { MyContext } from '../components/Layout';
 
 export default function Blogs() {
+	const { theme, setTheme } = useContext(MyContext);
 	return (
-		<div>
+		<div className={`${theme}`}>
 			<Head>
 				<title>Blog | Patrick Yambrick</title>
 			</Head>

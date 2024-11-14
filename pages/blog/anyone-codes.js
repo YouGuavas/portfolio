@@ -2,8 +2,11 @@ import styles from '../../styles/blog.module.scss';
 import ByLine from '@/components/ByLine';
 import Head from 'next/head';
 import TableOfContents from '@/components/TableOfContents';
+import BlogImage from '@/components/BlogImage';
 import { useContext, useEffect } from 'react';
+import { MyContext } from '@/components/Layout';
 import BlogPost, { BlogContext } from '@/components/BlogPost';
+import drawing1 from ''
 
 export default function Blog() {
 	return (
@@ -16,13 +19,13 @@ export default function Blog() {
 	);
 }
 function BlogContent() {
-	const { theme, setTheme } = useContext(BlogContext);
+	const { theme, setTheme } = useContext(MyContext);
 	const { variant, setVariant } = useContext(BlogContext);
 	useEffect(() => {
 		setVariant(['Show All', [1, 2, 3]]);
 	}, []);
 	useEffect(() => {
-		variant[1].indexOf(4) !== -1 ? setTheme('spaceship') : setTheme('default');
+		variant[1].indexOf(4) !== -1 ? setTheme('spaceship') : null;
 	}, [variant]);
 
 	return (
@@ -63,6 +66,7 @@ function BlogContent() {
 					we are able to examine our thoughts and break them down into parts
 				</li>
 			</ul>
+			<BlogImage />
 			{variant[1].indexOf(1) !== -1 ? (
 				<>
 					<h2 className={`${styles.blogTitle} my-title`}>

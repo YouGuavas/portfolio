@@ -1,148 +1,147 @@
-@import '../../utils/_variables.scss';
 .gallery {
-    min-height: 450px;
-    position: relative;
-    height: 530px;
-    min-width: 300px;
-    max-width: 650px;
-    background-color: var(--color-1);
-    margin: 0 auto;
-    @media only screen and (max-width: $sm-max) {
-        min-width: 150px;
-        max-width: 100%;
-    }
-    .galleryMainContainer {
-        position: absolute;
-        line-height: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        height: 450px;
-        min-height: calc(100% - 80px);
-        width: 100%;
-        @media only screen and (max-width: $sm-max) {
-            min-width: 150px;
-        }
-    }
+	min-height: 450px;
+	position: relative;
+	height: 530px;
+	min-width: 300px;
+	max-width: 650px;
+	background-color: var(--color-1);
+	margin: 0 auto;
+	@media only screen and (max-width: var(--sm-max)) {
+		min-width: 150px;
+		max-width: 100%;
+	}
+	.galleryMainContainer {
+		position: absolute;
+		line-height: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		height: 450px;
+		min-height: calc(100% - 80px);
+		width: 100%;
+		@media only screen and (max-width: var(--sm-max)) {
+			min-width: 150px;
+		}
+	}
 
-    .galleryThumbnails {
-        overflow: hidden;
-        white-space: nowrap;
-        bottom: 0;
-        width: 100%;
-        position: absolute;
-        height: 80px;
-    }
-    .galleryMain {
-        max-height: 450px;
-        position: absolute;
-        display: inline;
-        width: 100%;
-        transition: 0.4s ease-in;
-        z-index: 2;
-        left: 0%;
-        @for $i from 2 through 20 {
-            &:nth-child(#{$i}) {
-                left: calc(calc($i - 2) * 100%);
-            }
-        }
-        @media only screen and (max-width: $sm-max) {
-            min-width: 150px;
-            max-width: 150px;
-        }
-    }
-    &.fullscreenModal {
-        height: 100vh;
-        width: 75vw;
-        z-index: 8;
-        position: fixed;
-        margin: 0 auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        background-color: var(--color-1);
-        @media only screen and (max-width: $sm-max) {
-            width: 100vw;
-        }
-        .galleryMainContainer {
-            height: calc(100vh - 80px);
-        }
+	.galleryThumbnails {
+		overflow: hidden;
+		white-space: nowrap;
+		bottom: 0;
+		width: 100%;
+		position: absolute;
+		height: 80px;
+	}
+	.galleryMain {
+		max-height: 450px;
+		position: absolute;
+		display: inline;
+		width: 100%;
+		transition: 0.4s ease-in;
+		z-index: 2;
+		left: 0%;
+		@for $i from 2 through 20 {
+			&:nth-child(#{$i}) {
+				left: calc(calc($i - 2) * 100%);
+			}
+		}
+		@media only screen and (max-width: var(--sm-max)) {
+			min-width: 150px;
+			max-width: 150px;
+		}
+	}
+	&.fullscreenModal {
+		height: 100vh;
+		width: 75vw;
+		z-index: 8;
+		position: fixed;
+		margin: 0 auto;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		background-color: var(--color-1);
+		@media only screen and (max-width: var(--sm-max)) {
+			width: 100vw;
+		}
+		.galleryMainContainer {
+			height: calc(100vh - 80px);
+		}
 
-        .galleryMain {
-            max-height: calc(100vh - 80px);
-            display: inline;
-            position: absolute;
-            width: 100%;
-            transition: 0.4s ease-in;
-            transform: translate3d(100%, 0, 0);
+		.galleryMain {
+			max-height: calc(100vh - 80px);
+			display: inline;
+			position: absolute;
+			width: 100%;
+			transition: 0.4s ease-in;
+			transform: translate3d(100%, 0, 0);
 
-            left: 0;
-            @for $i from 2 through 20 {
-                &:nth-child(#{$i}) {
-                    left: calc(calc($i - 2) * 100%);
-                }
-            }
-        }
-        .galleryIcon {
-            color: var(--color-3);
-        }
-        .galleryFullscreen {
-            height: 110px;
-            width: 60px;
-        }
-    }
-    .galleryThumbnail {
-        display: inline;
-        box-sizing: border-box;
-        margin: 0.1rem 0;
-        width: 10%;
-        max-height: 80px;
-        transform: translate3d(100%, 0, 0);
-    }
-    .galleryFullscreen {
-        position: absolute;
-        height: 50px;
-        width: 25px;
-        bottom: 2px;
-        right: 10px;
-    }
-    .galleryIcon {
-        color: var(--color-3);
-        transition: all 0.3s ease-out;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 0.3rem;
-        cursor: pointer;
-        z-index: 4;
-        &:hover,
-        &:focus,
-        &:active {
-            color: var(--color-2);
-        }
-        svg {
-            transition: 0.2s;
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-    }
-    .thumbnailActive {
-        border: 2px solid var(--color-3);
-    }
-    .galleryArrow {
-        position: absolute;
-        height: 100px;
-        width: 50px;
-        font-size: 2rem;
-    }
-    .arrowLeft,
-    .arrowRight {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .arrowLeft {
-        left: 0;
-    }
-    .arrowRight {
-        right: 0;
-    }
+			left: 0;
+			@for $i from 2 through 20 {
+				&:nth-child(#{$i}) {
+					left: calc(calc($i - 2) * 100%);
+				}
+			}
+		}
+		.galleryIcon {
+			color: var(--color-3);
+		}
+		.galleryFullscreen {
+			height: 110px;
+			width: 60px;
+		}
+	}
+	.galleryThumbnail {
+		display: inline;
+		box-sizing: border-box;
+		margin: 0.1rem 0;
+		width: 10%;
+		max-height: 80px;
+		transform: translate3d(100%, 0, 0);
+	}
+	.galleryFullscreen {
+		position: absolute;
+		height: 50px;
+		width: 25px;
+		bottom: 2px;
+		right: 10px;
+	}
+	.galleryIcon {
+		color: var(--color-3);
+		transition: all 0.3s ease-out;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 0.3rem;
+		cursor: pointer;
+		z-index: 4;
+		&:hover,
+		&:focus,
+		&:active {
+			color: var(--color-2);
+		}
+		svg {
+			transition: 0.2s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.thumbnailActive {
+		border: 2px solid var(--color-3);
+	}
+	.galleryArrow {
+		position: absolute;
+		height: 100px;
+		width: 50px;
+		font-size: 2rem;
+	}
+	.arrowLeft,
+	.arrowRight {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.arrowLeft {
+		left: 0;
+	}
+	.arrowRight {
+		right: 0;
+	}
 }

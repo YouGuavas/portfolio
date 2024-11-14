@@ -2,18 +2,18 @@
 	{
 		"A": ["Athlete", "Accepting", "Accountable", "Adventurer"],
 		"B": ["Bicycling"],
-		"C": ["Coding", "Curiosity", "Creativity", "Coach"],
+		"C": ["Coding", "Curious", "Creative", "Coach"],
 		"D": ["Driven", "Dedicated", "Developer", "Dependable", "Designer"],
 		"E": ["Engineer", "Empathetic", "Educator"],
 		"F": ["Friend", "Fluid"],
-		"G": ["Goals", "Generativity"],
+		"G": ["Goals", "Generative", "Generous"],
 		"H": ["Honesty", "Horcrux"],
 		"I": ["Intelligent", "Innovative"],
 		"J": ["Jovial"],
 		"K": ["Kind", "Kenough"],
 		"L": ["Learner", "Loyal", "Leader"],
 		"M": ["Mentor"],
-		"N": ["Nature-Lover"],
+		"N": ["Natural"],
 		"O": ["Original", "Optimist"],
 		"P": ["Positive", "Perseverent", "Perceptive", "Philosophical"],
 		"Q": ["Quaffle", "Quality"],
@@ -25,6 +25,6 @@
 		"W": ["Walker", "Writer"],
 		"X": ["Xylophone"],
 		"Y": ["Yambrick"],
-		"Z": ["Zebras"]
+		"Z": ["Zebra"]
 	}
 ]

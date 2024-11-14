@@ -1,11 +1,9 @@
-@import '../../utils/_variables.scss';
-
 .footer {
-    background-color: var(--color-6);
-    font-family: var(--style-font-1);
-    color: var(--color-3);
-    padding: 2rem;
-    text-align: center;
-    height: var(--footer-height);
-    opacity: var(--semit-transparent);
+	background-color: var(--color-6);
+	font-family: var(--style-font-1);
+	color: var(--color-3);
+	padding: 2rem;
+	text-align: center;
+	height: var(--footer-height);
+	opacity: var(--semit-transparent);
 }

@@ -5,10 +5,13 @@ import projects from '../data/projects.json';
 import work from '../data/work.json';
 
 import styles from '../styles/work.module.scss';
+import { useContext } from 'react';
+import { MyContext } from '../components/Layout';
 
 export default function Work() {
+	const { theme, setTheme } = useContext(MyContext);
 	return (
-		<div>
+		<div className={`${theme}`}>
 			<Head>
 				<title>Work | Patrick Yambrick</title>
 			</Head>
@@ -45,8 +48,9 @@ function Card(props) {
 			return <SkillsUsed skills={skills} />;
 		}
 	};
+	const { theme, setTheme } = useContext(MyContext);
 	return (
-		<div className={`${styles.card}`}>
+		<div className={`${styles.card} ${theme}`}>
 			<div
 				style={{ backgroundImage: `url(${props.project.src1})` }}
 				className={styles.backgroundImageContainer}

@@ -3,13 +3,19 @@
 .tableOfContents {
 	transition: inherit;
 	position: fixed;
+	display: flex;
+	flex-direction: column;
 	left: 0;
-	margin: 1rem auto;
+	gap: 0.1rem;
+	margin: 0 auto;
 	padding: 0.5rem;
+
 	cursor: pointer;
 	@media only screen and (max-width: $md-max) {
-		width: 75%;
-		margin-left: auto;
+		font-size: 0.6rem;
+		top: 10vh;
+		flex-direction: row;
+		width: 100vw;
 	}
 	li {
 		transition: inherit;
@@ -21,6 +27,9 @@
 		text-align: left;
 		margin: 0.5rem auto;
 		padding: 1rem 0.7rem;
-		border-radius: 0.2rem;
+		border-radius: var(--radius);
+		@media only screen and (max-width: $md-max) {
+			padding: 0.2rem;
+		}
 	}
 }
