@@ -7,13 +7,14 @@ export default function BlogImage(props) {
 	const { theme, setTheme } = useContext(MyContext);
 
 	return (
-		<div className={`${styles.blogImageContainer} ${theme}`}>
+		<figure className={`${styles.blogImageContainer} ${theme}`}>
 			<Image
 				src={props.src}
 				alt={props.alt}
 				height={props.height}
 				width={props.width}
 			/>
-		</div>
+			<figcaption>{props.alt}</figcaption>
+		</figure>
 	);
 }

@@ -8,8 +8,8 @@ import { useContext } from 'react';
 import { MyContext } from './Layout';
 import styles from '../styles/components/Header.module.scss';
 const FbButton = (props) => {
-	const { url, text } = props;
-	const { theme, setTheme } = useContext(MyContext);
+	const { text } = props;
+	const { theme, url } = useContext(MyContext);
 
 	return (
 		<FacebookShareButton
@@ -22,8 +22,8 @@ const FbButton = (props) => {
 	);
 };
 const TweetButton = (props) => {
-	const { url, text } = props;
-	const { theme, setTheme } = useContext(MyContext);
+	const { text } = props;
+	const { theme, url } = useContext(MyContext);
 
 	return (
 		<TwitterShareButton className={`${styles.shareButton} ${theme}`} url={url}>

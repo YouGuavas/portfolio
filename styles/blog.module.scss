@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
+	min-height: 100vh;
 
 	ul {
 		display: inherit;
@@ -35,7 +36,10 @@
 .leaders {
 	width: 65vw;
 	margin: 0 auto;
+	font-size: 1.1rem;
 	@media screen and (max-width: var(--md-max)) {
+		font-size: 1rem;
+
 		width: 85vw;
 	}
 }
@@ -44,6 +48,13 @@
 }
 .blogParagraph {
 	margin-top: 1rem;
+	a {
+		font-weight: 600;
+		transition: 0.4s;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 .considerations {
 	margin-top: 2rem;
@@ -72,10 +83,17 @@
 .considerations,
 .myList {
 	font-family: var(--style-font-2);
+	pre {
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid var(--color-2);
+		font-family: monospace;
+	}
 }
 
-.closing {
-	margin: 1.6rem auto;
+.closing,
+.ending {
+	margin-bottom: 1.6rem;
 }
 .leaders {
 	display: flex;

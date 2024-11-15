@@ -23,7 +23,7 @@ export default function Header() {
 
 	return (
 		<header id="collapsible-header" className={`${styles.header} ${theme}`}>
-			<TweetButton buttonSize={buttonSize} url={url} text={text} />
+			<TweetButton buttonSize={buttonSize} text={text} />
 			<Link name="Logo Home" href="#Home" scroll={false}>
 				<Image
 					alt="My personal logo"
@@ -33,7 +33,7 @@ export default function Header() {
 					src={logo.src}
 				/>
 			</Link>
-			<FbButton buttonSize={buttonSize} url={url} quote={text} />
+			<FbButton buttonSize={buttonSize} quote={text} />
 		</header>
 	);
 }
