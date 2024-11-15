@@ -19,7 +19,7 @@ export default function Blog() {
 		<BlogPost>
 			<Head>
 				<title>
-					Why Elon Musk Can't Teach You CSS (Simplified) | Patrick Yambrick
+					Why Elon Musk Can&apos;t Teach You CSS (Simplified) | Patrick Yambrick
 				</title>
 			</Head>
 			<BlogContent />
@@ -39,7 +39,7 @@ function BlogContent() {
 			  variant[1].indexOf(0) !== -1
 			? setTheme('default')
 			: null;
-	}, [variant]);
+	}, [variant, setTheme]);
 
 	return (
 		<section className={`${styles.blogBody} ${theme}`}>
