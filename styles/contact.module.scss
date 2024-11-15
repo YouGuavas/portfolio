@@ -1,34 +1,7 @@
 .contact {
 	min-height: var(--main-height);
 	padding-bottom: 2rem;
-}
-
-.inputClass {
-	width: 100%;
 	background-color: var(--color-1);
-	color: var(--color-2);
-	border-bottom: 1px solid var(--color-2);
-	border-radius: 0.2rem;
-	padding: 0.5rem;
-	margin-bottom: 0.6rem;
-}
-
-.contactTitle {
-	color: var(--color-2);
-	text-transform: uppercase;
-	display: block;
-	letter-spacing: 0.025rem;
-	margin-bottom: 2rem;
-	font-size: 0.9rem;
-	line-height: 1rem;
-}
-
-.or {
-	color: var(--color-4);
-	margin: 10vh auto;
-}
-
-.jumbo {
 	text-transform: uppercase;
 	font-size: 2rem;
 	letter-spacing: 0.25rem;
@@ -59,4 +32,29 @@
 			margin: 0 0.25rem;
 		}
 	}
+}
+
+.inputClass {
+	width: 100%;
+	background-color: var(--color-1);
+	color: var(--color-2);
+	border-bottom: 1px solid var(--color-2);
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+	margin-bottom: 0.6rem;
+}
+
+.contactTitle {
+	color: var(--color-2);
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 0.025rem;
+	margin-bottom: 2rem;
+	font-size: 0.9rem;
+	line-height: 1rem;
+}
+
+.or {
+	color: var(--color-4);
+	margin: 10vh auto;
 }

@@ -4,17 +4,6 @@ import { MyContext } from './Layout';
 
 import { useEffect, useContext } from 'react';
 
-const navHighlighter = () => {
-	if (window) {
-		let pageName = window.location.pathname;
-		document.querySelectorAll('nav a').forEach((link) => {
-			link.classList.remove(styles.active);
-		});
-		if (pageName === '/') {
-			return document.getElementById('home').classList.add(styles.active);
-		}
-	}
-};
 export default function Nav(props) {
 	const links = props.links;
 	const renderLinks = (item, index) => {
@@ -34,10 +23,6 @@ export default function Nav(props) {
 	};
 
 	const { theme, setTheme } = useContext(MyContext);
-	useEffect(() => {
-		navHighlighter();
-		window.addEventListener('scroll', navHighlighter);
-	}, [links]);
 
 	return (
 		<nav className={`${styles.myNavFull} ${theme}`} id="menu-full">

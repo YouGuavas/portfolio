@@ -31,27 +31,89 @@ function BlogContent() {
 	const { variant, setVariant } = useContext(BlogContext);
 
 	useEffect(() => {
-		variant[1].indexOf(4) !== -1 ? setTheme('spaceship') : null;
+		variant[1].indexOf(4) !== -1
+			? setTheme('spaceship')
+			: variant[1].indexOf(2) !== -1 ||
+			  variant[1].indexOf(1) !== -1 ||
+			  variant[1].indexOf(3) !== -1 ||
+			  variant[1].indexOf(0) !== -1
+			? setTheme('default')
+			: null;
 	}, [variant]);
 
 	return (
 		<section className={`${styles.blogBody} ${theme}`}>
 			<TableOfContents
-				title="Voice"
+				title="Level"
 				sections={[
-					['Cowboy', [1]],
-					['Patrick', [2]],
-					['Teacher', [3]],
+					['Beginner', [1]],
+					['Intermediate', [2]],
+					['Advanced', [3]],
 					['Elon Musk', [4]],
+					['Back', [0]],
 				]}
 			/>
 			<div className={`${styles.titleContainer}`}>
 				<h1 className="my-title" id="1">
-					Why Elon Musk Can't Teach You CSS (Simplified)
+					Why Elon Musk Can&apos;t Teach You CSS (Simplified)
 				</h1>
 
-				<ByLine by="Patrick Yambrick" date="November 9, 2024" />
+				<ByLine by="Patrick Yambrick" date="November 15, 2024" />
 			</div>
+			{variant[1].indexOf(0) !== -1 ? (
+				<>
+					<p className={styles.blogParagraph}>
+						Hi! I see you sitting there wondering to yourself: &quot;How can I
+						get started coding?&quot; Or maybe: &quot;What does this have to do
+						with Elon Musk?&quot; Don&apos;t worry-I&apos;m not going to bore
+						you with a traditional <em>beginner&apos;s coding tutorial</em>!
+						Instead, my aim with this blog post is to attempt to deliver the
+						quickest and most concise overview of coding for the web of which I
+						am able. I hope to do so while still touching on enough high-level
+						topics to help readers gain enough confidence that they start
+						digging into learning pathways of their own. I will do my best to
+						provide relevant links (as starting points for self-directed
+						learners) when I notice myself making broad leaps.
+					</p>
+					<p className={styles.blogParagraph}>
+						I will be focusing on{' '}
+						<Link href="https://www.w3schools.com/html/html_intro.asp">
+							HTML
+						</Link>{' '}
+						and CSS here, with the intention of delivering information via a
+						cascading approach, drawing from real-world examples familiar to
+						most of us. I personally authored each of these sections, leveraging{' '}
+						<Link href="">OpenAI&apos;s chatGPT</Link> for proofreading. If you
+						want to follow along with a curriculum and start exploring, I
+						strongly advise checking out{' '}
+						<Link href="https://www.freecodecamp.org/">FreeCodeCamp</Link>.
+					</p>
+					<p className={styles.blogParagraph}>
+						I&apos;m a huge proponent of the concept that we are capable of
+						coding anything we can vocalize, provided the following:
+					</p>
+					<ul className={`${styles.ending} ${styles.myList}`}>
+						<li>we are capable of wielding some programming language</li>
+						<li>
+							we are able to examine our thoughts and break them down into parts
+						</li>
+					</ul>
+					<h3>
+						<strong>Readers:</strong>
+					</h3>
+					<p className={styles.blogParagraph}>
+						I want to refine this educational style, and my blogging style. I
+						welcome any{' '}
+						<Link href="mailto:patrick@patdesigns.online">
+							thoughtful feedback
+						</Link>
+						. Also note that coding of any sort can be very difficult. My hope
+						with this post is to explore a style of communication which I
+						believe has potential to educate and elevate-not alienate any
+						would-be learners through over-simplification.
+					</p>
+				</>
+			) : null}
 			{variant[1].indexOf(4) !== -1 ? (
 				<>
 					<p className={styles.blogParagraph}>
@@ -59,9 +121,9 @@ function BlogContent() {
 					</p>
 					<p className={styles.blogParagraph}>
 						Have you ever given Mars side-eye through a telescope? If you
-						haven't--really, you should; it-it's one of the-- really, one of the
-						peak experiences humanity has to offer itself. Have you seen my
-						rocket?
+						haven&apos;t--really, you should; it-it&apos;s one of the-- really,
+						one of the peak experiences humanity has to offer itself. Have you
+						seen my rocket?
 					</p>
 					<p className={styles.blogParagraph}>
 						Fine. <em>This</em> is how you write CSS.
@@ -73,67 +135,42 @@ function BlogContent() {
 						width={400}
 					/>
 					<p className={styles.blogParagraph}>
-						Okay, maybe Elon Musk didn't write any of this--and maybe he&apos;s
-						too busy to teach you CSS--but I did, and I&apos;m <em>certain</em>{' '}
-						that I can teach anybody how to write CSS.
+						Okay, maybe Elon Musk didn&apos;t write any of this--and maybe
+						he&apos;s too busy to teach you CSS--but I did, and I&apos;m{' '}
+						<em>certain</em> that I can teach anybody how to write CSS.
 					</p>
 				</>
-			) : (
-				<>
-					<p className={styles.blogParagraph}>
-						Hi there! I see you sitting there wondering to yourself: &quot;How
-						can I get started coding?&quot; Or maybe: &quot;What does this have
-						to do with Elon Musk?&quot; Don&apos;t worry-I'm not going to bore
-						you with a traditional <em>beginner&apos;s coding tutorial</em>!
-						Instead, my aim with this blog post is to attempt to describe coding
-						as one might approach it from various non-coding perspectives, and I
-						will attempt to do so as accessibly as possible. Each section will
-						serve as a surface-level overview only.
-					</p>
-					<p className={styles.blogParagraph}>
-						Owing to my own limitations, I will be focusing on HTML and CSS
-						here. I personally authored the "Patrick Yambrick" and "Elon Musk"
-						sections. <Link href="">OpenAI&apos;s chatGPT</Link> provided me
-						with the other two "translations" based on information I provided,
-						in conjunction with specific prompting. If you want to follow along
-						with a curriculum and start exploring, I strongly advise checking
-						out <Link href="https://www.freecodecamp.org/">FreeCodeCamp</Link>.
-					</p>
-					<p className={styles.blogParagraph}>
-						I'm a huge proponent of the concept that we are capable of coding
-						anything we can vocalize, provided the following:
-					</p>
-					<ul className={`${styles.ending} ${styles.myList}`}>
-						<li>we are capable of wielding some programming language</li>
-						<li>
-							we are able to examine our thoughts and break them down into parts
-						</li>
-					</ul>
-				</>
-			)}
+			) : null}
 
-			{variant[1].indexOf(2) !== -1 ? (
+			{variant[1].indexOf(1) !== -1 ? (
 				<>
 					<h2 className={`${styles.blogTitle} my-title`}>HTML as a Lego set</h2>
 					<p className={styles.blogParagraph}>
 						<em>Many</em> aspects of coding function just like building blocks!
-						Sure, maybe they're a <em>little</em> more complex than Legos. Data
-						structures, operands, and operators all <em>link</em> together in a
-						system, which then operates toward a goal that you've set for it. In
-						this example, we'll be examining HTML-the coding language
-						responsible for presenting web pages via your browser. HTML fits
-						perfectly in this example because it doesn't really /do/ much of
-						anything! It just sits there! As with our skeletons, though, it's
-						far from useless. HTML provides much-needed structure to our web
-						pages and other front-end applications. HTML elements really are
-						very similar to mental building blocks. You're functionally{' '}
-						<em>stacking</em> them on top of one another to build the basic
-						layout of your site. If you can type on a keyboard, and you can
-						build with Legos, you can teach yourself how to build an HTML
-						site-when provided with the pathway that best suits you.
+						Sure, maybe they&apos;re a <em>little</em> more complex than Legos.
+						Data structures, operands, and operators all <em>link</em> together
+						in a system, which then operates toward a goal that you&apos;ve set
+						for it. In this example, we&apos;ll be examining{' '}
+						<Link href="https://www.w3schools.com/html/html_intro.asp">
+							HTML
+						</Link>
+						-the coding language responsible for presenting web pages via your
+						browser. HTML fits perfectly in this example because it doesn&apos;t
+						really /do/ much of anything! It just sits there! As with our
+						skeletons, though, it&apos;s far from useless. HTML provides
+						much-needed structure to our web pages and other front-end
+						applications.{' '}
+						<Link href="https://www.w3schools.com/html/html_elements.asp">
+							HTML elements
+						</Link>{' '}
+						really are very similar to mental building blocks. You&apos;re
+						functionally <em>stacking</em> them on top of one another to build
+						the basic layout of your site. If you can type on a keyboard, and
+						you can build with Legos, you can teach yourself how to build an
+						HTML site-when provided with the pathway that best suits you.
 					</p>{' '}
 					<p className={styles.blogParagraph}>
-						A common theme you'll discover on your coding journey is this:
+						A common theme you&apos;ll discover on your coding journey is this:
 						Things were perfect before. HTML was perfect. Why did we add more
 						code? Further still, within HTML: divs are perfect. Why do we need
 						more elements? This is how an HTML site built only with divs looks
@@ -146,14 +183,14 @@ function BlogContent() {
 						width={400}
 					/>
 					<p className={`${styles.blogParagraph} ${styles.ending}`}>
-						I know what you&apos;re thinking-those are Mega Bloks! That's right.
-						We just opened up the starter kit. As we dig deeper and deepr into
-						HTML, we'll learn more and more about its elements -- and how we can
-						use those to improve the structure of our code. In the beginning,
-						it's fine to dig around and explore -- that's how I learned! One
-						piece of gentle advice, though: diving deeper and really
-						understanding the importance of structure from early on is a{' '}
-						<em>really</em> good idea.
+						I know what you&apos;re thinking-those are Mega Bloks! That&apos;s
+						right. We just opened up the starter kit. As we dig deeper and
+						deeper into HTML, we&apos;ll learn more and more about its elements
+						-- and how we can use those to improve the structure of our code. In
+						the beginning, it&apos;s fine to dig around and explore --
+						that&apos;s how I learned! One piece of gentle advice, though:
+						diving deeper and really understanding the importance of structure
+						from early on is a <em>really</em> good idea.
 					</p>
 					<h3 className={`${styles.blogTitle} my-title`}>
 						<strong>Takeaway:</strong>
@@ -162,33 +199,44 @@ function BlogContent() {
 						HTML is very forgiving! Play around with it, build some stuff, see
 						what you can do. You can write pretty much anything, and HTML will
 						make it work.
-					</p>
+					</p>{' '}
+				</>
+			) : null}
+			{variant[1].indexOf(2) !== -1 ? (
+				<>
 					<h2 className={`my-title`}>HTML & CSS as an English paper</h2>
 					<p className={styles.blogParagraph}>
-						Great! Now you've got your Lego tower built. Admire it. You've
-						earned it. Except that you just remembered that you've got an
-						English paper due first thing in the morning! The last time you
-						tried to turn in a Lego tower to your professor, they laughed so
-						hard that students from the hallway popped their heads in to see
-						what was going on. Never again. So, what happens when we want to add
-						a little complexity to coding? Well, as with nearly every learning
-						endeavor: we break it down into smaller blocks, don't we?
+						Great! Now you&apos;ve got your block tower built. Admire it.
+						You&apos;ve earned it. Except that you just remembered that
+						you&apos;ve got an English paper due first thing in the morning! The
+						last time you tried to turn in a Lego tower to your professor, they
+						laughed so hard that students from the hallway popped their heads in
+						to see what was going on. Never again. So, what happens when we want
+						to add a little complexity to coding? Well, as with nearly every
+						learning endeavor: we break it down into smaller blocks, don&apos;t
+						we?
 					</p>{' '}
 					<p className={styles.blogParagraph}>
-						What's a thing that every English teacher appreciates? That's
-						right--a well-formatted document! As you've been playing with your
-						blocks, you've begun to take notice of the fact that many of them
-						come in different shapes and sizes. Maybe you've even started to
-						draw comparisons in your own mind's eye, like this one--use those!
-						Lean into them. Anyway, I think about HTML elements the same way I
-						do building blocks, which is the same way that I think about English
-						paper formatting rules. As we dive deeper into HTML, we can really
-						begin to deepen this comparison -- h1, h2, h3, etc. all serve as
-						headings; attention-grabbers we place strategically throughout a
-						page, half in an attempt to help others, and half in an attempt to
-						keep our <em>own</em> thoughts organized.
+						What&apos;s a thing that every English teacher appreciates?
+						That&apos;s right--a well-formatted document! As you&apos;ve been
+						playing with your blocks, you&apos;ve begun to take notice of the
+						fact that many of them come in different shapes and sizes. Maybe
+						you&apos;ve even started to draw comparisons in your own mind&apos;s
+						eye, like this one--use those! Lean into them. Anyway, I think about
+						HTML elements the same way I do building blocks, which is the same
+						way that I think about English paper formatting rules. As we dive
+						deeper into HTML, we can really begin to deepen this comparison --
+						h1, h2, h3, etc. all serve as headings; attention-grabbers we place
+						strategically throughout a page, half in an attempt to help others,
+						and half in an attempt to keep our <em>own</em> thoughts organized.
 					</p>
-					<p className={styles.blogParagraph}>
+					<BlogImage
+						src={drawing2.src}
+						alt="Structured HTML & CSS, drawn."
+						height={400}
+						width={400}
+					/>
+					<p className={`${styles.blogParagraph} ${styles.ending}`}>
 						Following that same line of thinking, it makes sense -- in my mind
 						-- that the other HTML elements function in much the same way,
 						providing structure and formatting at a basic level.{' '}
@@ -231,9 +279,57 @@ function BlogContent() {
 							</code>
 						</pre>
 					</p>
+					<h3 className={`${styles.blogTitle} my-title`}>
+						<strong>Takeaway:</strong>
+					</h3>
+					<p className={`${styles.blogParagraph} ${styles.ending}`}>
+						HTML may be forgiving, but organization is important. Consider
+						learning its structure while you build to save yourself a bunch of
+						headaches down the road.
+					</p>
+				</>
+			) : null}
+			{variant[1].indexOf(3) !== -1 ? (
+				<>
+					<h2 className={`my-title`}>HTML & CSS as an art project</h2>
+					<p className={styles.blogParagraph}>
+						I don&apos;t know about you -- I got lucky and had a great English
+						teacher. I remember them explaining to the class once that the
+						reason why they were allowed to make &quot;mistakes,&quot; while we
+						weren&apos;t. My teacher went on to explain: &quot;When we have
+						mastered our subject, we are allowed to take some creative license
+						with it.&quot; I didn&apos;t understand at the time, but now I think
+						I do: Nobody is grading our papers. That suits me, as a creative
+						writer who felt stifled under the constraints of formal structure.
+					</p>
+					<p className={styles.blogParagraph}>
+						<Link href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+							CSS
+						</Link>{' '}
+						allows us to get <em>creative</em> with it. CSS, when paired with{' '}
+						<Link href="https://www.w3schools.com/css/css_selectors.asp">
+							CSS selectors
+						</Link>{' '}
+						-- the &quot;names,&quot; or &quot;labels&quot; of HTML elements,
+						along with{' '}
+						<Link href="https://www.w3schools.com/cssref/sel_class.php">
+							classes
+						</Link>
+						, ids, etc. -- allows for very fine control over the look{' '}
+						<em>and</em> feel of a page. If you&apos;re someone with an artistic
+						mind, just a little CSS can carry you further than you might expect.
+					</p>
+					<p className={styles.blogParagraph}>
+						If you&apos;ve been following along with the{' '}
+						<Link href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
+							FreeCodeCamp front-end curriculum
+						</Link>
+						, and you understand what&apos;s happening on this page,
+						there&apos;s a strong chance you&apos;re ready to start building
+						creatively.
+					</p>
 					<Carousel
 						images={[
-							{ src: drawing2, alt: 'Structured HTML & CSS, drawn' },
 							{
 								src: drawing3,
 								alt: 'Structured HTML & CSS, drawn and colored (1/2)',
@@ -244,12 +340,13 @@ function BlogContent() {
 							},
 						]}
 					/>
-					<h2 className={`my-title`}>HTML & CSS as an art project</h2>
-					<p className={styles.blogParagraph}>
-						As the curious among us saw while flipping through the previous
-						example, when we wield various disciplines together, we can take
-						something seemingly rigid and untouchable, and turn it into a sort
-						of art.
+					<h3 className={`${styles.blogTitle} my-title`}>
+						<strong>Takeaway:</strong>
+					</h3>
+					<p className={`${styles.blogParagraph} ${styles.ending}`}>
+						Developing good organizational and structural habits from the
+						beginning of your journey will help you discover ways to create and
+						to shine through all of space and time.
 					</p>
 				</>
 			) : null}

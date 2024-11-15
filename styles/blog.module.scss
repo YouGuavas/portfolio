@@ -32,15 +32,14 @@
 	}
 }
 .blogBody,
-.considerations,
-.leaders {
+.considerations {
 	width: 65vw;
 	margin: 0 auto;
-	font-size: 1.1rem;
-	@media screen and (max-width: var(--md-max)) {
-		font-size: 1rem;
+	font-size: 1.2rem;
+	@media screen and (max-width: 800px) {
+		font-size: 0.9rem;
 
-		width: 85vw;
+		width: 70vw;
 	}
 }
 .blogBody {

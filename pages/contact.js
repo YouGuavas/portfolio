@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { grabElement } from '@/utils/_functions';
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 import styles from '../styles/contact.module.scss';
 
@@ -65,24 +66,25 @@ export default function Contact() {
     }*/
 
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Contact | Patrick Yambrick</title>
 			</Head>
 			<section
 				className={`pad-top-vh my-background-generic place-items-center ${styles.contact}`}
 			>
-				<div className={`my-overlay grid place-items-center`}>
-					<div className="lg:flex lg:flex-wrap">
-						<h2 className={`${styles.jumbo} pt-4`}>Email:</h2>
-						<a
-							href="mailto:patrick@patdesigns.online"
-							className={`${styles.jumbo} pt-4`}
-						>
-							patrick@patdesigns.online
-						</a>
-					</div>
-					{/*
+				<div>
+					<h2>Email:</h2>
+					<Link href="mailto:patrick@patdesigns.online">
+						patrick@patdesigns.online
+					</Link>
+				</div>
+			</section>
+		</>
+	);
+}
+
+/*
                     <p className={styles.or}>Or:</p>
                     <form
                         id="contact-form"
@@ -154,9 +156,4 @@ export default function Contact() {
                                 />
                             </div>
                         </div>
-                    </form>*/}
-				</div>
-			</section>
-		</div>
-	);
-}
+                    </form>*/

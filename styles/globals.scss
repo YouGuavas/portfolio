@@ -37,10 +37,13 @@
 		--medium-transparent: 55%;
 	}
 	--style-font-1: 'Amatic SC', 'Oswald', 'Patrick Hand', serif;
-	--style-font-2: serif;
-	--font-size-sm: 0.8rem;
+	--style-font-2: 'Oswald', sans-serif;
+	--font-size-sm: 0.6rem;
 	--font-size-md: 1.2rem;
 	--font-size-lg: 1.4rem;
+	--font-size-toc: 1.4rem;
+	--font-size-toc-sm: 0.9rem;
+
 	--font-weight-norm: 200;
 	--font-weight-bold: 800;
 	--radius: 0;
@@ -93,6 +96,8 @@
 	--font-size-sm: 0.8rem;
 	--font-size-md: 1rem;
 	--font-size-lg: 1.2rem;
+	--font-size-toc: 0.9rem;
+	--font-size-toc-sm: 0.5rem;
 	--font-weight-norm: 200;
 	--font-weight-bold: 600;
 	--radius: 0.4rem;
@@ -406,11 +411,11 @@ a.back-link {
 	font-family: var(--style-font-1);
 }
 h1.my-title {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-weight: var(--font-weight-norm);
 }
 h3.my-title {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	margin-top: 0.2rem;
 }
 a.stat-link {

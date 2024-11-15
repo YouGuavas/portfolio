@@ -5,17 +5,18 @@
 	position: fixed;
 	display: flex;
 	flex-direction: column;
+	justify-content: center; /* Centers items horizontally */
+	align-items: center; /* Centers items vertically */
 	left: 0;
 	gap: 0.1rem;
 	margin: 0 auto;
 	padding: 0.5rem;
 
 	cursor: pointer;
-	@media only screen and (max-width: $md-max) {
-		font-size: 0.6rem;
-		top: 10vh;
-		flex-direction: row;
-		width: 100vw;
+	font-size: var(--font-size-toc);
+
+	@media only screen and (max-width: $sm-max) {
+		font-size: var(--font-size-toc-sm);
 	}
 	li {
 		transition: inherit;
