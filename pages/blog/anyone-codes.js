@@ -66,14 +66,13 @@ function BlogContent() {
 						Hi! I see you sitting there wondering to yourself: &quot;How can I
 						get started coding?&quot; Or maybe: &quot;What does this have to do
 						with Elon Musk?&quot; Don&apos;t worry-I&apos;m not going to bore
-						you with a traditional <em>beginner&apos;s coding tutorial</em>!
-						Instead, my aim with this blog post is to attempt to deliver the
-						quickest and most concise overview of coding for the web of which I
-						am able. I hope to do so while still touching on enough high-level
-						topics to help readers gain enough confidence that they start
-						digging into learning pathways of their own. I will do my best to
-						provide relevant links (as starting points for self-directed
-						learners) when I notice myself making broad leaps.
+						you with a traditional <em>beginner&apos;s coding tutorial</em>! My
+						aim is to deliver a high-level overview of the building blocks of
+						coding for the web, focusing on HTML & CSS. I hope to help readers
+						gain confidence, and to inspire you to set out on your own learning
+						pathway. I will do my best to provide relevant links (as starting
+						points for self-directed learners) when I notice myself making
+						leaps.
 					</p>
 					<p className={styles.blogParagraph}>
 						I will be focusing on{' '}
@@ -92,25 +91,24 @@ function BlogContent() {
 						I&apos;m a huge proponent of the concept that we are capable of
 						coding anything we can vocalize, provided the following:
 					</p>
-					<ul className={`${styles.ending} ${styles.myList}`}>
-						<li>we are capable of wielding some programming language</li>
+					<ol className={`${styles.ending} ${styles.myList}`}>
+						<li>We are capable of wielding some programming language.</li>
 						<li>
-							we are able to examine our thoughts and break them down into parts
+							We are able to examine our thoughts and break them down into
+							parts.
 						</li>
-					</ul>
+					</ol>
 					<h3>
 						<strong>Readers:</strong>
 					</h3>
 					<p className={styles.blogParagraph}>
-						I want to refine this educational style, and my blogging style. I
-						welcome any{' '}
+						This is my first post, and I&apos;m eager to refine my teaching and
+						blogging styles. I welcome any{' '}
 						<Link href="mailto:patrick@patdesigns.online">
 							thoughtful feedback
 						</Link>
-						. Also note that coding of any sort can be very difficult. My hope
-						with this post is to explore a style of communication which I
-						believe has potential to educate and elevate-not alienate any
-						would-be learners through over-simplification.
+						. Coding of any sort can be difficult. My hope here is to explore
+						and educate-not alienate through over-simplification.
 					</p>
 				</>
 			) : null}
@@ -169,6 +167,9 @@ function BlogContent() {
 						you can build with Legos, you can teach yourself how to build an
 						HTML site-when provided with the pathway that best suits you.
 					</p>{' '}
+					<h2 className={`${styles.blogTitle} my-title`}>
+						A perfect beginning
+					</h2>
 					<p className={styles.blogParagraph}>
 						A common theme you&apos;ll discover on your coding journey is this:
 						Things were perfect before. HTML was perfect. Why did we add more
@@ -198,7 +199,11 @@ function BlogContent() {
 					<p className={`${styles.blogParagraph} ${styles.ending}`}>
 						HTML is very forgiving! Play around with it, build some stuff, see
 						what you can do. You can write pretty much anything, and HTML will
-						make it work.
+						make it work. You can start by creating a{' '}
+						<Link href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h">
+							.html
+						</Link>{' '}
+						file on your computer, editing it, and running it in a browser.
 					</p>{' '}
 				</>
 			) : null}
