@@ -63,16 +63,16 @@ function BlogContent() {
 			{variant[1].indexOf(0) !== -1 ? (
 				<>
 					<p className={styles.blogParagraph}>
-						Hi! I see you sitting there wondering to yourself: &quot;How can I
-						get started coding?&quot; Or maybe: &quot;What does this have to do
-						with Elon Musk?&quot; Don&apos;t worry-I&apos;m not going to bore
-						you with a traditional <em>beginner&apos;s coding tutorial</em>! My
-						aim is to deliver a high-level overview of the building blocks of
-						coding for the web, focusing on HTML & CSS. I hope to help readers
-						gain confidence, and to inspire you to set out on your own learning
-						pathway. I will do my best to provide relevant links (as starting
-						points for self-directed learners) when I notice myself making
-						leaps.
+						Hi! I see you sitting there wondering to yourself: &quot;
+						<em>How can I get started coding?</em>&quot; Or maybe: &quot;What
+						does this have to do with Elon Musk?&quot; Don&apos;t worry-I&apos;m
+						not going to bore you with a traditional{' '}
+						<em>beginner&apos;s coding tutorial</em>! My aim is to deliver a
+						high-level overview of the building blocks of coding for the web,
+						focusing on HTML & CSS. I hope to help readers gain confidence, and
+						to inspire you to set out on your own learning pathway. I will do my
+						best to provide relevant links (as starting points for self-directed
+						learners) when I notice myself making leaps.
 					</p>
 					<p className={styles.blogParagraph}>
 						I will be focusing on{' '}
@@ -82,9 +82,11 @@ function BlogContent() {
 						and CSS here, with the intention of delivering information via a
 						cascading approach, drawing from real-world examples familiar to
 						most of us. I personally authored each of these sections, leveraging{' '}
-						<Link href="">OpenAI&apos;s chatGPT</Link> for proofreading. If you
-						want to follow along with a curriculum and start exploring, I
-						strongly advise checking out{' '}
+						<Link href="https://openai.com/chatgpt/overview/">
+							OpenAI&apos;s chatGPT
+						</Link>{' '}
+						for proofreading. If you want to follow along with a curriculum and
+						start exploring, I strongly advise checking out{' '}
 						<Link href="https://www.freecodecamp.org/">FreeCodeCamp</Link>.
 					</p>
 					<p className={styles.blogParagraph}>
@@ -143,7 +145,7 @@ function BlogContent() {
 			{variant[1].indexOf(1) !== -1 ? (
 				<>
 					<h2 className={`${styles.blogTitle} my-title`}>HTML as a Lego set</h2>
-					<p className={styles.blogParagraph}>
+					<p className={`${styles.ending} ${styles.blogParagraph}`}>
 						<em>Many</em> aspects of coding function just like building blocks!
 						Sure, maybe they&apos;re a <em>little</em> more complex than Legos.
 						Data structures, operands, and operators all <em>link</em> together
@@ -211,16 +213,19 @@ function BlogContent() {
 				<>
 					<h2 className={`my-title`}>HTML & CSS as an English paper</h2>
 					<p className={styles.blogParagraph}>
-						Great! Now you&apos;ve got your block tower built. Admire it.
-						You&apos;ve earned it. Except that you just remembered that
+						Great! Now you&apos;ve got your block tower built. Admire
+						it-you&apos;ve earned it. Ahh! You just woke up, and remembered
 						you&apos;ve got an English paper due first thing in the morning! The
 						last time you tried to turn in a Lego tower to your professor, they
 						laughed so hard that students from the hallway popped their heads in
-						to see what was going on. Never again. So, what happens when we want
-						to add a little complexity to coding? Well, as with nearly every
-						learning endeavor: we break it down into smaller blocks, don&apos;t
-						we?
+						to see what was going on. Never again.
 					</p>{' '}
+					<p className={styles.blogParagraph}>
+						{' '}
+						So, what happens when we want to add a little complexity to coding?
+						Well, as with nearly every learning endeavor: we break it down into
+						smaller blocks, don&apos;t we?
+					</p>
 					<p className={styles.blogParagraph}>
 						What&apos;s a thing that every English teacher appreciates?
 						That&apos;s right--a well-formatted document! As you&apos;ve been
@@ -231,9 +236,9 @@ function BlogContent() {
 						HTML elements the same way I do building blocks, which is the same
 						way that I think about English paper formatting rules. As we dive
 						deeper into HTML, we can really begin to deepen this comparison --
-						h1, h2, h3, etc. all serve as headings; attention-grabbers we place
-						strategically throughout a page, half in an attempt to help others,
-						and half in an attempt to keep our <em>own</em> thoughts organized.
+						&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, and so on serve as structural
+						markers, just like the titles and subheadings of a paper. They grab
+						attention and help organize thoughts—both for readers and ourselves.
 					</p>
 					<BlogImage
 						src={drawing2.src}
@@ -299,13 +304,13 @@ function BlogContent() {
 					<h2 className={`my-title`}>HTML & CSS as an art project</h2>
 					<p className={styles.blogParagraph}>
 						I don&apos;t know about you -- I got lucky and had a great English
-						teacher. I remember them explaining to the class once that the
-						reason why they were allowed to make &quot;mistakes,&quot; while we
-						weren&apos;t. My teacher went on to explain: &quot;When we have
-						mastered our subject, we are allowed to take some creative license
-						with it.&quot; I didn&apos;t understand at the time, but now I think
-						I do: Nobody is grading our papers. That suits me, as a creative
-						writer who felt stifled under the constraints of formal structure.
+						teacher. I remember them explaining to the class why they could take
+						&quot;creative liberties&quot; while we couldn&apos;t. They said,
+						&quot;Once you&apos;ve mastered the rules, you&apos;re allowed to
+						bend them.&quot; At the time, I didn&apos;t fully understand. Now, I
+						think I do: Nobody is grading our papers. That suits me, as a
+						creative writer who felt stifled under the constraints of formal
+						structure.
 					</p>
 					<p className={styles.blogParagraph}>
 						<Link href="https://developer.mozilla.org/en-US/docs/Web/CSS">
@@ -320,7 +325,7 @@ function BlogContent() {
 						<Link href="https://www.w3schools.com/cssref/sel_class.php">
 							classes
 						</Link>
-						, ids, etc. -- allows for very fine control over the look{' '}
+						, IDs, and more -- allows for very fine control over the look{' '}
 						<em>and</em> feel of a page. If you&apos;re someone with an artistic
 						mind, just a little CSS can carry you further than you might expect.
 					</p>
