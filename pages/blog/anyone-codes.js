@@ -46,10 +46,10 @@ function BlogContent() {
 			<TableOfContents
 				title="Level"
 				sections={[
-					['Beginner', [1]],
-					['Intermediate', [2]],
-					['Advanced', [3]],
-					['Elon Musk', [4]],
+					['1', [1]],
+					['2', [2]],
+					['3', [3]],
+					['Elon', [4]],
 					['Back', [0]],
 				]}
 			/>
