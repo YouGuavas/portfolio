@@ -1,3 +1,4 @@
+@import '../../utils/_variables.scss';
 .navHeader {
 	display: block;
 }
@@ -23,6 +24,7 @@
 	.standardMenu {
 		position: absolute;
 		display: flex;
+		gap: 1rem;
 
 		.standardMenuLink {
 			color: var(--color-2);
@@ -35,18 +37,15 @@
 			letter-spacing: 0.2rem;
 			padding: 0 0.5rem;
 			border-radius: 0.15rem;
-			margin: 0 0.8rem;
 			cursor: pointer;
 
-			@media only screen and (max-width: var(--md-max)) {
+			@media only screen and (max-width: $md-max) {
 				font-weight: 400;
 				font-size: 1rem;
-				margin: 0 0.8rem;
 			}
 
-			@media only screen and (max-width: var(--sm-max)) {
+			@media only screen and (max-width: $sm-max) {
 				font-size: 0.8rem;
-				margin: 0 0.2rem;
 			}
 
 			&:hover,
@@ -58,12 +57,12 @@
 					opacity: 40%;
 				}
 
-				@media only screen and (max-width: var(--md-max)) {
+				@media only screen and (max-width: $md-max) {
 					font-size: 1.3rem;
 				}
 
-				@media only screen and (max-width: var(--sm-max)) {
-					font-size: 1rem;
+				@media only screen and (max-width: $sm-max) {
+					font-size: 0.9rem;
 				}
 			}
 		}
