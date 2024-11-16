@@ -103,7 +103,7 @@ function BlogContent() {
 					<h3>
 						<strong>Readers:</strong>
 					</h3>
-					<p className={styles.blogParagraph}>
+					<p className={`${styles.ending} ${styles.blogParagraph}`}>
 						This is my first post, and I&apos;m eager to refine my teaching and
 						blogging styles. I welcome any{' '}
 						<Link href="mailto:patrick@patdesigns.online">
