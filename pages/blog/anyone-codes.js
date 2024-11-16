@@ -134,7 +134,7 @@ function BlogContent() {
 						height={400}
 						width={400}
 					/>
-					<p className={styles.blogParagraph}>
+					<p className={`${styles.ending} ${styles.blogParagraph}`}>
 						Okay, maybe Elon Musk didn&apos;t write any of this--and maybe
 						he&apos;s too busy to teach you CSS--but I did, and I&apos;m{' '}
 						<em>certain</em> that I can teach anybody how to write CSS.
