@@ -200,17 +200,7 @@ body {
 	display: flex;
 	gap: 2rem;
 }
-.my-list {
-	list-style: none;
-	li {
-		margin: 0 auto;
-		margin-top: 0.6rem;
-		width: 80%;
-		@media screen and (max-width: var(--md-max)) {
-			width: 80vw;
-		}
-	}
-}
+
 .my-rotate {
 	transform: rotate(var(--rotate-1));
 	@media screen and (min-width: $sm-max) {
