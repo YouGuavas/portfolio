@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '../../styles/blog.module.scss';
+import SelfieImage from './SelfieImage';
 
 export default function Collapsible(props) {
 	const [isCollapsed, setIsCollapsed] = useState(true);
@@ -28,6 +29,14 @@ export default function Collapsible(props) {
 				className={`${styles.blogTitle} my-title collapsible-title`}
 				onClick={toggleCollapse}
 			>
+				{props.image ? (
+					<SelfieImage
+						alt={`A text bubble icon indicating text ownership.`}
+						height={50}
+						width={50}
+						src={props.image.src}
+					/>
+				) : null}
 				{props.title}
 			</h2>
 

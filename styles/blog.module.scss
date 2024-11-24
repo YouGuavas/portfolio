@@ -57,6 +57,8 @@
 	a {
 		font-weight: 600;
 		transition: 0.4s;
+		color: var(--color-2);
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -73,6 +75,9 @@
 		margin: 0 auto;
 		margin-top: 0.6rem;
 		width: 80%;
+		strong {
+			color: var(--color-2);
+		}
 		@media screen and (max-width: var(--md-max)) {
 			width: 80vw;
 		}

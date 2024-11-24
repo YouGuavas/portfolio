@@ -221,12 +221,7 @@
 		line-height: 1.75rem;
 		font-family: var(--style-font-2);
 	}
-	.selfieImageContainer {
-		min-width: 45vw;
-		img {
-			border-radius: 100%;
-		}
-	}
+
 	.myList {
 		list-style: none;
 
@@ -313,5 +308,11 @@
 			padding: 1.3rem 1.3rem;
 			width: 100%;
 		}
+	}
+}
+.selfieImageContainer {
+	min-width: 45vw;
+	img {
+		border-radius: 100%;
 	}
 }

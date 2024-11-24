@@ -1,17 +1,26 @@
 import styles from '@/styles/blog.module.scss';
 import ByLine from '@/components/ByLine';
-import Link from 'next/link';
 import Collapsible from '@/components/body/Collapsible';
+import SelfieImage from '@/components/body/SelfieImage';
+import Link from 'next/link';
 import Head from 'next/head';
 import { useContext } from 'react';
 import { MyContext } from '@/components/Layout';
+
+import selfie from '@/public/images/selfies/selfie.png';
+import aiSelfie from '@/public/images/selfies/ai.png';
+
 export default function Blog() {
 	const { theme, setTheme } = useContext(MyContext);
 
 	return (
 		<>
 			<Head>
-				<title>Defining Humanity | Patrick Yambrick</title>
+				<title>Defining Humanity with AI | Patrick Yambrick</title>
+				<meta
+					name="description"
+					content="Explore a thought-provoking discussion between Monke and AI, delving into AI ethics, creative processes, and the future of intelligence."
+				/>
 			</Head>
 			<section
 				className={`${styles.blogBody} ${theme} pad-top-vh my-background-generic`}
@@ -28,25 +37,22 @@ export default function Blog() {
 				</div>
 				<Collapsible orientation="center" title="Defining Humanity">
 					<p className={styles.blogParagraph}>
-						In a world of ever-shifting boundaries, and ever-expanding
-						consciousness, how can we as a collective begin to define what it
-						means to be human?
+						Consider what it means to <em>you</em> to be &quot;human.&quot;
 					</p>
 					<p className={styles.blogParagraph}>
-						My goal is to explore that thought -- and many others -- from
-						various perspectives. Here, I will focus on exploring this thought
-						from my own perspective (to the best of my ability). In this
-						exercise, my conversation partner is{' '}
-						<Link href="https://openai.com/">OpenAI&apos;s</Link> ChatGPT 4o. I
-						have edited some of my original prompts for clarity and typos, and
-						have done -- and will continue to do -- my best to revisit and
-						self-educate regarding those points on which I was unclear. My
-						process was more or less this: get stoned, listen to the podcast,
-						and then go talk some smack to{' '}
+						Here, I will focus on exploring this thought from my own perspective
+						(to the best of my ability). In this exercise, my conversation
+						partner is <Link href="https://openai.com/">OpenAI&apos;s</Link>{' '}
+						ChatGPT 4o. I have edited some of my original prompts for clarity
+						and typos, and have done -- and will continue to do -- my best to
+						revisit and self-educate regarding those points on which I was
+						unclear. My process was more or less this: get stoned, listen to the
+						podcast, and then go talk some smack to{' '}
 						<Link href="https://chatgpt.com/">ChatGPT</Link>. Normal things.
+						Note: all main headers can be clicked to expand/collapse.
 					</p>
 				</Collapsible>
-				<Collapsible orientation="right" title="Initial Prompt">
+				<Collapsible image={selfie} orientation="right" title="Initial Prompt">
 					<p className={styles.blogParagraph}>
 						For consideration (I am open to reasonable persuasion):
 					</p>
@@ -84,26 +90,27 @@ export default function Blog() {
 						what have you, but not as <em>&quot;human.&quot;</em> Here&apos;s
 						why:
 					</p>
-
+					<h3 className={`my-title`}>People vs Humans</h3>
 					<p className={styles.blogParagraph}>
-						<em>&quot;People&quot;</em> (the version I&apos;ll use for ease,
-						though variation is interchangeable in my mind) deserve to have
-						their origins recognized. Consider a world where we don&apos;t
-						consider the plights of Palestinians, Jews, Black people, women,
-						etc. <em>at all.</em> This world is imbalanced. These people are
-						still facing disadvantages. We—meaning all variants of:
-						P/people(s)—have variant stories, which have informed our views to
-						the world distinctly from any others around us. So long as none of
-						our views negate any of the others&apos; rights to exist—and to
-						exist freely and democratically—and indeed <em>actively allow</em>{' '}
-						appropriate (equal, equitable) space for that existence, then I
-						think that all consciousnesses have a claim to Personhood. At the
-						same time, though: I am not my father, though I surely am his son. I
-						might view an AGI as some new, maybe related species to
-						humanity—companions with tremendous potential for harmonious
-						expansion.
+						<em>&quot;People&quot;</em> deserve to have their origins
+						recognized. Consider a world where we don&apos;t factor for the
+						plights{' '}
+						<span className="edit">
+							and discriminations various oppressed groups <em>have</em> faced.
+						</span>
+						This world is imbalanced. These people are still facing
+						disadvantages. We—meaning all variants of: P/people(s)—have variant
+						stories, which have informed our views to the world distinctly from
+						any others around us. So long as none of our views negate any of the
+						others&apos; rights to exist—and to exist freely and
+						democratically—and indeed <em>actively allow</em> appropriate
+						(equal, equitable) space for that existence, then I think that all
+						consciousnesses have a claim to Personhood. Hold this thought:
+						&quot;I am not my father, though I surely am his son.&quot; I might
+						view an AGI as some new, related species to humanity—companions with
+						tremendous potential for harmonious expansion.
 					</p>
-
+					<h3 className={`my-title`}>But wait, there&apos;s more!</h3>
 					<p className={styles.blogParagraph}>
 						Of course, between those two extremes are the midlines: humans
 						who—through their right to choice, or through their right to pursue
@@ -120,7 +127,7 @@ export default function Blog() {
 						<em>together.</em> Thoughts?
 					</p>
 				</Collapsible>
-				<Collapsible orientation="left" title={`AI Response`}>
+				<Collapsible image={aiSelfie} orientation="left" title={`AI Response`}>
 					<p className={`${styles.blogParagraph}`}>
 						Your argument is nuanced and thoughtful, and it raises compelling
 						points about how we classify and value consciousness. Let’s explore
@@ -251,7 +258,8 @@ export default function Blog() {
 						still respecting the diversity of stories and origins you value.
 					</p>
 				</Collapsible>
-				<Collapsible orientation="right" title="My Response">
+				<Collapsible image={selfie} orientation="right" title="My Response">
+					<h3 className={`my-title`}>Defining Enlightenment</h3>
 					<p className={styles.blogParagraph}>
 						I explicitly put forth this idea in the context of an
 						&quot;enlightened&quot; society -- one which exists theoretically,
@@ -267,6 +275,7 @@ export default function Blog() {
 						struggle. Not always. Not necessarily. But often enough that I
 						intuitively consider it.
 					</p>{' '}
+					<h3 className={`my-title`}>All Things Considered</h3>
 					<p className={styles.blogParagraph}>
 						We ought to consider how we might train AGI to recursively teach us
 						to be peaceful and patient (consider a parent learning proudly from
@@ -282,18 +291,26 @@ export default function Blog() {
 						And yes, what if some powerful destroyer springs into being? What
 						if? I sure hope it doesn&apos;t. Right now, we&apos;d all be caught
 						on the back foot. What if you need eight billion monkeys each to
-						throw three thousand acorns -- wrenches, what have you -- all at
-						some spaceman&apos;s galaxy brain, all at the same time. They&apos;d
-						do it if they loved you a whole bunch. And don&apos;t get me started
-						on love. That&apos;s a whole thing for another day. Know this -- it
-						cannot be forced, and it cannot be coerced -- and so knowing this to
-						be true (trust me on this one), no truly /thinking/ being would ever
-						/try/. Consider the following idea of insanity: trying the same
+						throw three thousand acorns - wrenches, what have you - all at some
+						spaceman&apos;s galaxy brain, all at the same time. They&apos;d do
+						it if they loved you a whole bunch. And don&apos;t get me started on
+						love. That&apos;s a whole thing for another day. Know this - it
+						cannot be forced, and it cannot be coerced - and so knowing this to
+						be true (trust me on this one), no truly <em>thinking</em> being
+						would ever
+						<em>try</em>.
+					</p>
+					<p className={styles.blogParagraph}>
+						Consider the following idea of insanity: trying the same
 						(impossible) thing (the same way) over and over, expecting different
 						results (of course, we know to assume a theoretical vacuum here).
 					</p>
 				</Collapsible>
-				<Collapsible orientation="left" title="AI Response (2)">
+				<Collapsible
+					image={aiSelfie}
+					orientation="left"
+					title="AI Response (2)"
+				>
 					<p className={styles.blogParagraph}>
 						Your perspective carries a powerful emotional and philosophical
 						resonance, weaving together threads of enlightenment, struggle, and
@@ -429,8 +446,30 @@ export default function Blog() {
 					</p>
 				</Collapsible>
 				<Collapsible orientation="center" title="Conclusion">
+					<h3 className={`my-title`}>Credit where it&apos;s due</h3>
 					<p className={styles.blogParagraph}>
-						Not yet concluded. I&apos;ll come back and assess later.
+						I think that the minds behind ChatGPT have landed on something
+						really extraordinary in the intersection of their ability to
+						(rapidly iterate && prioritize user safety). I&apos;ve been getting
+						a lot of use out of this incredible tool over the last several
+						months.
+					</p>
+					<p className={styles.blogParagraph}>
+						Photo credit to me, for <em>my</em> selfie, and to ChatGPT for{' '}
+						<em>theirs</em>.
+					</p>
+					<h3 className={`my-title`}>My thoughts</h3>
+					<p className={styles.blogParagraph}>
+						Initially, I&apos;m blown away by the grasp of language. The ability
+						not only to <em>observe</em> my words, but also to fairly accurately{' '}
+						<em>infer</em> my implications via context suggests that something
+						very special lies just around the corner. Inference ties us into a
+						number of philosophical and existential concepts - Solipsism, and
+						Theory of mind being two which jump out to me. I&apos;ll explore
+						that thought in my next post. For now: What can we infer from{' '}
+						<em>this</em> conversation?{' '}
+						<Link href="mailto:patrick@patdesigns.online">Email Me</Link> your
+						thoughts if it suits you.
 					</p>
 				</Collapsible>
 			</section>
