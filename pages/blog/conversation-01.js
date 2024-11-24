@@ -49,7 +49,9 @@ export default function Blog() {
 						unclear. My process was more or less this: get stoned, listen to the
 						podcast, and then go talk some smack to{' '}
 						<Link href="https://chatgpt.com/">ChatGPT</Link>. Normal things.
-						Note: all main headers can be clicked to expand/collapse.
+					</p>
+					<p className={styles.blogParagraph}>
+						Note: tap or click main headers to expand/collapse the section.
 					</p>
 				</Collapsible>
 				<Collapsible image={selfie} orientation="right" title="Initial Prompt">
@@ -468,8 +470,10 @@ export default function Blog() {
 						Theory of mind being two which jump out to me. I&apos;ll explore
 						that thought in my next post. For now: What can we infer from{' '}
 						<em>this</em> conversation?{' '}
-						<Link href="mailto:patrick@patdesigns.online">Email Me</Link> your
-						thoughts if it suits you.
+						<p className={styles.blogParagraph}>
+							<Link href="mailto:patrick@patdesigns.online">Email Me</Link> your
+							thoughts if it suits you.
+						</p>
 					</p>
 				</Collapsible>
 			</section>
