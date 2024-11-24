@@ -7,7 +7,7 @@ export default function Footer() {
 	const { theme, setTheme } = useContext(MyContext);
 
 	return (
-		<footer className={`${styles.footer} ${theme}`}>
+		<footer className={`${styles.footer} ${theme} my-background-generic `}>
 			<p className={styles.footerNotice}>
 				This site is hosted on{' '}
 				<Link href="https://vercel.com/legal/privacy-policy">Vercel</Link>,

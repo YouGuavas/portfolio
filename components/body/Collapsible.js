@@ -14,7 +14,15 @@ export default function Collapsible(props) {
 		setIsCollapsed(false);
 	}, []);
 	return (
-		<div className={`${styles.collapsibleContainer}`}>
+		<div
+			className={`${styles.collapsibleContainer} ${styles.absoluteBlogging} ${
+				props.orientation === 'center'
+					? 'center'
+					: props.orientation === 'left'
+					? 'left'
+					: 'right'
+			}`}
+		>
 			{/* The collapsible title */}
 			<h2
 				className={`${styles.blogTitle} my-title collapsible-title`}

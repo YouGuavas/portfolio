@@ -33,14 +33,15 @@
 }
 .blogBody,
 .considerations {
-	width: 65vw;
-	min-height: 70vh;
+	min-width: 45vw;
+	width: 70vw;
+	min-height: 100vh;
 	margin: 0 auto;
 	font-size: 1.2rem;
 	@media screen and (max-width: 800px) {
 		font-size: 0.9rem;
 
-		width: 68vw;
+		width: 90vw;
 	}
 }
 .collapsibleContainer {
@@ -49,8 +50,10 @@
 .blogBody {
 	margin-top: 15vh;
 }
+
 .blogParagraph {
-	margin-top: 1rem;
+	margin: 1rem auto;
+
 	a {
 		font-weight: 600;
 		transition: 0.4s;
@@ -69,7 +72,7 @@
 	li {
 		margin: 0 auto;
 		margin-top: 0.6rem;
-		width: 63vw;
+		width: 80%;
 		@media screen and (max-width: var(--md-max)) {
 			width: 80vw;
 		}
@@ -92,6 +95,11 @@
 		border: 1px solid var(--color-2);
 		font-family: monospace;
 	}
+}
+
+.edit {
+	color: var(--color-3);
+	opacity: 0.8;
 }
 
 .closing,

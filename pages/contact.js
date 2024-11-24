@@ -5,8 +5,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import styles from '../styles/contact.module.scss';
+import { useContext } from 'react';
+import { MyContext } from '../components/Layout';
 
 export default function Contact() {
+	const { theme, setTheme } = useContext(MyContext);
+
 	const labelClass =
 		'block uppercase tracking-wide text-xs font-bold mb-2 my-text-mustard';
 	const inputClass = `my-transition leading-tight appearance-none ${styles.inputClass}`;
@@ -71,10 +75,10 @@ export default function Contact() {
 				<title>Contact | Patrick Yambrick</title>
 			</Head>
 			<section
-				className={`pad-top-vh my-background-generic place-items-center ${styles.contact}`}
+				className={`pad-top-vh my-background-generic place-items-center ${styles.contact} ${theme}`}
 			>
 				<div>
-					<h2>Email:</h2>
+					<h2 className="my-title">Email:</h2>
 					<Link href="mailto:patrick@patdesigns.online">
 						patrick@patdesigns.online
 					</Link>

@@ -29,7 +29,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
-				<body id="#body">
+				<body id="#body" className="my-background-generic">
 					<Main />
 					<NextScript />
 				</body>

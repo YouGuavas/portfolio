@@ -19,7 +19,7 @@ export default function Blogs() {
 				id="Stories"
 				className={`${styles.blogs} pad-top-vh my-background-generic text-center my-text-mustard`}
 			>
-				<h1>Blog</h1>
+				<h1 className={`my-title`}>Blog</h1>
 				<ul>
 					{blogPosts.map((blogPost, index) => {
 						return <BlogInfo blogPost={blogPost} key={index} />;

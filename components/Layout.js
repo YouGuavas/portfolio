@@ -30,6 +30,12 @@ const Layout = ({ children }) => {
 			router.events.off('routeChangeComplete', handleRouteChange);
 		};
 	}, [router]); // Run when router changes
+	useEffect(() => {
+		// Set the theme class on <html> dynamically
+		const root = document.documentElement;
+		root.classList.remove('default', 'spaceship', 'new-normal'); // Remove old classes
+		root.classList.add(`${theme}`); // Add new class based on context
+	}, [theme]);
 
 	return (
 		<MyContext.Provider value={{ theme, setTheme, url, setUrl }}>

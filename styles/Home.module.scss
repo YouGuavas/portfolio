@@ -208,25 +208,47 @@
 }
 .about,
 .contact {
-	height: var(--main-height);
+	min-height: var(--main-height);
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	justify-content: center; /* Horizontally centers children */
+	align-items: center; /* Vertically centers children */
 
-	h2 {
-		font-size: 1.4rem;
-	}
 	p {
 		margin: 1rem auto;
 		font-size: 1.2rem;
 		line-height: 1.75rem;
 		font-family: var(--style-font-2);
 	}
-
-	@media screen and (max-width: $md-max), (max-height: 600px) {
-		height: var(--main-height);
-		font-size: 0.8rem;
+	.selfieImageContainer {
+		min-width: 45vw;
+		img {
+			border-radius: 100%;
+		}
 	}
-	@media screen and (max-width: $sm-max), (max-height: 600px) {
+	.myList {
+		list-style: none;
+
+		li {
+			margin: 0 auto;
+			margin-top: 0.6rem;
+			width: 90%;
+			@media screen and (max-width: var(--md-max)) {
+				width: 80vw;
+			}
+		}
+	}
+
+	@media screen and (max-width: $md-max), (max-height: 599px) {
+		min-height: var(--main-height);
+		font-size: 0.8rem;
+		flex-direction: column;
+		div {
+			min-height: 30vh;
+		}
+	}
+	@media screen and (max-width: $sm-max), (max-height: 599px) {
 		h2 {
 			font-size: 0.9rem;
 		}
