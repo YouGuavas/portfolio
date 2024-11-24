@@ -7,7 +7,7 @@ import { MyContext } from '@/components/Layout';
 import styles from '@/styles/Home.module.scss';
 import selfie from '@/public/images/selfies/selfie.png';
 
-function index() {
+function Home() {
 	const { theme, setTheme } = useContext(MyContext);
 
 	return (
@@ -38,7 +38,7 @@ function index() {
 						for unconventional presentations (which kept students on their toes
 						at all times) somehow made our Chem lectures memorable. As a
 						learner, I have carried this quote of his -- repeated so often --
-						with me: "Testing stifles students' creativity."
+						with me: &quot;Testing stifles students&apos; creativity.&quot;
 					</p>
 					<ul className={`md:px-4 px-3 ${styles.myList}`}>
 						<h2 className={`my-title`}>Current areas of interest:</h2>
@@ -58,4 +58,4 @@ function index() {
 	);
 }
 
-export default index;
+export default Home;

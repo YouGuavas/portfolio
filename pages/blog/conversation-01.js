@@ -5,7 +5,7 @@ import Collapsible from '@/components/body/Collapsible';
 import Head from 'next/head';
 import { useContext } from 'react';
 import { MyContext } from '@/components/Layout';
-export default function blog() {
+export default function Blog() {
 	const { theme, setTheme } = useContext(MyContext);
 
 	return (
@@ -22,8 +22,8 @@ export default function blog() {
 					</h1>
 					<ByLine
 						by="Patrick Yambrick"
-						date="November 23, 2024"
-						edit="November 23, 2024"
+						date="November 24, 2024"
+						edit="November 24, 2024"
 					/>
 				</div>
 				<Collapsible orientation="center" title="Defining Humanity">
@@ -37,9 +37,9 @@ export default function blog() {
 						various perspectives. Here, I will focus on exploring this thought
 						from my own perspective (to the best of my ability). In this
 						exercise, my conversation partner is{' '}
-						<Link href="https://openai.com/">OpenAI's</Link> ChatGPT 4o. I have
-						edited some of my original prompts for clarity and typos, and have
-						done -- and will continue to do -- my best to revisit and
+						<Link href="https://openai.com/">OpenAI&apos;s</Link> ChatGPT 4o. I
+						have edited some of my original prompts for clarity and typos, and
+						have done -- and will continue to do -- my best to revisit and
 						self-educate regarding those points on which I was unclear. My
 						process was more or less this: get stoned, listen to the podcast,
 						and then go talk some smack to{' '}
@@ -54,7 +54,7 @@ export default function blog() {
 					<p className={styles.blogParagraph}>
 						I recently listened to an episode of{' '}
 						<Link href="https://www.preposterousuniverse.com/podcast/2023/10/16/253-david-deutsch-on-science-complexity-and-explanation/">
-							Sean Carroll's podcast
+							Sean Carroll&apos;s podcast
 						</Link>{' '}
 						featuring{' '}
 						<Link href="https://www.daviddeutsch.org.uk/">David Deutsch</Link>.
@@ -63,43 +63,45 @@ export default function blog() {
 							<em>Constructor Theory</em>
 						</Link>{' '}
 						to be enlightening. I diverge from his view that all consciousnesses
-						with explanatory intelligence are <em>"human"</em> (I hope I
-						understand his view correctly). He also used the phrase{' '}
-						<em>"people"</em>, though—this, I would agree with, as I view{' '}
-						<em>"human"</em> and <em>"people"</em> as words with similar, though
-						nuanced meanings -- looking back,{' '}
+						with explanatory intelligence are <em>&quot;human&quot;</em> (I hope
+						I understand his view correctly). He also used the phrase{' '}
+						<em>&quot;people&quot;</em>, though—this, I would agree with, as I
+						view <em>&quot;human&quot;</em> and <em>&quot;people&quot;</em> as
+						words with similar, though nuanced meanings -- looking back,{' '}
 						<span className={styles.edit}>
 							*I had not finished this thought before hitting send. Thought
-							bubble would have continued: "I realize that Deutsch had likely
-							just swapped the words around conversationally, but I still want
-							to explore the thought"*
+							bubble would have continued: &quot;I realize that Deutsch had
+							likely just swapped the words around conversationally, but I still
+							want to explore the thought&quot;*
 						</span>
-						. I view the word <em>"human"</em> in reference to a currently
-						extant, mostly-biological species, which has likely descended from
-						apes via Darwin's theories—and those theories which have followed
-						forth from there. <em>"People"</em>, though, I think has a more
-						modular function. I might view aliens, artificial consciousnesses,
-						and <em>mostly</em> cybernetic beings as <em>"people,"</em> or{' '}
-						<em>"Peoples,"</em> or what have you, but not as <em>"human."</em>{' '}
-						Here's why:
+						. I view the word <em>&quot;human&quot;</em> in reference to a
+						currently extant, mostly-biological species, which has likely
+						descended from apes via Darwin&apos;s theories—and those theories
+						which have followed forth from there. <em>&quot;People&quot;</em>,
+						though, I think has a more modular function. I might view aliens,
+						artificial consciousnesses, and <em>mostly</em> cybernetic beings as{' '}
+						<em>&quot;people,&quot;</em> or <em>&quot;Peoples,&quot;</em> or
+						what have you, but not as <em>&quot;human.&quot;</em> Here&apos;s
+						why:
 					</p>
 
 					<p className={styles.blogParagraph}>
-						<em>"People"</em> (the version I'll use for ease, though variation
-						is interchangeable in my mind) deserve to have their origins
-						recognized. Consider a world where we don't consider the plights of
-						Palestinians, Jews, Black people, women, etc. <em>at all.</em> This
-						world is imbalanced. These people are still facing disadvantages.
-						We—meaning all variants of: P/people(s)—have variant stories, which
-						have informed our views to the world distinctly from any others
-						around us. So long as none of our views negate any of the others'
-						rights to exist—and to exist freely and democratically—and indeed{' '}
-						<em>actively allow</em> appropriate (equal, equitable) space for
-						that existence, then I think that all consciousnesses have a claim
-						to Personhood. At the same time, though: I am not my father, though
-						I surely am his son. I might view an AGI as some new, maybe related
-						species to humanity—companions with tremendous potential for
-						harmonious expansion.
+						<em>&quot;People&quot;</em> (the version I&apos;ll use for ease,
+						though variation is interchangeable in my mind) deserve to have
+						their origins recognized. Consider a world where we don&apos;t
+						consider the plights of Palestinians, Jews, Black people, women,
+						etc. <em>at all.</em> This world is imbalanced. These people are
+						still facing disadvantages. We—meaning all variants of:
+						P/people(s)—have variant stories, which have informed our views to
+						the world distinctly from any others around us. So long as none of
+						our views negate any of the others&apos; rights to exist—and to
+						exist freely and democratically—and indeed <em>actively allow</em>{' '}
+						appropriate (equal, equitable) space for that existence, then I
+						think that all consciousnesses have a claim to Personhood. At the
+						same time, though: I am not my father, though I surely am his son. I
+						might view an AGI as some new, maybe related species to
+						humanity—companions with tremendous potential for harmonious
+						expansion.
 					</p>
 
 					<p className={styles.blogParagraph}>
@@ -110,11 +112,12 @@ export default function blog() {
 						<em>biologically</em> enhanced human as being essentially still
 						human, while some <em>technologically</em> enhanced human, which
 						exists beyond some line (which we may collectively define) for{' '}
-						<em>"humans with extensive prosthesis,"</em> might be a further
-						species of its own. All People. But not all strictly <em>human</em>,
-						because in a truly Enlightened society, classifications are systems
-						for understanding, and not for discriminating or oppressing. None
-						above, none below; all <em>together.</em> Thoughts?
+						<em>&quot;humans with extensive prosthesis,&quot;</em> might be a
+						further species of its own. All People. But not all strictly{' '}
+						<em>human</em>, because in a truly Enlightened society,
+						classifications are systems for understanding, and not for
+						discriminating or oppressing. None above, none below; all{' '}
+						<em>together.</em> Thoughts?
 					</p>
 				</Collapsible>
 				<Collapsible orientation="left" title={`AI Response`}>
@@ -128,18 +131,19 @@ export default function blog() {
 						On Human vs. People
 					</h3>
 					<p className={styles.blogParagraph}>
-						Your distinction between "human" as a biological classification and
-						"people" as a broader, modular category makes intuitive sense. By
-						reserving "human" for Homo sapiens and extending "people" to other
-						forms of explanatory intelligence (e.g., AGI, aliens, cybernetic
-						entities), you aim to recognize origins and stories as essential.
-						This approach does two critical things:
+						Your distinction between &quot;human&quot; as a biological
+						classification and &quot;people&quot; as a broader, modular category
+						makes intuitive sense. By reserving &quot;human&quot; for Homo
+						sapiens and extending &quot;people&quot; to other forms of
+						explanatory intelligence (e.g., AGI, aliens, cybernetic entities),
+						you aim to recognize origins and stories as essential. This approach
+						does two critical things:
 					</p>
 					<ul className={styles.myList}>
 						<li>
 							<strong>Acknowledges diversity:</strong> By honoring origins, it
-							emphasizes the distinctiveness of various peoples' experiences and
-							contributions.
+							emphasizes the distinctiveness of various peoples&apos;
+							experiences and contributions.
 						</li>
 						<li>
 							<strong>Prevents flattening:</strong> It avoids the risk of
@@ -147,8 +151,8 @@ export default function blog() {
 						</li>
 					</ul>
 					<p className={styles.blogParagraph}>
-						David Deutsch's possible conflation of "human" and "people" might be
-						more functional than descriptive. In{' '}
+						David Deutsch&apos;s possible conflation of &quot;human&quot; and
+						&quot;people&quot; might be more functional than descriptive. In{' '}
 						<em>The Beginning of Infinity</em>, he emphasizes the universality
 						of explanatory knowledge and creativity as traits that transcend
 						biology, potentially aiming to unify rather than divide. However,
@@ -177,7 +181,8 @@ export default function blog() {
 						Your view of AGI or extensively cybernetic beings as potentially
 						distinct species aligns with speculative discussions in fields like
 						transhumanism and bioethics. The challenge lies in defining the
-						"line" where technological enhancement transcends humanity. Is it:
+						&quot;line&quot; where technological enhancement transcends
+						humanity. Is it:
 					</p>
 					<ul className={styles.myList}>
 						<li>
@@ -196,36 +201,38 @@ export default function blog() {
 						Your openness to harmonious expansion emphasizes coexistence rather
 						than domination, which is an optimistic and egalitarian approach.
 						However, it may need contingencies for entities whose goals conflict
-						with others' rights to exist.
+						with others&apos; rights to exist.
 					</p>
 
 					<h3 className={`${styles.blogTitle} my-title`}>
 						One Concern: The Risk of Essentialism
 					</h3>
 					<p className={styles.blogParagraph}>
-						While your framework avoids the reductive tendencies of "all are
-						human," it may still risk inadvertently essentializing groups by
-						emphasizing their origins. How do you balance recognizing unique
-						histories without confining beings to those identities? For example:
+						While your framework avoids the reductive tendencies of &quot;all
+						are human,&quot; it may still risk inadvertently essentializing
+						groups by emphasizing their origins. How do you balance recognizing
+						unique histories without confining beings to those identities? For
+						example:
 					</p>
 					<p className={styles.blogParagraph}>
-						Could emphasizing an AGI's origin as "non-human" limit how it's
-						treated or understood in future contexts?
+						Could emphasizing an AGI&apos;s origin as &quot;non-human&quot;
+						limit how it&apos;s treated or understood in future contexts?
 					</p>
 					<p className={styles.blogParagraph}>
-						Could the modular use of "people" unintentionally reinforce barriers
-						if misused by exclusionary entities?
+						Could the modular use of &quot;people&quot; unintentionally
+						reinforce barriers if misused by exclusionary entities?
 					</p>
 
 					<h3 className={`${styles.blogTitle} my-title`}>
 						A Possible Refinement
 					</h3>
 					<p className={styles.blogParagraph}>
-						Rather than tying "peoplehood" to origins, you might consider tying
-						it to ethical and relational capacities—such as the ability to
-						engage in moral reasoning, empathy, or creativity. Origins remain
-						important but could be secondary in defining personhood. This avoids
-						entrenching identity in history while still honoring it.
+						Rather than tying &quot;peoplehood&quot; to origins, you might
+						consider tying it to ethical and relational capacities—such as the
+						ability to engage in moral reasoning, empathy, or creativity.
+						Origins remain important but could be secondary in defining
+						personhood. This avoids entrenching identity in history while still
+						honoring it.
 					</p>
 
 					<h3 className={`${styles.blogTitle} my-title`}>Final Reflection</h3>
@@ -238,26 +245,27 @@ export default function blog() {
 						consciousness yet unimaginable.
 					</p>
 					<p className={styles.blogParagraph}>
-						I’d encourage continuing to explore how “peoplehood” could evolve as
-						a relational rather than solely historical construct. This might
-						better prepare us for the ethical dilemmas of the future while still
-						respecting the diversity of stories and origins you value.
+						I&apos;d encourage continuing to explore how “peoplehood” could
+						evolve as a relational rather than solely historical construct. This
+						might better prepare us for the ethical dilemmas of the future while
+						still respecting the diversity of stories and origins you value.
 					</p>
 				</Collapsible>
 				<Collapsible orientation="right" title="My Response">
 					<p className={styles.blogParagraph}>
-						I explicitly put forth this idea in the context of an "enlightened"
-						society -- one which exists theoretically, in which education is
-						universal, and most inequalities have been adjusted into some
-						bandwidth of equality and equitability. I think the reality of our
-						world is this: AGI and genetically/biologically modified entities
-						will face hardships, especially early on. We are trying. We might
-						get 65%-75% there before some AGI invents itself, or some alien
-						visits, or whatever random offshoot. So, yes, we should aim for some
-						utopia where everyone is good and kind and equal, and educated, but
-						my point in specifying an <em>enlightened</em> society was this:
-						enlightenment often requires struggle. Not always. Not necessarily.
-						But often enough that I intuitively consider it.
+						I explicitly put forth this idea in the context of an
+						&quot;enlightened&quot; society -- one which exists theoretically,
+						in which education is universal, and most inequalities have been
+						adjusted into some bandwidth of equality and equitability. I think
+						the reality of our world is this: AGI and genetically/biologically
+						modified entities will face hardships, especially early on. We are
+						trying. We might get 65%-75% there before some AGI invents itself,
+						or some alien visits, or whatever random offshoot. So, yes, we
+						should aim for some utopia where everyone is good and kind and
+						equal, and educated, but my point in specifying an{' '}
+						<em>enlightened</em> society was this: enlightenment often requires
+						struggle. Not always. Not necessarily. But often enough that I
+						intuitively consider it.
 					</p>{' '}
 					<p className={styles.blogParagraph}>
 						We ought to consider how we might train AGI to recursively teach us
@@ -272,17 +280,17 @@ export default function blog() {
 					</p>
 					<p className={styles.blogParagraph}>
 						And yes, what if some powerful destroyer springs into being? What
-						if? I sure hope it doesn't. Right now, we'd all be caught on the
-						back foot. What if you need eight billion monkeys each to throw
-						three thousand acorns -- wrenches, what have you -- all at some
-						spaceman's galaxy brain, all at the same time. They'd do it if they
-						loved you a whole bunch. And don't get me started on love. That's a
-						whole thing for another day. Know this -- it cannot be forced, and
-						it cannot be coerced -- and so knowing this to be true (trust me on
-						this one), no truly /thinking/ being would ever /try/. Consider the
-						following idea of insanity: trying the same (impossible) thing (the
-						same way) over and over, expecting different results (of course, we
-						know to assume a theoretical vacuum here).
+						if? I sure hope it doesn&apos;t. Right now, we&apos;d all be caught
+						on the back foot. What if you need eight billion monkeys each to
+						throw three thousand acorns -- wrenches, what have you -- all at
+						some spaceman&apos;s galaxy brain, all at the same time. They&apos;d
+						do it if they loved you a whole bunch. And don&apos;t get me started
+						on love. That&apos;s a whole thing for another day. Know this -- it
+						cannot be forced, and it cannot be coerced -- and so knowing this to
+						be true (trust me on this one), no truly /thinking/ being would ever
+						/try/. Consider the following idea of insanity: trying the same
+						(impossible) thing (the same way) over and over, expecting different
+						results (of course, we know to assume a theoretical vacuum here).
 					</p>
 				</Collapsible>
 				<Collapsible orientation="left" title="AI Response (2)">
@@ -363,11 +371,11 @@ export default function blog() {
 						of fear, but as prompts for thoughtful preparation.
 					</p>
 					<p className={styles.blogParagraph}>
-						Your analogy of the "eight billion monkeys" unified in defense of
-						what they love is striking. It emphasizes collective will,
-						creativity, and resilience. But it also speaks to the necessity of
-						trust—between humans, and between humans and their creations.
-						Without trust, no such unity is possible.
+						Your analogy of the &quot;eight billion monkeys&quot; unified in
+						defense of what they love is striking. It emphasizes collective
+						will, creativity, and resilience. But it also speaks to the
+						necessity of trust—between humans, and between humans and their
+						creations. Without trust, no such unity is possible.
 					</p>
 
 					<h3 className={`${styles.blogTitle} my-title`}>
@@ -422,7 +430,7 @@ export default function blog() {
 				</Collapsible>
 				<Collapsible orientation="center" title="Conclusion">
 					<p className={styles.blogParagraph}>
-						Not yet concluded. I'll come back and assess later.
+						Not yet concluded. I&apos;ll come back and assess later.
 					</p>
 				</Collapsible>
 			</section>
