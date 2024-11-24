@@ -1,21 +1,17 @@
-import Head from 'next/head'
-import React from 'react'
-import Lander from '../components/Lander'
-import About from '../components/About'
-import Contact from '../components/Contact'
+import Head from 'next/head';
+import React from 'react';
+import { About } from '../components/About';
 
 function index() {
-    return (
-        <main>
-            <Head>
-                <title>Home | Patrick Yambrick</title>
-            </Head>
+	return (
+		<main>
+			<Head>
+				<title>Home | Patrick Yambrick</title>
+			</Head>
 
-            <Lander />
-            <About />
-            <Contact />
-        </main>
-    )
+			<About />
+		</main>
+	);
 }
 
-export default index
+export default index;

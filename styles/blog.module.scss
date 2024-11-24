@@ -34,6 +34,7 @@
 .blogBody,
 .considerations {
 	width: 65vw;
+	min-height: 70vh;
 	margin: 0 auto;
 	font-size: 1.2rem;
 	@media screen and (max-width: 800px) {
@@ -41,6 +42,9 @@
 
 		width: 68vw;
 	}
+}
+.collapsibleContainer {
+	margin-top: 2rem;
 }
 .blogBody {
 	margin-top: 15vh;

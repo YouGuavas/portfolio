@@ -37,7 +37,7 @@ function BlogContent() {
 			  variant[1].indexOf(1) !== -1 ||
 			  variant[1].indexOf(3) !== -1 ||
 			  variant[1].indexOf(0) !== -1
-			? setTheme('default')
+			? setTheme('new-normal')
 			: null;
 	}, [variant, setTheme]);
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState, createContext } from 'react';
 import { useRouter } from 'next/router'; // Import useRouter from Next.js
 
 import Header from './Header';
+import Footer from './Footer';
 
 import Nav from './Nav';
 import styles from '../styles/components/Layout.module.scss';
@@ -9,7 +10,7 @@ import styles from '../styles/components/Layout.module.scss';
 export const MyContext = createContext();
 
 const Layout = ({ children }) => {
-	const [theme, setTheme] = useState('default');
+	const [theme, setTheme] = useState('new-normal');
 	const [url, setUrl] = useState('https://patdesigns.online');
 	const router = useRouter(); // Get the router object
 
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
 			</div>
 
 			{children}
+			<Footer />
 		</MyContext.Provider>
 	);
 };

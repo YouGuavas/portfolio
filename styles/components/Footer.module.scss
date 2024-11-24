@@ -1,9 +1,12 @@
 .footer {
-	background-color: var(--color-6);
 	font-family: var(--style-font-1);
-	color: var(--color-3);
+	color: var(--color-2);
 	padding: 2rem;
 	text-align: center;
-	height: var(--footer-height);
-	opacity: var(--semit-transparent);
+	min-height: var(--footer-height);
+	border-top: 1px solid var(--color-3);
+	margin-top: 5vh;
+	@media screen and (max-width: var(--sm-max)) {
+		font-size: var(--font-size-sm);
+	}
 }

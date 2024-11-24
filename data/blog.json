@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Conversation With an AI (1)",
+		"category": "Beginners",
+		"href": "conversation-01",
+		"description": "Exploring thoughts using AI as a sounding board."
+	},
+	{
 		"title": "Why Elon Musk Can't Teach You CSS (Simplified)",
 		"category": "Beginners",
 		"href": "anyone-codes",

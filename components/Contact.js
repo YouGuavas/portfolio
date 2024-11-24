@@ -10,7 +10,7 @@ const Contact = (props) => {
 
 	return (
 		<section className={`${styles.contact} ${theme}`}>
-			<div className={`very-rotate main-wrapper`}>
+			<div className={`very-rotate alt-wrapper`}>
 				<h2
 					className={`${styles.iconTitle} font-bold md:px-4 px-3 my-title`}
 					id="Contact"
