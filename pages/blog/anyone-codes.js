@@ -42,7 +42,7 @@ function BlogContent() {
 	}, [variant, setTheme]);
 
 	return (
-		<section className={`${styles.blogBody} ${theme}`}>
+		<section className={`${styles.blogBody} ${theme} pad-top-vh`}>
 			<TableOfContents
 				title="Level"
 				sections={[
