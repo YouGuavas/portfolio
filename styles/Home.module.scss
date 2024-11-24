@@ -83,7 +83,7 @@
 		font-family: inherit;
 		width: 70%;
 		grid-template-columns: repeat(
-			4,
+			5,
 			minmax(5%, 1fr)
 		); /* Create 5 columns with a minimum width of 5% */
 		grid-gap: 0.2rem; /* Adjust the gap between grid items */
