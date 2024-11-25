@@ -76,10 +76,10 @@ export default function Contact() {
 				<div>
 					<h2 className={'my-title'}>Privacy Notice</h2>
 					<p>
-						We use Vercel's web analytics to understand how our site is used and
-						to improve your experience. This data is anonymous and does not
-						include any personal or sensitive information. If you’d like to know
-						more, feel free to reach out!
+						We use Vercel&apos;s web analytics to understand how our site is
+						used and to improve your experience. This data is anonymous and does
+						not include any personal or sensitive information. If you&apos;d
+						like to know more, feel free to reach out!
 					</p>
 				</div>
 			</section>
