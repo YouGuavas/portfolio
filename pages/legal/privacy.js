@@ -71,10 +71,16 @@ export default function Contact() {
 				<title>Privacy Policy | Patrick Yambrick</title>
 			</Head>
 			<section
-				className={`pad-top-vh my-background-generic place-items-center ${styles.contact}`}
+				className={`pad-top-vh my-background-generic place-items-center max-height`}
 			>
 				<div>
-					<h2>I collect no data</h2>
+					<h2 className={'my-title'}>Privacy Notice</h2>
+					<p>
+						We use Vercel's web analytics to understand how our site is used and
+						to improve your experience. This data is anonymous and does not
+						include any personal or sensitive information. If you’d like to know
+						more, feel free to reach out!
+					</p>
 				</div>
 			</section>
 		</>

@@ -346,6 +346,9 @@ body {
 .stats-container {
 	margin-top: 15vh;
 }
+.max-height {
+	min-height: 100vh;
+}
 
 .my-btn {
 	color: var(--color-2);
