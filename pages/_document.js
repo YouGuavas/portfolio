@@ -14,7 +14,10 @@ class MyDocument extends Document {
 					<meta name="theme-color" content="#000000" />
 					<meta
 						name="description"
-						content="Patrick Yambrick's portfolio website"
+						content="Patrick Yambrick is a self-directed learner with a personal goal to learn as much
+						as possible about modern science, technology, the self, and their
+						union leveraging only resources which are available to everyday
+						people. I am currently focused on self-taught web development and AI Ethics and Philosophy."
 					/>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link
