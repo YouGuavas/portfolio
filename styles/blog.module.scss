@@ -123,6 +123,6 @@
 }
 .quote {
 	opacity: 0.7;
-	width: 95%;
-	margin: 0.2rem auto;
+	min-width: 40vw;
+	max-width: 75%;
 }

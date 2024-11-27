@@ -1,14 +1,14 @@
 [
 	{
+		"title": "Saganomics: A Modular Framework for Traveling Forward in Time",
+		"category": "Beginners",
+		"href": "saganomics",
+		"description": "An overview of Saganomics, a modular, philosophical approach to democratizing knowledge and reshaping humanity throughout the broad future of space and time."
+	},
+	{
 		"title": "Conversation With an AI (01: Defining Humanity)",
 		"category": "Beginners",
 		"href": "conversation-01",
 		"description": "Exploratory considerations on what it means to be human, with ChatGPT."
-	},
-	{
-		"title": "Why Elon Musk Can't Teach You CSS (Simplified)",
-		"category": "Beginners",
-		"href": "anyone-codes",
-		"description": "Exploring coding from various perspectives"
 	}
 ]

@@ -24,27 +24,24 @@ function Home() {
 					<h1 className="font-bold md:px-4 px-3 my-title" id="About">
 						Welcome
 					</h1>
-					<p className={`md:px-4 px-3`}>
-						I am a self-directed learner with a personal goal to learn as much
-						as possible about modern science, technology, the self, and their
-						union leveraging only resources which are available to every-day
-						people. In pursuit of this aim, I hope to educate, uplift, and
-						enlighten myself and those around me.
-					</p>
-					<p className={`md:px-4 px-3`}>
-						I am beyond lucky to have attended Kettering University during the
-						tenure of the late, great professor Reg Bell, whose passion for
-						understanding <em>and</em> educating students, paired with his love
-						for unconventional presentations (which kept students on their toes
-						at all times) somehow made our Chem lectures memorable. As a
-						learner, I have carried this quote of his -- repeated so often --
-						with me: &quot;Testing stifles students&apos; creativity.&quot;
+					<p className={styles.blogParagraph}>
+						I am a self-directed learner on a journey to explore modern science,
+						technology, and the self. Guided by the principle: &quot;Knowledge
+						is power, teaching is honor,&quot; I believe we each have the
+						ability—and responsibility—to shape the world for the better.
+					</p>{' '}
+					<p className={styles.blogParagraph}>
+						We&apos;re all winging it--life&apos;s a whole lot of trial and
+						error. Nobody&apos;s grading our papers. To me, the leap from there
+						is clear: Let&apos;s work together to create a sustainable, peaceful
+						future through quantum historical recursion.
 					</p>
 					<ul className={`md:px-4 px-3 ${styles.myList}`}>
 						<h2 className={`my-title`}>Current areas of interest:</h2>
 
 						<li>Web Development and Design</li>
-						<li>AI (especially Ethics and Philosophy)</li>
+						<li>AI (with a focus on Ethics and Philosophy)</li>
+						<li>Recursion and Systems Thinking</li>
 					</ul>
 				</div>
 				<SelfieImage
