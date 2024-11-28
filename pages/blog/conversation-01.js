@@ -470,10 +470,10 @@ export default function Blog() {
 						Theory of mind being two which jump out to me. I&apos;ll explore
 						that thought in my next post. For now: What can we infer from{' '}
 						<em>this</em> conversation?{' '}
-						<p className={styles.blogParagraph}>
-							<Link href="mailto:patrick@patdesigns.online">Email Me</Link> your
-							thoughts if it suits you.
-						</p>
+					</p>
+					<p className={styles.blogParagraph}>
+						<Link href="mailto:patrick@patdesigns.online">Email Me</Link> your
+						thoughts if it suits you.
 					</p>
 				</Collapsible>
 			</section>
