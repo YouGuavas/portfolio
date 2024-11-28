@@ -129,7 +129,7 @@ export default function Blog() {
 					title="A Divergent Inquiry"
 				>
 					<p className={styles.blogParagraph}>
-						I was wondering about offshoots where there may somehow be some
+						I was wondering about offshoots where there may somehow be an
 						species which has advanced super far down the engineering pathway,
 						having mostly abandoned <em>scientific</em> advancements upon
 						attaining understanding of space travel and nuclear fusion. Then,
@@ -856,8 +856,8 @@ export default function Blog() {
 					<h3 className={`my-title`}>Not There Yet</h3>
 					<p className={styles.blogParagraph}>
 						This utopian vision of a race of builders, enlightened by knowledge
-						and guided by principle may be only exist in the imagined lands of
-						some distant system. The principles they possess-growth, learning,
+						and guided by principle may only exist in the imagined lands of some
+						distant system. The principles they possess-growth, learning,
 						teaching, sustainability, adaptability, and responsibility-are very
 						real, though, and something worth aspiring to. Many of the
 						technologies-hydrogen energy, nuclear fusion, artificial
