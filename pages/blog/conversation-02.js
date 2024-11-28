@@ -23,12 +23,11 @@ export default function Blog() {
 		<>
 			<Head>
 				<title>
-					Solar Stewardship: Visions of a Utopian Timeline in a Time of Thanks |
-					Patrick Yambrick
+					Solar Stewardship: Striving for Utopia with AI | Patrick Yambrick
 				</title>
 				<meta
 					name="description"
-					content="Consider a potential variation of technologically advanced society, accelerated by AI, described via conversation between ChatGPT and Patrick Yambrick."
+					content="Explore a conversation about a potential variation of future society, accelerated by artificial intelligence, described via conversation between ChatGPT and Patrick Yambrick."
 				/>
 			</Head>
 			<section
@@ -36,8 +35,7 @@ export default function Blog() {
 			>
 				<div className={`${styles.titleContainer}`}>
 					<h1 className="my-title" id="1">
-						Solar Stewardship: Pathways to Ethical Growth and Intergalactic
-						Unity in a Time of Thanks
+						Solar Stewardship: Striving for Utopia with AI
 					</h1>
 					<ByLine
 						by="Patrick Yambrick"
@@ -78,7 +76,7 @@ export default function Blog() {
 				<Collapsible
 					image={selfie}
 					orientation="right"
-					title="Starstruck Impulse"
+					title="A Starstruck Impulse"
 				>
 					<p className={styles.blogParagraph}>
 						Is there any space debris heading our way from Betelgeuse&apos;s
