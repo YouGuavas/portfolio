@@ -1,4 +1,4 @@
-import { FbButton, TweetButton } from './SocialButtons';
+import { ShareButtonsGroup, SocialButtonsGroup } from './SocialButtons';
 import { useEffect, useContext } from 'react';
 import { MyContext } from './Layout';
 import logo from '../public/images/logoDark.png';
@@ -7,8 +7,6 @@ import Image from 'next/image';
 import { handleScroll } from '@/utils/_functions';
 
 import styles from '../styles/components/Header.module.scss';
-
-const buttonSize = 24;
 
 export default function Header() {
 	const text =
@@ -22,8 +20,11 @@ export default function Header() {
 	});
 
 	return (
-		<header id="collapsible-header" className={`${styles.header} ${theme}`}>
-			<TweetButton buttonSize={buttonSize} text={text} />
+		<header
+			id="collapsible-header"
+			className={`${styles.header} ${theme} space-x-2`}
+		>
+			<ShareButtonsGroup />
 			<Link name="Logo Home" href="#Home" scroll={false}>
 				<Image
 					alt="My personal logo"
@@ -33,7 +34,8 @@ export default function Header() {
 					src={logo.src}
 				/>
 			</Link>
-			<FbButton buttonSize={buttonSize} quote={text} />
+
+			<SocialButtonsGroup />
 		</header>
 	);
 }
