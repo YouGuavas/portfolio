@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { useContext } from 'react';
 import { MyContext } from '@/components/Layout';
 import BlogImage from '@/components/BlogImage';
+import shroom from '@/public/images/psilocybin/shroom.png';
 
 export default function Blog() {
 	const { theme, setTheme } = useContext(MyContext);
@@ -36,6 +37,12 @@ export default function Blog() {
 				</div>
 
 				<Collapsible orientation="center" title="Introduction">
+					<BlogImage
+						src={shroom.src}
+						height={400}
+						width={400}
+						alt="Psilocybin mushrooms."
+					/>
 					<p className={styles.blogParagraph}>
 						Psilocybin is a naturally occurring compound found in certain
 						species of mushrooms which has been used for centuries in spiritual
@@ -47,10 +54,11 @@ export default function Blog() {
 						healing, and enhanced well-being.
 					</p>
 					<p className={styles.blogParagraph}>
-						This blog explores the mental health benefits of psilocybin use,
-						delving into intentional practices to maximize positive outcomes. It
-						also discusses potential risks and drawbacks, emphasizing the
-						importance of a balanced, informed approach.
+						This living blog series aims to explore the neurological and mental
+						health benefits of psilocybin use, from the perspective of a
+						curious, scientific observer. It will also discuss potential risks
+						and drawbacks, emphasizing the importance of a balanced, informed
+						approach.
 					</p>
 				</Collapsible>
 

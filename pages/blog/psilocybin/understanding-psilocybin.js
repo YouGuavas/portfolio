@@ -189,28 +189,34 @@ export default function Blog() {
 						segregation between networks in the brain.
 					</p>
 					<p className={styles.blogParagraph}>
-						This diminishing effect on the DMN is temporary; most of it subsides
-						within a week or two. While the DMN is suppressed via psilocybin,
-						the brain tends to behave in a way that is similar to what takes
-						place during REM sleep. Namely: information processing occurs in a
-						more fluid manner, and connections across disparate brain regions
-						occur more easily. These interactions often lead to increased
-						cognitive flexibility and emotional processing.
+						This diminishing effect on the DMN is temporary and dose-dependent,
+						and it also varies by individual; most of it subsides within a week
+						or two. While the DMN is suppressed via psilocybin, the brain tends
+						to behave in a way that is similar to what takes place during REM
+						sleep. Namely: information processing occurs in a more fluid manner,
+						and connections across disparate brain regions occur more easily.
+						These interactions often lead to increased cognitive flexibility and
+						emotional processing.
 					</p>
 					<p className={styles.blogParagraph}>
 						In the context of creativity, the DMN plays a key role in idea
 						generation, so turning it &quot;off&quot; altogether would hardly be
 						ideal, unless we <em>only</em> need to process information. We want
 						to <em>do</em> things with our information -- act on our clever
-						ideas -- and our brains sometimes do that by taking the ideas
-						generated within the DMN and running them through more task-oriented
-						networks, such as the Executive-Control Network, or through
-						&quot;prioritization&quot; networks, like the Salience Network. We
-						can see quite easily, then, how hypothetical creativity might arise
-						from these interactions: we have this thought, generated within the
-						DMN, and then we hold onto it in some way while we suppress the DMN.
-						Then, once our brain is a bit less pent-up, that initial thought
-						which we were holding plays a game of &apos;
+						ideas -- and I speculate that our brains sometimes do this (in part)
+						by taking the ideas generated within the DMN and running them
+						through more task-oriented networks, such as the Executive-Control
+						Network, or through &quot;prioritization&quot; networks, like the
+						Salience Network. Further research is needed here.
+					</p>
+					<p className={styles.blogParagraph}>
+						If we take this speculation as a temporary, provisional truth for
+						the sake of the example, we can see quite easily how hypothetical
+						creativity might arise from these interactions: we have this
+						thought, generated from within a daydream or a mind&apos;s
+						wanderings, and then we hold onto it in some way while we suppress
+						the DMN. Then, once our brain is a bit less pent-up, that initial
+						thought which we were holding plays a game of &apos;
 						<Link href="https://en.wikipedia.org/wiki/We_Love_Katamari">
 							We Love Katamari
 						</Link>
@@ -222,11 +228,12 @@ export default function Blog() {
 						As mentioned earlier, the diminishing of the DMN is a temporary
 						effect. We do not currently know precisely how long it takes for
 						this effect to subside. Estimates range anywhere from a week, to a
-						few months before activity returns to normal. Studies indicate that
-						the DMN often sees a lasting rewriting during this rebound period,
-						resulting in increased fluidity, openness, and improved emotional
-						regulation. The lasting nature of this impact further highlights
-						psilocybin&apos;s potential in therapeutic settings.
+						few months before activity returns to normal. Studies are loosely
+						indicative of the possibility that the DMN sees a lasting rewriting
+						during this rebound period (further research required), resulting in
+						increased fluidity, openness, and improved emotional regulation. The
+						lasting nature of this impact further highlights psilocybin&apos;s
+						potential in therapeutic settings.
 					</p>
 				</Collapsible>
 				<Collapsible orientation="center" title="Conclusion">
