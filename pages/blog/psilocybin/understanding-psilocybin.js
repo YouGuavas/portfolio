@@ -40,8 +40,7 @@ export default function Blog() {
 				<Collapsible orientation="center" title="How Psilocybin Works">
 					<p className={styles.blogParagraph}>
 						Psilocybin is a prodrug, meaning it converts to its active form,
-						psilocin, after ingestion -- or, anecdotally, when mixed with lemon
-						juice outside of the body. Psilocin interacts primarily with
+						psilocin, after ingestion. Psilocin interacts primarily with
 						serotonin receptors in the brain, particularly the 5-HT2A receptor,
 						which is linked to mood regulation, cognition, and perception. By
 						activating these receptors, psilocin induces altered states of
@@ -74,10 +73,11 @@ export default function Blog() {
 						<Link href="https://consensus.app/papers/psilocybin-induces-rapid-and-persistent-growth-of-shao-liao/2f106dbcc5705ad383aab9d619193701/">
 							2021 (Shao, et al.)
 						</Link>
-						, a study on mice found that psilocybin promotes rapid and sustained
-						increases in dendritic spine density and size in the frontal cortex.
-						This study further discovered that these structural changes occur
-						within 24 hours, and persist for at least a month after use.
+						, a study on <em>mice</em> found that psilocybin promotes rapid and
+						sustained increases in dendritic spine density and size in the
+						frontal cortex. This study further discovered that these structural
+						changes occur within 24 hours, and persist for at least a month
+						after use.
 					</p>
 
 					<p className={styles.blogParagraph}>
@@ -133,9 +133,9 @@ export default function Blog() {
 						Activity in the prefrontal cortex (which is located in the frontal
 						lobe of the brain) is responsible for a number of cognitive
 						functions. These include: speech formation, working memory, and risk
-						management. Improvements to neuroplasticity in this region, then,
-						are likely to translate into improvements in writing and
-						communication, personality expression, and decision-making.
+						management. Improvements to neuroplasticity in this region are
+						indicative of potential improvements in writing, communication,
+						personality expression, and decision-making.
 					</p>
 					<p className={styles.blogParagraph}>
 						While the prefrontal cortext controls speech, working memory, and
@@ -143,10 +143,10 @@ export default function Blog() {
 						of the brain -- is responsible for converting short-term memory into
 						long-term memory, and for spatial memory, which is: the ability to
 						remember where you are, where you set your keys, and how to get from
-						point A to point B. Since the hippocampus is among the earliest
-						brain regions to be impacted by Alzheimer&apos;s disease, these
-						results could be indicative of psilocybin&apos;s future role in the
-						treatment of various dementias.
+						point A to point B. I speculate that since the hippocampus is among
+						the earliest brain regions to be impacted by Alzheimer&apos;s
+						disease, these results could be indicative of psilocybin&apos;s
+						future role in the treatment of various dementias.
 					</p>
 
 					<BlogImage
@@ -231,11 +231,12 @@ export default function Blog() {
 				</Collapsible>
 				<Collapsible orientation="center" title="Conclusion">
 					<p className={styles.blogParagraph}>
-						While further study is needed, psilocybin and{' '}
-						<em>magic mushrooms</em> show tremendous potential to improve
-						cognition across the board via improved neuroplasticity and
-						decreased brain network segregation. Thank you for reading. If you
-						found this post to be informative, consider sharing, or{' '}
+						While further human studies are needed, the observed effects of
+						psilocybin and <em>magic mushrooms</em> in mice and rats indicate
+						potential to improve cognition across the board via improved
+						neuroplasticity and decreased brain network segregation. Thank you
+						for reading. If you found this post to be informative, consider
+						sharing, or{' '}
 						<Link href="mailto:patrick@patdesigns.online">Email Me</Link>!
 					</p>
 				</Collapsible>
