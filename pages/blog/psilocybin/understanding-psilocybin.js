@@ -59,7 +59,7 @@ export default function Blog() {
 							&quot;He received every new idea as perfectly beautiful.&quot;
 						</p>
 						<p className={styles.blogParagraph}>
-							-Robert Oppenheimer's parents, recalling his high childhood
+							-Robert Oppenheimer&apos;s parents, recalling his high childhood
 							neuroplasticity
 						</p>
 					</blockquote>
@@ -81,22 +81,22 @@ export default function Blog() {
 					</p>
 
 					<p className={styles.blogParagraph}>
-						This finding's significance lies in its cascades: dendritic spines
-						are bulbous protrusions from neuronal dendrites -- they&apos;re the
-						part of the brain cell that is responsible for handling{' '}
-						<em>incoming</em> signals. This means that any increase in the size
-						of dendritic spines is likely to increase the efficiency of
+						This finding&apos;s significance lies in its cascades: dendritic
+						spines are bulbous protrusions from neuronal dendrites --
+						they&apos;re the part of the brain cell that is responsible for
+						handling <em>incoming</em> signals. This means that any increase in
+						the size of dendritic spines is likely to increase the efficiency of
 						information transfer throughout the brain, which in turn likely
 						allows for increased fluid thinking and improved information
 						synthesis, key factors in both creativity and personal growth.
 						Knowing this, it isn&apos;t difficult for we curious monkeys to make
-						the leap from "improved dendritic function" to "increased learning
-						efficiency." Moreover, the rapid onset and long-lasting nature of
-						these dendritic changes lends itself incredibly well to potential
-						therapeutic use. As with any medication which is long-lasting,
-						fast-acting, and which presents no pathways to chemical dependence,
-						psilocybin is unlikely to lead to addiction or psychological
-						dependence in therapeutic settings.
+						the leap from &quot;improved dendritic function&quot; to
+						&quot;increased learning efficiency.&quot; Moreover, the rapid onset
+						and long-lasting nature of these dendritic changes lends itself
+						incredibly well to potential therapeutic use. As with any medication
+						which is long-lasting, fast-acting, and which presents no pathways
+						to chemical dependence, psilocybin is unlikely to lead to addiction
+						or psychological dependence in therapeutic settings.
 					</p>
 					<BlogImage
 						src={dendrite.src}
@@ -119,15 +119,15 @@ export default function Blog() {
 						<Link href="https://consensus.app/papers/transcriptional-regulation-in-the-rat-prefrontal-cortex-jefsen-elfving/3597677726af5d4b8ea4a22bad15b053/">
 							This study from 2020 (Jefsen, et al.)
 						</Link>{' '}
-						builds upon the "administer <em>magic mushrooms</em> once, provide{' '}
-						therapeutic benefits" principle and examines the acute effects of
-						psilocybin on the expression of genes relating to the regulation of
-						neuroplasticity-related proteins in rats (including c-Fos, Psd95,
-						and Sgk1, among others) following the administering of a single
-						dose. The researchers behind the study report finding increases in
-						the expression of those genese related to neuroplasticity in both
-						the hippocampus and the prefrontal cortex, with some bias toward the
-						latter.
+						builds upon the &quot;administer <em>magic mushrooms</em> once,
+						provide therapeutic benefits&quot; principle and examines the acute
+						effects of psilocybin on the expression of genes relating to the
+						regulation of neuroplasticity-related proteins in rats (including
+						c-Fos, Psd95, and Sgk1, among others) following the administering of
+						a single dose. The researchers behind the study report finding
+						increases in the expression of those genese related to
+						neuroplasticity in both the hippocampus and the prefrontal cortex,
+						with some bias toward the latter.
 					</p>
 					<p className={styles.blogParagraph}>
 						Activity in the prefrontal cortex (which is located in the frontal
@@ -153,7 +153,7 @@ export default function Blog() {
 						src={gene.src}
 						height={400}
 						width={400}
-						alt={`Gene Belcher (Bob's Burgers), expressing himself.`}
+						alt={`Gene Belcher (Bob&apos;s Burgers), expressing himself.`}
 					/>
 					<p className={styles.blogParagraph}></p>
 				</Collapsible>
@@ -185,7 +185,7 @@ export default function Blog() {
 						</Link>{' '}
 						examined the effects of psilocybin on the DMN, and found that while
 						under the influence of <em>magic mushrooms</em>, activity in
-						subjects' DMNs tended to decrease, along with a decrease in the
+						subjects&apos; DMNs tended to decrease, along with a decrease in the
 						segregation between networks in the brain.
 					</p>
 					<p className={styles.blogParagraph}>
