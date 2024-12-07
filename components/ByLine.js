@@ -10,7 +10,7 @@ const Disclaimer = function () {
 			safe use and the treatment of mental illnesses, such as depression.
 			Further, as a matter of personal philosophy, grounded in understanding the
 			brain: I do not advise the use of any substance for users under age 25, or
-			who have predispositions to severe mental illness.
+			who have predispositions to severe mental illness, regardless of legality.
 		</p>
 	);
 };

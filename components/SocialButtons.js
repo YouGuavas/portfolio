@@ -81,7 +81,7 @@ const SocialButtonsGroup = () => {
 		},
 		{
 			icon: FacebookIcon,
-			url: 'https://facebook.com/patrick.yambrick',
+			url: 'https://www.facebook.com/profile.php?id=61569691153903',
 			label: 'Facebook',
 		},
 
