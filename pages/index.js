@@ -40,8 +40,8 @@ function Home() {
 						<h2 className={`my-title`}>Current areas of interest:</h2>
 
 						<li>Web Development and Design</li>
-						<li>AI (with a focus on Ethics and Philosophy)</li>
-						<li>Recursion and Systems Thinking</li>
+						<li>AI-augmented Learning</li>
+						<li>Psychedelics and Mental Health</li>
 					</ul>
 				</div>
 				<SelfieImage

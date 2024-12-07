@@ -1,5 +1,5 @@
 import styles from '@/styles/blog.module.scss';
-import ByLine from '@/components/ByLine';
+import { ByLine } from '@/components/ByLine';
 import Collapsible from '@/components/body/Collapsible';
 import SelfieImage from '@/components/body/SelfieImage';
 import Link from 'next/link';
@@ -477,6 +477,11 @@ export default function Blog() {
 					</p>
 				</Collapsible>
 			</section>
+			<div className={styles.leaders}>
+				<Link href=".">
+					<h2 className={`${styles.blogTitle} my-title`}>Back</h2>
+				</Link>
+			</div>
 		</>
 	);
 }

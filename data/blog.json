@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Psilocybin (01: Introduction)",
+		"category": "Beginners",
+		"href": "psilocybin",
+		"description": "An introduction to psilocybin."
+	},
+	{
 		"title": "Conversation With an AI (02: Striving for Solar Utopia)",
 		"category": "Beginners",
 		"href": "conversation-02",
