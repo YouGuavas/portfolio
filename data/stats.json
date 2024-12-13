@@ -1,0 +1,21 @@
+[
+	{
+		"title": "Psilocybin (01: Introduction)",
+		"category": "Beginners",
+		"href": "psilocybin",
+		"description": "An introduction to psilocybin."
+	},
+	{
+		"title": "Conversation With an AI (02: Striving for Solar Utopia)",
+		"category": "Beginners",
+		"href": "conversation-02",
+		"description": "Holiday fun exploring a bountiful alien society."
+	},
+
+	{
+		"title": "Conversation With an AI (01: Defining Humanity)",
+		"category": "Beginners",
+		"href": "conversation-01",
+		"description": "Exploratory considerations on what it means to be human, with ChatGPT."
+	}
+]
