@@ -2,10 +2,12 @@ import Link from 'next/link';
 import SkillsUsed from './SkillsUsed';
 
 import styles from '../styles/work.module.scss';
+import blogStyles from '../styles/blog.module.scss';
+
 import { useContext } from 'react';
 import { MyContext } from '../components/Layout';
 
-export default function Card(props) {
+const Card = function (props) {
 	const renderSkills = () => {
 		if (props.project.skills) {
 			const skills = props.project.skills;
@@ -56,4 +58,34 @@ export default function Card(props) {
 			</div>
 		</div>
 	);
-}
+};
+
+const GridCard = function (props) {
+	const { theme, setTheme } = useContext(MyContext);
+	return (
+		<div className={`${styles.gridCard} ${theme} col-span-1`}>
+			<div
+				className={`${styles.contentContainer} my-text-mustard grid grid-cols-1 place-items-center text-center`}
+			>
+				<h3 className={`my-title col-span-1`}>{props.title}</h3>
+				<div className={`col-span-1 ${styles.projectDescription}`}>
+					<p>{props.features[0]['Messages']}</p>
+				</div>
+
+				{props.url ? (
+					<Link
+						name={`Live link to ${props.title}`}
+						href={props.url}
+						target="_blank"
+						rel="noreferrer"
+						className="col-span-1 my-btn"
+					>
+						View it live
+					</Link>
+				) : null}
+			</div>
+		</div>
+	);
+};
+
+export { Card, GridCard };

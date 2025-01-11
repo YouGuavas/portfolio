@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from '../../styles/blog.module.scss';
 import SelfieImage from './SelfieImage';
 
-export default function Collapsible(props) {
+const Collapsible = function(props) {
 	const [isCollapsed, setIsCollapsed] = useState(true);
 	const contentRef = useRef(null); // Ref for the collapsible content
 
@@ -56,3 +56,6 @@ export default function Collapsible(props) {
 		</div>
 	);
 }
+
+
+export {Collapsible}

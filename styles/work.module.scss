@@ -18,15 +18,22 @@
 		height: 270px;
 	}
 }
-
-.card {
+.card,
+.gridCard {
 	position: relative;
-	grid-column: span 3 / span 3;
 	transition: 0.3s;
 	height: 60vh;
 	overflow: hidden;
 	border-radius: 0.1rem;
 	cursor: default;
+}
+.gridCard {
+	grid-column: span 1 / span 1;
+}
+
+.card {
+	grid-column: span 3 / span 3;
+
 	@media only screen and (min-width: var(--md-max)) {
 		padding: 1rem 10rem;
 	}

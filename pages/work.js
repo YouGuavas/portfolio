@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Card from '@/components/Card';
+import { Card } from '@/components/Card';
 import projects from '../data/projects.json';
 import work from '../data/work.json';
 
