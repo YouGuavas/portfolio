@@ -1,6 +1,6 @@
 import styles from '@/styles/blog.module.scss';
 import { ByLine } from '@/components/ByLine';
-import Collapsible from '@/components/body/Collapsible';
+import { Collapsible } from '@/components/body/Collapsible';
 import SelfieImage from '@/components/body/SelfieImage';
 import Link from 'next/link';
 import Head from 'next/head';

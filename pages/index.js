@@ -41,15 +41,9 @@ function Home() {
 
 						<li>Web Development and Design</li>
 						<li>AI-augmented Learning</li>
-						<li>Psychedelics and Mental Health</li>
+						<li>Mental Health and Well-being</li>
 					</ul>
 				</div>
-				<SelfieImage
-					height={400}
-					width={400}
-					src={selfie.src}
-					alt={`A selfie of me.`}
-				/>
 			</section>
 		</main>
 	);
