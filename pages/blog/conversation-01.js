@@ -7,7 +7,7 @@ import Head from 'next/head';
 import { useContext } from 'react';
 import { MyContext } from '@/components/Layout';
 
-import selfie from '@/public/images/selfies/selfie.png';
+import selfie from '@/public/images/selfies/cartoonselfie.png';
 import aiSelfie from '@/public/images/selfies/ai.png';
 
 export default function Blog() {

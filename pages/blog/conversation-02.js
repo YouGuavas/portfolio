@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import { MyContext } from '@/components/Layout';
 import BlogImage from '@/components/BlogImage';
 
-import selfie from '@/public/images/selfies/selfie.png';
+import selfie from '@/public/images/selfies/cartoonselfie.png';
 import aiSelfie from '@/public/images/selfies/ai.png';
 
 import dyson01 from '@/public/images/conversation-02/dyson01.png';

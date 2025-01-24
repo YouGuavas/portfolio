@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import SelfieImage from '@/components/body/SelfieImage';
 import { MyContext } from '@/components/Layout';
 import styles from '@/styles/Home.module.scss';
-import selfie from '@/public/images/selfies/selfie.png';
+import selfie from '@/public/images/selfies/cartoonselfie.png';
 
 function Home() {
 	const { theme, setTheme } = useContext(MyContext);
@@ -44,6 +44,7 @@ function Home() {
 						<li>Mental Health and Well-being</li>
 					</ul>
 				</div>
+				<SelfieImage src={selfie.src} height={200} width={200} />
 			</section>
 		</main>
 	);
