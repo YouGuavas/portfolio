@@ -44,7 +44,12 @@ function Home() {
 						<li>Mental Health and Well-being</li>
 					</ul>
 				</div>
-				<SelfieImage src={selfie.src} height={200} width={200} />
+				<SelfieImage
+					src={selfie.src}
+					alt="Cartoon selfie made with Inkscape"
+					height={200}
+					width={200}
+				/>
 			</section>
 		</main>
 	);
