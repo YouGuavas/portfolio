@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import { useContext } from 'react';
+import Link from 'next/link';
 
 import SelfieImage from '@/components/body/SelfieImage';
 import { MyContext } from '@/components/Layout';
@@ -28,14 +29,13 @@ function Home() {
 						I am a self-directed learner on a journey to explore modern science,
 						technology, and the self. Guided by the principle: &quot;Knowledge
 						is power, teaching is honor,&quot; I believe we each have the
-						ability—and responsibility—to shape the world for the better.
+						ability—and responsibility—to shape the world for the better. I
+						believe that the first step toward this is listening - Please,{' '}
+						<Link href="/contact" className="underline">
+							Contact Me
+						</Link>{' '}
+						and let me listen to your vision.
 					</p>{' '}
-					<p className={styles.blogParagraph}>
-						We&apos;re all winging it--life&apos;s a whole lot of trial and
-						error. Nobody&apos;s grading our papers. To me, the leap from there
-						is clear: Let&apos;s work together to create a sustainable, peaceful
-						future through quantum historical recursion.
-					</p>
 					<ul className={`md:px-4 px-3 ${styles.myList}`}>
 						<h2 className={`my-title`}>Current areas of interest:</h2>
 
