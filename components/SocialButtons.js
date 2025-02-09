@@ -27,7 +27,7 @@ const FbButton = (props) => {
 			className={`inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${theme}`}
 			url={url}
 		>
-			<FacebookIcon className="h-6 w-6" round={true} />
+			<FacebookIcon alt="Facebook Icon" className="h-6 w-6" round={true} />
 		</FacebookShareButton>
 	);
 };
@@ -39,7 +39,7 @@ const TweetButton = (props) => {
 			className={`inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${theme}`}
 			url={url}
 		>
-			<TwitterIcon className="h-6 w-6" round={true} />
+			<TwitterIcon alt="X Icon" className="h-6 w-6" round={true} />
 		</TwitterShareButton>
 	);
 };
@@ -67,7 +67,7 @@ const SocialButton = ({ icon: Icon, label, url }) => {
 			target="_blank"
 			className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
 		>
-			<Icon className="h-6 w-6 rounded-full" />
+			<Icon alt="Share button" className="h-6 w-6 rounded-full" />
 		</Link>
 	);
 };

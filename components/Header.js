@@ -27,7 +27,7 @@ export default function Header() {
 			<ShareButtonsGroup />
 			<Link name="Logo Home" href="#Home" scroll={false}>
 				<Image
-					alt="My personal logo"
+					alt="Patrick Yambrick logo"
 					className="my-logo"
 					height={96}
 					width={96}
