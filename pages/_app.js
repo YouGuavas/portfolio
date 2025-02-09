@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
 				<meta name="theme-color" content="#000000" />
 				<meta
 					name="description"
-					content="Located in Genesee County, Michigan, Patrick Yambrick is a self-directed learner delivering web development and tutoring services to small businesses and individuals in the Flint area and beyond."
+					content="Patrick Yambrick, a Flint-based web developer and tutor, offers expert web design, React development, and personalized tutoring services for small businesses and individuals in Michigan and beyond."
 				/>
 			</Head>
 			<Component {...pageProps} />

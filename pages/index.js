@@ -14,7 +14,7 @@ function Home() {
 	return (
 		<main className={theme}>
 			<Head>
-				<title>Home | Patrick Yambrick</title>
+				<title>Patrick Yambrick | Web Development & Tutoring in Michigan</title>
 			</Head>
 
 			<section
