@@ -75,11 +75,6 @@ const SocialButton = ({ icon: Icon, label, url }) => {
 const SocialButtonsGroup = () => {
 	const socialMediaLinks = [
 		{
-			icon: TwitterIcon,
-			url: 'https://x.com/beezoox3',
-			label: 'X (Formerly Twitter)',
-		},
-		{
 			icon: FacebookIcon,
 			url: 'https://www.facebook.com/profile.php?id=61569691153903',
 			label: 'Facebook',
