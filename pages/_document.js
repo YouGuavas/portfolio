@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+
 import React from 'react';
 
 class MyDocument extends Document {
@@ -10,12 +11,6 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<meta charSet="utf-8" />
-					<meta name="theme-color" content="#000000" />
-					<meta
-						name="description"
-						content="Patrick Yambrick is a self-directed learner who is currently focused on delivering web development and tutoring services."
-					/>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link
 						rel="preconnect"

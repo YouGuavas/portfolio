@@ -1,6 +1,5 @@
 import React, { useEffect, useState, createContext } from 'react';
 import { useRouter } from 'next/router'; // Import useRouter from Next.js
-
 import Header from './Header';
 import Footer from './Footer';
 
