@@ -44,6 +44,7 @@ function Home() {
 						<li>Mental Health and Well-being</li>
 					</ul>
 				</div>
+
 				<SelfieImage
 					src={selfie.src}
 					alt="Cartoon selfie made with Inkscape"
