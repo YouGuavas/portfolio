@@ -72,7 +72,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
-				<title>Contact | Patrick Yambrick</title>
+				<title>Patrick Yambrick | Contact</title>
 			</Head>
 			<section
 				className={`pad-top-vh my-background-generic place-items-center ${styles.contact} ${theme}`}

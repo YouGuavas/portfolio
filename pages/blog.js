@@ -13,7 +13,7 @@ export default function Blogs() {
 	return (
 		<div className={`${theme}`}>
 			<Head>
-				<title>Blog | Patrick Yambrick</title>
+				<title>Patrick Yambrick | Blog</title>
 			</Head>
 			<section
 				id="Stories"
