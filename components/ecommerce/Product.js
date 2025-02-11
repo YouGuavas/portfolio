@@ -6,6 +6,7 @@ import { MyContext } from '../../components/Layout';
 
 const Product = function (props) {
 	const { theme, setTheme } = useContext(MyContext);
+	console.log(props.product);
 	return (
 		<div className={`${styles.card} ${theme}`}>
 			<div className={styles.backgroundImageContainer}></div>
@@ -13,7 +14,7 @@ const Product = function (props) {
 			<div
 				className={`${styles.contentContainer} my-text-mustard grid grid-cols-2 place-items-center text-center`}
 			>
-				<h4 className="col-span-2">{props.product.title}</h4>
+				<h4 className="col-span-2">{props.product.name}</h4>
 				<div className={`col-span-2 ${styles.productDescription}`}>
 					<p>{props.product.description}</p>
 				</div>
