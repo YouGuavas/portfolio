@@ -10,7 +10,6 @@ export default function CheckoutButton({ priceId }) {
 
 	const handleCheckout = async () => {
 		setLoading(true);
-		alert(priceId);
 		const stripe = await stripePromise;
 
 		const response = await fetch('/api/checkout', {
