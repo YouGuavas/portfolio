@@ -30,12 +30,30 @@ export default function Work() {
 					<h2 className="my-title disappear-md">Project Tiers</h2>
 
 					<div className="grid grid-cols-3 gap-2 py-6">
-						{Array.isArray(data)
-							? data.map((tier, index) => {
-									console.log('tier- ' + tier);
-									return <Product key={index} product={tier} />;
-							  })
-							: null}
+						<Product
+							product={{
+								name: 'Single Page',
+								price: 8000,
+								description:
+									'A responsive, modern, SEO-friendly landing page build with react and next.',
+							}}
+						/>
+						<Product
+							product={{
+								name: 'Entrepreneur',
+								price: 15000,
+								description:
+									'A full site, SEO optimized and branded, fit for an entrepreneurial spirit. Similar to this site.',
+							}}
+						/>
+						<Product
+							product={{
+								name: 'Fully Featured',
+								price: 35000,
+								description:
+									'A fully-featured, customized site - suitable for any use, up to and including enterprise level.',
+							}}
+						/>
 					</div>
 				</div>
 			</section>

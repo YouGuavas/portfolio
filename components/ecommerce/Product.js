@@ -6,7 +6,6 @@ import { MyContext } from '../../components/Layout';
 
 const Product = function (props) {
 	const { theme, setTheme } = useContext(MyContext);
-	console.log(props.product);
 	return (
 		<div className={`${styles.card} ${theme}`}>
 			<div className={styles.backgroundImageContainer}></div>
@@ -16,9 +15,10 @@ const Product = function (props) {
 			>
 				<h4 className="col-span-2">{props.product.name}</h4>
 				<div className={`col-span-2 ${styles.productDescription}`}>
+					<p>{`$${props.product.price / 100}`}</p>
 					<p>{props.product.description}</p>
 				</div>
-				<CheckoutButton priceId={props.product.price} />
+				{/*<CheckoutButton priceId={props.product.price} />*/}
 			</div>
 		</div>
 	);
