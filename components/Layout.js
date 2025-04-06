@@ -42,8 +42,8 @@ const Layout = ({ children }) => {
 				<Header />
 
 				<Nav
-					links={['Home', 'Work', 'Hire', 'Blog', 'Contact']}
-					pages={['work', 'hire', 'contact', 'blog']}
+					links={['Home', 'Work', 'Hire', 'Contact']}
+					pages={['work', 'hire', 'contact']}
 				/>
 			</div>
 
