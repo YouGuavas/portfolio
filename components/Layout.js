@@ -9,7 +9,7 @@ import styles from '../styles/components/Layout.module.scss';
 export const MyContext = createContext();
 
 const Layout = ({ children }) => {
-	const [theme, setTheme] = useState('default');
+	const [theme, setTheme] = useState('spaceship');
 	const [url, setUrl] = useState('https://patdesigns.online');
 	const router = useRouter(); // Get the router object
 
