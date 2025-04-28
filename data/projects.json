@@ -1,11 +1,11 @@
 [
 	{
-		"title": "Women's Resource Directory (Flint/Genesee County)",
+		"title": "Patripples",
 		"skills": ["React"],
-		"description": "A bunch of resources aimed at helping underserved women in Flint and Genesee County. Some information needs updating. See my contact section, or view it at github if you'd like to help finish this project.",
-		"live": "https://gencowomen.vercel.app/",
-		"github": "https://github.com/YouGuavas/gencowomen",
-		"src1": "/images/gencowomen.png"
+		"description": "",
+		"live": "https://patripples.com/",
+		"github": "https://github.com/YouGuavas/patripples",
+		"src1": "/images/patripples.png"
 	},
 	{
 		"title": "Code Editor",
