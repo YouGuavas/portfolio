@@ -26,23 +26,15 @@ function Home() {
 						Welcome
 					</h1>
 					<p className={styles.blogParagraph}>
-						I am a self-directed learner on a journey to explore modern science,
-						technology, and the self. Guided by the principle: &quot;Knowledge
-						is power, teaching is honor,&quot; I believe we each have the
-						ability—and responsibility—to shape the world for the better. I
-						believe that the first step toward this is listening - Please,{' '}
-						<Link href="/contact" className="underline">
-							Contact Me
-						</Link>{' '}
-						and let me listen to your vision.
+						You have caught me during a liminal phase. My new home is{' '}
+						<Link
+							className="my-text-forest lowercase spaced darken"
+							href="https://patripples.com/"
+						>
+							patripples
+						</Link>
+						.
 					</p>{' '}
-					<ul className={`md:px-4 px-3 ${styles.myList}`}>
-						<h2 className={`my-title`}>Current areas of interest:</h2>
-
-						<li>Web Development and Design</li>
-						<li>AI-augmented Learning</li>
-						<li>Mental Health and Well-being</li>
-					</ul>
 				</div>
 
 				<SelfieImage

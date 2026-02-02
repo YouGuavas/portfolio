@@ -40,11 +40,6 @@ const Layout = ({ children }) => {
 		<MyContext.Provider value={{ theme, setTheme, url, setUrl }}>
 			<div className={`${styles.container} ${theme}`}>
 				<Header />
-
-				<Nav
-					links={['Home', 'Work', 'Hire', 'Contact']}
-					pages={['work', 'hire', 'contact']}
-				/>
 			</div>
 
 			{children}

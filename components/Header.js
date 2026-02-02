@@ -24,7 +24,6 @@ export default function Header() {
 			id="collapsible-header"
 			className={`${styles.header} ${theme} space-x-2`}
 		>
-			<ShareButtonsGroup />
 			<Link name="Logo Home" href="#Home" scroll={false}>
 				<Image
 					alt="Patrick Yambrick logo"
@@ -34,8 +33,6 @@ export default function Header() {
 					src={logo.src}
 				/>
 			</Link>
-
-			<SocialButtonsGroup />
 		</header>
 	);
 }
